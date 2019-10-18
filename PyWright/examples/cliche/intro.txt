@@ -1,0 +1,19 @@
+"Demonstration of how to use system variables to simplify tasks."
+
+"Create a macro to make a character speak a dumb cliche:'
+
+"The cliche macro: Or my name isn't {{}$_speaking_name{}}"
+
+macro cliche
+"Or my name isn't {$_speaking_name}!"
+endmacro
+
+And here is how it might be used:
+
+char mia
+"Well, they had better fall at my feet when I wag my finger."
+cliche
+
+char phoenix
+"Mia! Please let me try this case! I am ready!"
+cliche

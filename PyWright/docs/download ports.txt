@@ -1,0 +1,2 @@
+You download "ports" short for "portraits" from "Download Games and Content" on the main menu. Phoenix is one of many on there :) One issue is that the apollo justice characters all use the japanese names rather than the american names, so you'll have to look at the sheets to see if its who you want. There is also the character list at [url="http://en.wikipedia.org/wiki/List_of_characters_in_the_Ace_Attorney_series"]wikipedia[/url] to help. You'll also have to rename them with the nametag=apollo attribute when you use the char command.
+

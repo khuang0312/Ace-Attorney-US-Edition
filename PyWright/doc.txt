@@ -1,0 +1,1219 @@
+=== TABLE OF CONTENTS ===
+	1. About PyWright
+	2. Game Controls
+	3. Script Reference
+	4. Special Variables
+	5. About Macros
+	6. About Text
+	7. Content files
+------------------------
+
+
+=== 1. About PyWright ===
+	PyWright is an ace attourney case maker that has been in very sporadic 
+development since December 2007.  It is basically an engine designed to emulate the 
+Ace Attourney series of lawer based adventure games published by capcom on the 
+GBA and Nintendo DS.  Writing a case for the engine consists of writing scripts in a 
+folder for the case using a simple script syntax and the commands
+outlined in this document.
+
+
+=== 2. Game Controls ===
+
+	enter -> next line of text
+	space -> back out of menus (that can be backed out)
+	z -> press in cross exams
+	x -> present from court record menu
+	up,down,left,right -> navigate menus, scroll through cross exams
+	d - toggle debug (fps counter)
+	alt-enter - fullscreen (problematic on some
+				systems due to odd resolution)
+	F5 - quicksave, only use when running a case
+	F7 - quickload, only use when running a case
+    1 - toggle between standard ds resolution (256x192), and a scaled 640x480
+    2 - toggle between using a scale2x filter or not (only makes sense in 640x480)
+    (these settings are saved in display.ini)
+
+------------------------
+
+
+
+
+
+=== 3. Script Reference ====
+
+Games
+   PyWright organizes sets of cases together into games.  All the games 
+are stored in the "games" folder in the PyWright directory.  Each game 
+is stored as a directory named after the game.  When PyWright is started, 
+a list of games is offered to the player to choose which one they want to play.  
+They are not listed in any particular order, although in the future with 
+download and upload of cases, ordering will become important (and possible).
+
+Cases
+   Inside a game folder are the cases.  A folder that contains an intro.txt 
+file is considered a case.  The folder should be named what you want the case 
+name to be.  Once a game is chosen from the game menu, the phoenix wright 
+case selection screen will let them cycle through the available cases.  Currently 
+these are organized alphabetically with no other organization possible.  
+Obviously the order may be important and this is a restriction, it will be 
+fixed in a future beta.
+
+Script organization
+   Inside a case folder are all of the files which are the meat of a case.  
+The only required file is "intro.txt", which is the first script that is run.  If you 
+have some sort of intro to the game, it makes sense to put it in here.  If 
+there is no investigation in a case, an entire case could be written in the 
+intro.txt file.  It is no different from any other scripts for a case, except that 
+it is the first one that is run.  
+   
+   Investigation on the other hand, requires each option on the investigation 
+menu (examine,move,present, and talk) to have it's own script file.  These 
+scripts are named "room.examine.txt", "room.move.txt", "room.present.txt", 
+and "room.talk.txt", with room being an identifier for a particular investigation 
+menu.  This organizational requirement might be removed in a future beta.
+   
+   A few other files may be present as well.  The file "macros.txt" contains 
+macros that can be used in the case.  Macros are sequences of actions 
+which are aliased to a short command, allowing you to build your own commands, 
+and speed up the scripting process considerably.  Also, any file that ends in
+".mcro" will be loaded in a similar fashion to macros.txt, allowing you to trade
+support functions with other users more easily. The file "evidence.txt" 
+contains a database of the evidence available to use in the case, such as 
+names, pictures, profiles, and descriptions.  More info on 
+macros.txt, .mcro files, and evidence.txt is available further on in this document.
+
+   Finally, a set of art, music, and sfx folders, which mimic the structure in 
+PyWrights root folder, can be placed in a case folder or game folder, allowing 
+the official content to be replaced, or simply to allow you to use your own 
+additional content which is specific to a case or game.  It is recommended to
+always place your own content in game or case local folders rather than at
+the pywright root, in order to make distributing the case easier.
+
+
+Command description key:
+----------------------------
+
+Regular text - The actual text of a command.  Type as is.
+    
+    Example:
+    
+    -----------------------
+        gobledygook
+    -----------------------
+    You would type gobledygook on a line for the command.
+    
+Text in square brackets - This is a required argument that specifies something about a command
+    
+    Example:
+    
+    -----------------------
+        gobledygook [someone]
+    -----------------------
+    You would type gobledygook, a space, and then some text representing "someone".
+    
+Text in curly brackets - These are optional arguments.  If the format is {x}, then you may include 
+    the x or not as an argument to the command.  If the format is {x=y}, then you may either include
+    x=something as a specified argument to the command, or not.  The order of optional arguments
+    does not matter.
+    
+    Example:
+    
+    ------------------------
+        gobledygook {no}
+    ------------------------
+    You may type either "gobledygook" or "gobledygook no", depending on whether you want
+        gobledygook or not.
+
+Variable usage:
+        Any argument to a command can be replaced by a variable.  To do so, simply write a dollar sign
+    followed by the variable name, instead of writing the normal argument.  If the argument is a named
+    argument ("x=5") you would replace the value on the right side of the equal sign.
+    
+    Example: Lets start the scene by jumping to a point based on what the player has done.  Assume
+    that the variable scene_state has been previously set.
+    
+    ----------------------
+    goto $scene_state
+    label new_to_room
+    "You look around the room.  It is a mess."
+    setvar scene_state been_in_room
+    goto scene_start
+    label been_in_room
+    "You return to the room."
+    goto scene_start
+    
+    label scene_start
+    ... other code ...
+    ----------------------
+    
+        Variable values can also be inserted in textboxes.  See the text markup section for more info
+    on how to do so.  See the "setvar" command in the command list for more info on how to work with
+    variables.
+    
+    Note: variable substitution does NOT work on label names.  I.E, you cannot do this:
+    
+        setvar the_label label1
+        label $label1
+    
+Here are all of the commands:
+------------------------------
+TO ADD VARIOUS OBJECTS
+
+emo [emotion name] {name=reference name}
+    Sets the emotion of a character to [emotion name].  If name is ommited, will set the emotion
+    of the currently speaking character.  If name exists, will set the emotion of the referenced
+    character object.
+    Valid emotions for a character are those art files found in art/port/[char name].
+    
+gui Back {x=number} {y=number} {z=number} {name=identifier}
+    will draw a Back button in the corner that waits for the user to click it or press the cancel 
+    (space) key.  Pauses script until pressed.
+    
+gui Button [result] {x=number} {y=number} {z=number} {name=identifier} {graphic=image path} [text]
+    Adds a button to the scene.  The button will have text printed on it.  When clicked,
+    result will be executed.  If result is the name of a label, the script will jump to that
+    label.  If result is of the form "{name_of_macro}" the macro will be executed
+    and script will resume from wherever it left off.
+    graphic=image path - the path to an image, starting after the art folder
+        EX:
+        macro add1
+        add var 1
+        "The variable is now: {$var}"
+        endmacro
+        
+        gui Button {add1} x=0 y=0 "Add to the variable"
+        gui Wait
+        
+
+gui Wait {run=macroname}
+    Waits for user to do something. No script lines following the gui Wait
+    command will be executed. Any created objects that execute a goto will
+    cancel the wait. For instance, clicking on a button, or clicking on
+    something to examine.
+    run - If set, this macro will be run each frame while waiting.  You can use it for a gui that
+        times out, or to handle special animation while still allowing player input.
+    
+menu [scene name]
+    shows the examine,talk,present,move menu for
+    named scene
+
+list [tag]
+    starts building a list to present user with options
+    the tag is an id you give to this indivudal list which allows
+    the user's choices to be remembered.  This line will act like a label, 
+    other commands can jump to the tag.
+
+li [text] {result=label or macro}
+    Adds a choice to the current list menu.  When chosen,
+    pywright will jump to a label that matches this text, or jump
+    to the label or macro if the result= argument is listed.
+
+showlist
+        shows the list that's been built - always follows the
+    last "li" command
+        Once the list is shown, the user will be presented with the list
+    of options that was built between the "list" and "showlist" commands.
+    The user will be able to select one of these options or hit the back
+    key.  The text of the option the user chooses becomes the name
+    of the label PyWright will search for.  If the option is not listed,
+    PyWright will stupidly continue on the line following showlist.  If 
+    Back is selected from the menu or the back button is pressed, PyWright
+    will continue to the next line of the script without jumping to any
+    label.  A showlist will only look for labels following the showlist command, 
+    and chooses the first acceptible match.
+        if the variable "_list_back_button" is "true" (The default), a back
+    button will be displayed in the corner of the screen.  If that variable
+    is "false", then no back button is displayed.  If no back button or "Back"
+    element is in the list, the list cannot be exited by the user at all.
+    
+forgetlist [list tag]
+    Forgets the chosen options for a given list tag.
+    
+forgetlistitem [list tag] [item text]
+    Forgets that the player has chosen the item from the list.
+    
+present
+        This shows the court record allowing items to be presented.  The user may
+    either present something or cancel by pressing the back button.  Present
+    will try to jump to a label that matches the player's choice.  If the back
+    button is pressed it continue processing instead of jumping.  The label it
+    will attempt to jump to will be named after the evidence that was chosen.  
+    Like other commands that use labels, it looks only for the first matching label 
+    after the present command.  If it finds "label none" before the label it is 
+    looking for, it will jump there instead.  This way you can define a canned 
+    response to badly presented evidence.
+
+examine {hide}
+        Shows the examine cursor.  When a spot has been chosen, will try to 
+    jump to a label based on the matching spot.  It will only search
+    for labels following the last listed region.  If the back button is pressed it will
+    not jump, but continue on.  If the cursor is outside any valid regions,
+    or it hits "label none" before the correct label, it will jump there.
+    hide - will not show the check icon when over a valid spot, or the back button
+    (and won't allow cancelling).
+
+region [x] [y] [width] [height] [label]
+	adds a region to current examine menu
+	run this AFTER an "examine" command
+	upper left corner of region at x,y
+	lower right corner at x+width,y+height
+	will jump to [label] when spot is examined
+    
+VARIOUS CONTROL COMMANDS
+
+print [any text or variables]
+    Will output the text and variables to the log file.
+
+include [name]
+    includes [name]d script in another.  It is like copy and pasting
+the contents of the other script into this one.  Used for more advanced
+operations, such as creating a new interface that you want to reuse, or just
+to string scripts together with no fuss.
+
+nt [name]
+    If a character is currently speaking, and you wish to continue to show
+    them but have a new offscreen character or their thoughts displayed,
+    use this command.  If [name] is blank, no nametag will be shown.  This
+    will not change the name of an existing speaking character.  The best
+    option to change an existing characters nametag is to reissue another
+    char command with the nametag=[name] argument.
+
+goto [name]
+        This command will search for a label with [name] and jump to that 
+    point, skipping any other lines.  If the label is not found following the
+    goto command, it will search for the label above it.  If multiple labels
+    have the same name, the script will jump to the first one it finds.  If
+    no label matches the [name] at all, script execution will resume on the
+    line following the goto command as if it was a comment.  Beware of
+    setting up a chain of goto commands that cause a game to endlessly
+    repeat the same sets of actions.
+    
+label [name]
+        This defines a marker in the script that for things to 
+    reference.  The command goto will make the script "jump"
+    to this point and begin executing lines.  The command
+    "flag" will jump to the named position if a certain flag has
+    been set.  Also, cross examinations, presenting, and
+    room examinations all use "labels" to define where to go
+    when various events occur.  More info about how these
+    commands use labels in the commands themselves.
+    See: goto, flag, noflag, is, endcross, listmenu, examine, region
+    
+penalty (+, - or nothing)[amount] {variable=name} {img=name}
+	examples:
+		penalty -10
+		penalty +50
+		penalty 100
+	subtracts, adds or sets the penalty amount (max penalty is 100)
+	shows an animation to match what is going on
+    variable - Sets which variable to base the values on.  Defaults to "penalty" which is the
+            standard variable for the penalty animation, but can point to another variable.  This
+            would allow you to make a specific "reputation" bar for each character, or have
+            different kinds of penalties, or different kinds of stats.
+            The range for the bar of a variable is 0 for an empty bar, and 100 for a full one.
+            If the variable is outside this range, it will be forced into it.
+    img - Use an fg image as the bar instead of the standard healthbar.
+
+pause [ticks] {all} {script} {priority=amount}
+    pause execution for ticks (1/60 of a second)
+    if no ticks given, will pause for 1 second.
+        In addition to ticks, either "all", "script", or "priority" can be specified.
+    These arguments control which aspect of pywright is paused.  If "all"
+    is specified, then all animation of any kind will be paused.  If "script" is
+    specified, then all animation continues, but the script will not proceed
+    to the next line until the delay is over.  If a priority is given, than what 
+    is paused are any objects with a higher priority value.  Currently, most sprites
+    have a priority of 0, characters have a priority of 20, and most gui items
+    have a priority of 50.  So a pause with priority of 0 or less than zero is
+    equivalent to {all}, while a pause with priority of 1000 is equivalent to
+    {script}.  A priority of {19} would pause profiles but not background
+    animation.
+    
+waitenter
+    pause execution until enter is pressed
+
+mus [filename]
+    plays music
+    if filename is blank, stops currently playing music
+
+sfx {after=0} [filename]
+    plays a sound effect
+    after - will wait this many frames before playing the sound
+
+movie [name] {[soundfile]}
+      Will play [name].mpeg if found in PyWright/[game]/movies, 
+    PyWright/[game]/[case]movies, or PyWright/movies.  File must be an mpeg-1
+    compressed movie.  Movies cannot play sound embedded in the file.
+    You will have to extract the sound element and convert it to a format the
+    sound player supports, such as .ogg.  You can start the sound playing
+    with sfx right before you play the movie, but then if the user
+    pauses the game the sound will keep playing and not sync with the movie.
+    [soundfile] is a path to the sound file, it is the same format that sfx supports.
+                    the movie will try and keep the sound in sync, if you play
+                    it with this method
+    
+exit
+    quits game
+
+endscript
+        This commend ends the current script.  If there is another script running,
+    that script will resume.
+    
+casemenu {pri=priority}
+        Shows the case selection menu. Can give it a priority if you need to
+    adjust it so it works better with other objects (for instance, to place
+    a textbox on the case selection screen and have that print while still
+    letting you choose a case)
+
+script [scene name] {noclear} {stack}
+    run a given script "scriptname.txt" within the current game
+    if you dont want all of the existing objects to vanish
+        in the new script, include noclear.
+    if stack is present, the new script will be run on top of the current
+        script, meaning when it ends, the current script will resume.
+        Use stack if you want to have a control script to organize
+        the rest of the game:
+        example:
+        ###################
+        #   script scene1 stack
+        #   script scene2 stack
+        #   script finalscene stack
+        #   script ending stack
+        ###################
+        This will run scene1.txt, then when that finishes, run scene2.txt, and
+        so on.  Stack is automatically used for checking evidence scripts,
+        but defaults to off in other instances.
+    
+top
+    goto the first line of a script
+
+cross [tag]
+    Begins the cross examination statements.  This line will act like a label, 
+    other commands can jump to the tag.
+
+endcross
+        Ends cross examination statements.  Put labels for cross examination
+    after this.  Cross examinations will jump to labels following "endcross"
+    depending on what actions the player takes.  
+        If press is tried, it will look for a label named "press [statement name]", 
+    where statement name is the name of the statement the player is 
+    currently viewing (statement names are set with the statement command).  
+    If "label press none" is found before "label press [statement]",
+    it will jump there instead
+        If the player tries to present, it will instead search for a label
+    named "[evidence name] [statement name]", stopping the search
+    if it finds a "label none".  Label none is where you would
+    likely deal with penalties.
+
+statement [name] {test=variable_name}
+    Begins a new statement
+    Found between the cross and endcross lines.
+    This line will act like a label, other commands can 
+    jump to the statement by name.
+    test - If you set this to a variable/flag name, that variable/flag will need to be
+        true in order for this statement to be shown.
+
+resume
+    If a cross examination is in play, this goes to the next statement in the cross
+    exam from where it was left off.
+    If a cross examination is not in play, execution will move to the line after
+    the last goto command.
+    
+    EX:
+    set name Freddie
+    goto print_name
+    "Now you know who I am."
+    endscript
+    
+    label print_name
+    "Hi, my name is {$name}"
+    resume
+
+cross_restart
+    Jumps to the beginning of the most recent cross examination
+
+clearcross
+    Must be called after a cross examination is over to clear the variables
+
+next_statement
+    Jump to the next statement within a cross/endcross section
+    
+prev_statement
+    Jump to the previous statement within a cross/endcross section
+    
+VARIABLES AND FLAGS TO KEEP TRACK OF WHAT HAPPENS
+
+setflag [flag]
+        Flags are a way to keep track of things that occur in the game.
+    They are a way to make sure you can't pick up a piece of evidence
+    twice, or make sure that the victim in a room is not there when the
+    player visits the crime scene on the next day.
+    flag - some identifier that is clear to you as defining that an event
+            has occured
+
+delflag [flag]
+        This command "unsets" a flag, forgetting that some event has
+    happend.
+    
+flag [flag] {AND} [flag] {AND} [flag] [name]
+        Use flag to do something only if some event is recorded as having 
+    happened.  If the flag is set, PyWright will search below the flag command
+    for a label named [name].  If the label is not found, execution resumes
+    on the line after "flag".
+
+noflag [flag] {AND} [flag] {AND} [name]
+        Works the same as "flag", only it will jump to the label if a flag
+    is NOT set.
+    
+set [variable] [value]
+setvar [variable] [value]
+    (These commands are aliases)
+        This command sets the value of a variable.  [value] may contain any character,
+    including spaces.  It may also contain variable substitutions, which can be used to
+    join text very easily.  All variables are stored as text, even numbers.  Math operations
+    will try and do the math on the variable, but convert the answer back to text.  See
+    addvar, subvar, divvar, and mulvar for more info on math.
+    Basic example:
+        setvar talked_to_emma true
+        Now the variable "talked_to_emma" is true.  (Note that there are no "booleans",
+    but you can use "true" and "false" if you like).
+    Joining text:
+        setvar name saluk
+        setvar description $name is a cool dude.
+        "{$description}"
+        (Will print "saluk is a cool dude")
+        
+        setvar color green
+        setvar object ball
+        "The {$object} is {$color}."
+        (Will print "The ball is green.")
+
+joinvar [variable] [value1] [value2] [value3] [value...]
+        This command is used to join strings together with no space in between them.
+    all the values are joined together and stored in [variable].
+    [value1] and 
+    Join text with no space between them:
+        setvar a Pho
+        setvar b enix
+        setvar c Wright
+        ("Pho" and "enix" are joined with no space -> "Phoenix")
+        joinvar name $a $b
+        ("Phoenix" and "Wright" are joined with a space)
+        setvar name $name $c
+        nt $name
+        (The nametag should now read "Phoenix Wright")
+        
+addvar [variable] [numeric value]
+        This command will add [numeric value] to the numeric value stored in 
+    [variable].  [variable] will hold the result of this addition.  Using 
+    variable substitution, it is possible to add variables together
+    as well as adding raw numbers.  If [variable] is not created yet, it will be
+    set to zero before the add happens.
+    EX:
+        setvar a 3
+        addvar a 2
+        (now a is equal to 5)
+        setvar b 10
+        addvar a $b
+        (now a is equal to 15, because b was added)
+        
+subvar [variable] [numeric value]
+        This command will subtract [numeric value] from the numeric value
+    of [variable] and save the answer in [variable].  Using 
+    variable substitution, it is possible to subtract variables from each other
+    as well as subtracting raw numbers.
+    EX:
+        setvar a 5
+        subvar a 3
+        (a is now 2)
+        setvar b 2
+        subvar a $b
+        (now a is equal to 0)
+        
+divvar [variable] [numeric value]
+        Use this to divide [variable] by [numeric value] and store the result
+    in [variable] as an integer (-1,0,1,2, etc, no decimal points).  
+    Be careful - numeric value CANNOT be 0.  Using 
+    variable substitution, it is possible to divide variables by each other
+    as well as dividing raw numbers.
+    EX:
+        setvar a 40
+        divvar a 5
+        (a is now 8)
+        setvar b 2
+        divvar a $b
+        (now a is equal to 4)
+    
+mulvar [variable] [numeric value]
+        Use this to multiply [variable] by [numeric value] and store the result
+    in [variable] as an integer (-1,0,1,2, etc, no decimal points).  Using 
+    variable substitution, it is possible to multiply variables by each other
+    as well as multiplying by a raw number.
+    EX:
+        setvar a 2
+        mulvar a 2
+        (a is now 4)
+        setvar b 5
+        mulvar a $b
+        (now a is equal to 20)
+
+absvar [variable]
+        Set the variable to the absolute value of it.
+
+random [variable] [start] [end]
+        Generates a random integer that can be somewhere between [start] and [end],
+    and stores the result in [variable].
+        
+is ([variable] [comparison] [value]) AND ([variable] [comparison] [value]) [label]
+        Compares a variable to a proposed value.  If the comparison
+    is true, PyWright will look for the first occuring named label below
+    the "is" command.  If not found, PyWright will continue on the next line.
+        If comparison is left blank or an = sign, it will check if the variable
+    is equal to the value.
+        If comparison is a >, <, >=, or <= sign, it will do a value
+    comparison.  This is an error if the variable contains text rather than
+    just digits, and it will evaluate as false.
+        You can chain the comparisons together in one "is" statement with
+    the keywords AND and OR.  All comparisons must evalutate as true if AND
+    is used for PyWright to jump to the label, whereas with OR, only one
+    of the comparisons must be true.
+    
+isnot
+        Functions the same as is, except it will jump to the label if
+    the comparisons fail.
+
+isempty [variable] [label]
+        Jumps to the label if the variable has not been set or has been set to nothing
+
+isnotempty [variable] [label]
+        Jumps to the label if the variable has been set to something.
+    
+isnumber [variable substitution or value] [label or ,]
+    This will jump to the label if the value is a valid integer.  If label is a comma, will only
+        execute the following line if the test passes.
+    EX:
+        set age 3
+        isnumber 3 addnumber
+        
+        "sorry age is supposed to be a number"
+        exit
+        
+        label addnumber
+        "Yay, age is a number and equal to {$age}."
+
+exportvars filename var1 var2 var3 ...
+    Saves the name and value of all of the listed variables to a file named "filename" in the current case directory
+    If no vars are listed, will save everything.  (This is only half of a saved game, because the objects in the current
+    view, and the scripts that are executing, are not variables)
+
+importvars filename
+    Loads saved variables from the file.
+
+savegame [filename] [hide]
+    Saves the game into a file located in the case directory. If filename is omitted, it uses the default name of "save".
+    If hide is mentioned, will hide the scrolling text alerting the player. Not recommended! If they don't know it is saving
+    and close the program, the save could be corrupted. If you use the "hide" feature, be sure to alert the player
+    in some other way that it is saving the game.
+    Because hide is a keyword, no save file may be named "hide".
+
+loadgame [filename] [hide]
+    Loads the game from the file located in the current cases directory. If the filename is omitted, tries to load from file 
+    "save". If hide is mentioned, the scrolling text indicating to the player that it is loading will not be printed.
+    Because hide is a keyword, no save file may be named "hide".
+    
+deletegame [filename]
+    Deletes the saved game indicated by filename, from the current cases folder. Filename must be provided.
+    Be careful with this command! Players will not be happy if you delete their saves without their knowledge.
+    
+WORKING WITH EVIDENCE
+
+addev [name] {profile}
+    adds the evidence to the court record.  If you want the evidence to be on the 
+    profile page instead of evidence, include the profile argument.
+    
+    EX: 
+        addev matchbox
+        addev edgeworth profile
+
+delev [name]
+    delets evidence from the court record
+    
+SPECIAL EFFECTS
+
+draw_off
+    Stops rendering the scene.  Graphics will "freeze".  Useful to update the screen with several
+    commands without the player seeing each change you make.
+draw_on
+    Turns screen rendering back on, so the player can see what's going on again.
+    
+scroll {x=amount} {y=amount} {speed=amount} {last} {nowait} {name=name of object to scroll}
+    Scrolls the screen or last added object by x amount and y amount at speed pixels per frame.  
+            Can be used to emulate the courtroom scroll effect, add simple animation to 
+            foreground objects, or create a cutscene.
+    speed = pixels per tick
+    last - only the most recently added object will scroll, everything else will stay fixed
+            use this if you want a specific object to come in or exit the screen
+            You can make a character appear to "walk on" for instance.
+    name - similar to "last" but more powerful.  Will select the object to scroll by name
+	    instead of just scrolling the last object
+    nowait - the script will continue processing while the scrolling is happening.  Use this
+            argument if you want to set up several scrolls at once or have more complex
+            animations.
+
+rotate {axis= x,y, or z} {degrees=number} {speed=number} {nowait} {name=name of object to rotate}
+    Rotates individual objects.
+    axis - the axis of rotation.  In opengl, this can be x, y, or z.  In software rendering, only
+            z will have any noticable effect.  X rotates an object horizontally, y rotates an
+            object vertically, and z rotates an object left or right onscreen.  Z is the default.
+    degrees - how many degrees of rotation should occur by the end of the rotation. Default is
+            a quarter rotation, i.e. 90.
+    speed - how many degrees should be rotated per frame.  Speed*degrees will tell you how
+            many frames an animation will take.  Default is 1.
+    nowait - If present, game will continue while rotation happens.  Default is to wait
+            for rotation to finish.
+    name - selects the object to rotate by name.  If not present, all objects will be rotated!
+            
+notguilty
+	shows the not guilty sequence
+
+guilty
+	shows the guilty sequence
+--------------------------------------------------------------------------
+
+=== 4. Special Variables ===
+   Instead of cluttering up the commands by adding command after command after command for 
+so many different types of settings that could be possible, the engine exposes special
+variables which can be manipulated by setvar and other variable commands, or inserted into
+wrightscript with the $var variable replacement.  All special variables start with 
+an underscore, so you don't have to worry about accidentally overwriting one.
+
+USED IN ACTUAL GAME LOGIC
+_speaking
+        If there are multiple characters on screen, the _speaking variable should contain the
+name of the character that is speaking.  When text is printed out, the _speaking character's
+portrait will be animated.  Also, any emotion changes etc will only affect the _speaking
+character.
+
+DEV CONTROLS
+
+_debug
+        If this is "true" or "on" or "1", then any unlisted commands will raise errors
+    while the engine is processing a script.  Also, instead of just ignoring missing
+    graphics files, you will be warned.  Finally, if debug is "on", all textboxes may be
+    skipped, regardless of whether you have read it or not.
+
+_return
+        When calling macros from within a textbox, the textbox text will be replaced
+    by the value of this variable if it exists.  Not specifically used anywhere else, but
+    you can use macros to return values by setting this variable by convention.
+    
+_preload
+        This will stop pywright from preloading scripts.  To stop preloading of a single
+    script instead of globally, add the line "preload_cancel" to the top of the script.
+
+THINGS ENGINE SETS WHICH MIGHT BE USEFUL TO USE IN LOGIC
+
+_layer_invisible
+_layer_bg
+_layer_char
+_layer_fg
+_layer_textbox
+_layer_gui
+        These variables all give you the default z value of various kinds of objects.
+    Makes it easier to place objects on specific layers.
+
+_speaking_name
+        Set to the last nametext set with the char or nt commands.
+
+_lastline
+        This holds the numeric value of the last line that was executed before a jump.
+    Any goto command, is test, examine sequence, cross examination event, all jump to a label.
+    Before jumping, they will store the line number in this variable.  You can tell 
+    wrightscript to return to where it was with the line "goto $_lastline".  
+
+_currentline
+        This holds the numeric value of the current line number.  If you want to
+    save your spot without creating a new label, you can copy _currentline into another variable
+    and use it later.
+
+_currentlabel
+        This holds the name of the most recent label wrightscript has jumped to.
+
+_lastlabel
+        This holds the name of the last label wrightscript has passed, not including
+    the label it jumped to if it has jumped.
+
+_statement
+        Holds the name of the current statement from a cross examination
+        
+_selected
+        Holds the value of the last thing the user selected.  In lists, this would
+    be the name of the item they chose on the list. In item check scripts, holds
+    the id of the evidence being checked. When an item is presented, holds the id
+    of the item.
+    
+_examine_offsetx, _examine_offsety
+        Used in perceive, holds the scrolled coordinates of the examine screen.
+
+_examine_clickx, _examine_clicky
+	holds the x and y clicked in examine
+
+INTERFACE TOGGLES SO YOU CAN CUSTOMIZE LOOK OR BEHAVIOR OF THINGS
+
+_default_port_frame_delay
+_default_fg_frame_delay
+        These both default to 6, when you display an fg or port animation, this is
+    equal to the number of game frames to wait before it goes to the next frame of the
+    animation. A frame delay of 1 will change the frame every time the screen is refreshed.
+
+_list_checked_img
+        Path from art to image used to display whether a list item has been
+    selected or not.  Defaults to "general/checkmark.png", if the image does not exist, the text will
+    instead be surrounded by parenthesis.
+
+_bigbutton_img
+        Path from art to the image to use for the big text continue button.  Defaults
+    to general/buttonpress.png.  The highleted version will add a _high to the name,
+    in the default case that is "general/buttonpress_high.png"
+
+_textbox_show_button
+        Toggles whether the continue button will be shown or not. Defaults to true.
+    Remember to have some other way that the text will continue if this is hidden
+    though, such as the {next} macro.
+    
+_textbox_show_recordbutton
+        Toggles whether the court record button is shown for a textbox. 
+    Defaults to true.
+
+_textbox_lines
+        Defaults to "auto".  In auto, the textbox will show 2 lines if the displayed text
+    will fit, and 3 lines if the displayed text needs 3 lines to fit.  Set this to 2 or 3
+    to fix the size at 2 or 3 lines.
+    
+_textbox_wrap
+        Defaults to "true".  If true, long lines in a textbox will be wrapped to the next
+    line.  If false, they will simply continue off screen.
+    
+_textbox_allow_skip
+        Defaults to "false".  If true, the player is allowed to skip through the text,
+    even if it is text they have not seen yet.
+
+_textbox_skipupdate
+        Defaults to "false". If true, textboxes will not halt the execution
+    of a script - allowing more complex animation or to show an interface
+    while text is being printed.
+    
+_nt_image
+        Defaults to "". Set to the path of an image to use for a character's nametag.
+    If this is present, the character's name should be printed on the image itself, 
+    as the name won't be displayed dynamically.
+
+_examine_skipupdate
+        Defaults to "false". If true, examine screends will not halt the
+    execution of a script, allowing things to be altered or to show an
+    interface while the player is examining.
+
+_examine_showbars
+        Defaults to "true". If true, the horizontal bars of the examination
+    screen will be drawn, if false, they will be hidden.
+
+_examine_showcursor
+        Defaults to "true". If true, the examination cross-hair cursor will be
+    shown on the examine screen, indicating to the player that it is an examine
+    interface. To hide it, set this variable to false. This can be used to hijack
+    examine logic for other purposes, to make custom interfaces etc.
+    
+_examine_use
+        Defaults to nothing. Set it to the name of an object to make the 
+    examine screen scroll that object, rather than copying the background
+    objects and scrolling them.
+    
+_examine_mousedown
+        Sets a macro to be run when the mouse is pressed down, to handle
+    your own clicks.  Defaults to false.
+    
+_testimony_blinker
+        Toggle whether the blinking testomony sign should be displayed or not
+
+_cr_button
+        Defaults to "true".  If it is false, the court record button won't be displayed,
+    and the court record will be inaccessible.
+
+_allow_present_evidence
+        Defaults to "true".  Toggles whether evidence can be presented or not.
+
+_allow_present_profiles
+        Defaults to "true".  Toggles whether profiles can be presented or not.
+    (If you don't want to write responses for profiles, turn this off)
+
+_allow_click_save
+        Defaults to "true", allows the player to click the save button (part of the court
+    record button) to save the game.
+    
+_allow_saveload
+        Defaults to "true".  If false the game absolutely cannot be restored or saved, 
+    via hotkey, or clicking on a button.
+    
+_allow_click_load
+        Defaults to "true", allows the player to click the load button (part of the court
+    record button) to load a saved game.
+
+present customization
+_profiles_enable
+        Defaults to "true", allows players to view profiles. Controls court record and present command.
+_profiles_present
+        Defaults to "true". If false, profiles can not be presented. Controls court record and present command.
+_evidence_enable
+        Defaults to "true", allows players to view evidence. Controls court record and present command.
+_evidence_present
+        Defaults to "true", allows players to present evidence. Controls court record and present command.
+
+_cr_back_button
+        Defaults to "true".  If it is false, the court record will not show a back button.
+    Set to false if you want to force the player to present something.  Don't forget to
+    set it back to true before the player pulls up the court record on their own!
+        
+_list_back_button
+        Defaults to "true".  If it is false, list menus will not display the back button.  If you
+    would prefer to include a "Back" element as the list item of your list menus, set
+    this to off.  Lists that contain no "Back" element of the list or "Back" button cannot
+    be cancelled by the user.  Also, remember that when Back is chosen from the
+    list (or the back button is pressed) the behavior is for PyWright to continue
+    to the next line of the script rather than jumping to any label.
+
+_menu_fade_level
+        Sets the percentage that menus will fade the background.  Defaults to 50.  Menus
+    in this case refers to the list and menu commands.  Lists only fade in single screen
+    mode, unless _double_screen_list_fade is true. 100 means fade completely to black, 
+    0 means do not fade the screen at all.
+
+_double_screen_list_fade
+        If true, lists will fade in dual screen as well, using _menu_fade_level to determine amount.
+        Defaults to "false" - most lists in double screen are displayed on top of the big continue
+        arrow and it looks bad to have that showing through.
+    
+_flash_sound
+        Defaults to "false".  If true, flash special effects will autoplay a flashy sound.
+        
+_shake_sound
+        Defaults to "false".  If true, shake special effects will autoplay a shakey sound.
+        
+_music_loop
+        Filename of music to play once current track is finished playing
+        
+USED IN intro.txt IN THE GAME FOLDER TO CONTROL MENU
+
+_order_cases
+        If set to "variable", the cases shown on the menu are defined by the _case_# variables.
+    The default is "alphabetical" which shows all the case folders in alphabetical order.
+
+_case_1, _case_2, _case_3, ...
+        The folder name of the case which should be placed in that position on the menu,
+    when using _order_cases variable.
+
+=== 5. About Macros ===
+macro [macroname]
+    Begins defining a macro.  All lines inside a macro block will be inserted where
+the macro is used.  Any numbered arguments, such as $1, $2, $3, will be 
+replaced by the argument of the macro.  Also, $0 will be replaced by the 
+line number the macro was inserted at.  This lets you use labels inside
+a macro that don't conflict if a macro is reused.
+
+endmacro
+    ends a macro block
+
+{[macroname] [arg1] [arg2] [arg3]}
+    Applies a macro
+
+Global macros are stored in any files that end in .mcro or in a file named macros.txt.
+If stored in the game folder, these macros can be called from any case in that game.
+If stored in a case folder, the macros can only be used in that specific case.
+Local macros can be defined anywhere in a script, they will then be usable anywhere
+in that same script.
+If you find you are using a set of commands often, you should define a macro for
+them.
+
+Builtin macros:
+In the path PyWright/core/macros there are some builtin macro files.  The contents
+of these files are loaded into every script, allowing you to use those commands in your
+games.  They help you to do more advanced things than are built in to the core of
+pywright, such as dealing with psyche locks, or making creation of court scenes easier.
+
+
+Called macros:
+    There is a second way to call a macro.  You can use the macro as if it were
+a regular command.  There is a benefit and downside to this method of macro
+execution.  When used in this way, all of the macro code will run inside a
+seperate script instead of the current script.  The benefit of this is that you
+are able to use a fresh set of labels within the macro that don't conflict outside
+of it.  For instance, you could have a "label start" inside the macro, as well as
+in the calling script, without the two labels conflicting.  Inside the macro, it will
+alsways jump to the macro's version of label start; and outside it will always
+jump to the label start defined in the script.  The downside of this, is that it
+is not possible to jump to a label defined outside of the called macro.
+
+example:
+            --------------------------
+            label start
+            "begining of script"
+
+            macro test
+            label start
+            "We are inside a macro"
+            list
+            li Finished
+            li continue
+            showlist
+            label continue
+            goto start
+            label Finished
+            endmacro
+
+            //Next line is calling the test macro!
+            test
+            "Play macro again?"
+            list
+            li Finished
+            li continue
+            showlist
+            label continue
+            goto start
+            label Finished
+            --------------------------
+    This script will show a list allowing you to continue reading the statement,
+until you are finished.  After exiting out of the macro, it will ask if you want
+to redo the script.  Notice that all the labels are the same, but none of them
+will conflict with each other.
+--------------------------------------------------------------------------------------
+
+
+
+
+=== 6. About Text ===
+
+        To print a line of text, instead of running a command, simply enclose the line with quotation
+    marks.  Various control codes that sit between { } characters within the text are allowed.
+    
+    {e[emotion]} - emotion: sets the portrait the current character.  Only works if character is set.
+            ex: {emad} - chooses the mad portrait.  Defaults to the blinking portrait, switching
+            to the talk portrait when text is printed
+    {n} - line break
+    {c[rgb]} - color: red, green, blue ranging from 0 to 9.  900 is full red.
+            ex: {c909} - sets color to purple
+            changes the color of following text for ONE textbox only -
+            	once the player goes to the next line the color reverts
+            also, if rgb is omitted (the command is just {c}) the color
+            	will revert to whatever color the text was before it
+            	was changed.
+    {c [6 digit html color code]} - also sets the color, but uses 
+            6 digit html color codes instead
+        i.e, {c aabbff} is light blue
+    {c red}, {c green}, etc - sets the color as defined by a variable, which
+        should be set to either a 3 digit pywright color or a 6 digit html color code.
+        no variables are set by default
+        use "set color_red ff0000" to set the color red, and so on for
+        other colors you use often.
+    {p[x]} - pause for x frames (game runs at 60fps, so pause for 
+    		x/60 seconds - {p3} pause for 3 frames
+    {f [length] [rgb]} - make the screen flash
+            can be called by {f} which chooses the default values of 3 frames
+        for the flash and white color.
+            can be called by {f [length]} which adjusts the length of the flash.
+        length is the number of frames the flash will last (at 60 frames per second).
+            finally, the rgb can be set with {f [length] [rgb]} where rgb is a series of 3
+        digits in the same format as the {c} markup command.
+    {s [time] [offset]} - make the screen shake
+        Can be called with {s}, {s [time]}, or {s [time] [offset]}.
+        time - how many frames to shake.  Defaults to 30.
+        offset - how far to displace the screen.  Defaults to 15 pixels.
+    {next} - continue to the next textbox without waiting for player input
+    {sfx[effect file]} - play a sound effect
+    {tbon} - Force the testimony blinking object to be shown for this text
+    {tboff} - Force the testimony blinking object to not be shown for this text
+    {center} - begin centering lines, or stop centering lines
+    		the following textbox will be reset
+    {wait[auto|manual]} - If wait is auto, the textbox varies wait speed of each
+			character based on what it is.  Punctuation for instance pauses longer than
+			regular letters.  If wait is manual, every non whitespace character is worth 
+			the same amount of waiting.
+    {delay[multiplier]} - Typical speed is 5 frames per character, or 1/12 a second delay,
+			with longer delays for certain punctuation.  By using the {delay} command
+			you multiply the delay by the multiplier.  A delay of 2 would be 10 frames
+			per character or 1/6 second each.
+        *Note that changing the delay automatically sets wait to manual
+    {sound[sound]} - Set the click sound to use
+    {type} - change click sound to typewriter, change wait mode to manual, change delay
+    		to 5 (5 times the typical delay between characters)
+ex: "You are making me{n}{emad}{c900}MAD!{p15}{c999}Take THAT!{f}And THAT!{s}{n}And thiiiiiiiiis!{f}{f}{s}"
+    {$[variable name]} - Insert the value of a variable into the text.
+    {[macroname]} - if you insert a macroname here, it will execute that macro in the middle of the
+        text.  If the macro sets the variable _return, the value of _return will be inserted into the text.  Macros
+        can play sound effects, start animations, or any normal command.
+------------------------------------------------------------------------------------------
+
+
+
+
+
+=== 7. Content Files ===:
+All content is stored in folders based on the content's category.  These folders can
+be located in the pywright root directory, but can also be placed inside a specific case.
+Files found in the case folder will have a higher priority and mask files found in the
+standard pywright content folders.
+
+The content folders are: art,music,sfx
+Art is also divided further, into art/port, art/bg, art/fg, art/ev, and art/general.'
+
+
+-----MUSIC-----
+Music files are stored in the music directory, and can be in any hierarchy.  They should
+be in .ogg format.  mp3 files can work, but compatability and portability to all platforms
+are not guaranteed with mp3 files.
+
+-----SOUND-----
+Sound effects are stored in the sfx folder, and should also be .ogg for best compression
+and reliability, although .wav files should work as well.
+
+-----GRAPHICS AND ANIMATION-----
+Animation and graphic files are stored in the art directory, in subfolders based
+on their type, and a .txt file defining their properties.  .png, .jpg (not .jpeg)
+and .gif are supported.  If the file is a .png or .jpg, it will be a grid
+of frames.  If the file is a .gif, it must be an animated gif (or a single frame).  A .gif
+that stores a grid of frames is not supported, it will be seen as one image.
+
+The text file is still used for animated gifs, for any metadata besides the locating
+of frames within the image.
+
+The text file, which should have the same name as the image file, but with a .txt
+extension, is organized as a list of commands.  It looks a lot like wrightscript
+in this regard.  All commands are optional.  The .txt file can be empty, although it
+usually isn't.
+
+animation file commands:
+
+horizontal [number of frames]
+    tells how many frames are stored in the image horizontally.  Defaults to 1.
+vertical [number of frames]
+    tells how many frames are stored vertically.  Defaults to 1
+length [number of frames]
+        Tells how many frames are in the animation total.  If vertical
+    is only 1, this defaults to horizontal.  If vertical is greater than
+    1, this value defaults to horizontal*vertical, but it is recommended
+    to put a length.
+
+loops [number]
+    if number of loops = 0, show to the last frame, then stop (don't loop)
+    if number of loops = 1, loop forever  (loop)
+    if number of loops > 1, play animation that many times   (play several times)
+    
+framedelay [frame] [ticks]
+    Sets the number of ticks to wait on a given frame in the animation. The standard
+    delay is 6 ticks.  There are 60 ticks in a second.
+
+sfx [frame] [sound file]
+    Plays a sound file at that frame
+blinkmode [blink,loop,stop]
+    When this animation is used for a blink (i.e., the character is animating but not
+talking), this command will tell the engine how to animate it.  Blink means it will
+continually play the animation, but with random delay between plays.  Loop
+continually plays the animation with no delay.  Finally, stop will only play through
+the animation once.  Reveal or klavier's guitar are examples where blinkmode should
+be stop
+blipsound [sound name]
+    Put this in the text file for a talking sprite to set the default blip sound to play
+while a character is talking.
+
+gif format commands:
+framecompress 0
+    Tells the loader this gif doesn't use frame compression.  This means that
+every frame in the gif uses the full image size, repainting the entire frame.  The
+default.  Use this if you are getting flashing eyes or holes in animated sprites.
+framecompress 1
+    Tells the loader all frames are compressed, meaning only the changed pixels
+are drawn on a frame.  Use if you are getting graphical artifacts, parts of a sprite
+not clearing.
+framecompress 0,0,4,1,8,0
+    Tells the loader that frames 0 to 4 are not compressed, frames after
+4 and before 8 are compressed, and after 8 frames are not compressed again.
+Only needed for problematic gifs that mix modes.  Use this if you have tried
+both framecompress 0 and framecompress 1 revealing artifacts in different 
+portions of the animation each time.
+
+note that the number of frames element is ignored for gif animation files
+    
+example text file: port_myOC_normal(talk).txt
+---------------------
+(12,1)
+sfx 10 attack.ogg
+---------------------
+The above animation is 12 frames, will loop forever, and play the attack sound
+effect on frame 10.
+
+
+-----ART TYPES-----
+bg = a background file.  Will be displayed under other graphics.
+fg = a foreground file.  Will be displayed on top of most things.
+ev = an evidence image
+port = a character portrait for a specific emotion and mode.
+general = these are the standard interface graphics.
+3d = 3d mesh objects.  Must be in collada or .dae format.  Will be scaled, 4 
+    units in the 3d file is equal to about 80 pixels.  More comprehensive
+    information will be presented in a later version.
+
+Portraits are organized into folders by character name.  The naming scheme
+for portraits is like this:
+art/port/[mycharacter]/[emotion](talk).gif - The talking version of an emotion
+art/port/[mycharacter]/[emotion](blink).gif - The blinking version of an emotion
+art/port/[mycharacter]/[emotion](combined).gif - First half of animation is
+	the talking version, the second half is blinking
+art/port/[mycharacter]/[emotion].gif - This is a one-off emotion that plays and
+	stops on the last frame by default (unless loops are controlled
+	in the script)
+
+Note that .png strips are both higher quality and smaller in size than .gif
+animations.
+
+    Starting with beta 9, pwlib art files can also be loaded for portraits.  They
+are not supported for other kinds of art at the moment.  Check the out the 
+folder "games\test\the_test\art\port\jihye" after downloading the test game
+for an example.  Thanks to Lee Ji Hoon for permission.  All that is needed, is 
+inside the standard pywright character folder, you place a file that is named
+after the character with a .asl fileextension.  Also, it will need access to
+any textures the pwlib file needs to load.  Only a very small subset of pwlib
+commands are supported:
+    loadtexture, createanimation, insertanimationframe, 
+    setanimationframetexturecoordinates, setcharacterlipsyncsilent,
+    setcharacterlipsynctalking
+    
+Also, the meaning of the commands might not match pwlib exactly.  The way
+it works, is PyWright will search through all animations which have been
+"setcharacterlipsyncsilent", and choose the one who's animation name matches
+the chosen emotion the best; and set that as the blinking animation.  It
+does the same with "setcharacterlipsynctalking" to choose the talking 
+animation.
+
+-----EVIDENCE DATA-----
+
+    Evidence used to have a special set of commands, and a confusing initialization
+script to set up the database, but now it just uses variables for all of the evidence 
+fields.  When a piece of evidence is added to the player's court record, it will be 
+added by some id value.  All the variables related to the fields for evidence 
+are named based on this id.  No fields are required, they will default to something.
+If the evidence icon name matches the id (such as an evidence with id paper, and
+an existing file art/ev/paper.png is found), that will be used as the icon.
+
+setvar [id]_name [name]
+	Gives the evidence [id] a more descriptive name.
+setvar [id]_desc [description]
+	Gives the evidence [id] a description.
+setvar [id]_pic [image]
+	Gives the evidence [id] an image from the art/ev folder
+setvar [id]_check [scriptname]  
+    Tells what script to run if the item is checked.
+setvar [id]_presentable true/false
+    Default is true. Set to false if you dont want the player to be able to
+    present this item
+    
+If you like, these can all be placed in a single script that is included at the 
+begining of intro.txt.  See games/test/the_test for an example.

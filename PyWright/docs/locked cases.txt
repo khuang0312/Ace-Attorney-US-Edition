@@ -1,0 +1,17 @@
+Is statements should not have parenthesis for starters. They are not supported in expressions.
+
+For case unlocking, it is easiest to use the macros. The game 10.91 has an example, and the macros themselves are stored in core/macros/cases.mcro.
+
+Here is an example game/intro.txt:
+
+[code]
+locked_cases
+{addcase caseone}
+{addcase casetwo}
+{addcase casethree}
+casemenu
+[/code]
+
+Then, in the actual case, when the player is in a win situation, call "wincase".
+
+You can also do "{resetcase casetwo}" if you need to relock it.

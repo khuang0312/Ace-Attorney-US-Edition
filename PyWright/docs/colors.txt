@@ -1,0 +1,10 @@
+n the future, it might be a good idea to predefine colors instead of hardcoding the values. Also, don't forget that you can use html colors as well, which have 6 characters instead of 3 and give you a better range:
+
+set color_red ff0000
+set color_thoughts 338590
+
+"{c red}This is bright red {c thoughts}This is the color for when someone is thinking"
+
+That way, if you need to adjust the colors later, you only have to change it in one place.
+
+Sorry for not communicating this option well.
