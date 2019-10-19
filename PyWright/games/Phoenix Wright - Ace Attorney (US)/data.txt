@@ -1,4 +1,0 @@
-version 0.01
-icon art/port/mugshots/phoenix.png
-title Ace Attorney US
-author TeamAAUS
