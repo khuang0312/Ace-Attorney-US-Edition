@@ -1,3 +1,0 @@
-bg black
-gamemenu . close
-label close

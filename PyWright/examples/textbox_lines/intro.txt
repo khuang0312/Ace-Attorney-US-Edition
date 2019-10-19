@@ -1,3 +1,0 @@
-set _textbox_lines 2
-set _debug true
-"This is a test{n}How many lines are shown?{n}2? or 3..."
