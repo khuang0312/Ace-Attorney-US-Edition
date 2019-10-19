@@ -1,0 +1,531 @@
+This log contains debugging and error messages from the last run.
+test
+Traceback (most recent call last):
+  File "core\libengine.py", line 2934, in make_start_script
+  File "urllib2.pyc", line 124, in urlopen
+  File "urllib2.pyc", line 389, in open
+  File "urllib2.pyc", line 502, in http_response
+  File "urllib2.pyc", line 427, in error
+  File "urllib2.pyc", line 361, in _call_chain
+  File "urllib2.pyc", line 510, in http_error_default
+HTTPError: HTTP Error 403: Forbidden
+lookup art/fg/../general/logosmall
+art/fg/../general/logosmall.txt art/general/logosmall.png None
+<open file 'art/general/logosmall.png', mode 'rb' at 0x03221430>
+starting game games/Phoenix Wright - Ace Attorney (US) Phoenix Wright - Ace Attorney (US) None casemenu
+not script games/Phoenix Wright - Ace Attorney (US)/Phoenix Wright - Ace Attorney (US).txt
+starting game games/Phoenix Wright - Ace Attorney (US) intro casemenu
+building registry for .
+building registry for ./games
+building registry for ./games/Phoenix Wright - Ace Attorney (US)
+set game to games/Phoenix Wright - Ace Attorney (US)
+setting it
+customizing defaults
+resetting defaults
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x03116980>
+resetting defaults
+> normal
+art/port/test/normal(blink)
+None None None None
+lookup art/general/textbox_2
+art/general/textbox_2.txt art/general/textbox_2.png None
+<open file 'art/general/textbox_2.png', mode 'rb' at 0x03116980>
+lookup art/fg/pointer
+art/fg/pointer.txt games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png', mode 'rb' at 0x063AB340>
+lookup art/general/press/press_old
+art/general/press/press_old.txt art/general/press/press_old.png None
+<open file 'art/general/press/press_old.png', mode 'rb' at 0x03116980>
+lookup art/general/press/press_old_high
+art/general/press/press_old_high.txt art/general/press/press_old_high.png None
+<open file 'art/general/press/press_old_high.png', mode 'rb' at 0x03116980>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x03116980>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x03116980>
+lookup art/bg/main
+art/bg/main.txt games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png', mode 'rb' at 0x063AB340>
+lookup art/general/arrow_big
+art/general/arrow_big.txt art/general/arrow_big.png art/general/arrow_big.txt
+<open file 'art/general/arrow_big.png', mode 'rb' at 0x063AB890>
+lookup art/fg/scanlines
+art/fg/scanlines.txt art/fg/scanlines.png None
+<open file 'art/fg/scanlines.png', mode 'rb' at 0x063AB340>
+lookup art/general/bigbutton/border
+art/general/bigbutton/border.txt art/general/bigbutton/border.png None
+<open file 'art/general/bigbutton/border.png', mode 'rb' at 0x063AB340>
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB340>
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x063AB340>
+end subscript scene1/show_court_record_button
+lookup art/general/buttonpress_high
+art/general/buttonpress_high.txt art/general/buttonpress_high.png None
+<open file 'art/general/buttonpress_high.png', mode 'rb' at 0x063AB340>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB340>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+100.0 100
+> normal
+art/port/Phoenix/normal(blink)
+lookup art/port/phoenix/normal(blink)
+art/port/phoenix/normal(blink).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png', mode 'rb' at 0x063AB890>
+lookup art/port/phoenix/normal(talk)
+art/port/phoenix/normal(talk).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png', mode 'rb' at 0x063AB890>
+games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png None None
+lookup art/general/nt_left
+art/general/nt_left.txt art/general/nt_left.png None
+<open file 'art/general/nt_left.png', mode 'rb' at 0x063AB340>
+lookup art/general/nt_middle
+art/general/nt_middle.txt art/general/nt_middle.png None
+<open file 'art/general/nt_middle.png', mode 'rb' at 0x063AB340>
+lookup art/general/nt_right
+art/general/nt_right.txt art/general/nt_right.png None
+<open file 'art/general/nt_right.png', mode 'rb' at 0x063AB340>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB340>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB340>
+deleting ws_button
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x063AB340>
+end subscript scene1/show_court_record_button
+exec {_crbut}
+show ev menu
+evidence z 7
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x063AB890>
+lookup art/general/cursor_ev
+art/general/cursor_ev.txt art/general/cursor_ev.png None
+<open file 'art/general/cursor_ev.png', mode 'rb' at 0x063AB890>
+lookup art/general/back
+art/general/back.txt art/general/back.png None
+<open file 'art/general/back.png', mode 'rb' at 0x063AB890>
+lookup art/general/evidence_zoom
+art/general/evidence_zoom.txt art/general/evidence_zoom.png None
+<open file 'art/general/evidence_zoom.png', mode 'rb' at 0x063AB890>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x063AB890>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x063AB890>
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x063AB890>
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x063AB890>
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x063AB890>
+lookup art/general/back
+art/general/back.txt art/general/back.png None
+<open file 'art/general/back.png', mode 'rb' at 0x063AB340>
+lookup art/general/check
+art/general/check.txt art/general/check.png None
+<open file 'art/general/check.png', mode 'rb' at 0x063AB340>
+exec {_crbut}
+show ev menu
+evidence z 7
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x063AB890>
+lookup art/general/cursor_ev
+art/general/cursor_ev.txt art/general/cursor_ev.png None
+<open file 'art/general/cursor_ev.png', mode 'rb' at 0x063AB890>
+lookup art/general/back
+art/general/back.txt art/general/back.png None
+<open file 'art/general/back.png', mode 'rb' at 0x063AB890>
+lookup art/general/evidence_zoom
+art/general/evidence_zoom.txt art/general/evidence_zoom.png None
+<open file 'art/general/evidence_zoom.png', mode 'rb' at 0x063AB890>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x063AB890>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x063AB890>
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x063AB890>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB340>
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x063AB340>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+starting game games/Phoenix Wright - Ace Attorney (US) Phoenix Wright - Ace Attorney (US) None casemenu
+not script games/Phoenix Wright - Ace Attorney (US)/Phoenix Wright - Ace Attorney (US).txt
+starting game games/Phoenix Wright - Ace Attorney (US) intro casemenu
+building registry for .
+building registry for ./games
+building registry for ./games/Phoenix Wright - Ace Attorney (US)
+set game to games/Phoenix Wright - Ace Attorney (US)
+setting it
+customizing defaults
+resetting defaults
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x063AB3E0>
+resetting defaults
+> normal
+art/port/test/normal(blink)
+None None None None
+lookup art/general/textbox_2
+art/general/textbox_2.txt art/general/textbox_2.png None
+<open file 'art/general/textbox_2.png', mode 'rb' at 0x063ABC50>
+lookup art/fg/pointer
+art/fg/pointer.txt games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png', mode 'rb' at 0x063ABF70>
+lookup art/general/press/press_old
+art/general/press/press_old.txt art/general/press/press_old.png None
+<open file 'art/general/press/press_old.png', mode 'rb' at 0x063ABC50>
+lookup art/general/press/press_old_high
+art/general/press/press_old_high.txt art/general/press/press_old_high.png None
+<open file 'art/general/press/press_old_high.png', mode 'rb' at 0x063ABC50>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x063ABC50>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x063ABC50>
+lookup art/bg/main
+art/bg/main.txt games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png', mode 'rb' at 0x063ABF70>
+lookup art/general/arrow_big
+art/general/arrow_big.txt art/general/arrow_big.png art/general/arrow_big.txt
+<open file 'art/general/arrow_big.png', mode 'rb' at 0x063AB6B0>
+lookup art/fg/scanlines
+art/fg/scanlines.txt art/fg/scanlines.png None
+<open file 'art/fg/scanlines.png', mode 'rb' at 0x063ABF70>
+lookup art/general/bigbutton/border
+art/general/bigbutton/border.txt art/general/bigbutton/border.png None
+<open file 'art/general/bigbutton/border.png', mode 'rb' at 0x063ABF70>
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063ABF70>
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x063ABF70>
+end subscript scene1/show_court_record_button
+lookup art/general/buttonpress_high
+art/general/buttonpress_high.txt art/general/buttonpress_high.png None
+<open file 'art/general/buttonpress_high.png', mode 'rb' at 0x063ABF70>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063ABF70>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+100.0 100
+> normal
+art/port/Phoenix/normal(blink)
+lookup art/port/phoenix/normal(blink)
+art/port/phoenix/normal(blink).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png', mode 'rb' at 0x063AB6B0>
+lookup art/port/phoenix/normal(talk)
+art/port/phoenix/normal(talk).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png', mode 'rb' at 0x063AB6B0>
+games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png None None
+lookup art/general/nt_left
+art/general/nt_left.txt art/general/nt_left.png None
+<open file 'art/general/nt_left.png', mode 'rb' at 0x063ABF70>
+lookup art/general/nt_middle
+art/general/nt_middle.txt art/general/nt_middle.png None
+<open file 'art/general/nt_middle.png', mode 'rb' at 0x063ABF70>
+lookup art/general/nt_right
+art/general/nt_right.txt art/general/nt_right.png None
+<open file 'art/general/nt_right.png', mode 'rb' at 0x063ABF70>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063ABF70>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063ABF70>
+deleting ws_button
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x063ABF70>
+end subscript scene1/show_court_record_button
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063ABF70>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+starting game games/Phoenix Wright - Ace Attorney (US) Phoenix Wright - Ace Attorney (US) None casemenu
+not script games/Phoenix Wright - Ace Attorney (US)/Phoenix Wright - Ace Attorney (US).txt
+starting game games/Phoenix Wright - Ace Attorney (US) intro casemenu
+building registry for .
+building registry for ./games
+building registry for ./games/Phoenix Wright - Ace Attorney (US)
+set game to games/Phoenix Wright - Ace Attorney (US)
+setting it
+customizing defaults
+resetting defaults
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x063ABCF0>
+resetting defaults
+> normal
+art/port/test/normal(blink)
+None None None None
+lookup art/general/textbox_2
+art/general/textbox_2.txt art/general/textbox_2.png None
+<open file 'art/general/textbox_2.png', mode 'rb' at 0x063ABD40>
+lookup art/fg/pointer
+art/fg/pointer.txt games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png', mode 'rb' at 0x067075C0>
+lookup art/general/press/press_old
+art/general/press/press_old.txt art/general/press/press_old.png None
+<open file 'art/general/press/press_old.png', mode 'rb' at 0x063ABD40>
+lookup art/general/press/press_old_high
+art/general/press/press_old_high.txt art/general/press/press_old_high.png None
+<open file 'art/general/press/press_old_high.png', mode 'rb' at 0x063ABD40>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x063ABD40>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x063ABD40>
+lookup art/bg/main
+art/bg/main.txt games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png', mode 'rb' at 0x067075C0>
+lookup art/general/arrow_big
+art/general/arrow_big.txt art/general/arrow_big.png art/general/arrow_big.txt
+<open file 'art/general/arrow_big.png', mode 'rb' at 0x06707B10>
+lookup art/fg/scanlines
+art/fg/scanlines.txt art/fg/scanlines.png None
+<open file 'art/fg/scanlines.png', mode 'rb' at 0x067075C0>
+lookup art/general/bigbutton/border
+art/general/bigbutton/border.txt art/general/bigbutton/border.png None
+<open file 'art/general/bigbutton/border.png', mode 'rb' at 0x067075C0>
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x067075C0>
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x067075C0>
+end subscript scene1/show_court_record_button
+lookup art/general/buttonpress_high
+art/general/buttonpress_high.txt art/general/buttonpress_high.png None
+<open file 'art/general/buttonpress_high.png', mode 'rb' at 0x067075C0>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x067075C0>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+100.0 100
+> normal
+art/port/Phoenix/normal(blink)
+lookup art/port/phoenix/normal(blink)
+art/port/phoenix/normal(blink).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png', mode 'rb' at 0x06707B10>
+lookup art/port/phoenix/normal(talk)
+art/port/phoenix/normal(talk).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png', mode 'rb' at 0x06707B10>
+games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png None None
+lookup art/general/nt_left
+art/general/nt_left.txt art/general/nt_left.png None
+<open file 'art/general/nt_left.png', mode 'rb' at 0x067075C0>
+lookup art/general/nt_middle
+art/general/nt_middle.txt art/general/nt_middle.png None
+<open file 'art/general/nt_middle.png', mode 'rb' at 0x067075C0>
+lookup art/general/nt_right
+art/general/nt_right.txt art/general/nt_right.png None
+<open file 'art/general/nt_right.png', mode 'rb' at 0x067075C0>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x067075C0>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x067075C0>
+deleting ws_button
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x067075C0>
+end subscript scene1/show_court_record_button
+exec {_crbut}
+show ev menu
+evidence z 7
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x06707B10>
+lookup art/general/cursor_ev
+art/general/cursor_ev.txt art/general/cursor_ev.png None
+<open file 'art/general/cursor_ev.png', mode 'rb' at 0x06707B10>
+lookup art/general/back
+art/general/back.txt art/general/back.png None
+<open file 'art/general/back.png', mode 'rb' at 0x06707B10>
+lookup art/general/evidence_zoom
+art/general/evidence_zoom.txt art/general/evidence_zoom.png None
+<open file 'art/general/evidence_zoom.png', mode 'rb' at 0x06707B10>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x06707B10>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x06707B10>
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x06707B10>
+lookup art/general/evidence
+art/general/evidence.txt art/general/evidence.png None
+<open file 'art/general/evidence.png', mode 'rb' at 0x06707B10>
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x067075C0>
+lookup art/general/check
+art/general/check.txt art/general/check.png None
+<open file 'art/general/check.png', mode 'rb' at 0x067075C0>
+lookup art/general/back
+art/general/back.txt art/general/back.png None
+<open file 'art/general/back.png', mode 'rb' at 0x067075C0>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x0307DA20>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+starting game games/Phoenix Wright - Ace Attorney (US) Phoenix Wright - Ace Attorney (US) None casemenu
+not script games/Phoenix Wright - Ace Attorney (US)/Phoenix Wright - Ace Attorney (US).txt
+starting game games/Phoenix Wright - Ace Attorney (US) intro casemenu
+building registry for .
+building registry for ./games
+building registry for ./games/Phoenix Wright - Ace Attorney (US)
+set game to games/Phoenix Wright - Ace Attorney (US)
+setting it
+customizing defaults
+resetting defaults
+lookup art/ev/lawyer_badge.png
+art/ev/lawyer_badge.png.txt games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/ev/lawyer_badge.png', mode 'rb' at 0x03044020>
+resetting defaults
+> normal
+art/port/test/normal(blink)
+None None None None
+lookup art/general/textbox_2
+art/general/textbox_2.txt art/general/textbox_2.png None
+<open file 'art/general/textbox_2.png', mode 'rb' at 0x03116980>
+lookup art/fg/pointer
+art/fg/pointer.txt games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/fg/pointer.png', mode 'rb' at 0x03221BB0>
+lookup art/general/press/press_old
+art/general/press/press_old.txt art/general/press/press_old.png None
+<open file 'art/general/press/press_old.png', mode 'rb' at 0x03116980>
+lookup art/general/press/press_old_high
+art/general/press/press_old_high.txt art/general/press/press_old_high.png None
+<open file 'art/general/press/press_old_high.png', mode 'rb' at 0x03116980>
+lookup art/general/press/present_old
+art/general/press/present_old.txt art/general/press/present_old.png None
+<open file 'art/general/press/present_old.png', mode 'rb' at 0x03116980>
+lookup art/general/press/present_old_high
+art/general/press/present_old_high.txt art/general/press/present_old_high.png None
+<open file 'art/general/press/present_old_high.png', mode 'rb' at 0x03116980>
+lookup art/bg/main
+art/bg/main.txt games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png None
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/bg/main.png', mode 'rb' at 0x03221BB0>
+lookup art/general/arrow_big
+art/general/arrow_big.txt art/general/arrow_big.png art/general/arrow_big.txt
+<open file 'art/general/arrow_big.png', mode 'rb' at 0x063AB7A0>
+lookup art/fg/scanlines
+art/fg/scanlines.txt art/fg/scanlines.png None
+<open file 'art/fg/scanlines.png', mode 'rb' at 0x03221BB0>
+lookup art/general/bigbutton/border
+art/general/bigbutton/border.txt art/general/bigbutton/border.png None
+<open file 'art/general/bigbutton/border.png', mode 'rb' at 0x03221BB0>
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x03221BB0>
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x03221BB0>
+end subscript scene1/show_court_record_button
+lookup art/general/buttonpress_high
+art/general/buttonpress_high.txt art/general/buttonpress_high.png None
+<open file 'art/general/buttonpress_high.png', mode 'rb' at 0x03221BB0>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x03221BB0>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+100.0 100
+> normal
+art/port/Phoenix/normal(blink)
+lookup art/port/phoenix/normal(blink)
+art/port/phoenix/normal(blink).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png', mode 'rb' at 0x063AB110>
+lookup art/port/phoenix/normal(talk)
+art/port/phoenix/normal(talk).txt games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).txt
+<open file 'games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png', mode 'rb' at 0x063AB110>
+games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(blink).png games/Phoenix Wright - Ace Attorney (US)/art/port/phoenix/normal(talk).png None None
+lookup art/general/nt_left
+art/general/nt_left.txt art/general/nt_left.png None
+<open file 'art/general/nt_left.png', mode 'rb' at 0x063AB7A0>
+lookup art/general/nt_middle
+art/general/nt_middle.txt art/general/nt_middle.png None
+<open file 'art/general/nt_middle.png', mode 'rb' at 0x063AB7A0>
+lookup art/general/nt_right
+art/general/nt_right.txt art/general/nt_right.png None
+<open file 'art/general/nt_right.png', mode 'rb' at 0x063AB7A0>
+start subscript scene1/hide_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB7A0>
+deleting ws_button
+end subscript scene1/hide_court_record_button
+start subscript scene1/show_court_record_button
+lookup art/general/buttonpress
+art/general/buttonpress.txt art/general/buttonpress.png None
+<open file 'art/general/buttonpress.png', mode 'rb' at 0x063AB7A0>
+deleting ws_button
+try_bottom
+lookup art/general/record
+art/general/record.txt art/general/record.png None
+<open file 'art/general/record.png', mode 'rb' at 0x063AB7A0>
+end subscript scene1/show_court_record_button
