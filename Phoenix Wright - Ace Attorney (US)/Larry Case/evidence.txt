@@ -21,6 +21,10 @@ set blackout_desc Type:Documents{n} Submitted as evidence by Prosecutor Payne.{n
    
 
 //Character Profiles
+set wright$_name Phoenix Wright //Just in case
+set wright$_pic phoenix.png
+set wright$_desc Age: 24{n} Gender: Male{n} That's me!
+
 set mia$_name Mia Fey
 set mia$_pic mia.png
 set mia$_desc Age: 27{n} Gender: Female{n} Chief Attorney at Fey & Co.. My boss, and a very good defense attorney.
