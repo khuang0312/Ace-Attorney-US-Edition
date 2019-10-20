@@ -18,7 +18,12 @@ set cindy_passport_desc Type:Evidence{n} Submitted as evidence by Prosecutor Pay
 set blackout_name Blackout Record
 set blackout_pic whiteenvelope.png
 set blackout_desc Type:Documents{n} Submitted as evidence by Prosecutor Payne.{n} Electricity to Ms. Stone's building was out from noon to 6PM on the day of the crime.
-   
+
+set handbook_name Objection Handbook
+set handbook_pic handbook.png
+set handbook_desc Type:Documents{n} A gift from Boss detailing the different types of evidentiary objections.
+
+
 
 //Character Profiles
 set wright$_name Phoenix Wright //Just in case
