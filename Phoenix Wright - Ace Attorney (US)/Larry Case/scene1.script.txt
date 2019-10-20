@@ -11,12 +11,21 @@ music_fade_in
 
 //intro text
 char phoenix hide
-"My name is Phoenix Wright, attorney at law."
-
-char phoenix hide
-"Here's the story: My first case is a fairly simple one. A young woman was killed in her apartment. The guy they arrested was the unlucky sap dating her: Larry Butz... my best friend since grade school. Our school had a saying: "When something smells, it's usually the Butz." In the 23 years I've known him, it's usually been true. He has a knack for getting himself in trouble. One thing I can say, though: it's usually not his fault. He just has terrible luck. But I know better than anyone that he's a good guy at heart. That and I owe him one. Which is why I took the case... to clear his name. And that's just what I'm going to do!"
+"My name is Phoenix Wright, {n}attorney at law."
+"Here's the story:"
+"My first case is {n}a fairly simple one."
+"A young woman was killed {n}in her apartment."
+"The guy they arrested was {n}the unlucky sap dating her:"
+"Larry Butz... my best {n}friend since grade school."
+"Our school had a saying: {n}"When something smells, {n}it's usually the Butz."
+"In the 23 years I've known {n}him, it's usually been true."
+"He has a knack for getting {n}himself in trouble."
+"One thing I can say, though: {n}it's usually not his fault. {n}He just has terrible luck."
+"But I know better than anyone {n}that he's a good guy at heart."
+"That and I owe him one. {n}Which is why I took the {n}case... to clear his name."
+"And that's just what I'm {n}going to do!"
 
 music_fade_out
 
 bg courtroom
-"August 3, 9:47 AM{n} District Court{n} Defendant Lobby No. 2{n}"
+"August 3, 9:47 AM {n}District Court {n}Defendant Lobby No. 2"
