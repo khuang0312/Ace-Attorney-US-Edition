@@ -1,6 +1,7 @@
 set _textbox_wrap true
 set _textbox_lines 3
+
 include evidence
 addev badge
 
-script scene1
+script court

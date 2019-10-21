@@ -1,0 +1,55 @@
+bg courtroom
+"August 3, 9:47 AM {n}District Court {n}Defendant Lobby No. 2"
+
+fg ani-judge-gavel
+fg ani-judge-gavel
+
+mus Phoenix Wright Ace Attorney OST 03   Trial.mp3
+set _music_loop Phoenix Wright Ace Attorney OST 03   Trial.mp3
+music_fade_in
+
+bg judgestand
+char judge e=normal(talk) {e normal(blink)}
+"Good morning, ladies and gentlemen.{e normal(blink)}"
+"The Court of the Ninth Judicial Circuit, Criminal Division, is now in session.{e normal(blink)}"
+"This is a criminal case brought by the state charging the defendant, Larry Butz.{e normal(blink)}"
+"One count of murder:{n} the unlawful killing of{n} another human being.{e normal(blink)}"
+"This trial will determine whether{n} the defendant is guilty or not guilty.{e normal(blink)}"
+"It will be based on the testimony and evidence provided in this case.{e normal(blink)}"
+"Are the prosecution and defense ready?{e normal(blink)}"
+
+bg prosecution
+fg pbench
+char payne e=normal
+"The prosecution is ready, Your Honor."
+
+bg defence
+fg dbench
+char phoenix e=normal(talk)
+"The, um, defense is ready, Your Honor.{e normal(blink)}"
+
+bg judgestand
+char judge e=normal(talk)
+"Ahem. Defense? This is your first trial, is it not?{e normal(blink)}"
+
+bg defence
+fg dbench
+char phoenix e=sheepish(talk)
+"Y-Yes, Your Honor. I'm, um, a little nervous.{e sheepish(blink)}"
+
+bg judgestand
+char judge e=normal(talk)
+"Your conduct during this trial will decide the fate of your client.{e normal(blink)}"
+"Murder is a serious charge.{e normal(blink)}"
+"For your client's sake, I hope you can control your nerves.{e normal(blink)}"
+
+bg defence
+fg dbench
+char phoenix e=sheepish(talk)
+"Thank... thank you, Your Honor. {c669}(Gulp... Hands shaking... Eyesight... fading...){e sheepish(blink)}"
+
+bg judgestand
+char judge e=normal(talk)
+"Well, then… Does the prosecution have any evidence to submit for inspection?{e normal(blink)}"
+
+mus //temp stop

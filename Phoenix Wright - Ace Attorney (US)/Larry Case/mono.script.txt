@@ -17,7 +17,7 @@ char phoenix hide
 "A young woman was killed {n}in her apartment."
 "The guy they arrested was {n}the unlucky sap dating her:"
 "Larry Butz... my best {n}friend since grade school."
-"Our school had a saying: {n}"When something smells, {n}it's usually the Butz."
+"Our school had a saying: {n}"When something smells, {n}it's usually the Butz.""
 "In the 23 years I've known {n}him, it's usually been true."
 "He has a knack for getting {n}himself in trouble."
 "One thing I can say, though: {n}it's usually not his fault. {n}He just has terrible luck."
@@ -27,5 +27,4 @@ char phoenix hide
 
 music_fade_out
 
-bg courtroom
-"August 3, 9:47 AM {n}District Court {n}Defendant Lobby No. 2"
+script court
