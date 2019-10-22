@@ -1,0 +1,5 @@
+-Fix animation not working until dialogue is finished
+
+-Show evidence being added to Court Record
+
+-Find a way to prevent adding music from causing lag
