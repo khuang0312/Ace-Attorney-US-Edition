@@ -1,13 +1,18 @@
+mus
+
 bg courtroom
 "August 3, 9:47 AM {n}District Court {n}Defendant Lobby No. 2"
 
 fg ani-judge-gavel
 fg ani-judge-gavel
 
+//Adding music causes lag for some reason
 mus Phoenix Wright Ace Attorney OST 03   Trial.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 03   Trial.mp3
 music_fade_in
 
+//Animation is wonky, blinking and not talking, or vice versa
+//Also, animation doesn't play out until dialogue is finished
 bg judgestand
 char judge e=normal(talk) {e normal(blink)}
 "Good morning, ladies and gentlemen.{e normal(blink)}"
@@ -18,6 +23,7 @@ char judge e=normal(talk) {e normal(blink)}
 "It will be based on the testimony and evidence provided in this case.{e normal(blink)}"
 "Are the prosecution and defense ready?{e normal(blink)}"
 
+//Finishes talking then animation plays
 bg prosecution
 fg pbench
 char payne e=normal
@@ -50,6 +56,81 @@ char phoenix e=sheepish(talk)
 
 bg judgestand
 char judge e=normal(talk)
-"Well, then… Does the prosecution have any evidence to submit for inspection?{e normal(blink)}"
+"Well, then... Does the prosecution have any evidence to submit for inspection?{e normal(blink)}"
 
-mus //temp stop
+bg prosecution
+fg pbench
+char payne e=normal
+"Yes, Your Honor."
+"We submit the following pieces of evidence:"
+
+set _ev cindy_autopsy
+showevl
+"The victim's autopsy report... "
+hideevl
+
+//Evidence pic doesn't change
+set _ev thinker
+showevl
+"A statue of The Thinker - the murder weapon... "
+hideevl
+
+set _ev cindy_passport
+showevl
+"The victim's passport... "
+hideevl
+
+set _ev blackout
+showevl
+"And a blackout record from the day of the murder."
+hideevl
+
+bg judgestand
+char judge e=normal(talk)
+"Does the defense object to the inclusion of any of the evidence presented by the prosecution?{e normal(blink)}"
+
+bg helper
+char mia e=bench-stern(talk) //Needs a better emotion
+"Nothing seems out of order here, Wright. {e bench-stern(talk)}"
+"If you find that any evidence is suspicious or irrelevant in future trials during inspection, {e bench-stern(talk)}"
+"you'll want to call the prosecution out on it. {e bench-stern(talk)}"
+
+char phoenix hide
+"Got it, Boss."
+
+bg defence
+fg dbench
+char phoenix e=normal(talk)
+"Uh... No objections, Your Honor.{e normal(blink)}"
+
+bg judgestand
+char judge e=normal(talk)
+"The court then accepts the evidence into the Court Record.{e normal(blink)}"
+//
+//
+//Show evidence being added to Court Record
+//
+//
+"With that settled... is the prosecution ready to give an opening statement? {e normal(blink)}"
+
+bg prosecution
+fg pbench
+char payne e=normal
+"Yes, Your Honor. May it please the court."
+"My name is Winston Payne, and I represent the state in this case."
+"The defendant, Larry Butz, and the victim, Cindy Stone, were dating..." 
+"But had broken up a few weeks prior to July 31st."
+"On that day, the defendant entered the victim's apartment."
+"There was a verbal altercation as reported by the neighbors."
+"After which he picked up a nearby statue of the Thinker and smashed her in the head."
+"One blow killed her instantly."
+"A witness saw the defendant flee the scene right after the moment of the crime, and discovered the body afterwards."
+"The defendant had a clear motive, and the evidence clearly points to his guilt."
+"As such, the prosecution asks that you find the defendant, Larry Butz, guilty of murder."
+
+bg judgestand
+char judge e=normal(talk)
+"Thank you, Mr. Payne.{e normal(blink)}"
+"Does the defense wish to give their opening statement at this time? {e normal(blink)}"
+
+mus //Temp stop
