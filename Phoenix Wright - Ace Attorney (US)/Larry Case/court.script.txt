@@ -1,18 +1,19 @@
 mus
 
-//All this doesn't work
+//All this doesn't work; What they don't say is a macro file needs to be created first for these to work
 label court
+clearcourt
 set _defense Phoenix
 set _prosecutor Payne
 set _witness Sawhit
 set _judge Judge
 set _helper Mia
-
+clear
 startcourt
 //Till here
 
 bg courtroom
-"{c090}{center}{type}August 3, 10:00 AM {n}District Court {n}Courtroom No. 2"
+"{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}District Court {n}Courtroom No. 2"
 
 fg ani-judge-gavel
 fg ani-judge-gavel
@@ -20,7 +21,6 @@ fg ani-judge-gavel
 //Adding music causes lag for some reason
 mus Phoenix Wright Ace Attorney OST 03   Trial.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 03   Trial.mp3
-music_fade_in
 
 //Animation is wonky, blinking and not talking, or vice versa
 //Also, animation doesn't play out until dialogue is finished
@@ -180,4 +180,68 @@ char phoenix e=normal(talk)
 "{e confident(talk)} Mr. Butz was simply caught up in a series of events; he is no murderer. {e confident(blink)}"
 "{e confident(talk)} Because of that, we ask that you find the defendant, Larry Butz, not guilty. {e confident(blink)}"
 
+bg judgestand
+char judge e=normal(talk)
+"Very good, Mr. Wright.{e normal(blink)}"
+
+music_fade_out
+
+"Moving on... The prosecution may call its first witness."
+
+bg prosecution
+fg pbench
+char payne e=confident(talk)
+"The prosecution calls the defendant to the stand."
+
+bg defence
+fg dbench
+char phoenix e=sweating(talk)
+//Add some sort of "what!!" sfx
+"Um...what?"
+
+sfx sfx-objection
+fg ObjectionAnim
+
+
+bg helper
+char mia hide //For now hide, use animation when made
+"Objection, Your Honor!"
+"The defendant is under no obligation to testify as opposing counsel has requested."
+"The defense asserts the defendant's right to remain silent."
+
+bg witness
+fg wbench
+char larry e=nervous(talk)
+"Remain silent!?"
+"I ain't gonna remain silent!"
+"No one can stop me from talking!"
+"Bring it on, man!"
+
+bg judgestand
+char judge e=surprised(talk)
+"Well, if the witness himself wants to testify, the court sees no reason to stop him.{e surprised}"
+"Objection overruled.{e surprised}"
+
+bg defence
+fg dbench
+char phoenix e=sweating(blink)
+"{c669}(Uh oh. Larry gets excited easily... this could be bad.)"
+
+bg helper
+char mia e=bench-geez(talk)
+"*sigh* ...You have some strange friends, Wright. {e bench-geez(blink)}"
+"{e bench-stern(blink)}Listen closely, now."
+"The prosecution will try to devalue the credibility of his testimony through direct examination...{e bench-stern(blink)}"
+"so it's up to you to object to inappropriate queries. {e bench-stern(blink)}"
+set _ev handbook
+showevl
+"You have the reference handbook I gave you, right?{e bench-stern(blink)}"
+"Give it a glance now if you need a refresher on the different types of evidentiary objections.{e bench-stern(blink)}"
+hideevl
+"If you're able to prevent the prosecution from eliciting damaging testimony...{e bench-stern(blink)}"
+"you'll gain more leeway in pleading your case.{e bench-stern(blink)}"
+"{c090}[Each successful evidentiary objection will add an additional point to the penalty bar.]"
+
 mus //Temp stop
+
+//script direct1
