@@ -1,7 +1,18 @@
 mus
 
+//All this doesn't work
+label court
+set _defense Phoenix
+set _prosecutor Payne
+set _witness Sawhit
+set _judge Judge
+set _helper Mia
+
+startcourt
+//Till here
+
 bg courtroom
-"August 3, 9:47 AM {n}District Court {n}Defendant Lobby No. 2"
+"{c090}{center}{type}August 3, 10:00 AM {n}District Court {n}Courtroom No. 2"
 
 fg ani-judge-gavel
 fg ani-judge-gavel
@@ -14,7 +25,7 @@ music_fade_in
 //Animation is wonky, blinking and not talking, or vice versa
 //Also, animation doesn't play out until dialogue is finished
 bg judgestand
-char judge e=normal(talk) {e normal(blink)}
+char judge e=normal(talk)
 "Good morning, ladies and gentlemen.{e normal(blink)}"
 "The Court of the Ninth Judicial Circuit, Criminal Division, is now in session.{e normal(blink)}"
 "This is a criminal case brought by the state charging the defendant, Larry Butz.{e normal(blink)}"
@@ -26,8 +37,8 @@ char judge e=normal(talk) {e normal(blink)}
 //Finishes talking then animation plays
 bg prosecution
 fg pbench
-char payne e=normal
-"The prosecution is ready, Your Honor."
+char payne e=confident(talk)
+"The prosecution is ready, Your Honor.{e confident(blink)}"
 
 bg defence
 fg dbench
@@ -35,8 +46,8 @@ char phoenix e=normal(talk)
 "The, um, defense is ready, Your Honor.{e normal(blink)}"
 
 bg judgestand
-char judge e=normal(talk)
-"Ahem. Defense? This is your first trial, is it not?{e normal(blink)}"
+char judge e=surprised(talk)
+"Ahem. Defense? This is your first trial, is it not?{e surprised(blink)}"
 
 bg defence
 fg dbench
@@ -60,7 +71,7 @@ char judge e=normal(talk)
 
 bg prosecution
 fg pbench
-char payne e=normal
+char payne e=confident(talk)
 "Yes, Your Honor."
 "We submit the following pieces of evidence:"
 
@@ -91,9 +102,9 @@ char judge e=normal(talk)
 
 bg helper
 char mia e=bench-stern(talk) //Needs a better emotion
-"Nothing seems out of order here, Wright. {e bench-stern(talk)}"
-"If you find that any evidence is suspicious or irrelevant in future trials during inspection, {e bench-stern(talk)}"
-"you'll want to call the prosecution out on it. {e bench-stern(talk)}"
+"Nothing seems out of order here, Wright. {e bench-stern(blink)}"
+"If you find that any evidence is suspicious or irrelevant in future trials during inspection... {e bench-stern(blink)}"
+"you'll want to call the prosecution out on it. {e bench-stern(blink)}"
 
 char phoenix hide
 "Got it, Boss."
@@ -113,9 +124,14 @@ char judge e=normal(talk)
 //
 "With that settled... is the prosecution ready to give an opening statement? {e normal(blink)}"
 
+music_fade_out
+mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+set_music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+music_fade_in
+
 bg prosecution
 fg pbench
-char payne e=normal
+char payne e=confident(talk)
 "Yes, Your Honor. May it please the court."
 "My name is Winston Payne, and I represent the state in this case."
 "The defendant, Larry Butz, and the victim, Cindy Stone, were dating..." 
@@ -124,13 +140,44 @@ char payne e=normal
 "There was a verbal altercation as reported by the neighbors."
 "After which he picked up a nearby statue of the Thinker and smashed her in the head."
 "One blow killed her instantly."
-"A witness saw the defendant flee the scene right after the moment of the crime, and discovered the body afterwards."
+"A witness saw the defendant flee the scene right after the moment of the crime...
+"discovering the body afterwards."
 "The defendant had a clear motive, and the evidence clearly points to his guilt."
 "As such, the prosecution asks that you find the defendant, Larry Butz, guilty of murder."
+
+music_fade_out
 
 bg judgestand
 char judge e=normal(talk)
 "Thank you, Mr. Payne.{e normal(blink)}"
 "Does the defense wish to give their opening statement at this time? {e normal(blink)}"
+
+bg helper
+char mia e=bench-stern(talk) //Needs a better emotion
+"You can choose to give an opening statement now... {e bench-stern(blink)}"
+"or after the prosecution completes its case in chief. {e bench-stern(blink)}"
+"I'd recommend giving it now, before the judge becomes ingrained in the prosecution's point of view... {e bench-stern(blink)}"
+"{e bench-geez(talk)} This one's a bit of a pushover. {e bench-geez(blink)}" 
+
+char phoenix hide
+"Got it, Chief."
+
+music_fade_out
+mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+set_music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+music_fade_in
+
+bg defence
+fg dbench
+char phoenix e=normal(talk)
+"Ahem. The defense will present an opening statement now, Your Honor. May it please the court. {e normal(blink)}"
+"{e document(talk)} There is reasonable doubt as to whether or not the defendant, Larry Butz, committed murder on July 31st. {e document(blink)}"
+"{e document(talk)} While Mr. Butz had indeed broken up with Ms. Stone a few weeks prior to her murder... {e document(blink)}"
+"he harbored no ill feelings toward Ms. Stone. {e document(blink)}"
+"{e document(talk)} In fact, he had gone to her apartment that day simply to see how she was doing. {e document(blink)}"
+"{e document(talk)} After realizing that she was out, he left the apartment without incident. {e document(blink)}"
+"{e confident(talk)} The prosecution lacks definitive evidence proving that Mr. Butz murdered Ms. Stone that day. {e confident(blink)}"
+"{e confident(talk)} Mr. Butz was simply caught up in a series of events; he is no murderer. {e confident(blink)}"
+"{e confident(talk)} Because of that, we ask that you find the defendant, Larry Butz, not guilty. {e confident(blink)}"
 
 mus //Temp stop
