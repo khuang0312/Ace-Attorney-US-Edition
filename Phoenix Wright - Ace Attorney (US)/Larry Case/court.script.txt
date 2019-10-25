@@ -22,56 +22,54 @@ fg ani-judge-gavel
 mus Phoenix Wright Ace Attorney OST 03   Trial.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 03   Trial.mp3
 
-//Animation is wonky, blinking and not talking, or vice versa
-//Also, animation doesn't play out until dialogue is finished
 bg judgestand
-char judge e=normal(talk)
-"Good morning, ladies and gentlemen.{e normal(blink)}"
-"The Court of the Ninth Judicial Circuit, Criminal Division, is now in session.{e normal(blink)}"
-"This is a criminal case brought by the state charging the defendant, Larry Butz.{e normal(blink)}"
-"One count of murder:{n} the unlawful killing of{n} another human being.{e normal(blink)}"
-"This trial will determine whether{n} the defendant is guilty or not guilty.{e normal(blink)}"
-"It will be based on the testimony and evidence provided in this case.{e normal(blink)}"
-"Are the prosecution and defense ready?{e normal(blink)}"
+char judge e=normal (talk)
+"Good morning, ladies and gentlemen."
+"The Court of the Ninth Judicial Circuit, Criminal Division, is now in session."
+"This is a criminal case brought by the state charging the defendant, Larry Butz."
+"One count of murder:{n} the unlawful killing of{n} another human being."
+"This trial will determine whether{n} the defendant is guilty or not guilty."
+"It will be based on the testimony and evidence provided in this case."
+"Are the prosecution and defense ready?"
 
 //Finishes talking then animation plays
 bg prosecution
 fg pbench
-char payne e=confident(talk)
-"The prosecution is ready, Your Honor.{e confident(blink)}"
+char payne e=confident (talk)
+"The prosecution is ready, Your Honor."
 
 bg defence
 fg dbench
-char phoenix e=normal(talk)
-"The, um, defense is ready, Your Honor.{e normal(blink)}"
+char phoenix e=normal (talk)
+"The, um, defense is ready, Your Honor."
 
 bg judgestand
-char judge e=surprised(talk)
-"Ahem. Defense? This is your first trial, is it not?{e surprised(blink)}"
+char judge e=surprised (talk)
+"Ahem. Defense? This is your first trial, is it not?"
 
 bg defence
 fg dbench
-char phoenix e=sheepish(talk)
-"Y-Yes, Your Honor. I'm, um, a little nervous.{e sheepish(blink)}"
+char phoenix e=sweating (talk)
+"Y-Yes, Your Honor. I'm, um, a little nervous."
 
 bg judgestand
-char judge e=normal(talk)
-"Your conduct during this trial will decide the fate of your client.{e normal(blink)}"
-"Murder is a serious charge.{e normal(blink)}"
-"For your client's sake, I hope you can control your nerves.{e normal(blink)}"
+char judge e=normal (talk)
+"Your conduct during this trial will decide the fate of your client."
+"Murder is a serious charge."
+"For your client's sake, I hope you can control your nerves."
 
 bg defence
 fg dbench
-char phoenix e=sheepish(talk)
-"Thank... thank you, Your Honor. {c669}(Gulp... Hands shaking... Eyesight... fading...){e sheepish(blink)}"
+char phoenix e=sweating (talk)
+"Thank... thank you, Your Honor. {c669}(Gulp... Hands shaking... Eyesight... fading...)"
 
 bg judgestand
-char judge e=normal(talk)
-"Well, then... Does the prosecution have any evidence to submit for inspection?{e normal(blink)}"
+char judge e=normal (talk)
+"Well, then... Does the prosecution have any evidence to submit for inspection?"
 
 bg prosecution
 fg pbench
-char payne e=confident(talk)
+char payne e=confident (talk)
 "Yes, Your Honor."
 "We submit the following pieces of evidence:"
 
@@ -81,6 +79,7 @@ showevl
 hideevl
 
 //Evidence pic doesn't change
+//Seems to work just fine for me - Ben
 set _ev thinker
 showevl
 "A statue of The Thinker - the murder weapon... "
@@ -97,32 +96,32 @@ showevl
 hideevl
 
 bg judgestand
-char judge e=normal(talk)
-"Does the defense object to the inclusion of any of the evidence presented by the prosecution?{e normal(blink)}"
+char judge e=normal (talk)
+"Does the defense object to the inclusion of any of the evidence presented by the prosecution?"
 
 bg helper
-char mia e=bench-stern(talk) //Needs a better emotion
-"Nothing seems out of order here, Wright. {e bench-stern(blink)}"
-"If you find that any evidence is suspicious or irrelevant in future trials during inspection... {e bench-stern(blink)}"
-"you'll want to call the prosecution out on it. {e bench-stern(blink)}"
+char mia e=bench-stern (talk) //Needs a better emotion
+"Nothing seems out of order here, Wright."
+"If you find that any evidence is suspicious or irrelevant in future trials during inspection..."
+"you'll want to call the prosecution out on it."
 
 char phoenix hide
 "Got it, Boss."
 
 bg defence
 fg dbench
-char phoenix e=normal(talk)
-"Uh... No objections, Your Honor.{e normal(blink)}"
+char phoenix e=normal (talk)
+"Uh... No objections, Your Honor."
 
 bg judgestand
-char judge e=normal(talk)
-"The court then accepts the evidence into the Court Record.{e normal(blink)}"
+char judge e=normal (talk)
+"The court then accepts the evidence into the Court Record."
 //
 //
 //Show evidence being added to Court Record
 //
 //
-"With that settled... is the prosecution ready to give an opening statement? {e normal(blink)}"
+"With that settled... is the prosecution ready to give an opening statement?"
 
 music_fade_out
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
@@ -131,7 +130,7 @@ music_fade_in
 
 bg prosecution
 fg pbench
-char payne e=confident(talk)
+char payne e=confident (talk)
 "Yes, Your Honor. May it please the court."
 "My name is Winston Payne, and I represent the state in this case."
 "The defendant, Larry Butz, and the victim, Cindy Stone, were dating..." 
@@ -148,41 +147,42 @@ char payne e=confident(talk)
 music_fade_out
 
 bg judgestand
-char judge e=normal(talk)
-"Thank you, Mr. Payne.{e normal(blink)}"
-"Does the defense wish to give their opening statement at this time? {e normal(blink)}"
+char judge e=normal (talk)
+"Thank you, Mr. Payne."
+"Does the defense wish to give their opening statement at this time?"
 
 bg helper
-char mia e=bench-stern(talk) //Needs a better emotion
-"You can choose to give an opening statement now... {e bench-stern(blink)}"
-"or after the prosecution completes its case in chief. {e bench-stern(blink)}"
-"I'd recommend giving it now, before the judge becomes ingrained in the prosecution's point of view... {e bench-stern(blink)}"
-"{e bench-geez(talk)} This one's a bit of a pushover. {e bench-geez(blink)}" 
+char mia e=bench-stern (talk) //Needs a better emotion
+"You can choose to give an opening statement now..."
+"or after the prosecution completes its case in chief."
+"I'd recommend giving it now, before the judge becomes ingrained in the prosecution's point of view..."
+"{e=bench-geez (talk)} This one's a bit of a pushover." 
 
 char phoenix hide
 "Got it, Chief."
 
 music_fade_out
+//This fade out contains the tail end from the last track
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 set_music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 music_fade_in
 
 bg defence
 fg dbench
-char phoenix e=normal(talk)
-"Ahem. The defense will present an opening statement now, Your Honor. May it please the court. {e normal(blink)}"
-"{e document(talk)} There is reasonable doubt as to whether or not the defendant, Larry Butz, committed murder on July 31st. {e document(blink)}"
-"{e document(talk)} While Mr. Butz had indeed broken up with Ms. Stone a few weeks prior to her murder... {e document(blink)}"
-"he harbored no ill feelings toward Ms. Stone. {e document(blink)}"
-"{e document(talk)} In fact, he had gone to her apartment that day simply to see how she was doing. {e document(blink)}"
-"{e document(talk)} After realizing that she was out, he left the apartment without incident. {e document(blink)}"
-"{e confident(talk)} The prosecution lacks definitive evidence proving that Mr. Butz murdered Ms. Stone that day. {e confident(blink)}"
-"{e confident(talk)} Mr. Butz was simply caught up in a series of events; he is no murderer. {e confident(blink)}"
-"{e confident(talk)} Because of that, we ask that you find the defendant, Larry Butz, not guilty. {e confident(blink)}"
+char phoenix e=normal (talk)
+"Ahem. The defense will present an opening statement now, Your Honor. May it please the court."
+"{e=document (talk)} There is reasonable doubt as to whether or not the defendant, Larry Butz, committed murder on July 31st."
+"While Mr. Butz had indeed broken up with Ms. Stone a few weeks prior to her murder..."
+"he harbored no ill feelings toward Ms. Stone."
+"In fact, he had gone to her apartment that day simply to see how she was doing."
+"After realizing that she was out, he left the apartment without incident."
+"{e=confident (talk)} The prosecution lacks definitive evidence proving that Mr. Butz murdered Ms. Stone that day."
+"Mr. Butz was simply caught up in a series of events; he is no murderer."
+"Because of that, we ask that you find the defendant, Larry Butz, not guilty."
 
 bg judgestand
-char judge e=normal(talk)
-"Very good, Mr. Wright.{e normal(blink)}"
+char judge e=normal (talk)
+"Very good, Mr. Wright."
 
 music_fade_out
 
@@ -190,16 +190,17 @@ music_fade_out
 
 bg prosecution
 fg pbench
-char payne e=confident(talk)
+char payne e=confident (talk)
 "The prosecution calls the defendant to the stand."
 
 bg defence
 fg dbench
-char phoenix e=sweating(talk)
+char phoenix e=sweating (talk)
 //Add some sort of "what!!" sfx
 "Um...what?"
 
 sfx sfx-objection
+//Do we have a voice line for her?
 fg ObjectionAnim
 
 
@@ -211,35 +212,38 @@ char mia hide //For now hide, use animation when made
 
 bg witness
 fg wbench
-char larry e=nervous(talk)
+char larry e=nervous (talk)
 "Remain silent!?"
 "I ain't gonna remain silent!"
 "No one can stop me from talking!"
 "Bring it on, man!"
 
 bg judgestand
-char judge e=surprised(talk)
-"Well, if the witness himself wants to testify, the court sees no reason to stop him.{e surprised}"
-"Objection overruled.{e surprised}"
+char judge e=surprised (talk)
+"Well, if the witness himself wants to testify, the court sees no reason to stop him."
+"Objection overruled."
 
 bg defence
 fg dbench
-char phoenix e=sweating(blink)
+char phoenix e=sweating (blink)
 "{c669}(Uh oh. Larry gets excited easily... this could be bad.)"
 
 bg helper
-char mia e=bench-geez(talk)
-"*sigh* ...You have some strange friends, Wright. {e bench-geez(blink)}"
-"{e bench-stern(blink)}Listen closely, now."
-"The prosecution will try to devalue the credibility of his testimony through direct examination...{e bench-stern(blink)}"
-"so it's up to you to object to inappropriate queries. {e bench-stern(blink)}"
+char mia e=bench-geez (talk)
+"*sigh* ...You have some strange friends, Wright."
+"{e=bench-stern (blink)}Listen closely, now."
+"The prosecution will try to devalue the credibility of his testimony through direct examination..."
+"so it's up to you to object to inappropriate queries."
 set _ev handbook
 showevl
-"You have the reference handbook I gave you, right?{e bench-stern(blink)}"
-"Give it a glance now if you need a refresher on the different types of evidentiary objections.{e bench-stern(blink)}"
+"You have the reference handbook I gave you, right?"
+"Give it a glance now if you need a refresher on the different types of evidentiary objections."
 hideevl
-"If you're able to prevent the prosecution from eliciting damaging testimony...{e bench-stern(blink)}"
-"you'll gain more leeway in pleading your case.{e bench-stern(blink)}"
+"If you're able to prevent the prosecution from eliciting damaging testimony..."
+"you'll gain more leeway in pleading your case."
+
+//See if we can show text without any name displayed for the message underneath
+
 "{c090}[Each successful evidentiary objection will add an additional point to the penalty bar.]"
 
 mus //Temp stop
