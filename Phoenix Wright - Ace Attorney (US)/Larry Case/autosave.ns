@@ -11,7 +11,7 @@
                 }
             ],
             "_track": "Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3",
-            "character": "mia",
+            "character": "larry",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -24,7 +24,7 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3",
                 "_list_back_button": "true",
-                "_last_written_text": "Um...what?\n",
+                "ev_z_textbox_x": "100",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n} Gender: Male{n} The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -38,25 +38,21 @@
                 "_bigbutton_img": "general/buttonpress",
                 "_nt_x": "",
                 "blackout_name": "Blackout Record",
-                "ev_z_textbox_w": "130",
+                "_textbox_y": "",
                 "_font_itemset_big_size": "14",
                 "_list_checked_y": "-10",
                 "handbook_name": "Objection Handbook",
-                "dx": "256",
                 "cindy_autopsy_desc": "Type:Reports{n} Received from Mia Fey.{n} Time of death: 7/31, 4PM-5PM{n} Cause of death: loss of blood due to blunt trauma{n}",
                 "_font_tb_size": "10",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_helper": "Mia",
-                "_currentlabel": "enddd",
                 "wright$_desc": "Age: 24{n} Gender: Male{n} That's me!",
                 "larry$_desc": "Age: 23{n} Gender: Male{n} The defendant in this case. A likeable guy who was my friend in grade school.",
-                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "ev_items_y": "63",
+                "_nt_image": "",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "cindy$_desc": "Age: 22{n} Gender: Female{n} The victim in this case. A model, she lived in an apartment by herself.",
@@ -64,23 +60,19 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "judge_nt": "Judge",
-                "_speaking_name": "Mia",
+                "_last_written_text": "Let me direct your attention to this\npiece of evidence. Do you recognize\nit?  \n",
+                "_speaking_name": "Larry",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
-                "defense_nt": "Phoenix",
                 "_textbox_wrap": "true",
-                "_music_fade": "0",
-                "_lastline": "2",
-                "_witness": "Sawhit",
+                "_music_fade": "100",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
                 "_shake_sound": "false",
                 "_font_list": "pwinternational.ttf",
-                "jx": "1552",
                 "ev_zrarrow_x": "240",
                 "ev_zrarrow_y": "90",
                 "_font_block_size": "10",
@@ -89,20 +81,17 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_default_frame_delay": "6",
-                "_ev": "blackout",
-                "wx": "776",
-                "_music_fade_nowait": "",
+                "_ev": "cindy_passport",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "Type:Documents{n} A gift from Boss detailing the different types of evidentiary objections.",
-                "_speaking": "mia",
+                "_speaking": "larry",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_nt_text_y": "0",
-                "_nt_image": "",
+                "ev_cursor_img": "general/cursor_ev",
+                "ev_items_y": "63",
                 "thinker_desc": "Type:Weapons{n} Submitted as evidence by Prosecutor Payne.{n} A statue in the shape of \"The Thinker.\" It's rather heavy.",
                 "ev_present_y": "0",
                 "ev_mode_bg_evidence": "general/evidence",
@@ -111,7 +100,7 @@
                 "ev_z_textbox_y": "70",
                 "larry$_name": "Larry Butz",
                 "_examine_mousedown": "false",
-                "court_wbench": "wbench",
+                "ev_z_textbox_w": "130",
                 "ev_z_textbox_h": "100",
                 "_font_itemset_big": "arial.ttf",
                 "_evidence_present": "true",
@@ -119,26 +108,19 @@
                 "cindy_passport_desc": "Type:Evidence{n} Submitted as evidence by Prosecutor Payne.{n} The victim apparently arrived home from Paris on 7/30,the day before the murder.",
                 "ev_larrow_y": "90",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
-                "helper_nt": "Mia",
+                "_default_frame_delay": "6",
                 "ev_larrow_x": "2",
                 "blackout_desc": "Type:Documents{n} Submitted as evidence by Prosecutor Payne.{n} Electricity to Ms. Stone's building was out from noon to 6PM on the day of the crime.",
-                "px": "1296",
                 "badge_pic": "lawyer_badge.png",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
-                "_timer_value_music_fade_out_add": "-0.08",
                 "_menu_fade_level": "50",
-                "hx": "1807",
                 "blackout_pic": "whiteenvelope.png",
-                "ev_z_textbox_x": "100",
                 "_flash_sound": "false",
-                "witness_nt": "Sawhit",
-                "_allow_click_save": "true",
                 "_font_gametitle_size": "16",
                 "_textbox_wrap_avoid_controlled": "true",
-                "court_dbench": "dbench",
                 "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
@@ -147,18 +129,15 @@
                 "wright$_pic": "phoenix.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "court_background": "courtroomfull",
                 "_lastlabel": "exit",
-                "court_helper": "helper",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
-                "_prosecutor": "Payne",
                 "handbook_pic": "handbook.png",
                 "ev_z_bg_x": "0",
                 "ev_z_bg_y": "0",
                 "_examine_use": "",
                 "cindy_autopsy_pic": "autopsy_report.png",
-                "prosecutor_nt": "Payne",
+                "_allow_click_save": "true",
                 "_textbox_skipupdate": "off",
                 "_evidence_enable": "true",
                 "mia$_name": "Mia Fey",
@@ -175,12 +154,10 @@
                 "ev_modebutton_y": "7",
                 "ev_modebutton_x": "196",
                 "_font_itemname": "pwinternational.ttf",
-                "court_pbench": "pbench",
                 "ev_zarrow_img": "general/arrow_right",
-                "_textbox_y": "",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.08",
+                "_nt_text_y": "0",
                 "ev_present_x": "90",
                 "badge_desc": "Type:Other{n} One of my possessions. No one would believe I was a defense attorney if I didn't carry this.",
                 "_allow_click_load": "true",
@@ -189,10 +166,7 @@
                 "frank$_desc": "Age: 36{n} Gender: Male{n} Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "ev_currentname_y": "35",
                 "ev_currentname_x": "30",
-                "_defense": "Phoenix",
-                "_judge": "Judge",
                 "frank$_pic": "sahwit.png",
-                "court_x": "0",
                 "cindy$_pic": "cindy.png"
             }
         },
@@ -202,23 +176,23 @@
         "assets.Script",
         [],
         {
-            "_world_id": 54994344,
+            "_world_id": 113722432,
             "statement": "",
             "pri": 0,
-            "scene": "local://builtin",
+            "scene": "direct1.script",
             "cross": null,
-            "si": 3,
+            "si": 114,
             "lastline": 0,
             "instatement": false,
             "_objects": [
                 [
-                    "fg",
+                    "bg",
                     [],
                     {
-                        "dim": 0.74500000000000122,
+                        "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "fg/../general/logosmall",
+                        "name": "bg/witness",
                         "blinkspeed": [
                             100,
                             200
@@ -228,11 +202,46 @@
                         "greyscale": 0,
                         "pri": 0,
                         "pos": [
-                            -25,
-                            -15
+                            0,
+                            0
                         ],
                         "loopmode": 0,
-                        "id_name": "logo",
+                        "id_name": "witness",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "fg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/wbench",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "wbench",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -248,237 +257,10 @@
                     }
                 ],
                 [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": 81,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": "",
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "_world_id": 55034584,
-            "viewed": {},
-            "scene": "",
-            "lastline": ""
-        },
-        [
-            "stack",
-            1
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 55013128,
-            "statement": "",
-            "pri": 0,
-            "scene": "intro",
-            "cross": null,
-            "si": 4,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/case1-1",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "case1-1",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 58071320,
-            "statement": "",
-            "pri": 0,
-            "scene": "court.script",
-            "cross": null,
-            "si": 206,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/helper",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "helper",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
                     "char",
                     [
-                        "mia/normal(blink)",
-                        true
+                        "larry/normal(blink)",
+                        false
                     ],
                     {
                         "emoname": "normal",
@@ -504,11 +286,11 @@
                             100,
                             200
                         ],
-                        "clicksound": "blipfemale.ogg",
-                        "nametag": "Mia\n",
-                        "id_name": "mia",
+                        "clicksound": "blipmale.ogg",
+                        "nametag": "Larry\n",
+                        "id_name": "larry",
                         "tint": null,
-                        "charname": "mia",
+                        "charname": "larry",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -516,15 +298,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": 0,
+                            "loopmode": "blinknoset",
                             "start": 0,
-                            "loops": 0,
+                            "loops": 1,
                             "x": 0,
                             "spd": 6
                         },
-                        "modename": "blink",
+                        "modename": "talk",
                         "dim": 1,
-                        "name": "mia/normal(blink)",
+                        "name": "larry/normal(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -534,7 +316,7 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 0,
+                            "loops": 1,
                             "x": 0,
                             "spd": 6
                         },
@@ -547,7 +329,7 @@
                 [
                     "textbox",
                     [
-                        "Objection, Your Honor!\n",
+                        "Looks like she just got back from\nParis on July 30th{p 5}.{p 5}.{p 5}. \n",
                         [
                             255,
                             255,
@@ -557,11 +339,11 @@
                         1,
                         true,
                         false,
-                        "Mia\n"
+                        "Larry\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "Objection, Your Honor!\n",
+                        "text": "Looks like she just got back from\nParis on July 30th{p 5}.{p 5}.{p 5}. \n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -629,109 +411,39 @@
                         "hold_func": null,
                         "z": 6
                     }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script116": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script83": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script139": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script112": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script88": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script134": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script137": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script136": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script157": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script156": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script133": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script132": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script26": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script27": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script28": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script29": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script138": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script52": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script57": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script56": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script170": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script77": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script58": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script73": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script72": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script171": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script135": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script173": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script172": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script175": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script174": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script177": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script176": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script197": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script178": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script150": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script102": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script103": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script104": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script98": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script122": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script93": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script205": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script31": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script30": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script15": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script32": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script155": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script191": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script38": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script154": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script47": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script107": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script43": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script67": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script63": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script160": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script140": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script141": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script142": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script143": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script182": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script149": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script186": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script103": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script108": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script8": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script67": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script62": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script61": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script60": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script113": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script24": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script85": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script84": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script83": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script40": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script45": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script39": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script90": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script96": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script13": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script72": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script18": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script33": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script55": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script32": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casedirect1.script50": true
             }
         },
         [
             "stack",
-            3
+            0
         ]
     ]
 ]

@@ -4,5 +4,5 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-//script mono :testing court scene right now
-script court //comment line when done with court scene
+//script mono :Testing court scene right now
+script direct1 //Comment line when done with direct1 scene

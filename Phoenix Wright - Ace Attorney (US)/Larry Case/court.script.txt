@@ -18,7 +18,6 @@ bg courtroom
 fg ani-judge-gavel
 fg ani-judge-gavel
 
-//Adding music causes lag for some reason
 mus Phoenix Wright Ace Attorney OST 03   Trial.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 03   Trial.mp3
 
@@ -32,7 +31,6 @@ char judge e=normal (talk)
 "It will be based on the testimony and evidence provided in this case."
 "Are the prosecution and defense ready?"
 
-//Finishes talking then animation plays
 bg prosecution
 fg pbench
 char payne e=confident (talk)
@@ -78,8 +76,6 @@ showevl
 "The victim's autopsy report... "
 hideevl
 
-//Evidence pic doesn't change
-//Seems to work just fine for me - Ben
 set _ev thinker
 showevl
 "A statue of The Thinker - the murder weapon... "
@@ -123,10 +119,10 @@ char judge e=normal (talk)
 //
 "With that settled... is the prosecution ready to give an opening statement?"
 
-music_fade_out
+mus
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 set_music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
-music_fade_in
+mus
 
 bg prosecution
 fg pbench
@@ -144,7 +140,7 @@ char payne e=confident (talk)
 "The defendant had a clear motive, and the evidence clearly points to his guilt."
 "As such, the prosecution asks that you find the defendant, Larry Butz, guilty of murder."
 
-music_fade_out
+mus
 
 bg judgestand
 char judge e=normal (talk)
@@ -156,27 +152,29 @@ char mia e=bench-stern (talk) //Needs a better emotion
 "You can choose to give an opening statement now..."
 "or after the prosecution completes its case in chief."
 "I'd recommend giving it now, before the judge becomes ingrained in the prosecution's point of view..."
-"{e=bench-geez (talk)} This one's a bit of a pushover." 
+"{e bench-geez(talk)} This one's a bit of a pushover." 
 
 char phoenix hide
 "Got it, Chief."
 
-music_fade_out
+mus
 //This fade out contains the tail end from the last track
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 set_music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
-music_fade_in
+mus
 
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "Ahem. The defense will present an opening statement now, Your Honor. May it please the court."
-"{e=document (talk)} There is reasonable doubt as to whether or not the defendant, Larry Butz, committed murder on July 31st."
+char phoenix e=document (talk)
+"There is reasonable doubt as to whether or not the defendant, Larry Butz, committed murder on July 31st."
 "While Mr. Butz had indeed broken up with Ms. Stone a few weeks prior to her murder..."
 "he harbored no ill feelings toward Ms. Stone."
 "In fact, he had gone to her apartment that day simply to see how she was doing."
 "After realizing that she was out, he left the apartment without incident."
-"{e=confident (talk)} The prosecution lacks definitive evidence proving that Mr. Butz murdered Ms. Stone that day."
+char phoenix e=confident (talk)
+"The prosecution lacks definitive evidence proving that Mr. Butz murdered Ms. Stone that day."
 "Mr. Butz was simply caught up in a series of events; he is no murderer."
 "Because of that, we ask that you find the defendant, Larry Butz, not guilty."
 
@@ -184,7 +182,7 @@ bg judgestand
 char judge e=normal (talk)
 "Very good, Mr. Wright."
 
-music_fade_out
+mus
 
 "Moving on... The prosecution may call its first witness."
 
@@ -200,7 +198,7 @@ char phoenix e=sweating (talk)
 "Um...what?"
 
 sfx sfx-objection
-//Do we have a voice line for her?
+//Do we have a voice line for her? Currently no
 fg ObjectionAnim
 
 
@@ -231,7 +229,8 @@ char phoenix e=sweating (blink)
 bg helper
 char mia e=bench-geez (talk)
 "*sigh* ...You have some strange friends, Wright."
-"{e=bench-stern (blink)}Listen closely, now."
+char mia e=bench-stern (talk)
+"Listen closely, now."
 "The prosecution will try to devalue the credibility of his testimony through direct examination..."
 "so it's up to you to object to inappropriate queries."
 set _ev handbook
@@ -242,10 +241,11 @@ hideevl
 "If you're able to prevent the prosecution from eliciting damaging testimony..."
 "you'll gain more leeway in pleading your case."
 
-//See if we can show text without any name displayed for the message underneath
-
+nt
 "{c090}[Each successful evidentiary objection will add an additional point to the penalty bar.]"
 
-mus //Temp stop
+bg black fade
 
-//script direct1
+mus
+
+script direct1

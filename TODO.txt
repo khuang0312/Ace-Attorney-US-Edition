@@ -1,4 +1,4 @@
--Fix animation not working until dialogue is finished
+-Fix animation of payne when e=normal, not working until dialogue is finished
 
 -Show evidence being added to Court Record
 

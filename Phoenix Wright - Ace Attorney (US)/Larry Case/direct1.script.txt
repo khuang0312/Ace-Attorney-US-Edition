@@ -1,0 +1,179 @@
+mus
+
+mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+set _music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+
+bg prosecution
+fg pbench
+char payne e=normal
+"Please state your first and last name for the record."
+
+bg witness
+fg wbench
+char larry e=hello (talk)
+"Yo. I'm Larry Butz."
+
+bg prosecution
+fg pbench
+char payne e=normal
+"What do you do for a living?"
+
+bg witness
+fg wbench
+char larry e=smirk(talk) //Using "custom" official asset so might be wonky
+"I do all kinds of stuff!"
+"I'm making statues at the moment, and each one is unique."
+
+set _ev thinker
+
+bg prosecution
+fg pbench
+char payne e=normal
+showevl
+"Mr. Butz, let me direct your attention to this piece of evidence."
+"Do you recognize it?"
+hideevl
+
+bg witness
+fg wbench
+char larry e=smirk (talk)
+"Yeah, that's The Thinker!"
+"It's one of my creations."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Let the record show that the defendant has identified the murder weapon as one of his creations."
+
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c669}(Not good...)"
+
+bg prosecution
+fg pbench
+char payne e=normal
+"Mr. Butz, were you related to the victim?"
+
+bg witness
+fg wbench
+char larry e=nervous (talk)
+"She was my girl, man!"
+"We were great together!"
+"We were Romeo and Juliet, {p 5}Cleopatra and Mark Anthony!"
+
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c669}(Um... didn't they all die?)"
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"But isn't it true that the victim had recently dumped you?"
+
+//
+//
+//Add Objection chance here
+//
+//
+
+bg witness
+fg wbench
+char larry e=mad (talk)
+"I wasn't dumped!"
+"She just wasn't taking my phone calls...{p 30} or seeing me. {p 30}Ever. "
+"{s 20}WHAT'S IT TO YOU, ANYWAY!?"
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, what you describe is generally what we mean by "dumped.""
+
+char payne e=normal
+set _ev cindy_passport
+sfx sfx-evidenceshoop
+showevl
+"Let me direct your attention to this piece of evidence. Do you recognize it?"
+sfx sfx-evidenceshoop
+hideevl
+
+bg witness
+fg wbench
+char larry e=normal (talk)
+"Yeah, that's Cindy's passport."
+
+bg prosecution
+fg pbench
+char payne e=normal
+"Can you describe to me what's on the most recent page?"
+
+bg witness
+fg wbench
+char larry e=normal (talk)
+"Looks like she just got back from Paris on July 30th{p 5}.{p 5}.{p 5}."
+"{sfx sfx-realization}Wait a second."
+char larry e=nervous (talk)
+"Someone else wrote in here!"
+""To the love of my life, Cindy. Thanks for visiting me! XOXO"
+"{s 20}WHAT!?"
+"Dude...{p 10} no way..."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, what do you think of her now?"
+
+//
+//
+//Add Objection chance here
+//
+//
+
+bg witness
+fg wbench
+char larry e=nervous (talk)
+"That...{p 5} that cheatin' she-dog!"
+"I'm gonna die."
+"I'm just gonna drop dead."
+"Yeah, and when I meet her in the afterlife, I'm going to get to the bottom of this!"
+
+bg judgestand
+char judge e=surprised (talk)
+"{p 5}...Let's continue with the trial, shall we?"
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Of course, Your Honor."
+
+char payne e=normal
+"Mr. Butz, where were you on the 31st of July?"
+
+bg witness
+fg wbench
+char larry e=sweating //Also "custom" official asset
+"I, uh, I was visiting Cindy's apartment."
+
+bg prosecution
+fg pbench
+char payne e=normal
+"Did you meet with the victim?"
+
+bg witness
+fg wbench
+char larry e=nervous (talk)
+"She wasn’t home, man..."
+"So, like, I didn't see her."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Thank you, Mr. Butz."
+"No further questions, Your Honor."
+
+bg judgestand
+char judge e=normal (talk)
+"Mr. Wright, do you wish to cross examine the defendant?"
+
+mus //Temp stop

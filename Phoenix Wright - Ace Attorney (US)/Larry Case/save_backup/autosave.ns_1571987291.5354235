@@ -11,7 +11,7 @@
                 }
             ],
             "_track": null,
-            "character": "payne",
+            "character": "larry",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -22,6 +22,7 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
+                "_music_loop": "Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3",
                 "_list_back_button": "true",
                 "ev_z_textbox_x": "100",
                 "ev_check_img": "general/check",
@@ -45,10 +46,8 @@
                 "_font_tb_size": "10",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
                 "wright$_desc": "Age: 24{n} Gender: Male{n} That's me!",
                 "larry$_desc": "Age: 23{n} Gender: Male{n} The defendant in this case. A likeable guy who was my friend in grade school.",
-                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
@@ -61,15 +60,14 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_last_written_text": "The prosecution calls the defendant\nto the stand. \n",
-                "_speaking_name": "Payne",
+                "_last_written_text": "{s 20}WHAT'S IT TO YOU, ANYWAY!?\n",
+                "_speaking_name": "Larry",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
                 "_textbox_wrap": "true",
-                "_music_fade": "0",
-                "_lastline": "2",
+                "_music_fade": "100",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -83,17 +81,16 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
-                "_music_fade_nowait": "",
+                "_ev": "thinker",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "Type:Documents{n} A gift from Boss detailing the different types of evidentiary objections.",
-                "_speaking": "payne",
+                "_speaking": "larry",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_out_add": "-0.08",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_items_y": "63",
                 "thinker_desc": "Type:Weapons{n} Submitted as evidence by Prosecutor Payne.{n} A statue in the shape of \"The Thinker.\" It's rather heavy.",
                 "ev_present_y": "0",
@@ -124,7 +121,7 @@
                 "_flash_sound": "false",
                 "_font_gametitle_size": "16",
                 "_textbox_wrap_avoid_controlled": "true",
-                "_currentline": "4",
+                "_currentline": "88",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -164,6 +161,7 @@
                 "ev_present_x": "90",
                 "badge_desc": "Type:Other{n} One of my possessions. No one would believe I was a defense attorney if I didn't carry this.",
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n} Gender: Male{n} Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "ev_currentname_y": "35",
@@ -178,7 +176,7 @@
         "assets.Script",
         [],
         {
-            "_world_id": 56625272,
+            "_world_id": 113787968,
             "statement": "",
             "pri": 0,
             "scene": "local://builtin",
@@ -191,7 +189,7 @@
                     "fg",
                     [],
                     {
-                        "dim": 0.74500000000000133,
+                        "dim": 0.74400000000000122,
                         "screen_setting": "",
                         "end": null,
                         "name": "fg/../general/logosmall",
@@ -336,7 +334,7 @@
                     }
                 ]
             ],
-            "_world_id": 56561056,
+            "_world_id": 113787008,
             "viewed": {},
             "scene": "",
             "lastline": ""
@@ -350,7 +348,7 @@
         "assets.Script",
         [],
         {
-            "_world_id": 56625152,
+            "_world_id": 113787728,
             "statement": "",
             "pri": 0,
             "scene": "intro",
@@ -393,254 +391,6 @@
                             0
                         ]
                     }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 56560656,
-            "statement": "",
-            "pri": 0,
-            "scene": "court.script",
-            "cross": null,
-            "si": 21,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/prosecution",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "prosecution",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/pbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "pbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "payne/confident(talk)(blink)",
-                        false
-                    ],
-                    {
-                        "emoname": "confident(talk)",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Payne\n",
-                        "id_name": "payne",
-                        "tint": null,
-                        "charname": "payne",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": "stop",
-                            "start": 0,
-                            "loops": 0,
-                            "x": 11,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "payne/confident(talk)(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "confident(talk)",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "textbox",
-                    [
-                        "Um...what?\n",
-                        [
-                            255,
-                            255,
-                            255
-                        ],
-                        2,
-                        1,
-                        true,
-                        false,
-                        "Payne\n"
-                    ],
-                    {
-                        "num_lines": 4,
-                        "text": "Um...what?\n",
-                        "can_skip": false,
-                        "id_name": "_textbox_",
-                        "kill": false,
-                        "statement": null,
-                        "go": 1,
-                        "z": 4,
-                        "blocking": true,
-                        "wait": "auto"
-                    }
-                ],
-                [
-                    "uglyarrow",
-                    [],
-                    {
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "height": 192,
-                        "high": false,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "width": 256,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "id_name": "_uglyarrow_",
-                        "tint": null,
-                        "showleft": true,
-                        "_tb": true,
-                        "dim": 1,
-                        "name": "bg/main",
-                        "x": 0,
-                        "z": 0
-                    }
-                ],
-                [
-                    "button",
-                    [],
-                    {
-                        "rpos": [
-                            177,
-                            192
-                        ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
-                    }
                 ],
                 [
                     "guiWait",
@@ -674,16 +424,11 @@
                     }
                 ]
             ],
-            "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script9": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script14": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script20": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script5": true
-            }
+            "viewed": {}
         },
         [
             "stack",
-            3
+            2
         ]
     ]
 ]
