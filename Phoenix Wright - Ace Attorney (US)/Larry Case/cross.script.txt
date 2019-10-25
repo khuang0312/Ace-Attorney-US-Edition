@@ -3,16 +3,20 @@ mus
 mus Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
 
-fade bg black
+//fade bg black
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (blink)
 
 fg TestimonyAnim fade name=tanim
 nt
 delete name=tanim
 "{n}{center}{c940}-- Witness's Account--"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
 
 set _testimony_blinker true
 "{tbon}My name is Frank Sahwit."
@@ -23,8 +27,8 @@ set _testimony_blinker true
 "{tbon}A woman was on the ground...{p 5} She wasn't moving."
 "{tbon}The victim is, without a doubt, the woman I saw."
 "{tbon}I went to a nearby park and called the police immediately from a public phone."
-"{tbon}There was a phone in the victim’s apartment, but it wasn’t working."
-"{tbon}I don’t have a cell phone, unfortunately."
+"{tbon}There was a phone in the victim's apartment, but it wasn't working."
+"{tbon}I don't have a cell phone, unfortunately."
 
 mus
 set _testimony_blinker false
@@ -39,79 +43,312 @@ delete name=vs
 
 label start
 
-cross sawhit1
+cross sahwit1
 
-statement sawhitA
+statement sahwitA
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}My name is Frank Sahwit."
 
-statement sawhitB
+statement sahwitB
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}I go door-to-door selling newspaper subscriptions."
 
-statement sawhitC
+statement sahwitC
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
 
-statement sawhitD
+statement sahwitD
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
 
-statement sawhitE
+statement sahwitE
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}After seeing the defendant run away, I looked inside the apartment."
 
-statement sawhitF
+statement sahwitF
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}A woman was on the ground...She wasn't moving."
 
-statement sawhitG
+statement sahwitG
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}The victim is, without a doubt, the woman I saw."
 
-statement sawhitH
+statement sahwitH
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}I went to a nearby park and called the police immediately from a public phone."
 
-statement sawhitI
+statement sahwitI
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}There was a phone in the victim’s apartment, but it wasn’t working."
 
-statement sawhitJ
+statement sahwitJ
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "{tbon}I don’t have a cell phone, unfortunately."
 
 endcross
 
 goto start
 
-label press sawhit
+label press sahwitA
 sfx Phoenix - Hold it
 fg HoldItAnim
 pause 5 script
 bg defence
 fg dbench
-char phoenix 
+char phoenix e=normal (talk)
+"Frank Sahwit, you say?"
+
+sfx sfx-objection
+fg ObjectionAnim
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Your Honor, this question has been asked and answered."
+
+bg judgestand
+char judge e=warning (talk)
+"Sustained." 
+"Mr. Wright, please refrain from wasting the court's time."
+penalty -1
+resume
+
+label press sahwitB
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You sell newspaper subscriptions in this day and age?"
+
+sfx sfx-objection
+fg ObjectionAnim
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+“Your Honor, counsel's question calls for irrelevant testimony.”
+
+bg judgestand
+char judge e=warning (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -1
+resume
+
+label press sahwitC
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"You’re certain the time was 1:00 PM?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes"
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"And you discovered the body immediately after, correct?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"That's right"
+//Object here
+resume
+
+label press sahwitD
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"Isn't a man leaving an apartment a common sight?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Well... I don't know. He just looked suspicious."
+
+bg defence
+fg dbench
+char phoenix e=deskslam
+pause 3 script
+char phoenix e=handsondesk (talk)
+"Please refrain from speculating, Mr. Sahwit."
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"Yes, of course."
+resume
+
+label press sahwitE
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You decided to peek inside?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes"
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"You did so despite being unrelated to the victim or defendant?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"I was just curious, that's all."
+resume
+
+label press sahwitF
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You couldn't have been sure she was dead, could you?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"No, but there was a lot of blood everywhere."
+resume
+
+label press sahwitG
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You're completely certain the woman you saw was the victim?"
+
+sfx sfx-objection
+fg ObjectionAnim
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Your Honor, this question has been asked and answered."
+
+bg judgestand
+char judge e=warning (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -1
+resume
+
+label press sahwitH
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"So you left without touching anything in the apartment?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+char sahwit e=twitcching (talk)
+"I mean no, I didn't touch anything."
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+"{c669}(... He hesitated for a second there.)"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"..."
+resume
+
+label press sahwitI
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You knew the phone wasn't working?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You knew the phone wasn't working?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"There was a cordless phone on a shelf in the entranceway."
+"I reached inside and tried calling, but it wasn't working."
+resume
+
+label press sahwitJ
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Rather behind with the times, aren't you?"
+
+sfx sfx-objection
+fg ObjectionAnim
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+“Your Honor, counsel's question calls for irrelevant testimony.”
+
+bg judgestand
+char judge e=warning (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -1
 resume
 
 

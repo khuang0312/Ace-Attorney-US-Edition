@@ -4,6 +4,5 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-//script mono :Testing court scene right now
-script sawhitdirect //Comment line when done with sawhitdirect scene
-script cross //Will trigger after finishing testing sawhit direct
+//script mono :Testing other scene right now
+script cross //Comment when doen with cross
