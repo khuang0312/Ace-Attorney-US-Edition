@@ -1,5 +1,3 @@
-mus
-
 //All this doesn't work; What they don't say is a macro file needs to be created first for these to work
 label court
 clearcourt
@@ -120,11 +118,12 @@ char phoenix e=normal (talk)
 bg judgestand
 char judge e=normal (talk)
 "The court then accepts the evidence into the Court Record."
-//
-//
-//Show evidence being added to Court Record
-//
-//
+
+addev cindy_autopsy
+addev thinker
+addev cindy_passport
+addev blackout
+
 "With that settled... is the prosecution ready to give an opening statement?"
 
 mus

@@ -3,7 +3,7 @@ mus
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 
-fade bg black
+//fade bg black
 
 bg prosecution
 fg pbench
@@ -12,7 +12,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "My name is Frank Sahwit."
 
 bg prosecution
@@ -22,7 +22,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "I go door-to-door selling newspaper subscriptions."
 
 bg prosecution
@@ -32,7 +32,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "Yes."
 "I saw him fleeing an apartment while I was working at 1:00 PM on July 31st."
 
@@ -49,7 +49,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "He ran out leaving the door half-open behind him, so he must have been in a hurry."
 
 bg prosecution
@@ -59,7 +59,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "After seeing the defendant run away, I looked inside the apartment."
 
 bg prosecution
@@ -69,7 +69,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "A woman was on the ground...{p 5} She wasn't moving."
 
 set _ev cindy_autopsy
@@ -79,7 +79,7 @@ fg pbench
 char payne e=normal
 sfx sfx-evidenceshoop
 showevl
-"Let me direct your attention to the victim’s autopsy report."
+"Let me direct your attention to the victim's autopsy report."
 
 char payne e=confident (talk)
 "Do you recognize her?"
@@ -89,7 +89,7 @@ hideevl
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "Yes."
 "She is, without a doubt, the woman I saw."
 
@@ -100,7 +100,7 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
+char sahwit e=normal (talk)
 "I went to a nearby park and called the police immediately from a public phone."
 
 bg prosecution
@@ -110,8 +110,8 @@ char payne e=normal
 
 bg witness
 fg wbench
-char sawhit e=normal (talk)
-"There was one in the victim's apartment, but it wasn’t working."
+char sahwit e=normal (talk)
+"There was one in the victim's apartment, but it wasn't working."
 "I don't have a cell phone, unfortunately."
 
 bg prosecution
@@ -120,7 +120,7 @@ char payne e=normal
 "Let the record show that the blackout record corroborates the witness' testimony, as there was a power outage at the time."
 
 bg judgestand
-char judge e=surprsied (talk)
+char judge e=surprised (talk)
 "Aren't phones supposed to work during a blackout?"
 
 bg prosecution
@@ -131,7 +131,7 @@ char payne e=confident (talk)
 "The phone that Mr. Sahwit tried to use was one of those."
 
 bg judgestand
-char judge e=surprsied (talk)
+char judge e=surprised (talk)
 "I see..."
 pause 5
 "To think that new technology can be a hindrance at times."
@@ -149,9 +149,9 @@ char judge e=normal (talk)
 
 bg defence
 fg dbench
-char phoenix e=nervous (talk)
+char phoenix e=sweating (talk)
 "Y-Yes, Your Honor."
-char phoenix e=nervous (blink)
+char phoenix e=sweating (blink)
 "{c669}(Hoo boy... the pressure's getting to me.)"
 
 bg helper

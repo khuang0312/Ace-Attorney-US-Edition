@@ -65,4 +65,54 @@ fg wbench
 char sawhit e=normal (talk)
 "{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
 
+statement sawhitE
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}After seeing the defendant run away, I looked inside the apartment."
+
+statement sawhitF
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}A woman was on the ground...She wasn't moving."
+
+statement sawhitG
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}The victim is, without a doubt, the woman I saw."
+
+statement sawhitH
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}I went to a nearby park and called the police immediately from a public phone."
+
+statement sawhitI
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}There was a phone in the victim’s apartment, but it wasn’t working."
+
+statement sawhitJ
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}I don’t have a cell phone, unfortunately."
+
+endcross
+
+goto start
+
+label press sawhit
+sfx Phoenix - Hold it
+fg HoldItAnim
+pause 5 script
+bg defence
+fg dbench
+char phoenix 
+resume
+
+
 mus //Temp stop
