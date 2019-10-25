@@ -3,6 +3,8 @@ mus
 mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 set _music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
 
+fade bg black
+
 bg prosecution
 fg pbench
 char payne e=normal
@@ -176,4 +178,55 @@ bg judgestand
 char judge e=normal (talk)
 "Mr. Wright, do you wish to cross examine the defendant?"
 
-mus //Temp stop
+bg helper
+char mia e=bench-stern (talk)
+
+char phoenix hide
+"What should I do, Mia?"
+"This wasn't supposed to happen..."
+
+char mia e=bench-stern (talk)
+"Let's move on; the damage has been done."
+"We can push back from a different angle...{p 3} hopefully."
+
+bg defence
+fg dbench
+char phoenix e=headshake
+char phoenic e=normal (talk)
+"*sigh* ... The defense has no further questions for the defendant, Your Honor."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"The witness may be excused from the stand."
+
+bg witness
+fg wbench
+char larry e=nervous (talk)
+"Thanks for nothing, Nick!"
+"Why'd my Cindy go and do that, man? {s 10}WHY!?"
+
+bg defence
+fg dbench
+char phoenic e=nervous (blink)
+"{c669}(Larry… just get off the stand, please.)"
+
+fg ani-judge-gavel
+fg ani-judge-gavel
+
+bg judgestand
+char judge e=warning (talk)
+"Order! Order in the court!"
+char judge e=normal (talk)
+"Please call your next witness, Mr. Payne."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"The prosecution calls Frank Sahwit to the stand."
+
+bg black fade
+
+mus
+
+script sawhitdirect

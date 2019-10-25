@@ -1,0 +1,6 @@
+mus
+
+mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+set _music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+
+fade bg black
