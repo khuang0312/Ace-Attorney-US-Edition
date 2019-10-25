@@ -1,0 +1,68 @@
+mus
+
+mus Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
+set _music_loop Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
+
+fade bg black
+
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+
+fg TestimonyAnim fade name=tanim
+nt
+delete name=tanim
+"{n}{center}{c940}-- Witness's Account--"
+
+set _testimony_blinker true
+"{tbon}My name is Frank Sahwit."
+"{tbon}I go door-to-door selling newspaper subscriptions."
+"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
+"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
+"{tbon}After seeing the defendant run away, I looked inside the apartment."
+"{tbon}A woman was on the ground...{p 5} She wasn't moving."
+"{tbon}The victim is, without a doubt, the woman I saw."
+"{tbon}I went to a nearby park and called the police immediately from a public phone."
+"{tbon}There was a phone in the victim’s apartment, but it wasn’t working."
+"{tbon}I don’t have a cell phone, unfortunately."
+
+mus
+set _testimony_blinker false
+
+pause 5
+
+mus
+fg Cross-ExaminationAnim
+nt
+delete name=vs
+"{n}{c940}{center}-- Cross Examination --"
+
+label start
+
+cross sawhit1
+
+statement sawhitA
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}My name is Frank Sahwit."
+
+statement sawhitB
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}I go door-to-door selling newspaper subscriptions."
+
+statement sawhitC
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
+
+statement sawhitD
+bg witness
+fg wbench
+char sawhit e=normal (talk)
+"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
+
+mus //Temp stop
