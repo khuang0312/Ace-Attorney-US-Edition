@@ -31,9 +31,11 @@ set _ev thinker
 bg prosecution
 fg pbench
 char payne e=normal
+sfx sfx-evidenceshoop
 showevl
 "Mr. Butz, let me direct your attention to this piece of evidence."
 "Do you recognize it?"
+sfx sfx-evidenceshoop
 hideevl
 
 bg witness

@@ -3,3 +3,5 @@
 -Show evidence being added to Court Record
 
 -Find a way to prevent adding music from causing lag (It's the music_fade_in and fade_out)
+
+-Add Objection oppurtunities in direct testimonies

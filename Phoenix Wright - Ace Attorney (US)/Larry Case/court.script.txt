@@ -72,23 +72,31 @@ char payne e=confident (talk)
 "We submit the following pieces of evidence:"
 
 set _ev cindy_autopsy
+sfx sfx-evidenceshoop
 showevl
 "The victim's autopsy report... "
+sfx sfx-evidenceshoop
 hideevl
 
 set _ev thinker
+sfx sfx-evidenceshoop
 showevl
 "A statue of The Thinker - the murder weapon... "
+sfx sfx-evidenceshoop
 hideevl
 
 set _ev cindy_passport
+sfx sfx-evidenceshoop
 showevl
 "The victim's passport... "
+sfx sfx-evidenceshoop
 hideevl
 
 set _ev blackout
+sfx sfx-evidenceshoop
 showevl
 "And a blackout record from the day of the murder."
+sfx sfx-evidenceshoop
 hideevl
 
 bg judgestand
@@ -267,11 +275,15 @@ char mia e=bench-stern (talk)
 "Listen closely, now."
 "The prosecution will try to devalue the credibility of his testimony through direct examination..."
 "so it's up to you to object to inappropriate queries."
+
 set _ev handbook
+sfx sfx-evidenceshoop
 showevl
 "You have the reference handbook I gave you, right?"
 "Give it a glance now if you need a refresher on the different types of evidentiary objections."
+sfx sfx-evidenceshoop
 hideevl
+
 "If you're able to prevent the prosecution from eliciting damaging testimony..."
 "you'll gain more leeway in pleading your case."
 

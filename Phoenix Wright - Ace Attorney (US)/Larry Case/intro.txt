@@ -5,4 +5,5 @@ include evidence
 addev badge
 
 //script mono :Testing court scene right now
-script direct1 //Comment line when done with direct1 scene
+script sawhitdirect //Comment line when done with sawhitdirect scene
+script cross //Will trigger after finishing testing sawhit direct
