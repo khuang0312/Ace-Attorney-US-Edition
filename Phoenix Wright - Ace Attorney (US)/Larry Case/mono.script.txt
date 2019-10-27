@@ -1,34 +1,32 @@
-//background black
 bg lobby
 
-//To begin the music
-mus
+"{c090}{center}{type}{spd 2}August 3, 9:48 AM {n}District Court {n}Defendant Lobby No. 2"
 
-//set intro music loop
-mus Phoenix Wright Ace Attorney OST 02   Courtroom Lounge ~ Beginning Prelude.mp3
-set _music_loop Phoenix Wright Ace Attorney OST 02   Courtroom Lounge ~ Beginning Prelude.mp3
-music_fade_in
+mus lounge.mp3
+set _music_loop lounge.mp3
+music_fade_in nowait
 
-set _ev cindy//Prepares it for monologue
-
-//intro text
 char phoenix hide
+
 "My name is Phoenix Wright, {n}attorney at law."
+
+set _ev mia
+showevl
+"I work at Fey & Co. Law Offices {n}under my boss, Mia Fey."
+hideevl
+addev mia$
+
 "Here's the story:"
 "My first case is {n}a fairly simple one."
-
-showevl
 "A young woman was killed {n}in her apartment."
 "The guy they arrested was {n}the unlucky sap dating her:"
-hideevl
-addev cindy$ //Add Cindy to profiles
 
 set _ev larry
 showevl
 "Larry Butz... my best {n}friend since grade school."
 "Our school had a saying: {n}"When something smells, {n}it's usually the Butz.""
 hideevl
-addev larry$ //Add Larry to profiles
+addev larry$
 
 "In the 23 years I've known {n}him, it's usually been true."
 "He has a knack for getting {n}himself in trouble."

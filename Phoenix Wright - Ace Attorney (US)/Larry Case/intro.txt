@@ -4,5 +4,5 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-//script mono :Testing other scene right now
-script cross //Comment when doen with cross
+script mono //Cleaning up script
+//script cross //Testing scene, comment when done
