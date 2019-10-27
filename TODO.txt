@@ -7,3 +7,22 @@
 -Add Objection oppurtunities in direct testimonies
 
 -Clean up formatting of evidence and profiles
+
+-Change text colors to highlight key phrases
+
+-Fix Payne's normal animation so it can be used
+
+-Add evidence and profiles in court script when they are introduced
+
+Macro text here:
+//All this doesn't work; What they don't say is a macro file needs to be created first for these to work
+label court
+clearcourt
+set _defense Phoenix
+set _prosecutor Payne
+set _witness Sawhit
+set _judge Judge
+set _helper Mia
+clear
+startcourt
+//Till here
