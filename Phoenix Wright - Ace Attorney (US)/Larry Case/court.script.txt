@@ -216,7 +216,7 @@ sfx sfx-realization
 
 bg helper
 char mia e=bench-stern (talk)
-"{s 10}Object, Phoenix!"
+"{s 10}Object, Wright!"
 
 bg defence
 fg dbench
