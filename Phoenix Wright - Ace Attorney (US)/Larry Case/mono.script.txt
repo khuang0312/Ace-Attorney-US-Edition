@@ -10,23 +10,23 @@ char phoenix hide
 
 "My name is Phoenix Wright, {n}attorney at law."
 
+addev mia$
 set _ev mia
 showevl
 "I work at Fey & Co. Law Offices {n}under my boss, Mia Fey."
 hideevl
-addev mia$
 
 "Here's the story:"
 "My first case is {n}a fairly simple one."
 "A young woman was killed {n}in her apartment."
 "The guy they arrested was {n}the unlucky sap dating her:"
 
+addev larry$
 set _ev larry
 showevl
 "Larry Butz... my best {n}friend since grade school."
 "Our school had a saying: {n}"When something smells, {n}it's usually the Butz.""
 hideevl
-addev larry$
 
 "In the 23 years I've known {n}him, it's usually been true."
 "He has a knack for getting {n}himself in trouble."

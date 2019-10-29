@@ -136,7 +136,10 @@ set_music_loop logic.mp3
 music_fade_in nowait
 
 "My name is Winston Payne, and I {n}represent the state in this case."
-"The defendant, Larry Butz, and the {n}victim, Cindy Stone, were dating..." 
+
+addev cindy$
+
+"The defendant, Larry Butz, and the {n}victim, Cindy Stone, were dating..."
 "...but had broken up a few {n}weeks prior to July 31st."
 "On that day, the defendant {n}entered the victim's apartment."
 "There was a verbal altercation as reported by the neighbors,"
@@ -259,9 +262,11 @@ char mia e=bench-stern (talk)
 "The prosecution will try to devalue {n}the credibility of his testimony {n}through direct examination,"
 "so it's up to you to object to {n}inappropriate queries."
 
+addev handbook
 set _ev handbook
 sfx sfx-evidenceshoop
 showevl
+
 "You have the reference handbook {n}I gave you, right?"
 "It should be in the Court Record."
 "Give it a glance now if you need a {n}refresher on the different types {n}of evidentiary objections."
