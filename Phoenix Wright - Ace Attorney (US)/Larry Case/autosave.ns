@@ -11,9 +11,15 @@
                 }
             ],
             "_track": "moderato.ogg",
-            "character": "phoenix",
+            "character": "larry",
             "lists": {
-                "objections": {}
+                "objections": {
+                    "Relevance": 1,
+                    "Leading": 1,
+                    "Vague": 1,
+                    "Asked and Answered": 1,
+                    "Prejudicial": 1
+                }
             },
             "variables": {
                 "_font_loading_size": "16",
@@ -26,14 +32,14 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "moderato.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 090}{center}{type}{spd 3}- DIRECT EXAMINATION -\nLarry Butz\n",
+                "_last_written_text": "Answer the question, witness.\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "50",
+                "penalty": "0",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -48,7 +54,7 @@
                 "_font_tb_size": "10",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "Vague",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}That's me!",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
                 "ev_cursor_img": "general/cursor_ev",
@@ -64,14 +70,14 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Larry",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "2",
+                "_lastline": "257",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -86,17 +92,17 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
+                "_ev": "thinker",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "Type:Documents{n}A gift from Boss detailing the different types of evidentiary objections.",
-                "_speaking": "phoenix",
+                "_speaking": "larry",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.14",
+                "_timer_value_music_fade_in_add": "-0.02",
                 "ev_items_y": "63",
                 "thinker_desc": "Type:Weapons{n}Submitted as evidence by Prosecutor Payne.{n}A statue in the shape of \"The Thinker.\" It's rather heavy.",
                 "ev_larrow_y": "90",
@@ -119,6 +125,7 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Type:Documents{n}Submitted as evidence by Prosecutor Payne.{n}Electricity to Ms. Stone's building was out from noon to 6PM on the day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "Vague",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
@@ -129,7 +136,7 @@
                 "_flash_sound": "false",
                 "_font_gametitle_size": "16",
                 "_textbox_wrap_avoid_controlled": "true",
-                "_currentline": "2",
+                "_currentline": "60",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -138,7 +145,7 @@
                 "wright$_pic": "phoenix.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "enddd",
+                "_lastlabel": "exit",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
                 "handbook_pic": "handbook.png",
@@ -173,141 +180,142 @@
                 "_statements": [
                     {
                         "test": null,
-                        "index": 35,
+                        "index": 19,
                         "words": "1"
                     },
                     {
                         "test": null,
-                        "index": 41,
+                        "index": 25,
                         "words": "2"
                     },
                     {
                         "test": null,
-                        "index": 47,
+                        "index": 31,
                         "words": "3"
                     },
                     {
                         "test": null,
-                        "index": 53,
+                        "index": 37,
                         "words": "4"
                     },
                     {
                         "test": null,
-                        "index": 62,
+                        "index": 44,
                         "words": "5"
                     },
                     {
                         "test": null,
-                        "index": 72,
+                        "index": 55,
                         "words": "6"
                     },
                     {
                         "test": null,
-                        "index": 79,
+                        "index": 62,
                         "words": "7"
                     },
                     {
                         "test": null,
-                        "index": 85,
+                        "index": 68,
                         "words": "8"
                     },
                     {
                         "test": null,
-                        "index": 91,
+                        "index": 74,
                         "words": "9"
                     },
                     {
                         "test": null,
-                        "index": 97,
+                        "index": 80,
                         "words": "10"
                     },
                     {
                         "test": null,
-                        "index": 105,
+                        "index": 88,
                         "words": "11"
                     },
                     {
                         "test": null,
-                        "index": 111,
+                        "index": 94,
                         "words": "12"
                     },
                     {
                         "test": null,
-                        "index": 117,
+                        "index": 100,
                         "words": "13"
                     },
                     {
                         "test": null,
-                        "index": 127,
+                        "index": 110,
                         "words": "14"
                     },
                     {
                         "test": null,
-                        "index": 135,
+                        "index": 117,
                         "words": "15"
                     },
                     {
                         "test": null,
-                        "index": 144,
+                        "index": 127,
                         "words": "16"
                     },
                     {
                         "test": null,
-                        "index": 150,
+                        "index": 133,
                         "words": "17"
                     },
                     {
                         "test": null,
-                        "index": 156,
+                        "index": 139,
                         "words": "18"
                     },
                     {
                         "test": null,
-                        "index": 168,
+                        "index": 151,
                         "words": "19"
                     },
                     {
                         "test": null,
-                        "index": 174,
+                        "index": 157,
                         "words": "20"
                     },
                     {
                         "test": null,
-                        "index": 183,
+                        "index": 166,
                         "words": "21"
                     },
                     {
                         "test": null,
-                        "index": 188,
+                        "index": 171,
                         "words": "22"
                     },
                     {
                         "test": null,
-                        "index": 195,
+                        "index": 178,
                         "words": "23"
                     },
                     {
                         "test": null,
-                        "index": 201,
+                        "index": 184,
                         "words": "24"
                     },
                     {
                         "test": null,
-                        "index": 207,
+                        "index": 190,
                         "words": "25"
                     },
                     {
                         "test": null,
-                        "index": 213,
+                        "index": 196,
                         "words": "26"
                     },
                     {
                         "test": null,
-                        "index": 231,
+                        "index": 564,
                         "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "ev_currentname_y": "35",
@@ -322,32 +330,103 @@
         "assets.Script",
         [],
         {
-            "_world_id": 443637592,
+            "_world_id": 145987224,
             "statement": "",
             "pri": 0,
-            "scene": "larrydirect.script",
-            "cross": 15,
-            "si": 34,
+            "scene": "local://builtin",
+            "cross": null,
+            "si": 3,
             "lastline": 0,
             "instatement": false,
             "_objects": [
                 [
-                    "penalty",
-                    [
-                        50,
-                        "penalty"
-                    ],
+                    "fg",
+                    [],
+                    {
+                        "dim": 0.74450000000000094,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/../general/logosmall",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            -25,
+                            -15
+                        ],
+                        "loopmode": 0,
+                        "id_name": "logo",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 3,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "wait": 1
+                    }
+                ],
+                [
+                    "guiWait",
+                    [],
                     {
                         "dim": 1,
-                        "flash_color": [
-                            255,
-                            242,
-                            129,
-                            150
-                        ],
                         "screen_setting": "",
-                        "end": 50,
-                        "delay": 0,
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "pri": 81,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "_guiWait_",
+                        "start": 0,
+                        "run": "",
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            ],
+            "viewed": {}
+        },
+        [
+            "stack",
+            0
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/main",
                         "blinkspeed": [
                             100,
                             200
@@ -361,81 +440,16 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "penalty",
                         "start": 0,
                         "tint": null,
-                        "flash_amount": 0,
-                        "loops": 0,
-                        "x": 0,
-                        "flash_dir": 1,
-                        "z": 4,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "listmenu",
-                    [],
-                    {
-                        "pri": 50,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "fail": "none",
-                        "tag": "objections",
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "try_bottom",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "selected": "",
-                        "loopmode": 0,
-                        "start": 0,
                         "fade": 255,
-                        "greyscale": 0,
-                        "hidden": true,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "max_fade": 50,
-                        "id_name": "list_menu_id",
-                        "tint": null,
-                        "dim": 1,
-                        "name": "general/black",
-                        "si": 0,
+                        "loops": false,
                         "x": 0,
-                        "z": 5,
-                        "options": [
-                            [
-                                "TEST1",
-                                "TEST1"
-                            ],
-                            [
-                                "TEST2",
-                                "TEST2"
-                            ],
-                            [
-                                "TEST3",
-                                "TEST3"
-                            ],
-                            [
-                                "TEST4",
-                                "TEST4"
-                            ],
-                            [
-                                "TEST5",
-                                "TEST5"
-                            ]
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ],
@@ -446,7 +460,65 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/defence",
+                        "name": "bg/main",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            192
+                        ],
+                        "loopmode": 0,
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            ],
+            "_world_id": 145986304,
+            "viewed": {},
+            "scene": "",
+            "lastline": ""
+        },
+        [
+            "stack",
+            1
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_world_id": 133983168,
+            "statement": "",
+            "pri": 0,
+            "scene": "intro",
+            "cross": null,
+            "si": 4,
+            "lastline": 0,
+            "instatement": false,
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/case1-1",
                         "blinkspeed": [
                             100,
                             200
@@ -460,7 +532,63 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "defence",
+                        "id_name": "case1-1",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            ],
+            "viewed": {}
+        },
+        [
+            "stack",
+            2
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_world_id": 145988344,
+            "statement": "6",
+            "pri": 0,
+            "scene": "larrydirect.script",
+            "cross": "proceed",
+            "si": 60,
+            "lastline": 257,
+            "instatement": true,
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/witness",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "witness",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -481,7 +609,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "fg/dbench",
+                        "name": "fg/wbench",
                         "blinkspeed": [
                             100,
                             200
@@ -495,7 +623,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "dbench",
+                        "id_name": "wbench",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -513,11 +641,11 @@
                 [
                     "char",
                     [
-                        "phoenix/objecting(blink)",
+                        "larry/hello(blink)",
                         false
                     ],
                     {
-                        "emoname": "objecting",
+                        "emoname": "hello",
                         "pri": 20,
                         "pos": [
                             0,
@@ -541,10 +669,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "nametag": "Larry\n",
+                        "id_name": "larry",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "larry",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -552,15 +680,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": "stop",
+                            "loopmode": "blinknoset",
                             "start": 0,
-                            "loops": 0,
-                            "x": 6,
+                            "loops": 1,
+                            "x": 0,
                             "spd": 6
                         },
-                        "modename": "blink",
+                        "modename": "talk",
                         "dim": 1,
-                        "name": "phoenix/objecting(blink)",
+                        "name": "larry/hello(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -570,11 +698,11 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 0,
-                            "x": 0,
+                            "loops": 1,
+                            "x": 7,
                             "spd": 6
                         },
-                        "blinkemo": "objecting",
+                        "blinkemo": "hello",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -583,7 +711,7 @@
                 [
                     "textbox",
                     [
-                        "TEST OBJECTION\n",
+                        "{c 283}Yeah, that's The Thinker!\n\n",
                         [
                             255,
                             255,
@@ -593,15 +721,15 @@
                         1,
                         true,
                         false,
-                        "Phoenix\n"
+                        "Larry\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "TEST OBJECTION\n",
-                        "can_skip": false,
+                        "text": "{c 283}Yeah, that's The Thinker!\n\n",
+                        "can_skip": true,
                         "id_name": "_textbox_",
                         "kill": false,
-                        "statement": null,
+                        "statement": "6",
                         "go": 1,
                         "z": 4,
                         "blocking": true,
@@ -649,21 +777,38 @@
                     }
                 ],
                 [
-                    "button",
+                    "testimony_blink",
                     [],
                     {
-                        "rpos": [
-                            177,
-                            192
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/testimony",
+                        "blinkspeed": [
+                            100,
+                            200
                         ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
                         "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
+                        "pos": [
+                            0,
+                            22
+                        ],
+                        "loopmode": 0,
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 3,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "wait": 1
                     }
                 ],
                 [
@@ -699,13 +844,37 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script33": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script5": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script222": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script221": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script220": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script553": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script35": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script536": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script489": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script488": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script5": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script557": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script556": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script519": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script539": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script540": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script51": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script59": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script29": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script41": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script485": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script522": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script523": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script502": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script506": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script505": true
             }
         },
         [
             "stack",
-            0
+            3
         ]
     ]
 ]
