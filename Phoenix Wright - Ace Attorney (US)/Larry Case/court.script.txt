@@ -50,7 +50,7 @@ char judge e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (talk)
-"Thank... thank you, Your Honor. {n}{c669}(Gulp... Hands shaking... {n}Eyesight... fading...)"
+"Thank... thank you, Your Honor. {n}{c089}(Gulp... Hands shaking... {n}Eyesight... fading...)"
 
 bg judgestand
 char judge e=normal (talk)
@@ -116,7 +116,7 @@ addev blackout
 
 nt
 //Add bling2 SFX if we can mute the dialogue blips
-"{c669}{type}{spd 3}Evidence has been added {n}to the Court Record."
+"{c090}{type}{spd 3}Evidence has been added {n}to the Court Record."
 
 bg judgestand
 char judge e=normal (talk)
@@ -215,7 +215,7 @@ bg defence
 fg dbench
 char phoenix e=sweating (talk)
 sfx sfx-realization
-"Um... what? {n}{c669}(Is he serious?)"
+"Um... what? {n}{c089}(Is he serious?)"
 
 bg helper
 char mia e=bench-stern (talk)
@@ -249,7 +249,7 @@ char judge e=surprised (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c669}(Uh oh. Larry gets excited easily... {n}This could be bad.)"
+"{c089}(Uh oh. Larry gets excited easily... {n}This could be bad.)"
 
 bg helper
 char mia e=bench-geez (talk)
@@ -277,7 +277,6 @@ hideevl
 "you'll gain more leeway in {n}pleading your case."
 
 nt
-//Can we change the text color to red
 "{c090}[Each successful evidentiary {n}objection will add an additional {n}point to the penalty bar.]"
 
 bg black fade

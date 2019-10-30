@@ -21,3 +21,9 @@ set _helper Mia
 clear
 startcourt
 //Till here
+
+CHANGE TEXT COLORS
+{c940} = orange
+{c089} = blue
+{c090} = green
+{c999} = white

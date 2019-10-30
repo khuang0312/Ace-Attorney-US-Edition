@@ -1,201 +1,234 @@
-mus
+bg witness
+fg wbench
+char larry e=hello (blink)
 
-mus Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
-set _music_loop Phoenix Wright Ace Attorney OST 05   Logic and Trick.mp3
+nt
+"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
-fade bg black
+mus moderato.mp3
+set _music_loop moderato.mp3
+music_fade_in nowait
 
+penalty -50
+penalty
+cross larrytestimony
+
+set _testimony_blinker false
+set _allow_present_evidence false
+
+statement 1
 bg prosecution
 fg pbench
-char payne e=normal
+char payne e=confident (talk)
 "Please state your first and last name for the record."
 
+statement 2
 bg witness
 fg wbench
 char larry e=hello (talk)
 "Yo. I'm Larry Butz."
 
-bg prosecution
-fg pbench
-char payne e=normal
-"What do you do for a living?"
-
-bg witness
-fg wbench
-char larry e=smirk(talk) //Using "custom" official asset so might be wonky
-"I do all kinds of stuff!"
-"I'm making statues at the moment, and each one is unique."
-
-set _ev thinker
-
-bg prosecution
-fg pbench
-char payne e=normal
-sfx sfx-evidenceshoop
-showevl
-"Mr. Butz, let me direct your attention to this piece of evidence."
-"Do you recognize it?"
-sfx sfx-evidenceshoop
-hideevl
-
-bg witness
-fg wbench
-char larry e=smirk (talk)
-"Yeah, that's The Thinker!"
-"It's one of my creations."
-
+statement 3
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Let the record show that the defendant has identified the murder weapon as one of his creations."
+"What do you do for a living?"
 
+statement 4
+bg witness
+fg wbench
+char larry e=hello (talk)
+"I do all kinds of stuff!"
+"I'm making statues at the moment, {n}and each one is unique."
+
+set _ev thinker
+
+statement 5
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+sfx sfx-evidenceshoop
+showevl
+"Mr. Butz, let me direct your attention {n}to this piece of evidence."
+"Do you recognize it?"
+hideev1
+
+statement 6
+bg witness
+fg wbench
+char larry e=hello (talk)
+"Yeah, that's The Thinker!"
+"It's one of my creations."
+
+statement 7
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Let the record show that the {n}defendant has identified the murder {n}weapon as one of his creations."
+
+statement 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c669}(Not good...)"
 
+statement 9
 bg prosecution
 fg pbench
-char payne e=normal
-"Mr. Butz, were you related to the victim?"
+char payne e=confident (talk)
+"Mr. Butz, were you related {n}to the victim?"
 
+statement 10
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "She was my girl, man!"
 "We were great together!"
-"We were Romeo and Juliet, {p 5}Cleopatra and Mark Anthony!"
+"We were Romeo and Juliet, {p 5}{n}Cleopatra and Mark Anthony!"
 
+statement 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c669}(Um... didn't they all die?)"
 
+statement 12
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"But isn't it true that the victim had recently dumped you?"
+"But isn't it true that the victim had {n}recently dumped you?"
 
-//
-//
-//Add Objection chance here
-//
-//
-
+statement 13
 bg witness
 fg wbench
 char larry e=mad (talk)
 "I wasn't dumped!"
-"She just wasn't taking my phone calls...{p 30} or seeing me. {p 30}Ever. "
+char larry e=normal (talk)
+"She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
+char larry e=mad (talk)
 "{s 20}WHAT'S IT TO YOU, ANYWAY!?"
 
+statement 14
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Mr. Butz, what you describe is generally what we mean by "dumped.""
+"Mr. Butz, what you describe is {n}generally what we mean by {n}"dumped.""
 
-char payne e=normal
 set _ev cindy_passport
+
+statement 15
+bg prosecution
+fg pbench
+char payne e=confident (talk)
 sfx sfx-evidenceshoop
 showevl
-"Let me direct your attention to this piece of evidence. Do you recognize it?"
-sfx sfx-evidenceshoop
+"Let me direct your attention {n}to this piece of evidence. {n}Do you recognize it?"
 hideevl
 
+statement 16
 bg witness
 fg wbench
 char larry e=normal (talk)
 "Yeah, that's Cindy's passport."
 
-bg prosecution
-fg pbench
-char payne e=normal
-"Can you describe to me what's on the most recent page?"
-
-bg witness
-fg wbench
-char larry e=normal (talk)
-"Looks like she just got back from Paris on July 30th{p 5}.{p 5}.{p 5}."
-"{sfx sfx-realization}Wait a second."
-char larry e=nervous (talk)
-"Someone else wrote in here!"
-""To the love of my life, Cindy. Thanks for visiting me! XOXO"
-"{s 20}WHAT!?"
-"Dude...{p 10} no way..."
-
+statement 17
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Mr. Butz, what do you think of her now?"
+"Can you describe to me what's {n}on the most recent page?"
 
-//
-//
-//Add Objection chance here
-//
-//
+statement 18
+bg witness
+fg wbench
+char larry e=normal (talk)
+"Looks like she just got back from {n}Paris on July 30th{p 5}.{p 5}.{p 5}."
+"{sfx sfx-realization}Wait a second."
+char larry e=nervous (talk)
+"Someone else wrote in here!"
+""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
+"{s 20}WHAT!?"
+"Dude...{p 10} no way..."
 
+statement 19
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, what do you think {n}of her now?"
+
+statement 20
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "That...{p 5} that cheatin' she-dog!"
 "I'm gonna die."
 "I'm just gonna drop dead."
-"Yeah, and when I meet her in the afterlife, I'm going to get to the bottom of this!"
+"Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
 
+statement 21
 bg judgestand
 char judge e=surprised (talk)
 "{p 5}...Let's continue with the trial, shall we?"
 
+statement 22
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Of course, Your Honor."
+"Mr. Butz, where were you {n}on the 31st of July?"
 
-char payne e=normal
-"Mr. Butz, where were you on the 31st of July?"
-
-bg witness
-fg wbench
-char larry e=sweating //Also "custom" official asset
-"I, uh, I was visiting Cindy's apartment."
-
-bg prosecution
-fg pbench
-char payne e=normal
-"Did you meet with the victim?"
-
+statement 23
 bg witness
 fg wbench
 char larry e=nervous (talk)
-"She wasn’t home, man..."
-"So, like, I didn't see her."
+"I, uh, I was visiting Cindy's {n}apartment."
 
+statement 24
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Did you meet with the victim?"
+
+statement 25
+bg witness
+fg wbench
+char larry e=nervous (talk)
+"She wasn't home, man... {n}I didn't see her."
+
+statement 26
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Thank you, Mr. Butz."
+
+delete name=penalty
+music_fade_out nowait
+endcross
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
 "No further questions, Your Honor."
 
 bg judgestand
 char judge e=normal (talk)
-"Mr. Wright, do you wish to cross examine the defendant?"
+"Mr. Wright, do you wish to {n}cross-examine the defendant?"
 
 bg helper
 char mia e=bench-stern (talk)
 
 char phoenix hide
-"What should I do, Mia?"
-"This wasn't supposed to happen..."
+"What should I do, Mia? {n}This wasn't supposed to happen..."
 
 char mia e=bench-stern (talk)
-"Let's move on; the damage has been done."
-"We can push back from a different angle...{p 3} hopefully."
+"Let's move on; the damage {n}has been done."
+"We can push back from a {n}different angle...{p 10} hopefully."
 
 bg defence
 fg dbench
 char phoenix e=headshake
-char phoenic e=normal (talk)
-"*sigh* ... The defense has no further questions for the defendant, Your Honor."
+pause 60
+char phoenix e=normal (talk)
+"*sigh* ... The defense has no further {n}questions for the defendant, {n}Your Honor."
 
 bg prosecution
 fg pbench
@@ -204,14 +237,14 @@ char payne e=confident (talk)
 
 bg witness
 fg wbench
-char larry e=nervous (talk)
+char larry e=mad (talk)
 "Thanks for nothing, Nick!"
-"Why'd my Cindy go and do that, man? {s 10}WHY!?"
+"Why'd my Cindy go and {n}do that, man? {p 10}{s 10}WHY!?"
 
 bg defence
 fg dbench
-char phoenic e=nervous (blink)
-"{c669}(Larry… just get off the stand, please.)"
+char phoenix e=sweating (blink)
+"{c089}(Larry.{p 10}.{p 10}.{p 10} just get off the stand, please.)"
 
 fg ani-judge-gavel
 fg ani-judge-gavel
@@ -220,15 +253,20 @@ bg judgestand
 char judge e=warning (talk)
 "Order! Order in the court!"
 char judge e=normal (talk)
-"Please call your next witness, Mr. Payne."
+"Please call your next witness, {n}Mr. Payne."
 
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"The prosecution calls Frank Sahwit to the stand."
+"The prosecution calls Frank Sahwit {n}to the stand."
 
 bg black fade
 
-mus
-
 script sawhitdirect
+
+label press 1
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+"TEST"
+resume
