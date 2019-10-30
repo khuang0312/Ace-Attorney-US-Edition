@@ -1,5 +1,3 @@
-goto here
-
 bg witness
 fg wbench
 char sahwit e=normal (blink)
@@ -7,6 +5,7 @@ char sahwit e=normal (blink)
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Frank Sahwit"
 
+penalty 50
 penalty
 
 mus moderato.ogg
@@ -191,6 +190,448 @@ char payne e=confident (talk)
 
 goto endoftestimony
 
+label press 1
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 2
+
+label press 2
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 3
+
+label press 3
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 4
+
+label press 4
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 5
+
+label press 5
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 6
+
+label press 6
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 7
+
+label press 7
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading [7 CORRECT]
+li Prejudicial
+li Relevance
+li Vague [7 CORRECT]
+showlist
+goto 8
+
+label press 8
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 9
+
+label press 9
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 10
+
+label press 10
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 11
+
+label press 11
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 12
+
+label press 12
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 13
+
+label press 13
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading [13 CORRECT]
+li Prejudicial
+li Relevance
+li Vague [13 CORRECT]
+showlist
+goto 14
+
+label press 14
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 15
+
+label press 15
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 16
+
+label press 16
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 17
+
+label press 17
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 18
+
+label press 18
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 19
+
+label press 19
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 20
+
+label press 20
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 21
+
+label press 21
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 22
+
+label press 22
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 23
+
+label press 23
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 24
+
+label press 24
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(I can't possibly object to the judge.)"
+goto 25
+
+label press 25
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto 26
+
+label press 26
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(I can't possibly object to the judge.)"
+goto 27
+
+label press 27
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+goto endoftestimony
+
+label Asked and Answered
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10 script
+char phoenix e=pointing (talk)
+"Your Honor, this question has {n}been asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty -10
+is penalty 0 gameover
+resume
+
+label Leading
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty -10
+is penalty 0 gameover
+resume
+
+label Leading [7 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+penalty +10
+goto 9
+
+label Leading [13 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+penalty +10
+goto 15
+
+label Prejudicial
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty -10
+is penalty 0 gameover
+resume
+
+label Relevance
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty -10
+is penalty 0 gameover
+resume
+
+label Vague
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty -10
+is penalty 0 gameover
+resume
+
+label Vague [7 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+penalty +10
+goto 9
+
+label Vague [13 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+penalty +10
+goto 15
+
 label endoftestimony
 delete name=penalty
 music_fade_out nowait
@@ -207,7 +648,6 @@ char phoenix e=sweating (talk)
 char phoenix e=sweating (blink)
 "{c089}(Hoo boy... the pressure's {n}getting to me.)"
 
-label here
 bg helper
 char mia e=bench-stern (talk)
 "Alright, this is it. The real deal!"

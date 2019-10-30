@@ -14,6 +14,9 @@
 
 -Find a way to label the correct objections without displaying the text differently / [CORRECT] displays right now
 
+-Payne's normal animation is not working, fix or find alternate
+
+-Add description text for objection handbook
 
 Macro text moved here temporarily:
 

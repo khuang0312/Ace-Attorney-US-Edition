@@ -11,7 +11,7 @@
                 }
             ],
             "_track": "moderato.ogg",
-            "character": "payne",
+            "character": "mia",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -24,7 +24,7 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "moderato.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 283}My name is Frank Sahwit.\n\n",
+                "_last_written_text": "You'll want to object to the \nprosecution's questions rather \nthan the witness' responses.\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -46,7 +46,7 @@
                 "_font_tb_size": "10",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "press_2",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}That's me!",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
                 "ev_cursor_img": "general/cursor_ev",
@@ -62,7 +62,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Payne",
+                "_speaking_name": "Mia",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -90,7 +90,7 @@
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "Type:Documents{n}A gift from Boss detailing the different types of evidentiary objections.",
-                "_speaking": "payne",
+                "_speaking": "mia",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
@@ -127,7 +127,7 @@
                 "_flash_sound": "false",
                 "_font_gametitle_size": "16",
                 "_textbox_wrap_avoid_controlled": "true",
-                "_currentline": "1",
+                "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -136,7 +136,7 @@
                 "wright$_pic": "phoenix.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "enddd",
+                "_lastlabel": "exit",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
                 "handbook_pic": "handbook.png",
@@ -198,6 +198,116 @@
                         "test": null,
                         "index": 49,
                         "words": "6"
+                    },
+                    {
+                        "test": null,
+                        "index": 55,
+                        "words": "7"
+                    },
+                    {
+                        "test": null,
+                        "index": 61,
+                        "words": "8"
+                    },
+                    {
+                        "test": null,
+                        "index": 67,
+                        "words": "9"
+                    },
+                    {
+                        "test": null,
+                        "index": 73,
+                        "words": "10"
+                    },
+                    {
+                        "test": null,
+                        "index": 79,
+                        "words": "11"
+                    },
+                    {
+                        "test": null,
+                        "index": 85,
+                        "words": "12"
+                    },
+                    {
+                        "test": null,
+                        "index": 91,
+                        "words": "13"
+                    },
+                    {
+                        "test": null,
+                        "index": 97,
+                        "words": "14"
+                    },
+                    {
+                        "test": null,
+                        "index": 103,
+                        "words": "15"
+                    },
+                    {
+                        "test": null,
+                        "index": 109,
+                        "words": "16"
+                    },
+                    {
+                        "test": null,
+                        "index": 115,
+                        "words": "17"
+                    },
+                    {
+                        "test": null,
+                        "index": 126,
+                        "words": "18"
+                    },
+                    {
+                        "test": null,
+                        "index": 132,
+                        "words": "19"
+                    },
+                    {
+                        "test": null,
+                        "index": 138,
+                        "words": "20"
+                    },
+                    {
+                        "test": null,
+                        "index": 144,
+                        "words": "21"
+                    },
+                    {
+                        "test": null,
+                        "index": 150,
+                        "words": "22"
+                    },
+                    {
+                        "test": null,
+                        "index": 157,
+                        "words": "23"
+                    },
+                    {
+                        "test": null,
+                        "index": 164,
+                        "words": "24"
+                    },
+                    {
+                        "test": null,
+                        "index": 169,
+                        "words": "25"
+                    },
+                    {
+                        "test": null,
+                        "index": 177,
+                        "words": "26"
+                    },
+                    {
+                        "test": null,
+                        "index": 182,
+                        "words": "27"
+                    },
+                    {
+                        "test": null,
+                        "index": 215,
+                        "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
@@ -215,14 +325,14 @@
         "assets.Script",
         [],
         {
-            "_world_id": 57408968,
-            "statement": "3",
+            "_world_id": 137956888,
+            "statement": "2",
             "pri": 0,
             "scene": "sahwitdirect.script",
-            "cross": "proceed",
-            "si": 36,
+            "cross": "pressed",
+            "si": 210,
             "lastline": 30,
-            "instatement": true,
+            "instatement": false,
             "_objects": [
                 [
                     "penalty",
@@ -276,7 +386,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/prosecution",
+                        "name": "bg/helper",
                         "blinkspeed": [
                             100,
                             200
@@ -290,7 +400,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "prosecution",
+                        "id_name": "helper",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -305,49 +415,13 @@
                     }
                 ],
                 [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/pbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "pbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
                     "char",
                     [
-                        "payne/normal(blink)",
+                        "mia/bench-stern(blink)",
                         false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "bench-stern",
                         "pri": 20,
                         "pos": [
                             0,
@@ -370,11 +444,11 @@
                             100,
                             200
                         ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Payne\n",
-                        "id_name": "payne",
+                        "clicksound": "blipfemale.ogg",
+                        "nametag": "Mia\n",
+                        "id_name": "mia",
                         "tint": null,
-                        "charname": "payne",
+                        "charname": "mia",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -382,15 +456,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": "stop",
+                            "loopmode": "blinknoset",
                             "start": 0,
-                            "loops": 0,
-                            "x": 7,
+                            "loops": 1,
+                            "x": 0,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "payne/normal(blink)",
+                        "name": "mia/bench-stern(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -400,11 +474,11 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 0,
-                            "x": 0,
+                            "loops": 1,
+                            "x": 15,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
+                        "blinkemo": "bench-stern",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -413,7 +487,7 @@
                 [
                     "textbox",
                     [
-                        "{c 283}Mr. Sahwit, what do you do for a\nliving? \n\n",
+                        "Listen carefully for innapropriate \nqueries and refer to the objection \nhandbook if you need to.\n",
                         [
                             255,
                             255,
@@ -423,15 +497,15 @@
                         1,
                         true,
                         false,
-                        "Payne\n"
+                        "Mia\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "{c 283}Mr. Sahwit, what do you do for a\nliving? \n\n",
+                        "text": "Listen carefully for innapropriate \nqueries and refer to the objection \nhandbook if you need to.\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
-                        "statement": "3",
+                        "statement": null,
                         "go": 1,
                         "z": 4,
                         "blocking": true,
@@ -479,38 +553,21 @@
                     }
                 ],
                 [
-                    "testimony_blink",
+                    "button",
                     [],
                     {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/testimony",
-                        "blinkspeed": [
-                            100,
-                            200
+                        "rpos": [
+                            177,
+                            192
                         ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
+                        "s_graphic": "general/record",
+                        "s_text": "",
                         "pri": 0,
-                        "pos": [
-                            0,
-                            22
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
+                        "id_name": "_crbut_",
+                        "screen_setting": "try_bottom",
+                        "s_macroname": "{_crbut}",
+                        "hold_func": null,
+                        "z": 6
                     }
                 ],
                 [
@@ -546,10 +603,12 @@
                 ]
             ],
             "viewed": {
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script208": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script209": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script207": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script23": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script5": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script29": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script35": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casesahwitdirect.script29": true
             }
         },
         [

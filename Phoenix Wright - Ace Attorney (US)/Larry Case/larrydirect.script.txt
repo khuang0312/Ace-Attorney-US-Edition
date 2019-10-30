@@ -5,7 +5,7 @@ char larry e=hello (blink)
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
-penalty -50
+penalty 50
 penalty
 
 mus moderato.ogg
@@ -223,8 +223,8 @@ goto 2
 label press 2
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 3
 
@@ -244,8 +244,8 @@ goto 4
 label press 4
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 5
 
@@ -265,8 +265,8 @@ goto 6
 label press 6
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 7
 
@@ -306,8 +306,8 @@ goto 10
 label press 10
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 11
 
@@ -334,8 +334,8 @@ goto 13
 label press 13
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 14
 
@@ -368,8 +368,8 @@ goto 16
 label press 16
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 17
 
@@ -389,8 +389,8 @@ goto 18
 label press 18
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 19
 
@@ -410,8 +410,8 @@ goto 20
 label press 20
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 21
 
@@ -451,8 +451,8 @@ goto 24
 label press 24
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 25
 
@@ -472,8 +472,8 @@ goto 26
 label press 26
 bg helper
 char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 27
 
