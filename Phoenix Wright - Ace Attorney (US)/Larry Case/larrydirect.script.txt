@@ -70,7 +70,7 @@ statement 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c669}(Not good...)"
+"{c089}(Not good...)"
 
 statement 9
 bg prosecution
@@ -90,7 +90,7 @@ statement 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c669}(Um... didn't they all die?)"
+"{c089}(Um... didn't they all die?)"
 
 statement 12
 bg prosecution
@@ -261,6 +261,8 @@ char payne e=confident (talk)
 "The prosecution calls Frank Sahwit {n}to the stand."
 
 bg black fade
+
+pause 60
 
 script sawhitdirect
 

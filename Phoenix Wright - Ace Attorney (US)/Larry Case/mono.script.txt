@@ -38,4 +38,6 @@ hideevl
 bg black fade
 music_fade_out
 
+pause 60
+
 script court
