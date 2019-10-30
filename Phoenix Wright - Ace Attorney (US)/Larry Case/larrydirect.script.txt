@@ -5,8 +5,8 @@ char larry e=hello (blink)
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
-mus moderato.mp3
-set _music_loop moderato.mp3
+mus moderato.ogg
+set _music_loop moderato.ogg
 music_fade_in nowait
 
 penalty -50

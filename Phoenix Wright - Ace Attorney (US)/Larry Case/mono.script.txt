@@ -2,8 +2,8 @@ bg lobby
 
 "{c090}{center}{type}{spd 2}August 3, 9:48 AM {n}District Court {n}Defendant Lobby No. 2"
 
-mus lounge.mp3
-set _music_loop lounge.mp3
+mus lounge.ogg
+set _music_loop lounge.ogg
 music_fade_in nowait
 
 char phoenix hide

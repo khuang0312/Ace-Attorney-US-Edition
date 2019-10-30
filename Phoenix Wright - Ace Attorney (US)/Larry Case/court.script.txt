@@ -6,8 +6,8 @@ pause 100
 fg ani-judge-gavel
 fg ani-judge-gavel
 
-mus trial.mp3
-set _music_loop trial.mp3
+mus trial.ogg
+set _music_loop trial.ogg
 music_fade_in nowait
 
 bg judgestand
@@ -131,8 +131,8 @@ fg pbench
 char payne e=confident (talk)
 "Yes, Your Honor. {n}May it please the court."
 
-mus logic.mp3
-set_music_loop logic.mp3
+mus logic.ogg
+set_music_loop logic.ogg
 music_fade_in nowait
 
 "My name is Winston Payne, and I {n}represent the state in this case."
@@ -174,8 +174,8 @@ char phoenix e=normal (talk)
 "Ahem."
 "The defense will present an opening {n}statement now, Your Honor. {n}May it please the court."
 
-mus logic.mp3
-set_music_loop logic.mp3
+mus logic.ogg
+set_music_loop logic.ogg
 music_fade_in nowait
 
 char phoenix e=document (talk)
@@ -206,8 +206,8 @@ fg pbench
 char payne e=confident (talk)
 "The prosecution calls the {n}defendant to the stand."
 
-mus suspense.mp3
-set_music_loop suspense.mp3
+mus suspense.ogg
+set_music_loop suspense.ogg
 music_fade_in nowait
 
 
