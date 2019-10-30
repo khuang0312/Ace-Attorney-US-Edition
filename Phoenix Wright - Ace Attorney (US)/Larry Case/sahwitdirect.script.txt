@@ -5,7 +5,6 @@ char sahwit e=normal (blink)
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Frank Sahwit"
 
-penalty 50
 penalty
 
 mus moderato.ogg
