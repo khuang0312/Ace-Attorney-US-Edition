@@ -1,5 +1,5 @@
 bg courtroom
-"{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}District Court {n}Courtroom No. 2"
+"{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
 sfx sfx-gallery
 pause 100
@@ -160,7 +160,7 @@ char judge e=normal (talk)
 bg helper
 char mia e=bench-stern (talk)
 "You can choose to give an {n}opening statement now,"
-"or after the prosecution {n}completes its case in chief."
+"or after the prosecution {n}completes its case-in-chief."
 "I'd recommend giving it now, before {n}the judge becomes ingrained in the {n}prosecution's point of view..."
 char mia e=bench-geez (talk)
 "This one's a bit of a pushover." 
@@ -249,7 +249,7 @@ char judge e=surprised (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c089}(Uh oh. Larry gets excited easily... {n}This could be bad.)"
+"{c089}(Uh-oh. Larry gets excited easily... {n}This could be bad.)"
 
 bg helper
 char mia e=bench-geez (talk)
