@@ -12,7 +12,7 @@ mus moderato.ogg
 set _music_loop moderato.ogg
 music_fade_in nowait
 
-cross larrytestimony
+cross larrydirect
 
 set _testimony_blinker false
 set _allow_present_evidence false
@@ -22,7 +22,7 @@ statement 1
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Please state your first and last name for the record."
+"Please state your first and last {n}name for the record."
 
 statement 2
 bg witness

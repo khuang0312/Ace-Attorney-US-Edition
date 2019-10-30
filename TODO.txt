@@ -12,6 +12,8 @@
 
 -Find a way to disable the back button during direct examination
 
+-Find a way to label the correct objections without displaying the text differently / [CORRECT] displays right now
+
 
 Macro text moved here temporarily:
 
