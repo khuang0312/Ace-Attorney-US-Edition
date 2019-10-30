@@ -281,4 +281,6 @@ nt
 
 bg black fade
 
+pause 60
+
 script larrydirect
