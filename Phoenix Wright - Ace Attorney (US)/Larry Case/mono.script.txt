@@ -1,6 +1,6 @@
 bg lobby
 
-"{c090}{center}{type}{spd 2}August 3, 9:48 AM {n}District Court {n}Defendant Lobby No. 2"
+"{c090}{center}{type}{spd 2}August 3, 9:48 AM {n}Los Angeles Superior Court {n}Defendant Lobby No. 2"
 
 mus lounge.ogg
 set _music_loop lounge.ogg
