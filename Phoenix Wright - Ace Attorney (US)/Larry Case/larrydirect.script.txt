@@ -5,16 +5,24 @@ char larry e=hello (blink)
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
+penalty -50
+penalty
+
 mus moderato.ogg
 set _music_loop moderato.ogg
 music_fade_in nowait
 
-penalty -50
-penalty
 cross larrytestimony
 
 set _testimony_blinker false
 set _allow_present_evidence false
+
+list objections
+li TEST1
+li TEST2
+li TEST3
+li TEST4
+li TEST5
 
 statement 1
 bg prosecution
@@ -167,7 +175,7 @@ char larry e=nervous (talk)
 statement 21
 bg judgestand
 char judge e=surprised (talk)
-"{p 5}...Let's continue with the trial, shall we?"
+".{p 5}.{p 5}.{p 5}Let's continue with the trial, shall we?"
 
 statement 22
 bg prosecution
@@ -200,6 +208,25 @@ fg pbench
 char payne e=confident (talk)
 "Thank you, Mr. Butz."
 
+goto endoftestimony
+
+label press 1
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+showlist
+goto 2
+
+label TEST1
+sfx phoenix-objection
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+"TEST OBJECTION"
+
+label endoftestimony
 delete name=penalty
 music_fade_out nowait
 endcross
@@ -265,10 +292,3 @@ bg black fade
 pause 60
 
 script sawhitdirect
-
-label press 1
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-"TEST"
-resume
