@@ -12,7 +12,7 @@ char sahwit e=normal (blink)
 fg TestimonyAnim fade name=tanim
 nt
 delete name=tanim
-"{n}{center}{c940}-- Witness's Account--"
+"{n}{center}{c940}--Witness's Account--"
 
 bg witness
 fg wbench
