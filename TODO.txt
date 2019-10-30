@@ -8,6 +8,11 @@
 
 -Add evidence and profiles in court script when they are introduced
 
+-Objection voice lines do not play
+
+-Find a way to disable the back button during direct examination
+
+
 Macro text moved here temporarily:
 
 //All this doesn't work; What they don't say is a macro file needs to be created first for these to work
@@ -22,7 +27,8 @@ clear
 startcourt
 //Till here
 
-CHANGE TEXT COLORS
+
+Text Colors
 {c940} = orange
 {c089} = blue
 {c090} = green

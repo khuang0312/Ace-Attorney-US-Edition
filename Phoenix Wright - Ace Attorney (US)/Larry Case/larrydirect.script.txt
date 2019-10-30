@@ -16,6 +16,7 @@ cross larrytestimony
 
 set _testimony_blinker false
 set _allow_present_evidence false
+//set _back_button false //HELP! This doesn't work as intended
 
 statement 1
 bg prosecution
@@ -173,27 +174,32 @@ bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Of course, Your Honor."
-"Mr. Butz, where were you {n}on the 31st of July?"
 
 statement 23
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, where were you {n}on the 31st of July?"
+
+statement 24
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "I, uh, I was visiting Cindy's {n}apartment."
 
-statement 24
+statement 25
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Did you meet with the victim?"
 
-statement 25
+statement 26
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "She wasn't home, man... {n}I didn't see her."
 
-statement 26
+statement 27
 bg prosecution
 fg pbench
 char payne e=confident (talk)
@@ -318,9 +324,9 @@ fg dbench
 char phoenix e=thinking (blink)
 list objections
 li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
+li Leading [12 CORRECT]
+li Prejudicial [12 CORRECT]
+li Relevance [12 CORRECT]
 li Vague
 showlist
 goto 13
@@ -395,8 +401,8 @@ char phoenix e=thinking (blink)
 list objections
 li Asked and Answered
 li Leading
-li Prejudicial
-li Relevance
+li Prejudicial [19 CORRECT]
+li Relevance [19 CORRECT]
 li Vague
 showlist
 goto 20
@@ -430,14 +436,6 @@ showlist
 goto 23
 
 label press 23
-bg helper
-char mia e=bench-stern (talk)
-"Phoenix, he's our witness."
-"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 24
-
-label press 24
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
@@ -448,17 +446,39 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 25
+goto 24
 
-label press 25
+label press 24
 bg helper
 char mia e=bench-stern (talk)
 "Phoenix, he's our witness."
 "During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 25
+
+label press 25
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+list objections
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
 goto 26
 
 label press 26
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, he's our witness."
+"During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
+"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+goto 27
+
+
+label press 27
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
@@ -507,6 +527,23 @@ penalty -10
 is penalty 0 gameover
 resume
 
+label Leading [12 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+penalty +10
+goto 15
+
 label Prejudicial
 sfx phoenix-objection.mp3
 fg ObjectionAnim nowait
@@ -525,6 +562,40 @@ penalty -10
 is penalty 0 gameover
 resume
 
+label Prejudicial [12 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+penalty +10
+goto 15
+
+label Prejudicial [19 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+penalty +10
+goto 23
+
 label Relevance
 sfx phoenix-objection.mp3
 fg ObjectionAnim nowait
@@ -542,6 +613,40 @@ char judge e=normal (talk)
 penalty -10
 is penalty 0 gameover
 resume
+
+label Relevance [12 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+penalty +10
+goto 15
+
+label Relevance [19 CORRECT]
+sfx phoenix-objection.mp3
+fg ObjectionAnim nowait
+pause 50 script
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+penalty +10
+goto 23
 
 label Vague
 sfx phoenix-objection.mp3
