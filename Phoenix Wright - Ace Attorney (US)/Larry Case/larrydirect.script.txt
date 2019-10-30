@@ -17,8 +17,6 @@ cross larrytestimony
 set _testimony_blinker false
 set _allow_present_evidence false
 
-goto gameover
-
 statement 1
 bg prosecution
 fg pbench
@@ -115,7 +113,6 @@ bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, what you describe is {n}generally what we mean by {n}"dumped.""
-
 
 statement 15
 bg prosecution
@@ -328,7 +325,6 @@ li Vague
 showlist
 goto 13
 
-
 label press 13
 bg helper
 char mia e=bench-stern (talk)
@@ -440,7 +436,6 @@ char mia e=bench-stern (talk)
 "During opposing counsel's direct, {n}you'll want to object to their {n}questions instead."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 24
-
 
 label press 24
 bg defence
