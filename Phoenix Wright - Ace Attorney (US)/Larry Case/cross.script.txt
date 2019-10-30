@@ -79,7 +79,7 @@ statement sahwitF
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"{tbon}A woman was on the ground...She wasn't moving."
+"{tbon}A woman was on the ground... She wasn't moving."
 
 statement sahwitG
 bg witness
@@ -334,7 +334,7 @@ pause 5 script
 bg defence
 fg dbench
 char phoenix e=confident (talk)
-"Rather behind with the times, aren't you?"
+"Rather behind the times, aren't you?"
 
 sfx sfx-objection
 fg ObjectionAnim
