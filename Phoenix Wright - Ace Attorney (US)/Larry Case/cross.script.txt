@@ -1,355 +1,262 @@
-mus
-
-mus Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
-set _music_loop Phoenix Wright Ace Attorney OST 04   Examination ~ Moderate 2001.mp3
-
-//fade bg black
-
 bg witness
 fg wbench
 char sahwit e=normal (blink)
 
-fg TestimonyAnim fade name=tanim
+//fg Cross-ExaminationAnim
 nt
-delete name=tanim
-"{n}{center}{c940}--Witness's Account--"
+//"{c940}{center}{type}{spd 3}- Cross Examination - {n}Frank Sahwit"
 
-bg witness
-fg wbench
-char sahwit e=normal (talk)
+penalty
 
-set _testimony_blinker true
-"{tbon}My name is Frank Sahwit."
-"{tbon}I go door-to-door selling newspaper subscriptions."
-"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
-"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
-"{tbon}After seeing the defendant run away, I looked inside the apartment."
-"{tbon}A woman was on the ground...{p 5} She wasn't moving."
-"{tbon}The victim is, without a doubt, the woman I saw."
-"{tbon}I went to a nearby park and called the police immediately from a public phone."
-"{tbon}There was a phone in the victim's apartment, but it wasn't working."
-"{tbon}I don't have a cell phone, unfortunately."
-
-mus
-set _testimony_blinker false
-
-pause 5
-
-mus
-fg Cross-ExaminationAnim
-nt
-delete name=vs
-"{n}{c940}{center}-- Cross Examination --"
-
-label start
+mus allegro.ogg
+set _music_loop allegro.ogg
+music_fade_in nowait
 
 cross sahwit1
 
-statement sahwitA
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"{tbon}My name is Frank Sahwit."
+set _testimony_blinker false
+set _allow_present_evidence true
+label start
 
-statement sahwitB
+statement 1
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}I go door-to-door selling newspaper subscriptions."
+char sahwit e=normal (blink)
+"{type}{spd 100}My name is Frank Sahwit."
 
-statement sahwitC
+statement 2
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
+char sahwit e=normal (blink)
+"{type}{spd 100}I go door-to-door selling newspaper {n}subscriptions."
 
-statement sahwitD
+statement 3
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
+char sahwit e=normal (blink)
+"{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st."
 
-statement sahwitE
+statement 4
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}After seeing the defendant run away, I looked inside the apartment."
+char sahwit e=normal (blink)
+"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
 
-statement sahwitF
+statement 5
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}A woman was on the ground... She wasn't moving."
+char sahwit e=normal (blink)
+"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
 
-statement sahwitG
+statement 6
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}The victim is, without a doubt, the woman I saw."
+char sahwit e=normal (blink)
+"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
 
-statement sahwitH
+statement 7
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}I went to a nearby park and called the police immediately from a public phone."
+char sahwit e=normal (blink)
+"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
 
-statement sahwitI
+statement 8
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}There was a phone in the victim’s apartment, but it wasn’t working."
+char sahwit e=normal (blink)
+"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
 
-statement sahwitJ
+statement 9
 bg witness
 fg wbench
-char sahwit e=normal (talk)
-"{tbon}I don’t have a cell phone, unfortunately."
+char sahwit e=normal (blink)
+"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+
+statement 10
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I don't have a cell phone, {n}unfortunately."
 
 endcross
-
 goto start
 
-label press sahwitA
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 1
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "Frank Sahwit, you say?"
-
-sfx sfx-objection
+sfx payne-objection
 fg ObjectionAnim
-
 bg prosecution
 fg pbench
-char payne e=normal (talk)
-"Your Honor, this question has been asked and answered."
-
+char payne e=confident (talk)
+"Your Honor, this question has been {n}asked and answered."
 bg judgestand
-char judge e=warning (talk)
+char judge e=normal (talk)
 "Sustained." 
-"Mr. Wright, please refrain from wasting the court's time."
-penalty -1
+"Mr. Wright, please refrain from {n}wasting the court's time."
+penalty -10
 resume
 
-label press sahwitB
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 2
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You sell newspaper subscriptions in this day and age?"
-
-sfx sfx-objection
+"You sell newspaper subscriptions {n}in this day and age?"
+sfx payne-objection
 fg ObjectionAnim
-
 bg prosecution
 fg pbench
-char payne e=normal (talk)
-“Your Honor, counsel's question calls for irrelevant testimony.”
-
+char payne e=confident (talk)
+"Your Honor, counsel's question {n}calls for irrelevant testimony."
 bg judgestand
-char judge e=warning (talk)
+char judge e=normal (talk)
 "Sustained." 
 "Mr. Wright, please move on."
-penalty -1
+penalty -10
 resume
 
-label press sahwitC
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
-"You’re certain the time was 1:00 PM?"
-
+"You're certain the time was 1:00 PM?"
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"Yes"
-
+"Yes."
 bg defence
 fg dbench
-char phoenix e=thinking (talk)
-"And you discovered the body immediately after, correct?"
-
-bg witness
-fg wbench
-char sahwit e=twitching (talk)
-"That's right"
-//Object here
-resume
-
-label press sahwitD
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
-bg defence
-fg dbench
-char phoenix e=thinking (talk)
-"Isn't a man leaving an apartment a common sight?"
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"Well... I don't know. He just looked suspicious."
-
-bg defence
-fg dbench
-char phoenix e=deskslam
-pause 3 script
 char phoenix e=handsondesk (talk)
-"Please refrain from speculating, Mr. Sahwit."
-
+"And you discovered the body {n}immediately after, correct?"
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
+char sahwit e=normal (talk)
+"That's right."
+resume
+
+label press 4
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Isn't a man leaving an apartment a common sight?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Well... I don't know. {n}He just looked suspicious."
+bg defence
+fg dbench
+char phoenix e=pointing (talk)
+"Please refrain from speculating, {n}Mr. Sahwit."
+bg witness
+fg wbench
+char sahwit e=normal (talk)
 "Yes, of course."
 resume
 
-label press sahwitE
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 5
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "You decided to peek inside?"
-
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"Yes"
-
+"Yes."
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
-"You did so despite being unrelated to the victim or defendant?"
-
+"You did so despite being unrelated {n}to the victim or defendant?"
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
+char sahwit e=normal (talk)
 "I was just curious, that's all."
 resume
 
-label press sahwitF
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 6
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You couldn't have been sure she was dead, could you?"
-
+"You couldn't have been sure {n}she was dead, could you?"
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-"No, but there was a lot of blood everywhere."
+char sahwit e=normal (talk)
+"No, but there was a lot {n}of blood everywhere."
 resume
 
-label press sahwitG
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 7
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You're completely certain the woman you saw was the victim?"
-
-sfx sfx-objection
+"You're completely certain the woman {n}you saw was the victim?"
+sfx payne-objection
 fg ObjectionAnim
-
 bg prosecution
 fg pbench
-char payne e=normal (talk)
-"Your Honor, this question has been asked and answered."
-
+char payne e=confident (talk)
+"Your Honor, this question has been {n}asked and answered."
 bg judgestand
-char judge e=warning (talk)
+char judge e=normal (talk)
 "Sustained." 
 "Mr. Wright, please move on."
-penalty -1
+penalty -10
 resume
 
-label press sahwitH
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 8
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"So you left without touching anything in the apartment?"
-
+"So you left without touching {n}anything in the apartment?"
 bg witness
 fg wbench
 char sahwit e=normal (talk)
 "Yes."
-char sahwit e=twitcching (talk)
 "I mean no, I didn't touch anything."
-
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-"{c669}(... He hesitated for a second there.)"
-
+"{c089}(.{p 5}.{p 5}.{p 5}He hesitated for a second there.)"
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-"..."
+char sahwit e=normal (blink)
+".{p 5}.{p 5}.{p 5}"
 resume
 
-label press sahwitI
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 9
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "You knew the phone wasn't working?"
-
 bg witness
 fg wbench
 char sahwit e=normal (talk)
 "Yes."
-
 bg defence
 fg dbench
-char phoenix e=normal (talk)
-"You knew the phone wasn't working?"
-
+char phoenix e=handsondesk (talk)
+"You knew despite never having {n}entered the room?"
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-"There was a cordless phone on a shelf in the entranceway."
-"I reached inside and tried calling, but it wasn't working."
+char sahwit e=normal (talk)
+"There was a cordless phone on a {n}shelf in the entranceway."
+"I reached inside and tried calling, {n}but it wasn't working."
 resume
 
-label press sahwitJ
-sfx Phoenix - Hold it
-fg HoldItAnim
-pause 5 script
+label press 10
 bg defence
 fg dbench
 char phoenix e=confident (talk)
 "Rather behind the times, aren't you?"
-
-sfx sfx-objection
+sfx payne-objection
 fg ObjectionAnim
-
 bg prosecution
 fg pbench
-char payne e=normal (talk)
-“Your Honor, counsel's question calls for irrelevant testimony.”
-
+char payne e=confident (talk)
+"Your Honor, counsel's question calls for irrelevant testimony."
 bg judgestand
-char judge e=warning (talk)
+char judge e=normal (talk)
 "Sustained." 
 "Mr. Wright, please move on."
-penalty -1
+penalty -10
 resume
-
-
-mus //Temp stop

@@ -2,6 +2,8 @@ bg witness
 fg wbench
 char sahwit e=normal (blink)
 
+fg TestimonyAnim fade name=tanim
+delete name=tanim
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Frank Sahwit"
 
@@ -475,8 +477,7 @@ goto endoftestimony
 
 label Asked and Answered
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -493,8 +494,7 @@ resume
 
 label Leading
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -511,8 +511,7 @@ resume
 
 label Leading [7 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -528,8 +527,7 @@ goto 9
 
 label Leading [13 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -545,8 +543,7 @@ goto 15
 
 label Prejudicial
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -563,8 +560,7 @@ resume
 
 label Relevance
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -581,8 +577,7 @@ resume
 
 label Vague
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -599,8 +594,7 @@ resume
 
 label Vague [7 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -616,8 +610,7 @@ goto 9
 
 label Vague [13 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting

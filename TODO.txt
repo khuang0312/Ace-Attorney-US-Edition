@@ -38,3 +38,25 @@ Text Colors
 {c089} = blue
 {c090} = green
 {c999} = white
+
+Sahwit Traditional Testimony moved here (unused):
+fg TestimonyAnim fade name=tanim
+nt
+delete name=tanim
+"{n}{center}{c940}--Witness's Account--"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+
+set _testimony_blinker true
+"{tbon}My name is Frank Sahwit."
+"{tbon}I go door-to-door selling newspaper subscriptions."
+"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
+"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
+"{tbon}After seeing the defendant run away, I looked inside the apartment."
+"{tbon}A woman was on the ground...{p 5} She wasn't moving."
+"{tbon}The victim is, without a doubt, the woman I saw."
+"{tbon}I went to a nearby park and called the police immediately from a public phone."
+"{tbon}There was a phone in the victim's apartment, but it wasn't working."
+"{tbon}I don't have a cell phone, unfortunately."

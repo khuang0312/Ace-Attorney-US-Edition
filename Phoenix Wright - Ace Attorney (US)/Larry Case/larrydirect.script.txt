@@ -2,6 +2,8 @@ bg witness
 fg wbench
 char larry e=hello (blink)
 
+fg TestimonyAnim fade name=tanim
+delete name=tanim
 nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
@@ -493,8 +495,7 @@ goto endoftestimony
 
 label Asked and Answered
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -511,8 +512,7 @@ resume
 
 label Leading
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -529,8 +529,7 @@ resume
 
 label Leading [12 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -546,8 +545,7 @@ goto 15
 
 label Prejudicial
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -564,8 +562,7 @@ resume
 
 label Prejudicial [12 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -581,8 +578,7 @@ goto 15
 
 label Prejudicial [19 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -598,8 +594,7 @@ goto 23
 
 label Relevance
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -616,8 +611,7 @@ resume
 
 label Relevance [12 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -633,8 +627,7 @@ goto 15
 
 label Relevance [19 CORRECT]
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -650,8 +643,7 @@ goto 23
 
 label Vague
 sfx phoenix-objection.mp3
-fg ObjectionAnim nowait
-pause 50 script
+fg ObjectionAnim
 bg defence
 fg dbench
 char phoenix e=objecting
@@ -731,7 +723,7 @@ bg black fade
 
 pause 60
 
-script sawhitdirect
+script sahwitdirect
 
 label gameover
 mus
