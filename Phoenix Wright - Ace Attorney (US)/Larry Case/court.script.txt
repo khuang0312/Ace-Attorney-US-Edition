@@ -229,6 +229,7 @@ char phoenix e=thinking (talk)
 char phoenix e=normal (talk)
 "O-Objection, Your Honor!"
 "The defense is under no obligation {n}to testify as opposing counsel {n}has requested."
+char phoenix e=handsondesk (talk)
 "The defense asserts the defendant's {n}right to remain silent."
 
 bg witness
