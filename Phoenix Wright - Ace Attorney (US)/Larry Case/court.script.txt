@@ -21,6 +21,8 @@ char judge e=normal (talk)
 "...or not guilty, based on the {n}testimony and evidence {n}provided in this case."
 "Are the prosecution and {n}defense ready?"
 
+addev winston$
+
 bg prosecution
 fg pbench
 char payne e=confident (talk)
@@ -210,7 +212,6 @@ mus suspense.ogg
 set_music_loop suspense.ogg
 music_fade_in nowait
 
-
 bg defence
 fg dbench
 char phoenix e=sweating (talk)
@@ -254,22 +255,26 @@ char phoenix e=sweating (blink)
 bg helper
 char mia e=bench-geez (talk)
 "*sigh* ...You have some strange {n}friends, Wright."
-
-music_fade_out nowait
-
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"The prosecution will try to devalue {n}the credibility of his testimony {n}through direct examination,"
-"so it's up to you to object to {n}inappropriate queries."
+"The prosecution will try to devalue {n}the credibility of his testimony {n}through direct examination."
+"You should object to any {n}inappropriate queries so {n}he doesn't hurt his case."
+"As for what constitutes an {n}inappropriate query..."
 
 addev handbook
+addev handbook1
+addev handbook2
+addev handbook3
+addev handbook4
+addev handbook5
 set _ev handbook
 sfx sfx-evidenceshoop
 showevl
 
 "You have the reference handbook {n}I gave you, right?"
 "It should be in the Court Record."
-"Give it a glance now if you need a {n}refresher on the different types {n}of evidentiary objections."
+"It contains a guide on the types of {n}objections used to protest opposing {n}counsel's questions."
+"Give it a glance now if you need {n}a refresher."
 sfx sfx-evidenceshoop
 hideevl
 
@@ -277,10 +282,13 @@ hideevl
 "you'll gain more leeway in {n}pleading your case."
 
 nt
-"{c090}[Each successful evidentiary {n}objection will add an additional {n}point to the penalty bar.]"
+"{c940}[You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination.]
+"{c940}[Each successful objection {n}will add an additional point {n}to the penalty bar.]"
 
 bg black fade
 
-pause 60
+music_fade_out
+
+pause 30
 
 script larrydirect

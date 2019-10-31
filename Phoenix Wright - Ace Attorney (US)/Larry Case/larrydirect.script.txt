@@ -220,7 +220,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 2
+resume
 
 label press 2
 bg helper
@@ -228,7 +228,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 3
+resume
 
 label press 3
 bg defence
@@ -241,7 +241,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 4
+resume
 
 label press 4
 bg helper
@@ -249,7 +249,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 5
+resume
 
 label press 5
 bg defence
@@ -262,7 +262,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 6
+resume
 
 label press 6
 bg helper
@@ -270,7 +270,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 7
+resume
 
 label press 7
 bg defence
@@ -283,14 +283,14 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 8
+resume
 
 label press 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(What am I going to do, object {n}to my own thoughts?)"
-goto 9
+resume
 
 label press 9
 bg defence
@@ -303,7 +303,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 10
+resume
 
 label press 10
 bg helper
@@ -311,14 +311,14 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 11
+resume
 
 label press 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(What am I going to do, object {n}to my own thoughts?)"
-goto 12
+resume
 
 label press 12
 bg defence
@@ -331,7 +331,7 @@ li Prejudicial [12 CORRECT]
 li Relevance [12 CORRECT]
 li Vague
 showlist
-goto 13
+resume
 
 label press 13
 bg helper
@@ -339,7 +339,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 14
+resume
 
 label press 14
 bg defence
@@ -352,7 +352,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 15
+resume
 
 label press 15
 bg defence
@@ -365,7 +365,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 16
+resume
 
 label press 16
 bg helper
@@ -373,7 +373,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 17
+resume
 
 label press 17
 bg defence
@@ -386,7 +386,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 18
+resume
 
 label press 18
 bg helper
@@ -394,7 +394,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 19
+resume
 
 label press 19
 bg defence
@@ -407,7 +407,7 @@ li Prejudicial [19 CORRECT]
 li Relevance [19 CORRECT]
 li Vague
 showlist
-goto 20
+resume
 
 label press 20
 bg helper
@@ -415,14 +415,14 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 21
+resume
 
 label press 21
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(I can't possibly object to the judge.)"
-goto 22
+resume
 
 label press 22
 bg defence
@@ -435,7 +435,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 23
+resume
 
 label press 23
 bg defence
@@ -448,7 +448,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 24
+resume
 
 label press 24
 bg helper
@@ -456,7 +456,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 25
+resume
 
 label press 25
 bg defence
@@ -469,7 +469,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-goto 26
+resume
 
 label press 26
 bg helper
@@ -477,7 +477,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-goto 27
+resume
 
 
 label press 27
@@ -713,6 +713,8 @@ char judge e=warning (talk)
 "Order! Order in the court!"
 char judge e=normal (talk)
 "Please call your next witness, {n}Mr. Payne."
+
+addev frank$
 
 bg prosecution
 fg pbench

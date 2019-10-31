@@ -2,9 +2,9 @@ bg witness
 fg wbench
 char sahwit e=normal (blink)
 
-//fg Cross-ExaminationAnim
+fg Cross-ExaminationAnim
 nt
-//"{c940}{center}{type}{spd 3}- Cross Examination - {n}Frank Sahwit"
+"{c940}{center}{type}{spd 3}- Cross Examination - {n}Frank Sahwit"
 
 penalty
 

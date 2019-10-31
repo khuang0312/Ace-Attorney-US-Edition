@@ -1,28 +1,47 @@
 //Evidence
 set badge_name Attorney's Badge
 set badge_pic lawyer_badge.png
-set badge_desc Type:Other{n}One of my possessions. No one would believe I was a defense attorney if I didn't carry this.
+set badge_desc One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.
 
 set cindy_autopsy_name Cindy's Autopsy Report
 set cindy_autopsy_pic autopsy_report.png
-set cindy_autopsy_desc Type:Reports{n}Received from Mia Fey.{n}Time of death: 7/31, 4PM-5PM{n}Cause of death: loss of blood due to blunt trauma{n}
+set cindy_autopsy_desc Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma
  
 set thinker_name Statue
 set thinker_pic thinker.png
-set thinker_desc Type:Weapons{n}Submitted as evidence by Prosecutor Payne.{n}A statue in the shape of "The Thinker." It's rather heavy.
+set thinker_desc A statue in the shape {n}of "The Thinker." {n}It's rather heavy.
 
 set cindy_passport_name Passport
 set cindy_passport_pic en_passport.gif
-set cindy_passport_desc Type:Evidence{n}Submitted as evidence by Prosecutor Payne.{n}The victim apparently arrived home from Paris on 7/30,the day before the murder.
+set cindy_passport_desc The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.
 
 set blackout_name Blackout Record
 set blackout_pic whiteenvelope.png
-set blackout_desc Type:Documents{n}Submitted as evidence by Prosecutor Payne.{n}Electricity to Ms. Stone's building was out from noon to 6PM on the day of the crime.
+set blackout_desc Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.
 
 set handbook_name Objection Handbook
 set handbook_pic handbook.png
-set handbook_desc Type:Documents{n}A gift from Boss detailing the different types of evidentiary objections.
+set handbook_desc A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague
 
+set handbook1_name Objection Handbook Ch. 1
+set handbook1_pic handbook.png
+set handbook1_desc Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.
+
+set handbook2_name Objection Handbook Ch. 2
+set handbook2_pic handbook.png
+set handbook2_desc Objection: {n}Leading {n}{n}Counsel is leading the {n}witness to answer a {n}certain way.
+
+set handbook3_name Objection Handbook Ch. 3
+set handbook3_pic handbook.png
+set handbook3_desc Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.
+
+set handbook4_name Objection Handbook Ch. 4
+set handbook4_pic handbook.png
+set handbook4_desc Objection: {n}Relevance {n}{n}Counsel's question is {n}not directly related to {n}the case.
+
+set handbook5_name Objection Handbook Ch. 5
+set handbook5_pic handbook.png
+set handbook5_desc Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.
 
 
 //Character Profiles
