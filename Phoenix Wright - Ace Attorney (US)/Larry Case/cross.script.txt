@@ -86,7 +86,7 @@ bg defence
 fg dbench
 char phoenix e=normal (talk)
 "Frank Sahwit, you say?"
-sfx payne-objection
+sfx payne\objection
 fg ObjectionAnim
 bg prosecution
 fg pbench
@@ -105,7 +105,7 @@ bg defence
 fg dbench
 char phoenix e=normal (talk)
 "You sell newspaper subscriptions {n}in this day and age?"
-sfx payne-objection
+sfx payne\objection
 fg ObjectionAnim
 bg prosecution
 fg pbench
@@ -192,7 +192,7 @@ bg defence
 fg dbench
 char phoenix e=normal (talk)
 "You're completely certain the woman {n}you saw was the victim?"
-sfx payne-objection
+sfx payne\objection
 fg ObjectionAnim
 bg prosecution
 fg pbench
@@ -251,7 +251,7 @@ bg defence
 fg dbench
 char phoenix e=confident (talk)
 "Rather behind the times, aren't you?"
-sfx payne-objection
+sfx payne\objection
 fg ObjectionAnim
 bg prosecution
 fg pbench
@@ -267,7 +267,7 @@ resume
 
 label cindy_autopsy 3
 mus
-sfx Phoenix - Objection
+sfx phoenix\objection
 fg ObjectionAnim
 
 bg defence
@@ -288,9 +288,10 @@ bg witness
 fg wbench
 char sahwit e=twitching (talk)
 ""Estimated time of death: 4 PM.""
+sfx sfx-realization
 
 char sahwit e=damage
-sfx sfx-realization
+sfx sfx-stab
 "{s 5}...!"
 
 char phoenix e=deskslam
@@ -301,6 +302,7 @@ char phoenix e=pointing (talk)
 bg prosecution
 fg pbench
 char payne e=damage
+sfx sfx-stab
 pause 5 script
 
 bg witness
@@ -352,4 +354,5 @@ fg dbench
 cahr phoenix e=emo
 "...Dang."
 "Reset the game!"
+pause 50 script
 exit

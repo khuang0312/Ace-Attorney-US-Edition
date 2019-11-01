@@ -476,7 +476,7 @@ showlist
 goto endoftestimony
 
 label Asked and Answered
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -493,7 +493,7 @@ is penalty 0 gameover
 resume
 
 label Leading
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -510,7 +510,7 @@ is penalty 0 gameover
 resume
 
 label Leading [7 CORRECT]
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -526,7 +526,7 @@ penalty +10
 goto 9
 
 label Leading [13 CORRECT]
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -542,7 +542,7 @@ penalty +10
 goto 15
 
 label Prejudicial
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -559,7 +559,7 @@ is penalty 0 gameover
 resume
 
 label Relevance
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -576,7 +576,7 @@ is penalty 0 gameover
 resume
 
 label Vague
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -593,7 +593,7 @@ is penalty 0 gameover
 resume
 
 label Vague [7 CORRECT]
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench
@@ -609,7 +609,7 @@ penalty +10
 goto 9
 
 label Vague [13 CORRECT]
-sfx phoenix-objection.mp3
+sfx phoenix\objection
 fg ObjectionAnim
 bg defence
 fg dbench

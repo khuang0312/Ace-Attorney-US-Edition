@@ -6,10 +6,6 @@
 
 -Change text colors to highlight key phrases
 
--Add evidence and profiles in court script when they are introduced
-
--Objection voice lines do not play
-
 -Find a way to disable the back button during direct examination
 
 -Find a way to label the correct objections without displaying the text differently / [CORRECT] displays right now
@@ -17,6 +13,10 @@
 -Payne's normal animation is not working, fix or find alternate
 
 -Add description text for objection handbook
+
+-Add penalty threat whenever player has choice to press/object
+
+-Add save game so player doesn't start from beginning when gameover
 
 Macro text moved here temporarily:
 
