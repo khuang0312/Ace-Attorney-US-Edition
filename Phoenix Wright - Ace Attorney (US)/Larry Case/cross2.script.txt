@@ -16,7 +16,7 @@ char payne e=normal (talk)
 bg witness
 fg wbench
 char sahwit e=twitching (talk)
-"Er...{p 5}{sfx sfx-realization} there was a taped program playing on the TV!"
+"Er...{p 15}{sfx sfx-realization} there was a taped program playing on the TV!"
 char sahwit e=normal (talk)
 "A voice mentioned the time as 1:00 PM."
 
@@ -34,7 +34,7 @@ char mia e=bench-stern (talk)
 "You know what to do."
 
 nt
-"[Re-direct testimony is now added to original testimony for cross-exam.]"
+"{c090}[Re-direct testimony is now added to original testimony for cross-exam.]"
 
 bg black fade
 pause 5 script

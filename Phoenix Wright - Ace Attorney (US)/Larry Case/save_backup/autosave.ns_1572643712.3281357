@@ -62,7 +62,6 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_last_written_text": "A voice mentioned the time as 1:00 PM.\n",
                 "_speaking_name": "Payne",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
@@ -189,240 +188,12 @@
         "assets.Script",
         [],
         {
-            "_world_id": 53288312,
-            "statement": "",
-            "pri": 0,
-            "scene": "local://builtin",
-            "cross": null,
-            "si": 3,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 0.74500000000000099,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/../general/logosmall",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            -25,
-                            -15
-                        ],
-                        "loopmode": 0,
-                        "id_name": "logo",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": 81,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": "",
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "_world_id": 53346672,
-            "viewed": {},
-            "scene": "",
-            "lastline": ""
-        },
-        [
-            "stack",
-            1
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 53212664,
-            "statement": "",
-            "pri": 0,
-            "scene": "intro",
-            "cross": null,
-            "si": 4,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/case1-1",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "case1-1",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 54462984,
+            "_world_id": 51835848,
             "statement": "",
             "pri": 0,
             "scene": "cross2.script",
             "cross": null,
-            "si": 26,
+            "si": 4,
             "lastline": 0,
             "instatement": false,
             "_objects": [
@@ -500,11 +271,11 @@
                 [
                     "char",
                     [
-                        "payne/confident(blink)",
+                        "payne/normal(blink)",
                         false
                     ],
                     {
-                        "emoname": "confident",
+                        "emoname": "normal",
                         "pri": 20,
                         "pos": [
                             0,
@@ -539,15 +310,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": "blinknoset",
+                            "loopmode": "stop",
                             "start": 0,
-                            "loops": 1,
+                            "loops": 0,
                             "x": 0,
                             "spd": 6
                         },
-                        "modename": "blink",
+                        "modename": "talk",
                         "dim": 1,
-                        "name": "payne/confident(blink)",
+                        "name": "payne/normal(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -557,11 +328,11 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 1,
-                            "x": 6,
+                            "loops": 0,
+                            "x": 0,
                             "spd": 6
                         },
-                        "blinkemo": "confident",
+                        "blinkemo": "normal",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -570,7 +341,7 @@
                 [
                     "textbox",
                     [
-                        "No further questions.\n",
+                        "Mr. Sahwit, why did you think the time\nwas 1:00 PM? \n",
                         [
                             255,
                             255,
@@ -584,7 +355,7 @@
                     ],
                     {
                         "num_lines": 4,
-                        "text": "No further questions.\n",
+                        "text": "Mr. Sahwit, why did you think the time\nwas 1:00 PM? \n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -686,17 +457,12 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script8": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script3": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script13": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script20": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script18": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script25": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecross2.script3": true
             }
         },
         [
             "stack",
-            3
+            0
         ]
     ]
 ]

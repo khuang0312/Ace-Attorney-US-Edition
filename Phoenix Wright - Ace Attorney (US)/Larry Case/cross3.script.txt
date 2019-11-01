@@ -1,0 +1,451 @@
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Mr. Sahwit, how were you able to hear the time given there was a blackout?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"A-Actually, I didn’t hear the time..."
+"I saw it!"
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"What allowed you to see the time?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I saw the time on a table clock, the one the defendant used to hit the victim."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"No further questions."
+
+bg judgestand
+char judge e=normal (talk)
+"Mr. Wright, you may re-cross."
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Gladly, Your Honor."
+
+nt
+"[Re-direct testimony is now added to original testimony for cross-exam.]"
+
+bg black fade
+pause 5 script
+bg black fade
+
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+
+fg Cross-ExaminationAnim
+nt
+"{c940}{center}{type}{spd 3}- Cross Examination - {n}Hearing the Time"
+
+penalty
+
+mus allegro.ogg
+set _music_loop allegro.ogg
+music_fade_in nowait
+
+cross sahwit3
+
+set _testimony_blinker false
+set _allow_present_evidence true
+label start
+
+statement 1
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}My name is Frank Sahwit."
+
+statement 2
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I go door-to-door selling newspaper {n}subscriptions."
+
+statement 3
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st."
+
+
+statement 4
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I didn’t hear the time; I saw it." 
+
+
+statement 5
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I saw the time on the clock the defendant used to hit the victim." 
+
+statement 6
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
+
+statement 7
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
+
+statement 8
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
+
+statement 9
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
+
+statement 10
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
+
+statement 11
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+
+statement 12
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I don't have a cell phone, {n}unfortunately."
+
+endcross
+goto start
+
+label press 1
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Frank Sahwit, you say?"
+sfx payne\objection
+fg ObjectionAnim
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Your Honor, this question has been {n}asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Sustained." 
+"Mr. Wright, please refrain from {n}wasting the court's time."
+penalty -10
+is penalty 0 gameover
+resume
+
+label press 2
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You sell newspaper subscriptions {n}in this day and age?"
+sfx payne\objection
+fg ObjectionAnim
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Your Honor, counsel's question {n}calls for irrelevant testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -10
+is penalty 0 gameover
+resume
+
+label press 3
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"You're certain the time was 1:00 PM?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"And you discovered the body {n}immediately after, correct?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"That's right."
+resume
+
+label press 4
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You say that you saw it?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"You say this despite testifying that you clearly heard the time previously?"
+
+bg prosecution
+fg pbench
+char payne e=sweating (talk)
+"Your Honor, this question has been asked and answered."
+
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Please answer the question, Mr. Sahwit."
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I, uh, just got things mixed up."
+"My apologies."
+
+label press 5
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"So you saw the time on the murder weapon?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes, I did."
+
+label press 6
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Isn't a man leaving an apartment a common sight?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Well... I don't know. {n}He just looked suspicious."
+bg defence
+fg dbench
+char phoenix e=pointing (talk)
+"Please refrain from speculating, {n}Mr. Sahwit."
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes, of course."
+resume
+
+label press 7
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You decided to peek inside?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"You did so despite being unrelated {n}to the victim or defendant?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I was just curious, that's all."
+resume
+
+label press 8
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You couldn't have been sure {n}she was dead, could you?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"No, but there was a lot {n}of blood everywhere."
+resume
+
+label press 9
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You're completely certain the woman {n}you saw was the victim?"
+sfx payne\objection
+fg ObjectionAnim
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Your Honor, this question has been {n}asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -10
+is penalty 0 gameover
+resume
+
+label press 10
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"So you left without touching {n}anything in the apartment?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+"I mean no, I didn't touch anything."
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+"{c089}(.{p 5}.{p 5}.{p 5}He hesitated for a second there.)"
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+".{p 5}.{p 5}.{p 5}"
+resume
+
+label press 11
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You knew the phone wasn't working?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"You knew despite never having {n}entered the room?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"There was a cordless phone on a {n}shelf in the entranceway."
+"I reached inside and tried calling, {n}but it wasn't working."
+resume
+
+label press 12
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Rather behind the times, aren't you?"
+sfx payne\objection
+fg ObjectionAnim
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Your Honor, counsel's question calls for irrelevant testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained." 
+"Mr. Wright, please move on."
+penalty -10
+is penalty 0 gameover
+resume
+
+label thinker 5
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+
+bg defence
+fg dbench
+char phoenix e=pointing (blink)
+pause 5 script
+set _ev thinker
+sfx sfx-evidenceshoop
+showevl
+char phoenix e=document (talk)
+"Let me direct your attention to said murder weapon."
+hideevl
+"Where on this statue do you see a clock?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"It, uh, it actually says the time!"
+"Just tilt or give it a shake and it'll talk!"
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"So you have to hold the clock to have it sound the time?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"Yes."
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"And you knew this despite having never entered the apartment?"
+
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
+"...!"
+char sahit e=twitching (talk)
+"I..."
+"Actually, I had one of those clocks before!"
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"So you claim that you knew this was a clock because you had seen the same one before?"
+
+bg witness
+fg wbench
+char sahit e=normal (talk)
+"Yes, That's right"
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"You are aware that this clock was made by the defendant, don’t you?"
+
+bg witness
+fg wbench
+char sahit e=twitching (talk)
+"{s 5}Urk."
+"...Yes."
+
+//temp stop here
+exit
+
+label gameover
+mus
+bg judgestand
+char judge e=warning (talk)
+"That's enough. Mr. Wright, you are hereby removed from the court for legal incompetence."
+"The defendant has the right to request a new attorney and be tried at a later date."
+"The court declares a mistrial and is adjourned."
+
+bg defence
+fg dbench
+cahr phoenix e=emo
+"...Dang."
+"Reset the game!"
+pause 50 script
+exit
