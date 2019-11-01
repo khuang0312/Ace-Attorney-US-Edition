@@ -260,3 +260,50 @@ char judge e=normal (talk)
 "Mr. Wright, please move on."
 penalty -10
 resume
+
+label cindy_autopsy 3
+mus
+sfx Phoenix - Objection
+fg ObjectionAnim
+
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"Mr. Sahwit, you have been telling the truth as a witness in a court of law, have you not?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"Yes."
+
+char phoenix e=document (talk)
+"Let me direct your attention to the autopsy report." 
+"Can you read to me the estimated time of death?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+""Estimated time of death: 4 PM.""
+
+char sahwit e=damage
+"...!"
+
+char phoenix e=deskslam
+pause 5 script
+char phoenix e=pointing (talk)
+"And yet, in your testimony, you said that witnessed the defendant fleeing and discovered the body at 1:00 PM, did you not?"
+
+bg witness
+fg wbench
+char sahwit e=glaring (talk)
+"Er...{p 5} Yes, I did."
+
+char phoenix e=deskslam
+pause 5 script
+char phoenix e=confident (talk)
+"Thank you, Mr. Sahwit."
+"NO further questions, Your Honor."
+char phoenix e=confident (blink)
+"{c669}...Nailed it!)"
+
+label gameover
