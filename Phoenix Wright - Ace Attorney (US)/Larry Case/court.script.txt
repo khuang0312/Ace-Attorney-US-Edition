@@ -1,8 +1,13 @@
-bg courtroom
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
-sfx sfx-gallery
-pause 100
+sfx sfx-gallery 
+fg ani-gallery nowait
+
+fg phoenix_mia nowait
+fg judge nowait
+fg payne nowait
+
+pause 160
 fg ani-judge-gavel
 fg ani-judge-gavel
 
