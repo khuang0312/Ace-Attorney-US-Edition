@@ -4,6 +4,7 @@ set _textbox_lines 3
 include evidence
 addev badge
 
+
 script court
 //script cross //Testing scene
 //script pre_closing

@@ -1,10 +1,52 @@
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Mr. Sahwit, why did you think the time was 1:00 PM?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"I, uh, I heard the time when I found the body."
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"From where did you hear the time?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"Er...{p 15}{sfx sfx-realization} there was a taped program playing on the TV!"
+char sahwit e=normal (talk)
+"A voice mentioned the time as 1:00 PM."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"No further questions."
+
+bg judgestand
+char judge e=normal (talk)
+"You may re-cross, Mr. Wright."
+
+bg helper
+char mia e=bench-stern (talk)
+"You know what to do."
+
+nt
+"{c090}[Re-direct testimony is now added to original testimony for cross-exam.]"
+
+bg black fade
+pause 5 script
+bg black fade
+
 bg witness
 fg wbench
 char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}- Cross Examination - {n}Frank Sahwit"
+"{c940}{center}{type}{spd 3}- Cross Examination - {n}The Time of Discovery"
 
 penalty
 
@@ -12,7 +54,7 @@ mus allegro.ogg
 set _music_loop allegro.ogg
 music_fade_in nowait
 
-cross sahwit1
+cross sahwit2
 
 set _testimony_blinker false
 set _allow_present_evidence true
@@ -36,43 +78,57 @@ fg wbench
 char sahwit e=normal (blink)
 "{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st."
 
+
 statement 4
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
+"{type}{spd 100}I heard the time when I found the body." 
+
 
 statement 5
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
+"{type}{spd 100}There was a taped program playing on the TV, and a voice mentioned the time as 1:00 PM." 
 
 statement 6
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
+"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
 
 statement 7
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
+"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
 
 statement 8
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
+"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
 
 statement 9
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
 
 statement 10
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
+
+statement 11
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+
+statement 12
 bg witness
 fg wbench
 char sahwit e=normal (blink)
@@ -141,6 +197,30 @@ resume
 label press 4
 bg defence
 fg dbench
+char phoenix e=thinking (talk)
+"You heard the time instead of seeing it?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes, heard."
+"All I saw was the body lying there..."
+"I didn't think to look at anything else, least of all my watch."
+
+label press 5
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"So the TV was on and running then?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Uh, yes"
+
+label press 6
+bg defence
+fg dbench
 char phoenix e=normal (talk)
 "Isn't a man leaving an apartment a common sight?"
 bg witness
@@ -157,7 +237,7 @@ char sahwit e=normal (talk)
 "Yes, of course."
 resume
 
-label press 5
+label press 7
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -176,7 +256,7 @@ char sahwit e=normal (talk)
 "I was just curious, that's all."
 resume
 
-label press 6
+label press 8
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -187,7 +267,7 @@ char sahwit e=normal (talk)
 "No, but there was a lot {n}of blood everywhere."
 resume
 
-label press 7
+label press 9
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -206,7 +286,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label press 8
+label press 10
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -226,7 +306,7 @@ char sahwit e=normal (blink)
 ".{p 5}.{p 5}.{p 5}"
 resume
 
-label press 9
+label press 11
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -246,7 +326,7 @@ char sahwit e=normal (talk)
 "I reached inside and tried calling, {n}but it wasn't working."
 resume
 
-label press 10
+label press 12
 bg defence
 fg dbench
 char phoenix e=confident (talk)
@@ -265,81 +345,69 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label cindy_autopsy 3
+label blackout 5
 mus
 sfx phoenix\objection
 fg ObjectionAnim
 
 bg defence
 fg dbench
-char phoenix e=handsondesk (talk)
-"Mr. Sahwit, you have been telling the truth as a witness in a court of law, have you not?"
-
-bg witness
-fg wbench
-char sahwit e=twitching (talk)
-"Yes."
-
+char phoenix e=pointing (blink)
+pause 5 script
+set _ev blackout
+sfx sfx-evidenceshoop
+showevl
 char phoenix e=document (talk)
-"Let me direct your attention to the autopsy report." 
-"Can you read to me the estimated time of death?"
+"Let me direct your attention to the blackout record."
+hideevl
+"Tell me, what time was the power out?"
 
 bg witness
 fg wbench
 char sahwit e=twitching (talk)
-""Estimated time of death: 4 PM.""
-sfx sfx-realization
+"...12:00 AM to 6:00 PM."
 
 char sahwit e=damage
 sfx sfx-stab
-"{s 5}...!"
+"{s 10}Gah!"
 
-char phoenix e=deskslam
-pause 5 script
-char phoenix e=pointing (talk)
-"And yet, in your testimony, you said that witnessed the defendant fleeing and discovered the body at 1:00 PM, did you not?"
-
-bg prosecution
-fg pbench
-char payne e=damage
-sfx sfx-stab
-pause 5 script
+char phoenix e=confident (talk)
+"Mr. Sahwit, you are aware witnesses must tell the truth under penalty of perjury, are you not?"
 
 bg witness
 fg wbench
 char sahwit e=glaring (talk)
-"Er...{p 5} Yes, I did."
+"I... well... {s 5}urk!"
 
-char phoenix e=deskslam
-pause 5 script
+bg judgestand
+char judge e=warning (talk)
+"Mr. Sahwit?"
+"The court would prefer to hear an accurate testimony from the very beginning."
+"These constant corrections are harming your credibility."
+
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
+sfx sfx-realization
+"...!"
+char sahwit e=twitching (talk)
+"My apologies, Your Honor!"
+"I seem to have mixed a few details up."
+"It, uh, it must have been the shock of finding the body."
+
 char phoenix e=confident (talk)
-"Thank you, Mr. Sahwit."
-"No further questions, Your Honor."
-char phoenix e=confident (blink)
-"{c669}...Nailed it!)"
-
-bg helper
-char mia e=bench-stern (talk)
-"Great job, Wright!"
-"Way to put him on the spot!"
-"That's all you have to do: point out contradictions."
+"No further questions"
 
 bg judgestand
 char judge e=normal (talk)
-"Do you wish to re-direct, Mr. Payne?"
+"Re-direct, Mr. Payne?"
 
 bg prosecution
 fg pbench
 char payne e=sweating (talk)
-"Urgh..." 
-"Yes, Your Honor."
+"...Yes, Your Honor."
 
-bg helper
-char mia e=bench-stern (talk)
-"Watch this: he'll try to amend the witness' testimony."
-"Lies always beget more lies; see through one, and their whole story falls apart!"
-
-script cross2
+script cross3
 
 label gameover
 mus
