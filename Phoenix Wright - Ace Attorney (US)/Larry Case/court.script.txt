@@ -263,7 +263,7 @@ char mia e=bench-geez (talk)
 "*sigh* ...You have some strange {n}friends, Wright."
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"The prosecution will try to devalue {n}the credibility of his testimony {n}through direct examination."
+"The prosecution will try to devalue {n}the credibility of his testimony {n}through {c940}direct examination{c999}."
 "You should object to any {n}inappropriate queries so {n}he doesn't hurt his case."
 "As for what constitutes an {n}inappropriate query..."
 
