@@ -23,7 +23,7 @@ set _allow_present_profiles false
 statement 1
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Please state your first and last {n}name for the record."
 statement 1 test
 
