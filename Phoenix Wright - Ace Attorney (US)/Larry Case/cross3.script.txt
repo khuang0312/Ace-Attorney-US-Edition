@@ -6,7 +6,7 @@ char payne e=normal (talk)
 bg witness
 fg wbench
 char sahwit e=twitching (talk)
-"A-Actually, I didn’t hear the time..."
+"A-Actually, I didn't hear the time..."
 "I saw it!"
 
 bg prosecution
@@ -83,7 +83,7 @@ statement 4
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I didn’t hear the time; I saw it." 
+"{type}{spd 100}I didn't hear the time; I saw it." 
 
 
 statement 5
@@ -375,10 +375,10 @@ char phoenix e=pointing (blink)
 pause 5 script
 set _ev thinker
 sfx sfx-evidenceshoop
-showevl
+showevr
 char phoenix e=document (talk)
 "Let me direct your attention to said murder weapon."
-hideevl
+hideevr
 "Where on this statue do you see a clock?"
 
 bg witness
@@ -406,7 +406,7 @@ bg witness
 fg wbench
 char sahwit e=glaring (blink)
 "...!"
-char sahit e=twitching (talk)
+char sahwit e=twitching (talk) //error here animation is gone
 "I..."
 "Actually, I had one of those clocks before!"
 
@@ -417,19 +417,46 @@ char phoenix e=normal (talk)
 
 bg witness
 fg wbench
-char sahit e=normal (talk)
+char sahwit e=normal (talk)
 "Yes, That's right"
 
 bg defence
 fg dbench
 char phoenix e=confident (talk)
-"You are aware that this clock was made by the defendant, don’t you?"
+"You are aware that this clock was made by the defendant, don't you?"
 
 bg witness
 fg wbench
-char sahit e=twitching (talk)
+char sahwit e=twitching (talk)
 "{s 5}Urk."
 "...Yes."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"You're also aware that this clock...{p 20}{e confident(talk)} is the only of its kind, are you not?"
+
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
+"...!"
+char sahwit e=glaring (talk)
+"I..."
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Mr. Sahwit, you held the statue of The Thinker in your hand that day, didn't you?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"{s 5}I..."
+"I...!"
+"That...that day..."
+"I..."
+"I never!"
+
 
 //temp stop here
 exit

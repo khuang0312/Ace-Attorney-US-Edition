@@ -18,6 +18,8 @@
 
 -Add save game so player doesn't start from beginning when gameover
 
+-Timer and penalty for closing statement
+
 Macro text moved here temporarily:
 
 //All this doesn't work; What they don't say is a macro file needs to be created first for these to work

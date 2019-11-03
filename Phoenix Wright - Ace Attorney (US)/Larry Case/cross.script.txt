@@ -280,6 +280,8 @@ fg wbench
 char sahwit e=twitching (talk)
 "Yes."
 
+bg defence
+fg dbench
 char phoenix e=document (talk)
 "Let me direct your attention to the autopsy report." 
 "Can you read to me the estimated time of death?"
@@ -294,6 +296,8 @@ char sahwit e=damage
 sfx sfx-stab
 "{s 5}...!"
 
+bg defence
+fg dbench
 char phoenix e=deskslam
 pause 5 script
 char phoenix e=pointing (talk)
@@ -310,6 +314,8 @@ fg wbench
 char sahwit e=glaring (talk)
 "Er...{p 5} Yes, I did."
 
+bg defence
+fg dbench
 char phoenix e=deskslam
 pause 5 script
 char phoenix e=confident (talk)
