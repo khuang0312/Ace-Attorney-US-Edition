@@ -1,0 +1,44 @@
+bg defence
+fg dbench
+
+penalty 100
+
+set _textbox_show_button false
+set _list_back_button false 
+set_examine_showbars true
+
+char phoenix e=normal (talk)
+"In order for Larry to be innocent, Sahwit must be..."
+
+
+//In order for Larry to be innocent, Sahwit
+list [timeHeard]
+li [Lying about the time he heard.]
+li [Telling the truth about the time he heard.]
+
+
+//If Sahwit is telling the truth, then the clock
+//-Was off the day of the murder.
+//-Was not off the day of the murder.
+
+The clock must have been off, due to
+//-The blackout.
+//-A natural cause.
+
+//The cause must have been because the clock
+//-Was brought to a different time zone
+//-Was not designed to tell the time
+
+//That’s right! The victim went to Paris. The difference between here and Paris is 9 hours, which means...
+//-The clock is 3 hours slow
+//-The clock is 9 hours fast
+
+//WRONG CLOSING ANSWER:
+//Phoenix: No, that can’t be right. I need to re-focus…
+//Judge: The court does not appreciate stalling, Mr. Wright.
+//[-10 penalty point]
+
+showlist timeHeard
+
+
+

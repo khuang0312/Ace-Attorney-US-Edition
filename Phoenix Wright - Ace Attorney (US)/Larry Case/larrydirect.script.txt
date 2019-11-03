@@ -5,7 +5,7 @@ char larry e=hello (blink)
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
+"{c090}{center}{type}{spd 3}-- DIRECT EXAMINATION --{n}Larry Butz" //could increase the speed here...
 
 penalty 50
 penalty
@@ -18,25 +18,28 @@ cross larrydirect
 
 set _testimony_blinker false
 set _allow_present_evidence false
-//set _back_button false //HELP! This doesn't work as intended
+set _allow_present_profiles false
 
 statement 1
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Please state your first and last {n}name for the record."
+statement 1 test
 
 statement 2
 bg witness
 fg wbench
 char larry e=hello (talk)
 "Yo. I'm Larry Butz."
+statement 2 test
 
 statement 3
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "What do you do for a living?"
+statement 3 test
 
 statement 4
 bg witness
@@ -44,6 +47,7 @@ fg wbench
 char larry e=hello (talk)
 "I do all kinds of stuff!"
 "I'm making statues at the moment, {n}and each one is unique."
+statement 4 test
 
 statement 5
 bg prosecution
@@ -55,6 +59,7 @@ showevl
 "Mr. Butz, let me direct your attention {n}to this piece of evidence."
 "Do you recognize it?"
 hideev1
+statement 5 test
 
 statement 6
 bg witness
@@ -62,24 +67,28 @@ fg wbench
 char larry e=hello (talk)
 "Yeah, that's The Thinker!"
 "It's one of my creations."
+statement 6 test
 
 statement 7
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Let the record show that the {n}defendant has identified the murder {n}weapon as one of his creations."
+statement 7 test
 
 statement 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(Not good...)"
+statement 8 test
 
 statement 9
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, were you related {n}to the victim?"
+statement 9 test
 
 statement 10
 bg witness
@@ -88,18 +97,21 @@ char larry e=nervous (talk)
 "She was my girl, man!"
 "We were great together!"
 "We were Romeo and Juliet, {p 5}{n}Cleopatra and Mark Anthony!"
+statement 10 test
 
 statement 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(Um... didn't they all die?)"
+statement 11 test
 
 statement 12
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "But isn't it true that the victim had {n}recently dumped you?"
+statement 12 test
 
 statement 13
 bg witness
@@ -110,12 +122,14 @@ char larry e=normal (talk)
 "She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
 char larry e=mad (talk)
 "{s 20}WHAT'S IT TO YOU, ANYWAY!?"
+statement 13 test
 
 statement 14
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, what you describe is {n}generally what we mean by {n}"dumped.""
+statement 14 test
 
 statement 15
 bg prosecution
@@ -126,18 +140,21 @@ sfx sfx-evidenceshoop
 showevl
 "Let me direct your attention {n}to this piece of evidence. {n}Do you recognize it?"
 hideevl
+statement 15 test
 
 statement 16
 bg witness
 fg wbench
 char larry e=normal (talk)
 "Yeah, that's Cindy's passport."
+statement 16 test
 
 statement 17
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Can you describe to me what's {n}on the most recent page?"
+statement 17 test
 
 statement 18
 bg witness
@@ -150,12 +167,14 @@ char larry e=nervous (talk)
 ""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
 "{s 20}WHAT!?"
 "Dude...{p 10} no way..."
+statement 18 test
 
 statement 19
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, what do you think {n}of her now?"
+statement 19 test
 
 statement 20
 bg witness
@@ -165,47 +184,55 @@ char larry e=nervous (talk)
 "I'm gonna die."
 "I'm just gonna drop dead."
 "Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
+statement 20 test
 
 statement 21
 bg judgestand
 char judge e=surprised (talk)
 ".{p 5}.{p 5}.{p 5}Let's continue with the trial, shall we?"
+statement 21 test
 
 statement 22
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Of course, Your Honor."
+statement 22 test
 
 statement 23
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, where were you {n}on the 31st of July?"
+statement 23 test
 
 statement 24
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "I, uh, I was visiting Cindy's {n}apartment."
+statement 24 test
 
 statement 25
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Did you meet with the victim?"
+statement 25 test
 
 statement 26
 bg witness
 fg wbench
 char larry e=nervous (talk)
 "She wasn't home, man... {n}I didn't see her."
+statement 26 test
 
 statement 27
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Thank you, Mr. Butz."
+statement 27 test
 
 goto endoftestimony
 
@@ -220,7 +247,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 1
 
 label press 2
 bg helper
@@ -228,7 +255,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 2
 
 label press 3
 bg defence
@@ -241,7 +268,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 3
 
 label press 4
 bg helper
@@ -249,7 +276,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 4
 
 label press 5
 bg defence
@@ -262,7 +289,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 5
 
 label press 6
 bg helper
@@ -270,7 +297,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 6
 
 label press 7
 bg defence
@@ -283,14 +310,14 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 7
 
 label press 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(What am I going to do, object {n}to my own thoughts?)"
-resume
+goto 8
 
 label press 9
 bg defence
@@ -303,7 +330,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 9
 
 label press 10
 bg helper
@@ -311,14 +338,14 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 10
 
 label press 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(What am I going to do, object {n}to my own thoughts?)"
-resume
+goto 11
 
 label press 12
 bg defence
@@ -331,7 +358,7 @@ li Prejudicial [12 CORRECT]
 li Relevance [12 CORRECT]
 li Vague
 showlist
-resume
+goto 12
 
 label press 13
 bg helper
@@ -339,7 +366,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 13
 
 label press 14
 bg defence
@@ -352,7 +379,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 14
 
 label press 15
 bg defence
@@ -365,7 +392,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 15
 
 label press 16
 bg helper
@@ -373,7 +400,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 16
 
 label press 17
 bg defence
@@ -386,7 +413,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 17
 
 label press 18
 bg helper
@@ -394,7 +421,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 18
 
 label press 19
 bg defence
@@ -407,7 +434,7 @@ li Prejudicial [19 CORRECT]
 li Relevance [19 CORRECT]
 li Vague
 showlist
-resume
+goto 19
 
 label press 20
 bg helper
@@ -415,14 +442,14 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 20
 
 label press 21
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(I can't possibly object to the judge.)"
-resume
+goto 21
 
 label press 22
 bg defence
@@ -435,7 +462,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 22
 
 label press 23
 bg defence
@@ -448,7 +475,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 23
 
 label press 24
 bg helper
@@ -456,7 +483,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 24
 
 label press 25
 bg defence
@@ -469,7 +496,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-resume
+goto 25
 
 label press 26
 bg helper
@@ -477,7 +504,7 @@ char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
 "Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
-resume
+goto 26
 
 
 label press 27

@@ -4,5 +4,5 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-//script mono
-script cross2 //Testing scene
+script larrydirect
+//Just change the script name to whatever you're testing

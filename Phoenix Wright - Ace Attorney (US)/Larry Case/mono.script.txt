@@ -8,12 +8,20 @@ music_fade_in nowait
 
 char phoenix hide
 
+addev wright$
+set _ev wright
+sfx sfx-evidenceshoop.ogg
+showevl
 "My name is Phoenix Wright, {n}attorney at law."
+sfx sfx-evidenceshoop.ogg
+hideevl
 
 addev mia$
 set _ev mia
+sfx sfx-evidenceshoop.ogg
 showevl
 "I work at Fey & Co. Law Offices {n}under my boss, Mia Fey."
+sfx sfx-evidenceshoop.ogg
 hideevl
 
 "Here's the story:"
@@ -23,9 +31,11 @@ hideevl
 
 addev larry$
 set _ev larry
+sfx sfx-evidenceshoop.ogg
 showevl
 "Larry Butz... my best {n}friend since grade school."
 "Our school had a saying: {n}"When something smells, {n}it's usually the Butz.""
+sfx sfx-evidenceshoop.ogg
 hideevl
 
 "In the 23 years I've known {n}him, it's usually been true."

@@ -1,8 +1,13 @@
-bg courtroom
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
-sfx sfx-gallery
-pause 100
+sfx sfx-gallery 
+fg ani-gallery nowait
+
+fg phoenix_mia nowait
+fg judge nowait
+fg payne nowait
+
+pause 160
 fg ani-judge-gavel
 fg ani-judge-gavel
 
@@ -11,6 +16,7 @@ set _music_loop trial.ogg
 music_fade_in nowait
 
 bg judgestand
+
 char judge e=normal (talk)
 
 "Good morning, ladies and gentlemen."
@@ -25,7 +31,7 @@ addev winston$
 
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "The prosecution is ready, {n}Your Honor."
 
 bg defence
@@ -117,8 +123,7 @@ addev cindy_passport
 addev blackout
 
 nt
-//Add bling2 SFX if we can mute the dialogue blips
-"{c090}{type}{spd 3}Evidence has been added {n}to the Court Record."
+"{c090}{spd 99}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
 
 bg judgestand
 char judge e=normal (talk)
@@ -258,7 +263,7 @@ char mia e=bench-geez (talk)
 "*sigh* ...You have some strange {n}friends, Wright."
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"The prosecution will try to devalue {n}the credibility of his testimony {n}through direct examination."
+"The prosecution will try to devalue {n}the credibility of his testimony {n}through {c940}direct examination{c999}."
 "You should object to any {n}inappropriate queries so {n}he doesn't hurt his case."
 "As for what constitutes an {n}inappropriate query..."
 
@@ -283,8 +288,8 @@ hideevl
 "you'll gain more leeway in {n}pleading your case."
 
 nt
-"{c940}[You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination.]
-"{c940}[Each successful objection {n}will add an additional point {n}to the penalty bar.]"
+"{c940}{spd 99}{sound}[You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination.]
+"{c940}{spd 99}{sound}[Each successful objection {n}will add an additional point {n}to the penalty bar.]"
 
 bg black fade
 
