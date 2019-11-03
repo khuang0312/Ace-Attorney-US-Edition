@@ -267,6 +267,46 @@ penalty -10
 is penalty 0 gameover
 resume
 
+label none
+mus
+sfx phoenix\holdit
+fg HoldItAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Let me direct your attention to this piece of evidence."
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"What about it?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"Doesn't it contradict your testimony?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Maybe, maybe not."
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"{c089}(I think I've taken a wrong path...)"
+
+bg judgestand
+char judge e=warning (talk)
+"Mr. Wright, this line of questioning is going nowhere."
+"Please move on."
+
+penalty -10
+is penalty 0 gameover
+resume
+
 label cindy_autopsy 3
 mus
 sfx phoenix\holdit
@@ -312,6 +352,8 @@ mus objection.ogg
 set _music_loop objection.ogg
 music _fade_in nowait
 
+char phoenix e=deskslam
+pause 5 script
 char phoenix e=pointing (talk)
 "You said that you witnessed the {n}defendant fleeing and discovered {n}the body at 1:00 PM, did you not?"
 
@@ -322,8 +364,6 @@ char sahwit e=twitching (talk)
 
 bg defence
 fg dbench
-char phoenix e=deskslam
-pause 5 script
 char phoenix e=confident (talk)
 "Thank you, Mr. Sahwit."
 "No further questions, Your Honor."
