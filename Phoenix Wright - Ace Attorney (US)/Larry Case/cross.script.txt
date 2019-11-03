@@ -289,7 +289,7 @@ char phoenix e=document (talk)
 "Let me direct your attention {n}to the autopsy report."
 char phoenix e=pointing (talk)
 "Can you read to me the estimated {n}time of death?"
-label here //TESTING TESTING
+label here
 bg witness
 fg wbench
 char sahwit e=normal (talk)
@@ -301,39 +301,39 @@ pause 10
 char sahwit e=twitching (blink)
 "{s 5}...!"
 
+bg defence
+fg dbench
 char phoenix e=deskslam
-pause 5 script
-char phoenix e=pointing (talk)
-"And yet, in your testimony, you said that witnessed the defendant fleeing and discovered the body at 1:00 PM, did you not?"
+pause 5
+sfx sfx-deskslam
+pause 50
 
-bg prosecution
-fg pbench
-char payne e=damage
-sfx sfx-stab
-pause 5 script
+mus objection.ogg
+set _music_loop objection.ogg
+music _fade_in nowait
+
+char phoenix e=pointing (talk)
+"You said that you witnessed the {n}defendant fleeing and discovered {n}the body at 1:00 PM, did you not?"
 
 bg witness
 fg wbench
-char sahwit e=glaring (talk)
-"Er...{p 5} Yes, I did."
+char sahwit e=twitching (talk)
+"Er.{p 5}.{p 5}.{p 5} Yes, I did."
 
-char phoenix e=deskslam
-pause 5 script
+bg defence
+fg dbench
 char phoenix e=confident (talk)
 "Thank you, Mr. Sahwit."
 "No further questions, Your Honor."
-char phoenix e=confident (blink)
-"{c669}...Nailed it!)"
 
 bg helper
 char mia e=bench-stern (talk)
 "Great job, Wright!"
-"Way to put him on the spot!"
-"That's all you have to do: point out contradictions."
+"That's all you have to do:{p 10} {n}point out contradictions."
 
 bg judgestand
 char judge e=normal (talk)
-"Do you wish to re-direct, Mr. Payne?"
+"Do you wish to re-direct, {n}Mr. Payne?"
 
 bg prosecution
 fg pbench
@@ -343,8 +343,10 @@ char payne e=sweating (talk)
 
 bg helper
 char mia e=bench-stern (talk)
-"Watch this: he'll try to amend the witness' testimony."
-"Lies always beget more lies; see through one, and their whole story falls apart!"
+"Watch this: he'll try to amend {n}the witness' testimony."
+"Lies always beget more lies;{p 10} {n}see through one, and their {n}whole story falls apart!"
+
+music _fade_out nowait
 
 script cross2
 
