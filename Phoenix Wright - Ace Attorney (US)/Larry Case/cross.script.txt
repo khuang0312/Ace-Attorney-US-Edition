@@ -1,10 +1,12 @@
+goto here
+
 bg witness
 fg wbench
 char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}- Cross Examination - {n}Frank Sahwit"
+"{c940}{center}{type}{spd 3}- CROSS EXAMINATION - {n}Frank Sahwit"
 
 penalty
 
@@ -22,61 +24,61 @@ statement 1
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}My name is Frank Sahwit."
+""{type}{spd 100}My name is Frank Sahwit.""
 
 statement 2
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I go door-to-door selling newspaper {n}subscriptions."
+""{type}{spd 100}I go door-to-door selling newspaper {n}subscriptions.""
 
 statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st."
+""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st.""
 
 statement 4
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
+""{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry.""
 
 statement 5
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
+""{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment.""
 
 statement 6
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
+""{type}{spd 100}A woman was on the ground. {n}She wasn't moving.""
 
 statement 7
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
+""{type}{spd 100}The victim is, without a doubt, {n}the woman I saw.""
 
 statement 8
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
+""{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone.""
 
 statement 9
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+""{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working.""
 
 statement 10
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I don't have a cell phone, {n}unfortunately."
+""{type}{spd 100}I don't have a cell phone, {n}unfortunately.""
 
 endcross
 goto start
@@ -256,7 +258,7 @@ fg ObjectionAnim
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Your Honor, counsel's question calls for irrelevant testimony."
+"Your Honor, counsel's question {n}calls for irrelevant testimony."
 bg judgestand
 char judge e=normal (talk)
 "Sustained." 
@@ -267,31 +269,36 @@ resume
 
 label cindy_autopsy 3
 mus
-sfx phoenix\objection
-fg ObjectionAnim
+sfx phoenix\holdit
+fg HoldItAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Mr. Sahwit.{p 10} You have been telling {n}the truth as a witness in a court {n}of law,{p 5} have you not?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
 
 bg defence
 fg dbench
-char phoenix e=handsondesk (talk)
-"Mr. Sahwit, you have been telling the truth as a witness in a court of law, have you not?"
-
-bg witness
-fg wbench
-char sahwit e=twitching (talk)
-"Yes."
-
 char phoenix e=document (talk)
-"Let me direct your attention to the autopsy report." 
-"Can you read to me the estimated time of death?"
-
+"Let me direct your attention {n}to the autopsy report."
+char phoenix e=pointing (talk)
+"Can you read to me the estimated {n}time of death?"
+label here //TESTING TESTING
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-""Estimated time of death: 4 PM.""
+char sahwit e=normal (talk)
+""Estimated time of death: 4:00 PM.""
 sfx sfx-realization
-
 char sahwit e=damage
 sfx sfx-stab
+pause 10
+char sahwit e=twitching (blink)
 "{s 5}...!"
 
 char phoenix e=deskslam
@@ -343,16 +350,18 @@ script cross2
 
 label gameover
 mus
+fg ani-judge-gavel
+pause 50 script
 bg judgestand
 char judge e=warning (talk)
-"That's enough. Mr. Wright, you are hereby removed from the court for legal incompetence."
-"The defendant has the right to request a new attorney and be tried at a later date."
-"The court declares a mistrial and is adjourned."
-
+"That's enough."
+char judge e=normal (talk)
+"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
+"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
+"The court declares a mistrial {n}and is adjourned."
 bg defence
 fg dbench
-cahr phoenix e=emo
-"...Dang."
-"Reset the game!"
+char phoenix e=emo
+"Dang. Reset the game!"
 pause 50 script
 exit
