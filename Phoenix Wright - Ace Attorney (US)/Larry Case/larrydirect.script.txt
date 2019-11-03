@@ -5,7 +5,7 @@ char larry e=hello (blink)
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
+"{c090}{center}{type}{spd 3}-- DIRECT EXAMINATION --{n}Larry Butz" //could increase the speed here...
 
 penalty 50
 penalty

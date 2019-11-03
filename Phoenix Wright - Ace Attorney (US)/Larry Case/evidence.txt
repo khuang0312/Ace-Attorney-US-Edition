@@ -45,9 +45,9 @@ set handbook5_desc Objection: {n}Vague {n}{n}Counsel's question is not {n}clear 
 
 
 //Character Profiles
-set wright$_name Phoenix Wright //Just in case
-set wright$_pic phoenix.png
-set wright$_desc Age: 24{n}Gender: Male{n}That's me!
+set wright$_name Phoenix Wright 
+set wright$_pic wright.png
+set wright$_desc Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?
 
 set mia$_name Mia Fey
 set mia$_pic mia.png
