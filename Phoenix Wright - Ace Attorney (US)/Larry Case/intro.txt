@@ -4,5 +4,5 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-script larrydirect
+script pre_closing
 //Just change the script name to whatever you're testing

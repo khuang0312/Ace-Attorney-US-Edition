@@ -1,44 +1,129 @@
+//we might need to do playtesting to see if these choices make sense to the player...
+//the text for some of these choices are a bit confusing...
+//specifically choice 3
+
 bg defence
 fg dbench
 
 penalty 100
 
-set _textbox_show_button false
+mus suspense.ogg
+set _music_loop suspense.ogg
+music_fade_in nowait
+
+//set _textbox_show_button false
 set _list_back_button false 
 set_examine_showbars true
 
-char phoenix e=normal (talk)
-"In order for Larry to be innocent, Sahwit must be..."
+//1st choice
+
+set previous_choice choice1
+label choice1
+char phoenix e=thinking 
+"{c089}(In order for Larry to be innocent, Sahwit must have...)"
+
+list
+li Not actually heard the time. result=wronganswer //rewrote this for brevity
+li Heard the time. result=choice2
+
+showlist
+
+//2nd choice
+label choice2
+set previous_choice choice2
+char phoenix e=thinking (talk)
+"{c089}(If Sahwit is telling the truth, then the clock...)"
+
+list 
+li Was inaccurate that day. result=wronganswer //changed these two for brevity
+li Was accurate that day. result=choice3
+
+showlist
+
+//3rd choice
+label choice3
+set previous_choice choice3
+char phoenix e=thinking (talk)
+"{c089}(The clock must have had the wrong time, due to...)" //Decided to change this for clarity
+
+list 
+li The blackout. result=wronganswer
+li Something else. result=choice4 //Decided to change this choice's text
+
+showlist
+
+//4th choice
+label choice4
+set previous_choice choice4
+char phoenix e=sweating (talk)
+"{c089}(The cause must have been because the clock...)"
+
+list
+li Was in a different time zone. result=choice5 //changed also
+li Was not designed to tell the time. result=wronganswer
+
+showlist
+
+//5th choice
+label choice5
+set previous_choice choice5
+char phoenix e=confident (talk)
+"{c089}(That's right! The victim went to Paris, which means...)" //Changed this too, since this gives away the answer...
+
+list 
+li The clock is 3 hours slow result=wronganswer
+li The clock is 9 hours fast result=closingspeech
+
+showlist
+
+//start ending the game!
+label closingspeech
+char phoenix e=document
+"Sawhit's guilty. Butz didn't do it, bro."
 
 
-//In order for Larry to be innocent, Sahwit
-list [timeHeard]
-li [Lying about the time he heard.]
-li [Telling the truth about the time he heard.]
+label wronganswer
+char phoenix e=sweating (talk)
+"{c089}(No, that can't be right... {n} I need to refocus!)"
+
+bg judgestand
+
+char judge e=warning (talk)
+"The court does not appreciate stalling, Mr. Wright."
+
+sfx sfx-damage2
+penalty -25
+
+is penalty = 0 gameover
+
+bg defence
+fg dbench
+
+char phoenix e=emo
+"{c089}(Dammit Phoenix! Think! {n} Your friend's life is on the line!)"
+
+goto $previous_choice
 
 
-//If Sahwit is telling the truth, then the clock
-//-Was off the day of the murder.
-//-Was not off the day of the murder.
 
-The clock must have been off, due to
-//-The blackout.
-//-A natural cause.
 
-//The cause must have been because the clock
-//-Was brought to a different time zone
-//-Was not designed to tell the time
-
-//That’s right! The victim went to Paris. The difference between here and Paris is 9 hours, which means...
-//-The clock is 3 hours slow
-//-The clock is 9 hours fast
-
-//WRONG CLOSING ANSWER:
-//Phoenix: No, that can’t be right. I need to re-focus…
-//Judge: The court does not appreciate stalling, Mr. Wright.
-//[-10 penalty point]
-
-showlist timeHeard
+label gameover
+mus
+fg ani-judge-gavel
+pause 50 script
+bg judgestand
+char judge e=warning (talk)
+"That's enough."
+char judge e=normal (talk)
+"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
+"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
+"The court declares a mistrial {n}and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. Reset the game!"
+pause 50 script
+exit
 
 
 
