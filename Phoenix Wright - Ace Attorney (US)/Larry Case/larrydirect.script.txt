@@ -30,14 +30,14 @@ statement 1 test
 statement 2
 bg witness
 fg wbench
-char larry e=hello (talk)
+char larry e=headscratching (talk)
 "Yo. I'm Larry Butz."
 statement 2 test
 
 statement 3
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "What do you do for a living?"
 statement 3 test
 
@@ -52,7 +52,7 @@ statement 4 test
 statement 5
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 set _ev thinker
 sfx sfx-evidenceshoop
 showevl
@@ -64,7 +64,7 @@ statement 5 test
 statement 6
 bg witness
 fg wbench
-char larry e=hello (talk)
+char larry e=smirk (talk)
 "Yeah, that's The Thinker!"
 "It's one of my creations."
 statement 6 test
@@ -86,14 +86,14 @@ statement 8 test
 statement 9
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Mr. Butz, were you related {n}to the victim?"
 statement 9 test
 
 statement 10
 bg witness
 fg wbench
-char larry e=nervous (talk)
+char larry e=crying (talk)
 "She was my girl, man!"
 "We were great together!"
 "We were Romeo and Juliet, {p 5}{n}Cleopatra and Mark Anthony!"
@@ -134,7 +134,7 @@ statement 14 test
 statement 15
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal(talk)
 set _ev cindy_passport
 sfx sfx-evidenceshoop
 showevl
@@ -162,7 +162,7 @@ fg wbench
 char larry e=normal (talk)
 "Looks like she just got back from {n}Paris on July 30th{p 5}.{p 5}.{p 5}."
 "{sfx sfx-realization}Wait a second."
-char larry e=nervous (talk)
+char larry e=crying (talk)
 "Someone else wrote in here!"
 ""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
 "{s 20}WHAT!?"
@@ -179,7 +179,7 @@ statement 19 test
 statement 20
 bg witness
 fg wbench
-char larry e=nervous (talk)
+char larry e=crying (talk)
 "That...{p 5} that cheatin' she-dog!"
 "I'm gonna die."
 "I'm just gonna drop dead."
@@ -195,7 +195,7 @@ statement 21 test
 statement 22
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Of course, Your Honor."
 statement 22 test
 
@@ -209,7 +209,7 @@ statement 23 test
 statement 24
 bg witness
 fg wbench
-char larry e=nervous (talk)
+char larry e=crying (talk)
 "I, uh, I was visiting Cindy's {n}apartment."
 statement 24 test
 
@@ -223,7 +223,7 @@ statement 25 test
 statement 26
 bg witness
 fg wbench
-char larry e=nervous (talk)
+char larry e=crying (talk)
 "She wasn't home, man... {n}I didn't see her."
 statement 26 test
 
@@ -240,7 +240,7 @@ label press 1
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -261,7 +261,7 @@ label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -282,7 +282,7 @@ label press 5
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -303,12 +303,12 @@ label press 7
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
+list
+li Asked and Answered 
+li Leading result=Leading
+li Prejudicial result=Prejudicial
+li Relevance result=Relevance
+li Vague result=Vague
 showlist
 goto 7
 
@@ -323,7 +323,7 @@ label press 9
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -351,11 +351,11 @@ label press 12
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
-li Leading [12 CORRECT]
-li Prejudicial [12 CORRECT]
-li Relevance [12 CORRECT]
+li Leading result=Leading12
+li Prejudicial result=Prejudicial12
+li Relevance result=Relevance12
 li Vague
 showlist
 goto 12
@@ -372,7 +372,7 @@ label press 14
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -385,7 +385,7 @@ label press 15
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -406,7 +406,7 @@ label press 17
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -427,11 +427,11 @@ label press 19
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
-li Prejudicial [19 CORRECT]
-li Relevance [19 CORRECT]
+li Prejudicial result=Prejudicial19
+li Relevance result=Relevance19
 li Vague
 showlist
 goto 19
@@ -455,7 +455,7 @@ label press 22
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -468,7 +468,7 @@ label press 23
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -489,7 +489,7 @@ label press 25
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -511,7 +511,7 @@ label press 27
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -554,7 +554,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Leading [12 CORRECT]
+label Leading12
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -587,7 +587,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Prejudicial [12 CORRECT]
+label Prejudicial12
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -603,7 +603,7 @@ char judge e=normal (talk)
 penalty +10
 goto 15
 
-label Prejudicial [19 CORRECT]
+label Prejudicial19
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -636,7 +636,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Relevance [12 CORRECT]
+label Relevance12
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -652,7 +652,7 @@ char judge e=normal (talk)
 penalty +10
 goto 15
 
-label Relevance [19 CORRECT]
+label Relevance19
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
