@@ -5,7 +5,7 @@ char sahwit e=normal (blink)
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Frank Sahwit"
+"{c090}{center}{type}{spd 3}-- DIRECT EXAMINATION --{n}Frank Sahwit"
 
 penalty
 
@@ -21,7 +21,7 @@ set _allow_present_evidence false
 statement 1
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Please state your first and last {n}name for the record."
 statement 1 test
 
@@ -35,7 +35,7 @@ statement 2 test
 statement 3
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Mr. Sahwit, what do you do {n}for a living?"
 statement 3 test
 
@@ -91,7 +91,7 @@ statement 10 test
 statement 11
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal(talk)
 "What did you do at the time?"
 statement 11 test
 
@@ -134,11 +134,12 @@ statement 17
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-set _ev cindy_autopsy
+set _ev cindy$
 sfx sfx-evidenceshoop
 showevl
-"Let me direct your attention to the {n}victim's autopsy report."
+"Let me direct your attention to a {n}photo of the victim."
 "Do you recognize her?"
+sfx sfx-evidenceshoop
 hideevl
 statement 17 test
 
@@ -166,7 +167,7 @@ statement 20 test
 statement 21
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Were there no other phones nearby?"
 statement 21 test
 
@@ -195,7 +196,7 @@ statement 24 test
 statement 25
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Yes, Your Honor."
 "However, some cordless phones do {n}not function normally without power."
 "The phone that Mr. Sahwit tried {n}to use was one of those."
@@ -219,7 +220,7 @@ label press 1
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -240,7 +241,7 @@ label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -261,7 +262,7 @@ label press 5
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -282,12 +283,12 @@ label press 7
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
-li Leading [7 CORRECT]
+li Leading result=Leading7
 li Prejudicial
 li Relevance
-li Vague [7 CORRECT]
+li Vague result=Vague7
 showlist
 goto 7
 
@@ -303,7 +304,7 @@ label press 9
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -324,7 +325,7 @@ label press 11
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -345,12 +346,12 @@ label press 13
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
-li Leading [13 CORRECT]
+li Leading result=Leading13
 li Prejudicial
 li Relevance
-li Vague [13 CORRECT]
+li Vague result=Vague13
 showlist
 goto 13
 
@@ -366,7 +367,7 @@ label press 15
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -387,7 +388,7 @@ label press 17
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -408,7 +409,7 @@ label press 19
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -429,7 +430,7 @@ label press 21
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -450,7 +451,7 @@ label press 23
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -470,7 +471,7 @@ label press 25
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -490,7 +491,7 @@ label press 27
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-list objections
+list
 li Asked and Answered
 li Leading
 li Prejudicial
@@ -533,7 +534,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Leading [7 CORRECT]
+label Leading7
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -549,7 +550,7 @@ char judge e=normal (talk)
 penalty +10
 goto 9
 
-label Leading [13 CORRECT]
+label Leading13
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -616,7 +617,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Vague [7 CORRECT]
+label Vague7 
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -632,7 +633,7 @@ char judge e=normal (talk)
 penalty +10
 goto 9
 
-label Vague [13 CORRECT]
+label Vague13
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
