@@ -1,6 +1,6 @@
-bg prosecution
-fg pbench
-char payne e=normal (talk)
+bg prosecution fade
+fg pbench fade
+char payne e=normal (talk) fade
 "Mr. Sahwit, why did you think the time was 1:00 PM?"
 
 bg witness
@@ -416,6 +416,10 @@ bg prosecution
 fg pbench
 char payne e=sweating (talk)
 "...Yes, Your Honor."
+
+music _fade_out nowait
+
+bg black fade
 
 script cross3
 

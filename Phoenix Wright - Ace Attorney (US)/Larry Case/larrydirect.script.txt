@@ -1,6 +1,6 @@
-bg witness
-fg wbench
-char larry e=hello (blink)
+bg witness fade
+fg wbench fade
+char larry e=hello (blink) fade
 
 fg TestimonyAnim fade name=tanim
 delete name=tanim

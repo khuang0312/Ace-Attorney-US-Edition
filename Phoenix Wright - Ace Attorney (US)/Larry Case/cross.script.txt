@@ -1,8 +1,8 @@
 //goto here //uncomment this for DEBUG purposes
 
-bg witness
-fg wbench
-char sahwit e=normal (blink)
+bg witness fade
+fg wbench fade
+char sahwit e=normal (blink) fade
 
 fg Cross-ExaminationAnim
 nt
@@ -358,6 +358,8 @@ char mia e=bench-stern (talk)
 "Lies always beget more lies;{p 10} {n}see through one, and their {n}whole story falls apart!"
 
 music _fade_out nowait
+
+bg black fade
 
 script cross2
 

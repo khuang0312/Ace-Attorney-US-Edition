@@ -1,8 +1,8 @@
 //goto here //uncomment this for DEBUG purposes
 
-bg prosecution
-fg pbench
-char payne e=normal (talk)
+bg prosecution fade
+fg pbench fade
+char payne e=normal (talk) fade
 "Mr. Sahwit, how were you able to hear the time given there was a blackout?"
 
 bg witness
@@ -528,13 +528,13 @@ char sahwit e=bald (talk)
 "Give him {c940}death{c999}!"
 
 bg courtroom
-fg ani-gallery //Characters take a moment to appear
-fg judge
-fg phoenix_mia
-fg payne
-fg sahwit
+fg ani-gallery nowait
+fg judge nowait
+fg phoenix_mia nowait
+fg payne nowait
+fg sahwit nowait
 sfx sfx-gallery
-pause 50 script
+pause 160 script
 
 fg ani-judge-gavel
 fg ani-judge-gavel

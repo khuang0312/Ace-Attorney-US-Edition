@@ -1,6 +1,6 @@
-bg witness
-fg wbench
-char sahwit e=normal (blink)
+bg witness fade
+fg wbench fade
+char sahwit e=normal (blink) fade
 
 fg TestimonyAnim fade name=tanim
 delete name=tanim
@@ -737,9 +737,9 @@ nt
 "{c940}[Opposing counsel will object {n}to your questions if you {n}cross-examine ineffectively.]"
 "{c940}[{c090}Press {c940}relevant statements. {n}{c090}Impeach{c940} by presenting evidence {n}from the Court Record.]"
 
-bg black fade
+music _fade_out nowait
 
-music_fade_out
+bg black fade
 
 pause 60
 
