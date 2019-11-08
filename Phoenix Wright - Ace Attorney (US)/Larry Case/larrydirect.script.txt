@@ -243,6 +243,7 @@ label press 1
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 1
 li Asked and Answered
 li Leading
@@ -264,6 +265,7 @@ label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 2
 li Asked and Answered
 li Leading
@@ -285,6 +287,7 @@ label press 5
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 3
 li Asked and Answered
 li Leading
@@ -306,6 +309,7 @@ label press 7
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 4
 li Asked and Answered
 li Leading result=Leading
@@ -326,6 +330,7 @@ label press 9
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 5
 li Asked and Answered
 li Leading
@@ -354,6 +359,7 @@ label press 12
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 6
 li Asked and Answered
 li Leading result=Leading12
@@ -375,6 +381,7 @@ label press 14
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 7
 li Asked and Answered
 li Leading
@@ -388,6 +395,7 @@ label press 15
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 8
 li Asked and Answered
 li Leading
@@ -409,6 +417,7 @@ label press 17
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 9
 li Asked and Answered
 li Leading
@@ -430,6 +439,7 @@ label press 19
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 10
 li Asked and Answered
 li Leading
@@ -479,6 +489,7 @@ label press 22
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 11
 li Asked and Answered
 li Leading
@@ -492,6 +503,7 @@ label press 23
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 12
 li Asked and Answered
 li Leading
@@ -513,6 +525,7 @@ label press 25
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 13
 li Asked and Answered
 li Leading
@@ -535,6 +548,7 @@ label press 27
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
+penalty threat=10
 list 14
 li Asked and Answered
 li Leading
