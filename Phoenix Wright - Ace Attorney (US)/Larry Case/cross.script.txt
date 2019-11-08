@@ -277,7 +277,7 @@ sfx phoenix\holdit
 fg HoldItAnim
 bg defence
 fg dbench
-char phoenix e=objecting
+char phoenix e=pointing (blink)
 pause 30
 char phoenix e=pointing (talk)
 "Mr. Sahwit.{p 10} You have been telling {n}the truth as a witness in a court {n}of law,{p 5} have you not?"
