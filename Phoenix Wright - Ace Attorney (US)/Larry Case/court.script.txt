@@ -244,7 +244,7 @@ char larry e=mad (talk)
 "{s 20}Remain silent!?"
 
 char larry e=mad (talk)
-"I ain't gonna remain silent!"
+"{sfx sfx-smack}I ain't gonna remain silent!"
 
 "No one can stop me from talking!"
 
