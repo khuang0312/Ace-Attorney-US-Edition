@@ -24,7 +24,7 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "moderato.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "Dang. Reset the game!\n",
+                "_last_written_text": "You, the judge...\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -48,7 +48,7 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "press_21",
+                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -74,7 +74,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "192",
+                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -89,7 +89,7 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_ev": "cindy_passport",
+                "_layering_method": "zorder",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
@@ -139,7 +139,7 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "484",
+                "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -180,288 +180,287 @@
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.74",
+                "_timer_value_music_fade_in_add": "-0.02",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_statements": [
                     {
                         "test": null,
-                        "index": 22,
+                        "index": 24,
                         "words": "1"
                     },
                     {
                         "test": null,
-                        "index": 27,
+                        "index": 29,
                         "words": "1 test"
                     },
                     {
                         "test": null,
-                        "index": 29,
+                        "index": 31,
                         "words": "2"
                     },
                     {
                         "test": null,
-                        "index": 34,
+                        "index": 36,
                         "words": "2 test"
                     },
                     {
                         "test": null,
-                        "index": 36,
+                        "index": 38,
                         "words": "3"
                     },
                     {
                         "test": null,
-                        "index": 41,
+                        "index": 43,
                         "words": "3 test"
                     },
                     {
                         "test": null,
-                        "index": 43,
+                        "index": 45,
                         "words": "4"
                     },
                     {
                         "test": null,
-                        "index": 49,
+                        "index": 51,
                         "words": "4 test"
                     },
                     {
                         "test": null,
-                        "index": 51,
+                        "index": 53,
                         "words": "5"
                     },
                     {
                         "test": null,
-                        "index": 61,
+                        "index": 63,
                         "words": "5 test"
                     },
                     {
                         "test": null,
-                        "index": 63,
+                        "index": 65,
                         "words": "6"
                     },
                     {
                         "test": null,
-                        "index": 69,
+                        "index": 71,
                         "words": "6 test"
                     },
                     {
                         "test": null,
-                        "index": 71,
+                        "index": 73,
                         "words": "7"
                     },
                     {
                         "test": null,
-                        "index": 76,
+                        "index": 78,
                         "words": "7 test"
                     },
                     {
                         "test": null,
-                        "index": 78,
+                        "index": 80,
                         "words": "8"
                     },
                     {
                         "test": null,
-                        "index": 83,
+                        "index": 85,
                         "words": "8 test"
                     },
                     {
                         "test": null,
-                        "index": 85,
+                        "index": 87,
                         "words": "9"
                     },
                     {
                         "test": null,
-                        "index": 90,
+                        "index": 92,
                         "words": "9 test"
                     },
                     {
                         "test": null,
-                        "index": 92,
+                        "index": 94,
                         "words": "10"
                     },
                     {
                         "test": null,
-                        "index": 99,
+                        "index": 101,
                         "words": "10 test"
                     },
                     {
                         "test": null,
-                        "index": 101,
+                        "index": 103,
                         "words": "11"
                     },
                     {
                         "test": null,
-                        "index": 106,
+                        "index": 108,
                         "words": "11 test"
                     },
                     {
                         "test": null,
-                        "index": 108,
+                        "index": 110,
                         "words": "12"
                     },
                     {
                         "test": null,
-                        "index": 113,
+                        "index": 115,
                         "words": "12 test"
                     },
                     {
                         "test": null,
-                        "index": 115,
+                        "index": 117,
                         "words": "13"
                     },
                     {
                         "test": null,
-                        "index": 124,
+                        "index": 126,
                         "words": "13 test"
                     },
                     {
                         "test": null,
-                        "index": 126,
+                        "index": 128,
                         "words": "14"
                     },
                     {
                         "test": null,
-                        "index": 131,
+                        "index": 133,
                         "words": "14 test"
                     },
                     {
                         "test": null,
-                        "index": 133,
+                        "index": 135,
                         "words": "15"
                     },
                     {
                         "test": null,
-                        "index": 142,
+                        "index": 144,
                         "words": "15 test"
                     },
                     {
                         "test": null,
-                        "index": 144,
+                        "index": 146,
                         "words": "16"
                     },
                     {
                         "test": null,
-                        "index": 149,
+                        "index": 151,
                         "words": "16 test"
                     },
                     {
                         "test": null,
-                        "index": 151,
+                        "index": 153,
                         "words": "17"
                     },
                     {
                         "test": null,
-                        "index": 156,
+                        "index": 158,
                         "words": "17 test"
                     },
                     {
                         "test": null,
-                        "index": 158,
+                        "index": 160,
                         "words": "18"
                     },
                     {
                         "test": null,
-                        "index": 169,
+                        "index": 171,
                         "words": "18 test"
                     },
                     {
                         "test": null,
-                        "index": 171,
+                        "index": 173,
                         "words": "19"
                     },
                     {
                         "test": null,
-                        "index": 176,
+                        "index": 178,
                         "words": "19 test"
                     },
                     {
                         "test": null,
-                        "index": 178,
+                        "index": 180,
                         "words": "20"
                     },
                     {
                         "test": null,
-                        "index": 186,
+                        "index": 189,
                         "words": "20 test"
                     },
                     {
                         "test": null,
-                        "index": 188,
+                        "index": 191,
                         "words": "21"
                     },
                     {
                         "test": null,
-                        "index": 192,
+                        "index": 195,
                         "words": "21 test"
                     },
                     {
                         "test": null,
-                        "index": 194,
+                        "index": 197,
                         "words": "22"
                     },
                     {
                         "test": null,
-                        "index": 199,
+                        "index": 202,
                         "words": "22 test"
                     },
                     {
                         "test": null,
-                        "index": 201,
+                        "index": 204,
                         "words": "23"
                     },
                     {
                         "test": null,
-                        "index": 206,
+                        "index": 209,
                         "words": "23 test"
                     },
                     {
                         "test": null,
-                        "index": 208,
+                        "index": 211,
                         "words": "24"
                     },
                     {
                         "test": null,
-                        "index": 213,
+                        "index": 216,
                         "words": "24 test"
                     },
                     {
                         "test": null,
-                        "index": 215,
+                        "index": 218,
                         "words": "25"
                     },
                     {
                         "test": null,
-                        "index": 220,
+                        "index": 223,
                         "words": "25 test"
                     },
                     {
                         "test": null,
-                        "index": 222,
+                        "index": 225,
                         "words": "26"
                     },
                     {
                         "test": null,
-                        "index": 227,
+                        "index": 230,
                         "words": "26 test"
                     },
                     {
                         "test": null,
-                        "index": 229,
+                        "index": 232,
                         "words": "27"
                     },
                     {
                         "test": null,
-                        "index": 234,
+                        "index": 237,
                         "words": "27 test"
                     },
                     {
                         "test": null,
-                        "index": 716,
+                        "index": 720,
                         "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
-                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -477,23 +476,32 @@
         "assets.Script",
         [],
         {
-            "_world_id": 53288312,
-            "statement": "",
+            "_world_id": 57629552,
+            "statement": "21",
             "pri": 0,
-            "scene": "local://builtin",
-            "cross": null,
-            "si": 3,
-            "lastline": 0,
+            "scene": "larrydirect.script",
+            "cross": "pressed",
+            "si": 462,
+            "lastline": 195,
             "instatement": false,
             "_objects": [
                 [
-                    "fg",
-                    [],
+                    "penalty",
+                    [
+                        50,
+                        "penalty"
+                    ],
                     {
-                        "dim": 0.74800000000000122,
+                        "dim": 1,
+                        "flash_color": [
+                            255,
+                            242,
+                            129,
+                            150
+                        ],
                         "screen_setting": "",
-                        "end": null,
-                        "name": "fg/../general/logosmall",
+                        "end": 50,
+                        "delay": 0,
                         "blinkspeed": [
                             100,
                             200
@@ -503,11 +511,82 @@
                         "greyscale": 0,
                         "pri": 0,
                         "pos": [
-                            -25,
-                            -15
+                            0,
+                            0
                         ],
                         "loopmode": 0,
-                        "id_name": "logo",
+                        "id_name": "penalty",
+                        "start": 0,
+                        "tint": null,
+                        "flash_amount": 0,
+                        "loops": 0,
+                        "x": 0,
+                        "flash_dir": 1,
+                        "z": 4,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/defence",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "defence",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "fg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/dbench",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "dbench",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -523,149 +602,13 @@
                     }
                 ],
                 [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": 81,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": "",
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "_world_id": 53325576,
-            "viewed": {},
-            "scene": "",
-            "lastline": ""
-        },
-        [
-            "stack",
-            1
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 53213744,
-            "statement": "",
-            "pri": 0,
-            "scene": "intro",
-            "cross": null,
-            "si": 4,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
                     "char",
                     [
-                        "phoenix/thinking(blink)",
+                        "phoenix/zoom(blink)",
                         false
                     ],
                     {
-                        "emoname": "thinking",
+                        "emoname": "zoom",
                         "pri": 20,
                         "pos": [
                             0,
@@ -703,12 +646,12 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 17,
+                            "x": 0,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/thinking(blink)",
+                        "name": "phoenix/zoom(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -719,13 +662,81 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 3,
                             "spd": 6
                         },
-                        "blinkemo": "thinking",
+                        "blinkemo": "zoom",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
+                    }
+                ],
+                [
+                    "textbox",
+                    [
+                        "are wrong!\n",
+                        [
+                            255,
+                            255,
+                            255
+                        ],
+                        2,
+                        1,
+                        true,
+                        false,
+                        "Phoenix\n"
+                    ],
+                    {
+                        "num_lines": 4,
+                        "text": "are wrong!\n",
+                        "can_skip": false,
+                        "id_name": "_textbox_",
+                        "kill": false,
+                        "statement": null,
+                        "go": 1,
+                        "z": 4,
+                        "blocking": true,
+                        "wait": "auto"
+                    }
+                ],
+                [
+                    "uglyarrow",
+                    [],
+                    {
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            192
+                        ],
+                        "height": 192,
+                        "high": false,
+                        "loops": false,
+                        "spd": 6,
+                        "screen_setting": "",
+                        "end": null,
+                        "width": 256,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "fade": 255,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "id_name": "_uglyarrow_",
+                        "tint": null,
+                        "showleft": true,
+                        "_tb": true,
+                        "dim": 1,
+                        "name": "bg/main",
+                        "x": 0,
+                        "z": 0
                     }
                 ],
                 [
@@ -778,11 +789,16 @@
                     }
                 ]
             ],
-            "viewed": {}
+            "viewed": {
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script461": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script458": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script194": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script7": true
+            }
         },
         [
             "stack",
-            2
+            0
         ]
     ]
 ]
