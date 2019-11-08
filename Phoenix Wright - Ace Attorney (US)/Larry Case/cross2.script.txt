@@ -46,7 +46,7 @@ char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}- Cross Examination - {n}The Time of Discovery"
+"{c940}{center}{type}{spd 3}-- Cross Examination -- {n}The Time of Discovery"
 
 penalty
 
@@ -152,6 +152,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please refrain from {n}wasting the court's time."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -171,6 +172,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -282,6 +284,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -341,9 +344,79 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
+
+label blackout 5
+mus
+sfx phoenix\holdit
+fg HoldItAnim
+
+bg defence
+fg dbench
+char phoenix e=pointing (blink)
+pause 5 script
+set _ev blackout
+sfx sfx-evidenceshoop
+showevl
+char phoenix e=document (talk)
+"Let me direct your attention to the blackout record."
+sfx sfx-evidenceshoop
+hideevl
+"Tell me, what time was the power out?"
+
+bg witness
+fg wbench
+char sahwit e=twitching (talk)
+"...12:00 PM to 6:00 PM."
+
+char sahwit e=damage
+sfx sfx-stab
+"{s 10}Gah!"
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Mr. Sahwit, you are aware witnesses must tell the truth under penalty of perjury, are you not?"
+
+bg witness
+fg wbench
+char sahwit e=glaring (talk)
+"I... well... {s 5}urk!"
+
+bg judgestand
+char judge e=warning (talk)
+"Mr. Sahwit?"
+"The court would prefer to hear an accurate testimony from the very beginning."
+"These constant corrections are harming your credibility."
+
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
+sfx sfx-realization
+"...!"
+char sahwit e=twitching (talk)
+"My apologies, Your Honor!"
+"I seem to have mixed a few details up."
+"It, uh, it must have been the shock of finding the body."
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"No further questions."
+
+bg judgestand
+char judge e=normal (talk)
+"Re-direct, Mr. Payne?"
+
+bg prosecution
+fg pbench
+char payne e=sweating (talk)
+"...Yes, Your Honor."
+
+script cross3
 
 label none
 mus
@@ -380,74 +453,10 @@ bg judgestand
 char judge e=warning (talk)
 "Mr. Wright, this line of questioning is going nowhere."
 "Please move on."
-
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
-
-label blackout 5
-mus
-sfx phoenix\objection
-fg ObjectionAnim
-
-bg defence
-fg dbench
-char phoenix e=pointing (blink)
-pause 5 script
-set _ev blackout
-sfx sfx-evidenceshoop
-showevl
-char phoenix e=document (talk)
-"Let me direct your attention to the blackout record."
-hideevl
-"Tell me, what time was the power out?"
-
-bg witness
-fg wbench
-char sahwit e=twitching (talk)
-"...12:00 AM to 6:00 PM."
-
-char sahwit e=damage
-sfx sfx-stab
-"{s 10}Gah!"
-
-char phoenix e=confident (talk)
-"Mr. Sahwit, you are aware witnesses must tell the truth under penalty of perjury, are you not?"
-
-bg witness
-fg wbench
-char sahwit e=glaring (talk)
-"I... well... {s 5}urk!"
-
-bg judgestand
-char judge e=warning (talk)
-"Mr. Sahwit?"
-"The court would prefer to hear an accurate testimony from the very beginning."
-"These constant corrections are harming your credibility."
-
-bg witness
-fg wbench
-char sahwit e=glaring (blink)
-sfx sfx-realization
-"...!"
-char sahwit e=twitching (talk)
-"My apologies, Your Honor!"
-"I seem to have mixed a few details up."
-"It, uh, it must have been the shock of finding the body."
-
-char phoenix e=confident (talk)
-"No further questions"
-
-bg judgestand
-char judge e=normal (talk)
-"Re-direct, Mr. Payne?"
-
-bg prosecution
-fg pbench
-char payne e=sweating (talk)
-"...Yes, Your Honor."
-
-script cross3
 
 label gameover
 mus

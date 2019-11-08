@@ -10,12 +10,24 @@
                     "page": "evidence"
                 },
                 {
-                    "id": "wright$",
-                    "page": "profiles"
+                    "id": "cindy_autopsy",
+                    "page": "evidence"
+                },
+                {
+                    "id": "thinker",
+                    "page": "evidence"
+                },
+                {
+                    "id": "cindy_passport",
+                    "page": "evidence"
+                },
+                {
+                    "id": "blackout",
+                    "page": "evidence"
                 }
             ],
-            "_track": "lounge.ogg",
-            "character": "phoenix",
+            "_track": null,
+            "character": "sahwit",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -23,19 +35,19 @@
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
                 "thinker_name": "Statue",
-                "_testimony_blinker": "true",
+                "_testimony_blinker": "false",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "lounge.ogg",
+                "_music_loop": "allegro.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 090}{center}{type}{spd 2}August 3, 9:48 AM \nLos Angeles Superior Court \nDefendant Lobby No. 2\n",
+                "_last_written_text": "I never!\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "ev_mode_y": "12",
+                "penalty": "100",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -51,7 +63,7 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "thinker_5",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -60,7 +72,7 @@
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "_nt_image": "",
+                "ev_items_y": "63",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -69,7 +81,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Sahwit",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -77,12 +89,13 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "2",
+                "_lastline": "93",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
-                "_shake_sound": "false",
+                "_court_fail_label": "none",
                 "_font_list": "pwinternational.ttf",
+                "_allow_present_evidence": "true",
                 "ev_zrarrow_x": "240",
                 "ev_zrarrow_y": "90",
                 "_font_block_size": "10",
@@ -91,19 +104,20 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_ev": "wright",
+                "_ev": "thinker",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "sahwit",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.02",
-                "ev_items_y": "63",
+                "_nt_text_y": "0",
+                "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
+                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
@@ -118,7 +132,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_larrow_y": "90",
+                "ev_mode_y": "12",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -126,6 +140,7 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "thinker",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
@@ -140,15 +155,16 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "2",
+                "_currentline": "471",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
+                "currentcross": 57,
                 "_textbox_x": "",
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "enddd",
+                "_lastlabel": "none",
                 "_nt_x": "",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
@@ -168,6 +184,7 @@
                 "_font_tb": "pwinternational.ttf",
                 "ev_rarrow_y": "90",
                 "ev_rarrow_x": "240",
+                "_shake_sound": "false",
                 "_font_list_size": "10",
                 "ev_mode_bg_profiles": "general/evidence",
                 "_nt_y": "",
@@ -179,9 +196,76 @@
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_nt_text_y": "0",
+                "_timer_value_music_fade_in_add": "-0.2",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
+                "_statements": [
+                    {
+                        "test": null,
+                        "index": 62,
+                        "words": "1"
+                    },
+                    {
+                        "test": null,
+                        "index": 68,
+                        "words": "2"
+                    },
+                    {
+                        "test": null,
+                        "index": 74,
+                        "words": "3"
+                    },
+                    {
+                        "test": null,
+                        "index": 81,
+                        "words": "4"
+                    },
+                    {
+                        "test": null,
+                        "index": 88,
+                        "words": "5"
+                    },
+                    {
+                        "test": null,
+                        "index": 94,
+                        "words": "6"
+                    },
+                    {
+                        "test": null,
+                        "index": 100,
+                        "words": "7"
+                    },
+                    {
+                        "test": null,
+                        "index": 106,
+                        "words": "8"
+                    },
+                    {
+                        "test": null,
+                        "index": 112,
+                        "words": "9"
+                    },
+                    {
+                        "test": null,
+                        "index": 118,
+                        "words": "10"
+                    },
+                    {
+                        "test": null,
+                        "index": 124,
+                        "words": "11"
+                    },
+                    {
+                        "test": null,
+                        "index": 130,
+                        "words": "12"
+                    },
+                    {
+                        "test": null,
+                        "index": 136,
+                        "words": "$$$"
+                    }
+                ],
                 "_allow_click_load": "true",
                 "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
@@ -199,7 +283,7 @@
         "assets.Script",
         [],
         {
-            "_world_id": 53947048,
+            "_world_id": 53944368,
             "statement": "",
             "pri": 0,
             "scene": "local://builtin",
@@ -357,7 +441,7 @@
                     }
                 ]
             ],
-            "_world_id": 55674000,
+            "_world_id": 53985968,
             "viewed": {},
             "scene": "",
             "lastline": ""
@@ -371,7 +455,7 @@
         "assets.Script",
         [],
         {
-            "_world_id": 55673080,
+            "_world_id": 53964512,
             "statement": "",
             "pri": 0,
             "scene": "intro",
@@ -414,255 +498,6 @@
                             0
                         ]
                     }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 54631720,
-            "statement": "",
-            "pri": 0,
-            "scene": "mono.script",
-            "cross": null,
-            "si": 15,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/lobby",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "lobby",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "phoenix/normal(blink)",
-                        true
-                    ],
-                    {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
-                        "tint": null,
-                        "charname": "phoenix",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "phoenix/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "evidence",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "wright",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            13,
-                            13
-                        ],
-                        "loopmode": 0,
-                        "id_name": "ev",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "id": "wright",
-                        "page": "evidence"
-                    }
-                ],
-                [
-                    "textbox",
-                    [
-                        "My name is Phoenix Wright, \nattorney at law.\n",
-                        [
-                            255,
-                            255,
-                            255
-                        ],
-                        2,
-                        1,
-                        true,
-                        false,
-                        "Phoenix\n"
-                    ],
-                    {
-                        "num_lines": 4,
-                        "text": "My name is Phoenix Wright, \nattorney at law.\n",
-                        "can_skip": false,
-                        "id_name": "_textbox_",
-                        "kill": false,
-                        "statement": null,
-                        "go": 1,
-                        "z": 4,
-                        "blocking": true,
-                        "wait": "auto"
-                    }
-                ],
-                [
-                    "uglyarrow",
-                    [],
-                    {
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "height": 192,
-                        "high": false,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "width": 256,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "id_name": "_uglyarrow_",
-                        "tint": null,
-                        "showleft": true,
-                        "_tb": true,
-                        "dim": 1,
-                        "name": "bg/main",
-                        "x": 0,
-                        "z": 0
-                    }
-                ],
-                [
-                    "button",
-                    [],
-                    {
-                        "rpos": [
-                            177,
-                            192
-                        ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
-                    }
                 ],
                 [
                     "guiWait",
@@ -696,14 +531,11 @@
                     }
                 ]
             ],
-            "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casemono.script2": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casemono.script14": true
-            }
+            "viewed": {}
         },
         [
             "stack",
-            3
+            2
         ]
     ]
 ]

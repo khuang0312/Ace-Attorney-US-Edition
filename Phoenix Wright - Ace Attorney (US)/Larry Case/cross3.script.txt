@@ -34,7 +34,7 @@ char phoenix e=confident (talk)
 "Gladly, Your Honor."
 
 nt
-"[Re-direct testimony is now added to original testimony for cross-exam.]"
+"{c090}[Re-direct testimony is now added to original testimony for cross-exam.]"
 
 bg black fade
 pause 5 script
@@ -46,7 +46,7 @@ char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}- Cross Examination - {n}Hearing the Time"
+"{c940}{center}{type}{spd 3}-- Cross Examination -- {n}Hearing the Time"
 
 penalty
 
@@ -152,6 +152,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please refrain from {n}wasting the court's time."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -171,6 +172,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -301,6 +303,7 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
@@ -360,54 +363,15 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
-penalty -10
-is penalty 0 gameover
-resume
-
-label none
-mus
-sfx phoenix\holdit
-fg HoldItAnim
-bg defence
-fg dbench
-char phoenix e=objecting
-pause 10
-char phoenix e=pointing (talk)
-"Let me direct your attention to this piece of evidence."
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"What about it?"
-
-bg defence
-fg dbench
-char phoenix e=thinking (talk)
-"Doesn't it contradict your testimony?"
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"Maybe, maybe not."
-
-bg defence
-fg dbench
-char phoenix e=thinking (talk)
-"{c089}(I think I've taken a wrong path...)"
-
-bg judgestand
-char judge e=warning (talk)
-"Mr. Wright, this line of questioning is going nowhere."
-"Please move on."
-
+sfx sfx-damage2.ogg
 penalty -10
 is penalty 0 gameover
 resume
 
 label thinker 5
 mus
-sfx phoenix\objection
-fg ObjectionAnim
+sfx phoenix\holdit
+fg HoldItAnim
 
 bg defence
 fg dbench
@@ -500,6 +464,46 @@ char sahwit e=twitching (talk)
 
 //temp stop here
 exit
+
+label none
+mus
+sfx phoenix\holdit
+fg HoldItAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Let me direct your attention to this piece of evidence."
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"What about it?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"Doesn't it contradict your testimony?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Maybe, maybe not."
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"{c089}(I think I've taken a wrong path...)"
+
+bg judgestand
+char judge e=warning (talk)
+"Mr. Wright, this line of questioning is going nowhere."
+"Please move on."
+sfx sfx-damage2.ogg
+penalty -10
+is penalty 0 gameover
+resume
 
 label gameover
 mus
