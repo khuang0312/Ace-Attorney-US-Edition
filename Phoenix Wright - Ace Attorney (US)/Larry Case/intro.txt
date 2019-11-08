@@ -4,5 +4,10 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-script cross
+//addev cindy_autopsy //uncomment this for DEBUG purposes
+//addev thinker //uncomment this for DEBUG purposes
+//addev cindy_passport //uncomment this for DEBUG purposes
+//addev blackout //uncomment this for DEBUG purposes
+
+script cross3
 //Just change the script name to whatever you're testing

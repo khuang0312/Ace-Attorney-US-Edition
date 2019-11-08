@@ -1,3 +1,5 @@
+//goto here //uncomment this for DEBUG purposes
+
 bg prosecution
 fg pbench
 char payne e=normal (talk)
@@ -380,6 +382,11 @@ pause 5 script
 set _ev thinker
 sfx sfx-evidenceshoop
 showevr
+
+mus cornered1.ogg
+set _music_loop cornered1.ogg
+music_fade_in nowait
+
 char phoenix e=document (talk)
 "Let me direct your attention to said murder weapon."
 hideevr
@@ -409,30 +416,64 @@ char phoenix e=confident (talk)
 bg witness
 fg wbench
 char sahwit e=glaring (blink)
-"...!"
-char sahwit e=twitching (talk) //error here animation is gone
+sfx sfx-realization
+"{s 10}...!"
+char sahwit e=twitching (talk)
 "I..."
 "Actually, I had one of those clocks before!"
 
 bg defence
 fg dbench
-char phoenix e=normal (talk)
+char phoenix e=thinking (talk)
 "So you claim that you knew this was a clock because you had seen the same one before?"
 
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"Yes, That's right"
+"Yes, that's right"
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Mr. Sahwit, I find that statement very implausible..."
+
+bg judgestand
+char judge e=surprised (talk)
+"And you have evidence to back your claim, Mr. Wright?"
 
 bg defence
 fg dbench
 char phoenix e=confident (talk)
-"You are aware that this clock was made by the defendant, don't you?"
+"Yes..."
+
+label present1
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"And here it is."
+present noback
+goto present1
+
+label thinker
+mus
+sfx phoenix\takethat
+fg TakeThatAnim
+
+pause 5 script
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+set _ev thinker
+sfx sfx-evidenceshoop
+showevr
+"Mr. Sahwit, you are aware that this clock was made by the defendant, don't you?"
+hideevr
 
 bg witness
 fg wbench
 char sahwit e=twitching (talk)
-"{s 5}Urk."
+"Urk."
 "...Yes."
 
 bg defence
@@ -443,23 +484,66 @@ char phoenix e=normal (talk)
 bg witness
 fg wbench
 char sahwit e=glaring (blink)
-"...!"
+sfx sfx-stab
+"{s 15}...!"
 char sahwit e=glaring (talk)
 "I..."
 
 bg defence
 fg dbench
 char phoenix e=confident (talk)
-"Mr. Sahwit, you held the statue of The Thinker in your hand that day, didn't you?"
+"Mr. Sahwit, {p 10} you held the statue of The Thinker in your hand that day, didn't you?"
 
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-"{s 5}I..."
+char sahwit e=glaring (talk)
+sfx sfx-smack
+"{s 15}I..."
 "I...!"
 "That...that day..."
-"I..."
-"I never!"
+"I...I never!"
+"Look... I...the clock...I heard, no!"
+"I mean, I saw...saw..."
+char sahwit e=damage
+"Gaaah!{s 15}{sfx sfx-stab}{p 20}{s 20}{sfx sfx-stab}{p 20}{s 30}{sfx sfx-stab}{f}{next}"
+pause 30 script
+
+char sahwit e=toss
+pause 70 script
+sfx sfx-smack
+"{s 15}{next}"
+pause 10 script
+
+label here
+
+mus truth.ogg
+set _music_loop truth.ogg
+music_fade_in nowait
+
+char sahwit e=bald (talk)
+"{s 15}I-it was him, I tell you!"
+"I saw him!"
+"H-he killed her and he should burn!"
+"Burn!"
+"Give him death!"
+
+bg courtroom
+fg ani-gallery //Characters take a moment to appear
+fg judge
+fg phoenix_mia
+fg payne
+fg sahwit
+sfx sfx-gallery
+pause 50 script
+
+fg ani-judge-gavel
+fg ani-judge-gavel
+pause 5 script
+bg judgestand
+char judge e=warning (talk)
+"Order!"
+"Order in the court!"
+"Mr. Wright, please continue."
 
 
 //temp stop here
@@ -471,7 +555,7 @@ sfx phoenix\holdit
 fg HoldItAnim
 bg defence
 fg dbench
-char phoenix e=objecting
+char phoenix e=pointing (blink)
 pause 10
 char phoenix e=pointing (talk)
 "Let me direct your attention to this piece of evidence."

@@ -1,10 +1,5 @@
 //goto here //uncomment this for DEBUG purposes
 
-//addev cindy_autopsy //uncomment this for DEBUG purposes
-//addev thinker //uncomment this for DEBUG purposes
-//addev cindy_passport //uncomment this for DEBUG purposes
-//addev blackout //uncomment this for DEBUG purposes
-
 bg witness
 fg wbench
 char sahwit e=normal (blink)
@@ -283,7 +278,7 @@ fg HoldItAnim
 bg defence
 fg dbench
 char phoenix e=objecting
-pause 10
+pause 30
 char phoenix e=pointing (talk)
 "Mr. Sahwit.{p 10} You have been telling {n}the truth as a witness in a court {n}of law,{p 5} have you not?"
 
@@ -295,10 +290,16 @@ char sahwit e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=document (talk)
+set _ev cindy_autopsy
+sfx sfx-evidenceshoop
+showevr
 "Let me direct your attention {n}to the autopsy report."
 char phoenix e=pointing (talk)
 "Can you read to me the estimated {n}time of death?"
+hideevr
+
 label here
+
 bg witness
 fg wbench
 char sahwit e=normal (talk)
@@ -306,8 +307,7 @@ char sahwit e=normal (talk)
 sfx sfx-realization
 char sahwit e=damage
 sfx sfx-stab
-pause 10
-char sahwit e=twitching (blink)
+pause 25 script
 "{s 5}...!"
 
 bg defence
@@ -368,7 +368,7 @@ fg HoldItAnim
 bg defence
 fg dbench
 char phoenix e=objecting
-pause 10
+pause 30
 char phoenix e=pointing (talk)
 "Let me direct your attention to this piece of evidence."
 
