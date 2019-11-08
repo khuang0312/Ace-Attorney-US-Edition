@@ -162,7 +162,7 @@ statement 18
 bg witness
 fg wbench
 char larry e=normal (talk)
-"Looks like she just got back from {n}Paris on July 30th{p 5}.{p 5}.{p 5}."
+"Looks like she just got back from {n}Paris on {c940}July 30th{c999}{p 5}.{p 5}.{p 5}."
 "{sfx sfx-realization}Wait a second."
 char larry e=crying (talk)
 "{s 15}Someone else wrote in here!"
@@ -741,7 +741,7 @@ char payne e=confident (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"Mr. Wright, do you wish to {n}cross-examine the defendant?"
+"Mr. Wright, do you wish to {n}{c940}cross-examine{c999} the defendant?"
 
 bg helper
 char mia e=bench-stern (talk)

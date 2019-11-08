@@ -303,7 +303,7 @@ label here
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-""Estimated time of death: 4:00 PM.""
+""Estimated time of death: {c940}4:00 PM{c999}.""
 sfx sfx-realization
 char sahwit e=damage
 sfx sfx-stab
@@ -344,7 +344,7 @@ char mia e=bench-stern (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"Do you wish to re-direct, {n}Mr. Payne?"
+"Do you wish to {c940}re-direct{c999}, {n}Mr. Payne?"
 
 bg prosecution
 fg pbench

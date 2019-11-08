@@ -1,6 +1,6 @@
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
-sfx sfx-gallery 
+sfx sfx-gallery
 fg ani-gallery nowait
 
 fg phoenix_mia nowait
@@ -170,7 +170,7 @@ char mia e=bench-stern (talk)
 "or after the prosecution {n}completes its case in chief."
 "I'd recommend giving it now, before {n}the judge becomes ingrained in the {n}prosecution's point of view..."
 char mia e=bench-geez (talk)
-"This one's a bit of a pushover." 
+"This one's a bit of a pushover."
 
 char phoenix hide
 "Got it, Chief."
@@ -279,8 +279,8 @@ set _ev handbook
 sfx sfx-evidenceshoop
 showevl
 
-"You have the reference handbook {n}I gave you, right?"
-"It should be in the Court Record."
+"You have the {c940}reference handbook{c999} {n}I gave you, right?"
+"It should be in the {c940}Court Record{c999}."
 "It contains a guide on the types of {n}objections used to protest opposing {n}counsel's questions."
 "Give it a glance now if you need {n}a refresher."
 sfx sfx-evidenceshoop

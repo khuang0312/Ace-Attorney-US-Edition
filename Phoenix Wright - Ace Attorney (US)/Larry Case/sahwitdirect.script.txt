@@ -712,7 +712,7 @@ endcross
 
 bg judgestand
 char judge e=normal (talk)
-"Your cross-examination, {n}Mr. Wright?"
+"Your {c940}cross-examination{c999}, {n}Mr. Wright?"
 
 bg defence
 fg dbench
@@ -728,14 +728,14 @@ music_fade_in nowait
 bg helper
 char mia e=bench-stern (talk)
 "Alright, this is it. The real deal!"
-"Remember: you're allowed to lead the {n}witness during cross-examination."
-"Press them on any weak statements {n}they made in the direct examination {n}just now."
-"If you find a contradiction, impeach {n}them by presenting evidence that {n}conflicts with their testimony."
+"Remember: you're allowed to lead the {n}witness during {c940}cross-examination{c999}."
+"{c940}Press{c999} them on any weak statements {n}they made in the direct examination {n}just now."
+"If you find a contradiction, {c940}impeach{c999} {n}them by presenting evidence that {n}conflicts with their testimony."
 "This will help weaken the {n}prosecution's case."
 
 nt
 "{c940}[Opposing counsel will object {n}to your questions if you {n}cross-examine ineffectively.]"
-"{c940}[{c090}Press {c940}relevant statements. {n}Impeach by presenting evidence {n}from the Court Record.]"
+"{c940}[{c090}Press {c940}relevant statements. {n}{c090}Impeach{c940} by presenting evidence {n}from the Court Record.]"
 
 bg black fade
 

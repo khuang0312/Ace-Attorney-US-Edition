@@ -390,7 +390,7 @@ music_fade_in nowait
 char phoenix e=document (talk)
 "Let me direct your attention to said murder weapon."
 hideevr
-"Where on this statue do you see a clock?"
+"Where on this statue do you see a {c940}clock{c999}?"
 
 bg witness
 fg wbench
@@ -479,7 +479,7 @@ char sahwit e=twitching (talk)
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You're also aware that this clock...{p 20}{e confident(talk)} is the only of its kind, are you not?"
+"You're also aware that this clock...{p 20}{e confident(talk)} is the {c940}only of its kind{c999}, are you not?"
 
 bg witness
 fg wbench
@@ -525,7 +525,7 @@ char sahwit e=bald (talk)
 "I saw him!"
 "H-he killed her and he should burn!"
 "Burn!"
-"Give him death!"
+"Give him {c940}death{c999}!"
 
 bg courtroom
 fg ani-gallery //Characters take a moment to appear

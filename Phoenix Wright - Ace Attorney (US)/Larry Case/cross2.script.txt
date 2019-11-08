@@ -27,7 +27,7 @@ char payne e=confident (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"You may re-cross, Mr. Wright."
+"You may {c940}re-cross{c999}, Mr. Wright."
 
 bg helper
 char mia e=bench-stern (talk)
@@ -374,6 +374,7 @@ char sahwit e=twitching (talk)
 
 char sahwit e=damage
 sfx sfx-stab
+pause 10 script
 "{s 10}Gah!"
 
 bg defence
@@ -409,7 +410,7 @@ char phoenix e=confident (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"Re-direct, Mr. Payne?"
+"{c940}Re-direct{c999}, Mr. Payne?"
 
 bg prosecution
 fg pbench
