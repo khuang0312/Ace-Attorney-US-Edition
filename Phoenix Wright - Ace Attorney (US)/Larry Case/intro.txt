@@ -10,5 +10,5 @@ addev badge
 //addev cindy_passport //uncomment this for DEBUG purposes
 //addev blackout //uncomment this for DEBUG purposes
 
-script larrydirect
+script court
 //Just change the script name to whatever you're testing

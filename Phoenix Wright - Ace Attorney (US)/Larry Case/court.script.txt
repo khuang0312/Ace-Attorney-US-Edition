@@ -1,4 +1,4 @@
-bg courtroom fade
+bg black fade
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
 sfx sfx-gallery
