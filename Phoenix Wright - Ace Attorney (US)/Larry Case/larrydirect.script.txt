@@ -20,6 +20,8 @@ set _testimony_blinker false
 set _allow_present_evidence false
 set _allow_present_profiles false
 
+goto here //Uncomment for DEBUG sessions
+
 statement 1
 bg prosecution
 fg pbench
@@ -118,7 +120,7 @@ bg witness
 fg wbench
 char larry e=mad (talk)
 "I wasn't dumped!"
-char larry e=normal (talk)
+char larry e=crying (talk)
 "She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
 char larry e=mad (talk)
 "{s 20}WHAT'S IT TO YOU, ANYWAY!?"
@@ -163,7 +165,7 @@ char larry e=normal (talk)
 "Looks like she just got back from {n}Paris on July 30th{p 5}.{p 5}.{p 5}."
 "{sfx sfx-realization}Wait a second."
 char larry e=crying (talk)
-"Someone else wrote in here!"
+"{s 15}Someone else wrote in here!"
 ""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
 "{s 20}WHAT!?"
 "Dude...{p 10} no way..."
@@ -184,6 +186,7 @@ char larry e=crying (talk)
 "I'm gonna die."
 "I'm just gonna drop dead."
 "Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
+label here
 statement 20 test
 
 statement 21
@@ -304,7 +307,7 @@ bg defence
 fg dbench
 char phoenix e=thinking (blink)
 list
-li Asked and Answered 
+li Asked and Answered
 li Leading result=Leading
 li Prejudicial result=Prejudicial
 li Relevance result=Relevance
@@ -445,11 +448,32 @@ char mia e=bench-stern (talk)
 goto 20
 
 label press 21
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+
 bg defence
 fg dbench
-char phoenix e=sweating (blink)
-"{c089}(I can't possibly object to the judge.)"
-goto 21
+char phoenix e=pointing (blink)
+pause 30 script
+"You, the judge..."
+fg speedline
+char phoenix e=zoom (talk)
+"are wrong!"
+
+bg judgestand
+char judge e=warning (talk)
+penalty -100
+"How dare you Mr. Wright?"
+"You are hereby removed from the court for legal incompetence."
+"The defendant has the right to request a new attorney and be tried at a later date."
+"The court declares a mistrial and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. Reset the game!"
+pause 30 script
+exit
 
 label press 22
 bg defence

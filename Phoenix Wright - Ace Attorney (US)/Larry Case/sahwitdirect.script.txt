@@ -461,11 +461,32 @@ showlist
 goto 23
 
 label press 24
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+
 bg defence
 fg dbench
-char phoenix e=sweating (blink)
-"{c089}(I can't possibly object to the judge.)"
-goto 24
+char phoenix e=pointing (blink)
+pause 30 script
+"You, the judge..."
+fg speedline
+char phoenix e=zoom (talk)
+"are wrong!"
+
+bg judgestand
+char judge e=warning (talk)
+penalty -100
+"How dare you Mr. Wright?"
+"You are hereby removed from the court for legal incompetence."
+"The defendant has the right to request a new attorney and be tried at a later date."
+"The court declares a mistrial and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. Reset the game!"
+pause 30 script
+exit
 
 label press 25
 bg defence
@@ -481,11 +502,32 @@ showlist
 goto 25
 
 label press 26
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+
 bg defence
 fg dbench
-char phoenix e=sweating (blink)
-"{c089}(I can't possibly object to the judge.)"
-goto 26
+char phoenix e=pointing (blink)
+pause 30 script
+"You, the judge..."
+fg speedline
+char phoenix e=zoom (talk)
+"are wrong!"
+
+bg judgestand
+char judge e=warning (talk)
+penalty -100
+"How dare you Mr. Wright?"
+"You are hereby removed from the court for legal incompetence."
+"The defendant has the right to request a new attorney and be tried at a later date."
+"The court declares a mistrial and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. Reset the game!"
+pause 30 script
+exit
 
 label press 27
 bg defence
@@ -617,7 +659,7 @@ penalty -10
 is penalty 0 gameover
 resume
 
-label Vague7 
+label Vague7
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
