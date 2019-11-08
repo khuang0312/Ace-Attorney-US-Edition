@@ -1,5 +1,6 @@
 set _textbox_wrap true
 set _textbox_lines 3
+set _allow_present_profiles false
 
 include evidence
 addev badge
