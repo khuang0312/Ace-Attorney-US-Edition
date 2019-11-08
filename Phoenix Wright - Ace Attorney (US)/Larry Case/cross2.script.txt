@@ -46,7 +46,7 @@ char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}-- Cross Examination -- {n}The Time of Discovery"
+"{c940}{center}{type}{spd 3}-- CROSS EXAMINATION --{n}The Time of Discovery"
 
 penalty
 
