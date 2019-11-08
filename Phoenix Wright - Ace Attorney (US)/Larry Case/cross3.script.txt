@@ -422,7 +422,7 @@ char phoenix e=normal (talk)
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"Yes, That's right"
+"Yes, That's right."
 
 bg defence
 fg dbench

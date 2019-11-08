@@ -4,5 +4,4 @@ set _textbox_lines 3
 include evidence
 addev badge
 
-script cross
-//Just change the script name to whatever you're testing
+script court

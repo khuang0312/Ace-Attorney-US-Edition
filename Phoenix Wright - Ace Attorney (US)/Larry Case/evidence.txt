@@ -19,7 +19,7 @@ set blackout_name Blackout Record
 set blackout_pic whiteenvelope.png
 set blackout_desc Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.
 
-set handbook_name Objection Handbook
+set handbook_name Objection Handbook 
 set handbook_pic handbook.png
 set handbook_desc A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague
 

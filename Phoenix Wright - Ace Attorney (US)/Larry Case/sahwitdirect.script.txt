@@ -234,7 +234,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 2
 
 label press 3
@@ -255,7 +255,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 4
 
 label press 5
@@ -276,7 +276,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 6
 
 label press 7
@@ -297,7 +297,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 8
 
 label press 9
@@ -318,7 +318,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 10
 
 label press 11
@@ -339,7 +339,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 12
 
 label press 13
@@ -360,7 +360,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 14
 
 label press 15
@@ -381,7 +381,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 16
 
 label press 17
@@ -402,7 +402,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 18
 
 label press 19
@@ -423,7 +423,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 20
 
 label press 21
@@ -444,7 +444,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for innapropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for inapropriate {n}queries and refer to the objection {n}handbook if you need to."
 goto 22
 
 label press 23

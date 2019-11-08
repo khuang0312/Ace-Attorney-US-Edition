@@ -67,7 +67,7 @@ char judge e=normal (talk)
 
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "Yes, Your Honor."
 "We submit the following {n}pieces of evidence:"
 
@@ -241,11 +241,13 @@ bg witness
 fg wbench
 char larry e=mad (talk)
 "{s 20}Remain silent!?"
-char larry e=nervous (talk)
-"I ain't gonna remain silent!"
-//Would like to use the smirk animation here but it doesn't work properly
-"No one can stop me from talking!"
+
 char larry e=mad (talk)
+"I ain't gonna remain silent!"
+
+"No one can stop me from talking!"
+
+char larry e=smirk (talk)
 "{s 20}Bring it on, man!"
 
 bg judgestand
