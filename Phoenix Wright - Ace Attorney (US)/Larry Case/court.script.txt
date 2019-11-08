@@ -124,7 +124,7 @@ addev cindy_passport
 addev blackout
 
 nt
-"{c090}{spd 99}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
+"{c090}{spd 50}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
 
 bg judgestand
 char judge e=normal (talk)
