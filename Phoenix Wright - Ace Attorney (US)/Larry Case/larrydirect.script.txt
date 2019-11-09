@@ -119,11 +119,11 @@ statement 13
 bg witness
 fg wbench
 char larry e=mad (talk)
-"I wasn't dumped!"
+"{sfx sfx-smack}I wasn't dumped!"
 char larry e=crying (talk)
 "She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
 char larry e=mad (talk)
-"{s 20}WHAT'S IT TO YOU, ANYWAY!?"
+"{s 20}{sfx sfx-smack}WHAT'S IT TO YOU, ANYWAY!?"
 statement 13 test
 
 statement 14
@@ -782,7 +782,8 @@ char payne e=confident (talk)
 bg witness
 fg wbench
 char larry e=mad (talk)
-"Thanks for nothing, Nick!"
+"{sfx sfx-smack}Thanks for nothing, Nick!"
+char larry e=crying (talk)
 "Why'd my Cindy go and {n}do that, man? {p 10}{s 10}WHY!?"
 
 bg defence
