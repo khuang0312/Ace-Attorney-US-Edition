@@ -310,6 +310,12 @@ sfx sfx-stab
 pause 25 script
 "{s 5}...!"
 
+bg prosecution
+fg pbench
+char payne e=damage
+sfx sfx-smack
+pause 25 script
+
 bg defence
 fg dbench
 char phoenix e=deskslam

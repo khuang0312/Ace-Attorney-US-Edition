@@ -10,8 +10,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "trial.ogg",
-            "character": "judge",
+            "_track": null,
+            "character": "larry",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -22,9 +22,8 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "trial.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 090}{center}{type}{spd 2}August 3, 10:00 AM \nLos Angeles Superior Court \nCourtroom No. 2\n",
+                "ev_z_textbox_x": "100",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -48,11 +47,9 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "endd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
-                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
@@ -66,15 +63,14 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Judge",
+                "_speaking_name": "",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
-                "_music_fade": "20",
-                "_lastline": "4",
+                "_music_fade": "100",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -89,19 +85,18 @@
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
                 "_layering_method": "zorder",
-                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "judge",
+                "_speaking": "",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.02",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
-                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
+                "handbook1_pic": "handbook.png",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
@@ -130,7 +125,6 @@
                 "_font_block": "arial.ttf",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
-                "ev_z_textbox_x": "100",
                 "_flash_sound": "false",
                 "handbook5_name": "Objection Handbook Ch. 5",
                 "_font_gametitle_size": "16",
@@ -145,7 +139,7 @@
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "enddd",
+                "_lastlabel": "exit",
                 "_nt_x": "",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
@@ -178,7 +172,7 @@
                 "_nt_text_x": "0",
                 "_nt_text_y": "0",
                 "ev_present_x": "90",
-                "handbook1_pic": "handbook.png",
+                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "_allow_click_load": "true",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
@@ -195,12 +189,12 @@
         "assets.Script",
         [],
         {
-            "_world_id": 587185368,
+            "_world_id": 582498984,
             "statement": "",
             "pri": 0,
-            "scene": "court.script",
+            "scene": "larrydirect.script",
             "cross": null,
-            "si": 23,
+            "si": 8,
             "lastline": 0,
             "instatement": false,
             "_objects": [
@@ -211,7 +205,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/judgestand",
+                        "name": "bg/witness",
                         "blinkspeed": [
                             100,
                             200
@@ -225,7 +219,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "judgestand",
+                        "id_name": "witness",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -240,13 +234,49 @@
                     }
                 ],
                 [
+                    "fg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/wbench",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "wbench",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 3,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "wait": 1
+                    }
+                ],
+                [
                     "char",
                     [
-                        "judge/normal(blink)",
+                        "larry/hello(blink)",
                         false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "hello",
                         "pri": 20,
                         "pos": [
                             0,
@@ -264,16 +294,17 @@
                         "invert": 0,
                         "loopmode": 0,
                         "start": 0,
+                        "fade": 0,
                         "greyscale": 0,
                         "blinkspeed": [
                             100,
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Judge\n",
-                        "id_name": "judge",
+                        "nametag": "Larry\n",
+                        "id_name": "larry",
                         "tint": null,
-                        "charname": "judge",
+                        "charname": "larry",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -284,12 +315,12 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 13,
                             "spd": 6
                         },
-                        "modename": "talk",
+                        "modename": "blink",
                         "dim": 1,
-                        "name": "judge/normal(blink)",
+                        "name": "larry/hello(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -300,10 +331,10 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 5,
+                            "x": 0,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
+                        "blinkemo": "hello",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -312,29 +343,30 @@
                 [
                     "textbox",
                     [
-                        "Good morning, ladies and gentlemen.\n",
+                        "{c 090}{center}{type}{spd 3}-- DIRECT EXAMINATION --\nLarry Butz\n",
                         [
                             255,
                             255,
                             255
                         ],
                         2,
-                        1,
+                        3.0,
                         true,
                         false,
-                        "Judge\n"
+                        "\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "Good morning, ladies and gentlemen.\n",
+                        "text": "{c 090}{center}{type}{spd 3}-- DIRECT EXAMINATION --\nLarry Butz\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
+                        "_clicksound": "typewriter.ogg",
                         "kill": false,
                         "statement": null,
                         "go": 1,
                         "z": 4,
                         "blocking": true,
-                        "wait": "auto"
+                        "wait": "manual"
                     }
                 ],
                 [
@@ -428,256 +460,12 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script22": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Casecourt.script1": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/Larry Caselarrydirect.script7": true
             }
         },
         [
             "stack",
             0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 587185368,
-            "statement": "",
-            "pri": 0,
-            "scene": "court.script/music_fade_in/music_fade_in_add/music_fade_in_add/music_fade_in_add/music_fade_in_add/music_fade_in_add/music_fade_in_add",
-            "cross": null,
-            "si": 0,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/judgestand",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "judgestand",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "judge/normal(blink)",
-                        false
-                    ],
-                    {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Judge\n",
-                        "id_name": "judge",
-                        "tint": null,
-                        "charname": "judge",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": "blinknoset",
-                            "start": 0,
-                            "loops": 1,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "talk",
-                        "dim": 1,
-                        "name": "judge/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 1,
-                            "x": 5,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "textbox",
-                    [
-                        "Good morning, ladies and gentlemen.\n",
-                        [
-                            255,
-                            255,
-                            255
-                        ],
-                        2,
-                        1,
-                        true,
-                        false,
-                        "Judge\n"
-                    ],
-                    {
-                        "num_lines": 4,
-                        "text": "Good morning, ladies and gentlemen.\n",
-                        "can_skip": false,
-                        "id_name": "_textbox_",
-                        "kill": false,
-                        "statement": null,
-                        "go": 1,
-                        "z": 4,
-                        "blocking": true,
-                        "wait": "auto"
-                    }
-                ],
-                [
-                    "uglyarrow",
-                    [],
-                    {
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "height": 192,
-                        "high": false,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "width": 256,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "id_name": "_uglyarrow_",
-                        "tint": null,
-                        "showleft": true,
-                        "_tb": true,
-                        "dim": 1,
-                        "name": "bg/main",
-                        "x": 0,
-                        "z": 0
-                    }
-                ],
-                [
-                    "button",
-                    [],
-                    {
-                        "rpos": [
-                            177,
-                            192
-                        ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            1
         ]
     ]
 ]

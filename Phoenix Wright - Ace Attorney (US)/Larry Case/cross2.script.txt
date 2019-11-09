@@ -380,6 +380,12 @@ sfx sfx-stab
 pause 10 script
 "{s 10}Gah!"
 
+bg prosecution
+fg pbench
+char payne e=damage
+sfx sfx-smack
+pause 25 script
+
 mus objection.ogg
 set _music_loop objection.ogg
 music _fade_in nowait

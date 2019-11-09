@@ -488,6 +488,16 @@ bg witness
 fg wbench
 char sahwit e=glaring (blink)
 sfx sfx-stab
+
+bg prosecution
+fg pbench
+char payne e=damage
+sfx sfx-smack
+pause 25 script
+
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
 "{s 15}...!"
 char sahwit e=glaring (talk)
 "I..."
