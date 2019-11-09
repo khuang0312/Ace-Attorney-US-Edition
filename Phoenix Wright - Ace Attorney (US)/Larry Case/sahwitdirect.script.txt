@@ -228,6 +228,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 1
 
 label press 2
@@ -250,6 +251,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 3
 
 label press 4
@@ -272,6 +274,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 5
 
 label press 6
@@ -294,6 +297,7 @@ li Prejudicial
 li Relevance
 li Vague result=Vague7
 showlist
+penalty
 goto 7
 
 label press 8
@@ -316,6 +320,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 9
 
 label press 10
@@ -338,6 +343,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 11
 
 label press 12
@@ -360,6 +366,7 @@ li Prejudicial
 li Relevance
 li Vague result=Vague13
 showlist
+penalty
 goto 13
 
 label press 14
@@ -382,6 +389,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 15
 
 label press 16
@@ -404,6 +412,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 17
 
 label press 18
@@ -426,6 +435,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 19
 
 label press 20
@@ -448,6 +458,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 21
 
 label press 22
@@ -470,6 +481,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 23
 
 label press 24
@@ -512,6 +524,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto 25
 
 label press 26
@@ -554,6 +567,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
+penalty
 goto endoftestimony
 
 label Asked and Answered
