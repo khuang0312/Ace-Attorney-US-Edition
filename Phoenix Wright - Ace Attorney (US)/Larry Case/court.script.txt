@@ -116,7 +116,7 @@ char phoenix e=normal (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"The court then accepts the evidence into the Court Record."
+"The court then accepts the evidence into the {c940}Court Record{c999}."
 
 addev cindy_autopsy
 addev thinker
@@ -143,6 +143,7 @@ mus logic.ogg
 set_music_loop logic.ogg
 music_fade_in nowait
 
+char payne e=normal (talk)
 "My name is Winston Payne, and I {n}represent the state in this case."
 
 addev cindy$
@@ -155,6 +156,7 @@ addev cindy$
 "One blow killed her instantly."
 "You will hear from a witness who saw {n}the defendant flee the scene right {n}after the moment of the crime."
 "That same witness also discovered {n}the body afterwards."
+char payne e=confident (talk)
 "The defendant had a clear motive, {n}and the evidence clearly points {n}to his guilt."
 "As such, the prosecution asks that {n}you find the defendant, Larry Butz, {n}guilty of murder."
 
