@@ -359,8 +359,6 @@ char mia e=bench-stern (talk)
 
 music _fade_out nowait
 
-bg black fade
-
 script cross2
 
 label none

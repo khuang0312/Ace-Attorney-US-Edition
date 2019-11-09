@@ -1,8 +1,12 @@
 //goto here //uncomment this for DEBUG purposes
 
-bg prosecution fade
-fg pbench fade
-char payne e=normal (talk) fade
+mus moderato.ogg
+set _music_loop moderato.ogg
+music _fade_in nowait
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
 "Mr. Sahwit, how were you able to hear the time given there was a blackout?"
 
 bg witness
@@ -40,11 +44,10 @@ nt
 
 bg black fade
 pause 5 script
-bg black fade
 
-bg witness
-fg wbench
-char sahwit e=normal (blink)
+bg witness fade
+fg wbench fade
+char sahwit e=normal (blink) fade
 
 fg Cross-ExaminationAnim
 nt

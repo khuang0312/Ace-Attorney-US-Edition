@@ -1,6 +1,10 @@
-bg prosecution fade
-fg pbench fade
-char payne e=normal (talk) fade
+mus moderato.ogg
+set _music_loop moderato.ogg
+music _fade_in nowait
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
 "Mr. Sahwit, why did you think the time was 1:00 PM?"
 
 bg witness
@@ -38,11 +42,10 @@ nt
 
 bg black fade
 pause 5 script
-bg black fade
 
-bg witness
-fg wbench
-char sahwit e=normal (blink)
+bg witness fade
+fg wbench fade
+char sahwit e=normal (blink) fade
 
 fg Cross-ExaminationAnim
 nt
@@ -377,6 +380,10 @@ sfx sfx-stab
 pause 10 script
 "{s 10}Gah!"
 
+mus objection.ogg
+set _music_loop objection.ogg
+music _fade_in nowait
+
 bg defence
 fg dbench
 char phoenix e=confident (talk)
@@ -418,8 +425,6 @@ char payne e=sweating (talk)
 "...Yes, Your Honor."
 
 music _fade_out nowait
-
-bg black fade
 
 script cross3
 
