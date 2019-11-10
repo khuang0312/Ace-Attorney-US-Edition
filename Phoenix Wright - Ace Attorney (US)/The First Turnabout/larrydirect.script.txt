@@ -17,9 +17,6 @@ cross larrydirect
 
 set _testimony_blinker false
 set _allow_present_evidence false
-set _allow_present_profiles false
-
-//goto here //Uncomment for DEBUG sessions
 
 statement 1
 bg prosecution
@@ -31,7 +28,7 @@ statement 1 test
 statement 2
 bg witness
 fg wbench
-char larry e=headscratching (talk)
+char larry e=hello (talk)
 "Yo. I'm Larry Butz."
 statement 2 test
 
@@ -45,7 +42,7 @@ statement 3 test
 statement 4
 bg witness
 fg wbench
-char larry e=hello (talk)
+char larry e=headscratching (talk)
 "I do all kinds of stuff!"
 "I'm making statues at the moment, {n}and each one is unique."
 statement 4 test
@@ -65,7 +62,7 @@ statement 5 test
 statement 6
 bg witness
 fg wbench
-char larry e=smirk (talk)
+char larry e=hello (talk)
 "Yeah, that's The Thinker!"
 "It's one of my creations."
 statement 6 test
@@ -124,6 +121,7 @@ char larry e=crying (talk)
 char larry e=mad (talk)
 "{s 20}{sfx sfx-smack}WHAT'S IT TO YOU, ANYWAY!?"
 statement 13 test
+penalty -10
 
 statement 14
 bg prosecution
@@ -135,7 +133,7 @@ statement 14 test
 statement 15
 bg prosecution
 fg pbench
-char payne e=normal(talk)
+char payne e=normal (talk)
 set _ev cindy_passport
 sfx sfx-evidenceshoop
 showevl
