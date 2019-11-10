@@ -121,7 +121,6 @@ char larry e=crying (talk)
 char larry e=mad (talk)
 "{s 20}{sfx sfx-smack}WHAT'S IT TO YOU, ANYWAY!?"
 statement 13 test
-penalty -10
 
 statement 14
 bg prosecution
