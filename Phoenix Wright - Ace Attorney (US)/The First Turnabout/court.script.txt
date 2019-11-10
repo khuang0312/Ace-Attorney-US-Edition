@@ -1,25 +1,22 @@
-bg black fade
+bg black
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
 sfx sfx-gallery
 fg ani-gallery nowait
-
 fg phoenix_mia nowait
 fg judge nowait
 fg payne nowait
 
-pause 160
+pause 120
+
 fg ani-judge-gavel
 fg ani-judge-gavel
 
 mus trial.ogg
 set _music_loop trial.ogg
-music_fade_in nowait
 
 bg judgestand
-
 char judge e=normal (talk)
-
 "Good morning, ladies and gentlemen."
 "Court is now in session for the trial {n}of Butz v. the State of California."
 "This is a criminal case brought {n}by the state charging the {n}defendant, Larry Butz,"
