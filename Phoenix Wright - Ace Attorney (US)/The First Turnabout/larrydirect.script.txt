@@ -1,18 +1,17 @@
-bg witness fade
-fg wbench fade
-char larry e=hello (blink) fade
+bg witness
+fg wbench
+char larry e=hello (blink)
 
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}-- DIRECT EXAMINATION --{n}Larry Butz" //could increase the speed here...
+"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
 penalty 50
 penalty
 
 mus moderato.ogg
 set _music_loop moderato.ogg
-music_fade_in nowait
 
 cross larrydirect
 
