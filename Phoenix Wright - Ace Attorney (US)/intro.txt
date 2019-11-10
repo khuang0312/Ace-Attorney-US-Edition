@@ -1,4 +1,3 @@
-//Menu when starting the game
 set _order_cases variable
 	set _case_1 Larry Case
 	casemenu
