@@ -1,64 +1,9 @@
--Fix animation of payne when e=normal, not working until dialogue is finished
-
--Add Objection opportunities in direct testimonies, refer to objection handbook to write them
-
--Clean up formatting of evidence and profiles
-
--Change text colors to highlight key phrases
-
--Find a way to disable the back button during direct examination
-
--Find a way to label the correct objections without displaying the text differently / [CORRECT] displays right now
-
--Payne's normal animation is not working, fix or find alternate
-
--Add description text for objection handbook
-
--Add penalty threat whenever player has choice to press/object
-
 -Add save game so player doesn't start from beginning when gameover
 
 -Timer and penalty for closing statement
-
-Macro text moved here temporarily:
-
-//All this doesn't work; What they don't say is a macro file needs to be created first for these to work
-label court
-clearcourt
-set _defense Phoenix
-set _prosecutor Payne
-set _witness Sawhit
-set _judge Judge
-set _helper Mia
-clear
-startcourt
-//Till here
-
 
 Text Colors
 {c940} = orange
 {c089} = blue
 {c090} = green
 {c999} = white
-
-Sahwit Traditional Testimony moved here (unused):
-fg TestimonyAnim fade name=tanim
-nt
-delete name=tanim
-"{n}{center}{c940}--Witness's Account--"
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-
-set _testimony_blinker true
-"{tbon}My name is Frank Sahwit."
-"{tbon}I go door-to-door selling newspaper subscriptions."
-"{tbon}I saw the defendant fleeing an apartment while I was working at 1:00 PM on July 31st."
-"{tbon}He ran out leaving the door half-open behind him, so he must have been in a hurry."
-"{tbon}After seeing the defendant run away, I looked inside the apartment."
-"{tbon}A woman was on the ground...{p 5} She wasn't moving."
-"{tbon}The victim is, without a doubt, the woman I saw."
-"{tbon}I went to a nearby park and called the police immediately from a public phone."
-"{tbon}There was a phone in the victim's apartment, but it wasn't working."
-"{tbon}I don't have a cell phone, unfortunately."

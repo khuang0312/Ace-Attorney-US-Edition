@@ -1,0 +1,835 @@
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+goto here
+fg TestimonyAnim fade name=tanim
+delete name=tanim
+nt
+"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Frank Sahwit"
+
+mus moderato.ogg
+set _music_loop moderato.ogg
+
+cross sahwitdirect
+
+set _testimony_blinker false
+set _allow_present_evidence false
+
+statement 1
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Please state your first and last {n}name for the record."
+statement 1 test
+
+statement 2
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"My name is Frank Sahwit."
+statement 2 test
+
+statement 3
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Mr. Sahwit, what do you do {n}for a living?"
+statement 3 test
+
+statement 4
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I go door-to-door selling newspaper {n}subscriptions."
+statement 4 test
+
+statement 5
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Do you recognize the defendant {n}in this case?"
+statement 5 test
+
+statement 6
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes. I saw him fleeing an apartment {n}while I was working at 1:00 PM {n}on July 31st."
+statement 6 test
+
+statement 7
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Wasn't he acting strangely {n}at the time?"
+statement 7 test
+
+statement 8
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes, I would say that his behavior {n}was quite suspicious."
+statement 8 test
+
+statement 9
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Can you describe his actions in {n}greater detail?"
+statement 9 test
+
+statement 10
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
+statement 10 test
+
+statement 11
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"What did you do at the time?"
+statement 11 test
+
+statement 12
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"After seeing the defendant run away, {n}I looked inside the apartment."
+statement 12 test
+
+statement 13
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"You saw something terrible inside, {n}didn't you?"
+statement 13 test
+
+statement 14
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Oh, yes. {n}The sight chilled me to the core."
+statement 14 test
+
+statement 15
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"What did you see?"
+statement 15 test
+
+statement 16
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"A woman was on the ground.{p 5}.{p 5}.{p 5} {n}She wasn't moving."
+statement 16 test
+
+statement 17
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+set _ev cindy_autopsy
+sfx sfx-evidenceshoop
+showevl
+"Let me direct your attention to {n}the autopsy report."
+char payne e=normal (talk)
+"Do you recognize the woman in {n}the photograph of the body?"
+hideevl
+statement 17 test
+
+statement 18
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes. She is, without a doubt, {n}the woman I saw."
+statement 18 test
+
+statement 19
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"What did you do after you {n}saw the victim?"
+statement 19 test
+
+statement 20
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I went to a nearby park and {n}called the police immediately {n}from a public phone."
+statement 20 test
+
+statement 21
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Were there no other phones nearby?"
+statement 21 test
+
+statement 22
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"There was one in the victim's {n}apartment, but it wasn't working."
+"I don't have a cell phone, {n}unfortunately."
+statement 22 test
+
+statement 23
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Let the record show that the {n}blackout record corroborates {n}the witness' testimony,"
+"as there was a power outage {n}at the time."
+statement 23 test
+
+statement 24
+bg judgestand
+char judge e=surprised (talk)
+"Aren't phones supposed to work {n}during a blackout?"
+statement 24 test
+
+statement 25
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Yes, Your Honor."
+"However, some cordless phones do {n}not function normally without power."
+"The phone that Mr. Sahwit tried {n}to use was one of those."
+statement 25 test
+
+statement 26
+bg judgestand
+char judge e=surprised (talk)
+"I see.{p 5}.{p 5}.{p 5} New technology can be {n}quite a hindrance at times."
+statement 26 test
+
+statement 27
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Indeed."
+"Thank you, Mr. Sahwit. {n}No further questions."
+goto endoftestimony
+
+label press 1
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 1
+
+label press 2
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 2
+
+label press 3
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 3
+
+label press 4
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 4
+
+label press 5
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 5
+
+label press 6
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 6
+
+label press 7
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading result=Leading7
+li Prejudicial
+li Relevance
+li Vague result=Vague7
+showlist
+delete name=penalty
+goto 7
+
+label press 8
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 8
+
+label press 9
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 9
+
+label press 10
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 10
+
+label press 11
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 11
+
+label press 12
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 12
+
+label press 13
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading result=Leading13
+li Prejudicial
+li Relevance
+li Vague result=Vague13
+showlist
+delete name=penalty
+goto 13
+
+label press 14
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 14
+
+label press 15
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 15
+
+label press 16
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 16
+
+label press 17
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 17
+
+label press 18
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 18
+
+label press 19
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 19
+
+label press 20
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 20
+
+label press 21
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 21
+
+label press 22
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 22
+
+label press 23
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 23
+
+label press 24
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(I can't possibly object {n}to the judge...)"
+char phoenix e=thinking (blink)
+"{c089}(...Can I?)"
+char phoenix e=normal (blink)
+"{c089}(...)"
+char phoenix e=handsondesk (blink)
+"{c089}(... ... ... ...)"
+
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (blink)
+pause 60
+char phoenix e=sheepish (talk)
+"Sorry, Your Honor."
+"I just couldn't hold it in."
+
+bg judgestand
+char judge e=surprised (blink)
+pause 60
+char judge e=warning (blink)
+pause 30
+penalty threat=100
+pause 30
+sfx sfx-damage2
+penalty -100
+pause 30
+goto gameover
+
+label press 25
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 25
+
+label press 26
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(I can't possibly object {n}to the judge...)"
+char phoenix e=thinking (blink)
+"{c089}(...Can I?)"
+char phoenix e=normal (blink)
+"{c089}(...)"
+char phoenix e=handsondesk (blink)
+"{c089}(... ... ... ...)"
+
+mus
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (blink)
+pause 60
+char phoenix e=sheepish (talk)
+"Sorry, Your Honor."
+"I just couldn't hold it in."
+
+bg judgestand
+char judge e=surprised (blink)
+pause 60
+char judge e=warning (blink)
+pause 30
+penalty threat=100
+pause 30
+sfx sfx-damage2
+penalty -100
+pause 30
+goto gameover
+
+label press 27
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto endoftestimony
+
+label Asked and Answered
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10 script
+char phoenix e=pointing (talk)
+"Your Honor, this question has {n}been asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Leading
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Leading7
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 9
+
+label Leading13
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 15
+
+label Prejudicial
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Relevance
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Vague
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Vague7
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 9
+
+label Vague13
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please rephrase or move on, {n}Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 15
+
+label endoftestimony
+music_fade_out nowait
+endcross
+
+bg judgestand
+char judge e=normal (talk)
+"Your {c940}cross-examination{c999}, {n}Mr. Wright?"
+
+bg defence
+fg dbench
+char phoenix e=sweating (talk)
+"Y-Yes, Your Honor."
+char phoenix e=sweating (blink)
+"{c089}(Hoo boy... the pressure's {n}getting to me.)"
+label here
+mus truth.ogg
+set _music_loop truth.ogg
+music_fade_in nowait
+
+bg helper
+char mia e=bench-stern (talk)
+"Alright, this is it. The real deal!"
+"Remember: you're allowed to lead the {n}witness during {c940}cross-examination{c999}."
+"Think over what the witness just {n}testified about, and {c940}press{c999} them on {n}any weak statements they made."
+"If you find a contradiction, {c940}impeach{c999} {n}them by presenting evidence that {n}conflicts with their testimony."
+"This will help weaken the {n}prosecution's case."
+
+bg black
+nt
+"{c940}{sound}Opposing counsel will object {n}to improper questioning."
+"{c940}{sound}Press {c940}relevant statements. {n}{c090}Impeach{c940} by presenting evidence {n}from the Court Record."
+
+music_fade_out
+
+script sahwitcross
+
+label gameover
+mus
+fg ani-judge-gavel
+pause 30
+bg judgestand
+char judge e=warning (talk)
+"That's enough."
+char judge e=normal (talk)
+"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
+"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
+"The court declares a mistrial {n}and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. {p 30}Reset the game!"
+pause 60
+bg black
+sfx sfx-guilty
+pause 60
+exit

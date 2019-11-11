@@ -364,7 +364,7 @@ char mia e=bench-stern (talk)
 bg black fade
 music_fade_out
 
-script cross2
+script redirect1
 
 label none
 sfx phoenix\holdit
