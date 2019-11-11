@@ -507,8 +507,7 @@ pause 30
 sfx sfx-damage2
 penalty -100
 pause 30
-is penalty 0 gameover
-exit
+goto gameover
 
 label press 22
 bg defence
@@ -790,7 +789,6 @@ is penalty 0 gameover
 resume
 
 label endoftestimony
-delete name=penalty
 music_fade_out nowait
 endcross
 
