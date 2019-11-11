@@ -1,6 +1,6 @@
-bg witness fade
-fg wbench fade
-char sahwit e=normal (blink) fade
+bg witness
+fg wbench
+char sahwit e=normal (blink)
 
 fg TestimonyAnim fade name=tanim
 delete name=tanim

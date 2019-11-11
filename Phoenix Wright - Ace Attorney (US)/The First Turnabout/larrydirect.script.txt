@@ -16,7 +16,7 @@ cross larrydirect
 
 set _testimony_blinker false
 set _allow_present_evidence false
-goto here
+
 statement 1
 bg prosecution
 fg pbench
@@ -184,9 +184,8 @@ char larry e=crying (talk)
 "I'm gonna die."
 "I'm just gonna drop dead."
 "Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
-label here
 statement 20 test
-label here
+
 statement 21
 bg judgestand
 char judge e=surprised (talk)
