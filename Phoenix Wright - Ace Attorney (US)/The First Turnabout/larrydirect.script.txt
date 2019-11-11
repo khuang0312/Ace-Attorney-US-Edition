@@ -8,7 +8,6 @@ nt
 "{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
 
 penalty 50
-penalty
 
 mus moderato.ogg
 set _music_loop moderato.ogg
@@ -17,7 +16,7 @@ cross larrydirect
 
 set _testimony_blinker false
 set _allow_present_evidence false
-
+goto here
 statement 1
 bg prosecution
 fg pbench
@@ -42,8 +41,9 @@ statement 3 test
 statement 4
 bg witness
 fg wbench
-char larry e=headscratching (talk)
+char larry e=hello (talk)
 "I do all kinds of stuff!"
+char larry e=headscratching (talk)
 "I'm making statues at the moment, {n}and each one is unique."
 statement 4 test
 
@@ -115,11 +115,13 @@ statement 13
 bg witness
 fg wbench
 char larry e=mad (talk)
-"{sfx sfx-smack}I wasn't dumped!"
+sfx sfx-smack
+"{s 20}I wasn't dumped!"
 char larry e=crying (talk)
 "She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
 char larry e=mad (talk)
-"{s 20}{sfx sfx-smack}WHAT'S IT TO YOU, ANYWAY!?"
+sfx sfx-smack
+"{s 20}WHAT'S IT TO YOU, ANYWAY!?"
 statement 13 test
 
 statement 14
@@ -158,10 +160,10 @@ statement 18
 bg witness
 fg wbench
 char larry e=normal (talk)
-"Looks like she just got back from {n}Paris on {c940}July 30th{c999}{p 5}.{p 5}.{p 5}."
+"Looks like she just got back from {n}Paris on {c940}July 30th{c090}..."
 "{sfx sfx-realization}Wait a second."
 char larry e=crying (talk)
-"{s 15}Someone else wrote in here!"
+"{s 10}Someone else wrote in here!"
 ""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
 "{s 20}WHAT!?"
 "Dude...{p 10} no way..."
@@ -184,7 +186,7 @@ char larry e=crying (talk)
 "Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
 label here
 statement 20 test
-
+label here
 statement 21
 bg judgestand
 char judge e=surprised (talk)
@@ -239,7 +241,7 @@ label press 1
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -247,7 +249,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 1
 
 label press 2
@@ -255,14 +257,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 2
 
 label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -270,7 +273,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 3
 
 label press 4
@@ -278,14 +281,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 4
 
 label press 5
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -293,7 +297,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 5
 
 label press 6
@@ -301,14 +305,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 6
 
 label press 7
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading result=Leading
@@ -316,7 +321,7 @@ li Prejudicial result=Prejudicial
 li Relevance result=Relevance
 li Vague result=Vague
 showlist
-penalty
+delete name=penalty
 goto 7
 
 label press 8
@@ -330,7 +335,7 @@ label press 9
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -338,7 +343,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 9
 
 label press 10
@@ -346,7 +351,8 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 10
 
 label press 11
@@ -360,7 +366,7 @@ label press 12
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading result=Leading12
@@ -368,7 +374,7 @@ li Prejudicial result=Prejudicial12
 li Relevance result=Relevance12
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 12
 
 label press 13
@@ -376,14 +382,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 13
 
 label press 14
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -391,14 +398,14 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 14
 
 label press 15
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -406,7 +413,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 15
 
 label press 16
@@ -414,14 +421,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 16
 
 label press 17
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -429,7 +437,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 17
 
 label press 18
@@ -437,14 +445,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 18
 
 label press 19
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -452,7 +461,7 @@ li Prejudicial result=Prejudicial19
 li Relevance result=Relevance19
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 19
 
 label press 20
@@ -460,42 +469,53 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 20
 
 label press 21
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(I can't possibly object {n}to the judge...)"
+char phoenix e=thinking (blink)
+"{c089}(...Can I?)"
+char phoenix e=normal (blink)
+"{c089}(...)"
+char phoenix e=handsondesk (blink)
+"{c089}(... ... ... ...)"
+
 mus
 sfx phoenix\objection
 fg ObjectionAnim
-
 bg defence
 fg dbench
+char phoenix e=objecting
+pause 10
 char phoenix e=pointing (blink)
-pause 30 script
-"You, the judge..."
-fg speedline
-char phoenix e=zoom (talk)
-"are wrong!"
+pause 60
+char phoenix e=sheepish (talk)
+"Sorry, Your Honor."
+"I just couldn't hold it in."
 
 bg judgestand
-char judge e=warning (talk)
+char judge e=surprised (blink)
+pause 60
+char judge e=warning (blink)
+pause 30
+penalty threat=100
+pause 30
+sfx sfx-damage2
 penalty -100
-"How dare you Mr. Wright?"
-"You are hereby removed from the court for legal incompetence."
-"The defendant has the right to request a new attorney and be tried at a later date."
-"The court declares a mistrial and is adjourned."
-bg defence
-fg dbench
-char phoenix e=emo
-"Dang. Reset the game!"
-pause 30 script
+pause 30
+is penalty 0 gameover
 exit
 
 label press 22
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -503,14 +523,14 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 22
 
 label press 23
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -518,7 +538,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 23
 
 label press 24
@@ -526,14 +546,15 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 24
 
 label press 25
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -541,7 +562,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto 25
 
 label press 26
@@ -549,7 +570,8 @@ bg helper
 char mia e=bench-stern (talk)
 "Phoenix, this is opposing counsel's {n}direct examination."
 "You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for inappropriate {n}queries and refer to the objection {n}handbook if you need to."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
 goto 26
 
 
@@ -557,7 +579,7 @@ label press 27
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
-penalty threat=10
+penalty
 list
 li Asked and Answered
 li Leading
@@ -565,7 +587,7 @@ li Prejudicial
 li Relevance
 li Vague
 showlist
-penalty
+delete name=penalty
 goto endoftestimony
 
 label Asked and Answered
@@ -581,8 +603,11 @@ bg judgestand
 char judge e=normal (talk)
 "Overruled."
 "Answer the question, witness."
+penalty threat=10
+pause 30
 sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -599,8 +624,11 @@ bg judgestand
 char judge e=normal (talk)
 "Overruled."
 "Answer the question, witness."
+penalty threat=10
+pause 30
 sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -617,8 +645,10 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Please move on, Mr. Payne."
+pause 30
 sfx sfx-bling2
 penalty +10
+pause 30
 goto 15
 
 label Prejudicial
@@ -634,8 +664,11 @@ bg judgestand
 char judge e=normal (talk)
 "Overruled."
 "Answer the question, witness."
+penalty threat=10
+pause 30
 sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -652,7 +685,10 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
 penalty +10
+pause 30
 goto 15
 
 label Prejudicial19
@@ -668,7 +704,10 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
 penalty +10
+pause 30
 goto 23
 
 label Relevance
@@ -684,8 +723,11 @@ bg judgestand
 char judge e=normal (talk)
 "Overruled."
 "Answer the question, witness."
+penalty threat=10
+pause 30
 sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -702,7 +744,10 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
 penalty +10
+pause 30
 goto 15
 
 label Relevance19
@@ -718,7 +763,10 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
 penalty +10
+pause 30
 goto 23
 
 label Vague
@@ -734,8 +782,11 @@ bg judgestand
 char judge e=normal (talk)
 "Overruled."
 "Answer the question, witness."
+penalty threat=10
+pause 30
 sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -805,14 +856,14 @@ char payne e=confident (talk)
 
 bg black fade
 
-pause 60
+pause 30
 
 script sahwitdirect
 
 label gameover
 mus
 fg ani-judge-gavel
-pause 50 script
+pause 30
 bg judgestand
 char judge e=warning (talk)
 "That's enough."
@@ -823,6 +874,9 @@ char judge e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=emo
-"Dang. Reset the game!"
-pause 50 script
+"Dang. {p 30}Reset the game!"
+pause 60
+bg black
+sfx sfx-guilty
+pause 60
 exit

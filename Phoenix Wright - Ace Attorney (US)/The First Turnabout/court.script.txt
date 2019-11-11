@@ -303,7 +303,7 @@ penalty
 "{c940}{sound}Each successful objection {n}will raise the bar."
 penalty +10
 penalty
-"{c940}{sound}Allowing Larry to testify against {n}his own case will lower the bar."
+"{c940}{sound}Improper objections, among other {n}actions, will lower the bar."
 penalty -10
 delete name=penalty
 
