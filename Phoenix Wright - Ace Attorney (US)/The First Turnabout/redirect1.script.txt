@@ -5,7 +5,7 @@ char sahwit e=normal (blink)
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}- RE-DIRECT -{n}Frank Sahwit"
+"{c090}{center}{type}{spd 3}- RE-DIRECT -{n}The Time of Discovery"
 
 mus moderato.ogg
 set _music_loop moderato.ogg
@@ -213,7 +213,7 @@ char mia e=bench-stern (talk)
 
 bg black
 nt
-"{c940}{sound}Re-direct testimony is now added to {n}original testimony for cross-exam."
+"{c940}{sound}Re-direct testimony added to {n}original testimony for cross-exam."
 
 bg black fade
 

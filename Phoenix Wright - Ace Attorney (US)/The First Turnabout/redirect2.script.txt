@@ -5,7 +5,7 @@ char sahwit e=normal (blink)
 fg TestimonyAnim fade name=tanim
 delete name=tanim
 nt
-"{c090}{center}{type}{spd 3}- RE-DIRECT -{n}Frank Sahwit"
+"{c090}{center}{type}{spd 3}- RE-DIRECT -{n}Hearing the Time"
 
 mus moderato.ogg
 set _music_loop moderato.ogg
@@ -20,35 +20,34 @@ statement 1
 bg prosecution
 fg pbench
 char payne e=normal (talk)
-"Mr. Sahwit, why did you think {n}the time was 1:00 PM?"
+"Mr. Sahwit, how were you able {n}to hear the time given there {n}was a blackout?"
 statement 1 test
 
 statement 2
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"I... heard the time when {n}I found the body."
+"A-Actually, I didn't hear the time... {n}I saw it!"
 statement 2 test
 
 statement 3
 bg prosecution
 fg pbench
 char payne e=normal (talk)
-"From where did you hear the time?"
+"What allowed you to see the time?"
 statement 3 test
 
 statement 4
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"...There was a taped program {n}playing on the TV."
-"A voice mentioned the time as 1:00 PM."
+"I saw the time on a table clock, {n}the one the defendant used {n}to hit the victim."
 statement 4 test
 
 statement 5
 bg prosecution
 fg pbench
-char payne e=confident (talk)
+char payne e=normal (talk)
 "No further questions."
 goto endoftestimony
 
@@ -205,21 +204,22 @@ endcross
 
 bg judgestand
 char judge e=normal (talk)
-"You may re-cross, Mr. Wright."
+"Mr. Wright, you may re-cross."
 
-bg helper
-char mia e=bench-stern (talk)
-"You know what to do."
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"Gladly, Your Honor."
 
 bg black
 nt
-"{c940}{sound}Re-direct testimony is now added to {n}original testimony for cross-exam."
+"{c940}{sound}Re-direct testimony added to {n}original testimony for cross-exam."
 
 bg black fade
 
 pause 30
 
-script recross1
+script recross2
 
 label gameover
 mus
