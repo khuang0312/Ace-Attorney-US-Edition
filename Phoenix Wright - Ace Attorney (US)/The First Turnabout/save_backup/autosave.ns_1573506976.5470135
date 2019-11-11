@@ -26,8 +26,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "moderato.ogg",
-            "character": "payne",
+            "_track": null,
+            "character": "phoenix",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -35,19 +35,19 @@
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
                 "thinker_name": "Statue",
-                "_testimony_blinker": "true",
+                "_testimony_blinker": "false",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "moderato.ogg",
+                "_music_loop": "suspense.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 940}{sound}Re-direct testimony is now added to\noriginal testimony for cross-exam. \n",
+                "_last_written_text": "Mr. Sahwit, I have evidence that\npoints to the contrary... \n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "ev_mode_y": "12",
+                "penalty": "90",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -64,7 +64,7 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "present1",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -82,21 +82,21 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Payne",
+                "_speaking_name": "Phoenix",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
-                "_music_fade": "0",
-                "_lastline": "2",
+                "_music_fade": "100",
+                "_lastline": "424",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
                 "_court_fail_label": "none",
                 "_font_list": "pwinternational.ttf",
-                "_allow_present_evidence": "false",
+                "_allow_present_evidence": "true",
                 "ev_zrarrow_x": "240",
                 "ev_zrarrow_y": "90",
                 "_font_block_size": "10",
@@ -105,19 +105,20 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
+                "_ev": "thinker",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "payne",
+                "_speaking": "phoenix",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
                 "_nt_text_y": "0",
                 "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
+                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
@@ -132,7 +133,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_larrow_y": "90",
+                "ev_mode_y": "12",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -140,12 +141,12 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "cindy_autopsy",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
-                "_timer_value_music_fade_out_add": "-0.02",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -155,11 +156,11 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "4",
+                "_currentline": "423",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
-                "currentcross": 14,
+                "currentcross": 13,
                 "_textbox_x": "",
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
@@ -196,29 +197,19 @@
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.08",
+                "_timer_value_music_fade_in_add": "-0.14",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_statements": [
                     {
                         "test": null,
-                        "index": 18,
+                        "index": 20,
                         "words": "1"
                     },
                     {
                         "test": null,
-                        "index": 23,
-                        "words": "1 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 25,
+                        "index": 26,
                         "words": "2"
-                    },
-                    {
-                        "test": null,
-                        "index": 30,
-                        "words": "2 test"
                     },
                     {
                         "test": null,
@@ -227,31 +218,67 @@
                     },
                     {
                         "test": null,
-                        "index": 37,
-                        "words": "3 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 39,
+                        "index": 38,
                         "words": "4"
                     },
                     {
                         "test": null,
-                        "index": 45,
-                        "words": "4 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 47,
+                        "index": 44,
                         "words": "5"
                     },
                     {
                         "test": null,
-                        "index": 203,
+                        "index": 50,
+                        "words": "6"
+                    },
+                    {
+                        "test": null,
+                        "index": 56,
+                        "words": "7"
+                    },
+                    {
+                        "test": null,
+                        "index": 62,
+                        "words": "8"
+                    },
+                    {
+                        "test": null,
+                        "index": 68,
+                        "words": "9"
+                    },
+                    {
+                        "test": null,
+                        "index": 74,
+                        "words": "10"
+                    },
+                    {
+                        "test": null,
+                        "index": 80,
+                        "words": "11"
+                    },
+                    {
+                        "test": null,
+                        "index": 86,
+                        "words": "12"
+                    },
+                    {
+                        "test": null,
+                        "index": 92,
+                        "words": "13"
+                    },
+                    {
+                        "test": null,
+                        "index": 98,
+                        "words": "14"
+                    },
+                    {
+                        "test": null,
+                        "index": 104,
                         "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -267,13 +294,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 100926248,
+            "_world_id": 55586944,
             "statement": "",
             "pri": 0,
-            "scene": "recross1.script",
-            "cross": null,
-            "si": 8,
-            "lastline": 0,
+            "scene": "recross2.script",
+            "cross": "proceed",
+            "si": 423,
+            "lastline": 424,
             "instatement": false,
             "_objects": [
                 [
@@ -283,7 +310,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/prosecution",
+                        "name": "bg/defence",
                         "blinkspeed": [
                             100,
                             200
@@ -297,7 +324,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "prosecution",
+                        "id_name": "defence",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -318,7 +345,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "fg/pbench",
+                        "name": "fg/dbench",
                         "blinkspeed": [
                             100,
                             200
@@ -332,7 +359,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "pbench",
+                        "id_name": "dbench",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -350,11 +377,11 @@
                 [
                     "char",
                     [
-                        "payne/normal(blink)",
+                        "phoenix/document(blink)",
                         false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "document",
                         "pri": 20,
                         "pos": [
                             0,
@@ -378,10 +405,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Payne\n",
-                        "id_name": "payne",
+                        "nametag": "Phoenix\n",
+                        "id_name": "phoenix",
                         "tint": null,
-                        "charname": "payne",
+                        "charname": "phoenix",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -392,12 +419,12 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 5,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "payne/normal(blink)",
+                        "name": "phoenix/document(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -408,41 +435,13 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 2,
+                            "x": 20,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
+                        "blinkemo": "document",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
-                    }
-                ],
-                [
-                    "textbox",
-                    [
-                        "Mr. Sahwit, why did you think the time\nwas 1:00 PM? \n",
-                        [
-                            255,
-                            255,
-                            255
-                        ],
-                        2,
-                        1,
-                        true,
-                        false,
-                        "Payne\n"
-                    ],
-                    {
-                        "num_lines": 4,
-                        "text": "Mr. Sahwit, why did you think the time\nwas 1:00 PM? \n",
-                        "can_skip": false,
-                        "id_name": "_textbox_",
-                        "kill": false,
-                        "statement": null,
-                        "go": 1,
-                        "z": 4,
-                        "blocking": true,
-                        "wait": "auto"
                     }
                 ],
                 [
@@ -486,21 +485,64 @@
                     }
                 ],
                 [
-                    "button",
+                    "ev_menu",
                     [],
                     {
-                        "rpos": [
-                            177,
+                        "pri": 0,
+                        "pos": [
+                            0,
                             192
                         ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
+                        "fail": "none",
+                        "loops": false,
+                        "spd": 6,
                         "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
+                        "end": null,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "item_set": "evidence",
+                        "tint": null,
+                        "dim": 1,
+                        "sy": 0,
+                        "sx": 0,
+                        "name": "general/evidence",
+                        "items": [
+                            {
+                                "id": "badge",
+                                "page": "evidence"
+                            },
+                            {
+                                "id": "cindy_autopsy",
+                                "page": "evidence"
+                            },
+                            {
+                                "id": "thinker",
+                                "page": "evidence"
+                            },
+                            {
+                                "id": "cindy_passport",
+                                "page": "evidence"
+                            },
+                            {
+                                "id": "blackout",
+                                "page": "evidence"
+                            }
+                        ],
+                        "mode": "overview",
+                        "x": 0,
+                        "z": 7,
+                        "page": 0
                     }
                 ],
                 [
@@ -536,17 +578,29 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script22": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script51": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script36": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script29": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script215": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script211": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script43": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script44": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script207": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script552": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script557": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script403": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script394": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script410": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script415": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script379": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script102": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script373": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script96": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script537": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script378": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script421": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script542": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script6": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script547": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script562": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script561": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script404": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script405": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script370": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script384": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script389": true
             }
         },
         [
