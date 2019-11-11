@@ -1,141 +1,94 @@
-mus moderato.ogg
-set _music_loop moderato.ogg
-music _fade_in nowait
-
-bg prosecution
-fg pbench
-char payne e=normal (talk)
-"Mr. Sahwit, why did you think the time was 1:00 PM?"
-
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
-"I, uh, I heard the time when I found the body."
-
-bg prosecution
-fg pbench
-char payne e=normal (talk)
-"From where did you hear the time?"
-
-bg witness
-fg wbench
-char sahwit e=twitching (talk)
-"Er...{p 20}{sfx sfx-realization}{f} there was a taped program playing on the TV!"
-char sahwit e=normal (talk)
-"A voice mentioned the time as 1:00 PM."
-
-bg prosecution
-fg pbench
-char payne e=confident (talk)
-"No further questions."
-
-bg judgestand
-char judge e=normal (talk)
-"You may {c940}re-cross{c999}, Mr. Wright."
-
-bg helper
-char mia e=bench-stern (talk)
-"You know what to do."
-
-nt
-"{c090}[Re-direct testimony is now added to original testimony for cross-exam.]"
-
-bg black fade
-pause 5 script
-
-bg witness fade
-fg wbench fade
-char sahwit e=normal (blink) fade
+char sahwit e=normal (blink)
 
 fg Cross-ExaminationAnim
 nt
-"{c940}{center}{type}{spd 3}-- CROSS EXAMINATION --{n}The Time of Discovery"
-
-penalty
+"{c940}{center}{type}{spd 3}- RE-CROSS -{n}The Time of Discovery"
 
 mus allegro.ogg
 set _music_loop allegro.ogg
 music_fade_in nowait
 
-cross sahwit2
+cross recross1
 
 set _testimony_blinker false
 set _allow_present_evidence true
+
 label start
+goto 11
 
 statement 1
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}My name is Frank Sahwit."
+""{type}{spd 100}My name is Frank Sahwit.""
 
 statement 2
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I go door-to-door selling newspaper {n}subscriptions."
+""{type}{spd 100}I go door-to-door selling {n}newspaper subscriptions.""
 
 statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working at {n}1:00 PM on July 31st."
-
+""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 PM on July 31st.""
 
 statement 4
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I heard the time when I found the body."
-
+""{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry.""
 
 statement 5
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}There was a taped program playing on the TV, and a voice mentioned the time as 1:00 PM."
+""{type}{spd 100}After seeing the defendant {n}run away, I looked inside {n}the apartment.""
 
 statement 6
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry."
+""{type}{spd 100}A woman was on the ground. {n}She wasn't moving.""
 
 statement 7
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}After seeing the defendant run away, {n}I looked inside the apartment."
+""{type}{spd 100}The victim is, without a doubt, {n}the woman I saw.""
 
 statement 8
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}A woman was on the ground. {n}She wasn't moving."
+""{type}{spd 100}I went to a nearby park and {n}called the police immediately {n}from a public phone.""
 
 statement 9
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}The victim is, without a doubt, {n}the woman I saw."
+""{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working.""
 
 statement 10
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I went to a nearby park and called {n}the police immediately from {n}a public phone."
+""{type}{spd 100}I don't have a cell phone, {n}unfortunately.""
 
 statement 11
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working."
+""{type}{spd 100}I heard the time when I {n}found the body.""
 
 statement 12
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I don't have a cell phone, {n}unfortunately."
+""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00 PM.""
 
 endcross
 goto start
@@ -155,8 +108,11 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please refrain from {n}wasting the court's time."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
@@ -175,59 +131,26 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
 label press 3
 bg defence
 fg dbench
-char phoenix e=thinking (talk)
-"You're certain the time was 1:00 PM?"
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"Yes."
-bg defence
-fg dbench
-char phoenix e=handsondesk (talk)
-"And you discovered the body {n}immediately after, correct?"
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"That's right."
+char phoenix e=thinking (blink)
+"{c089}I've already impeached him {n}on this point."
 resume
 
 label press 4
 bg defence
 fg dbench
-char phoenix e=thinking (talk)
-"You heard the time instead of seeing it?"
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"Yes, heard."
-"All I saw was the body lying there..."
-"I didn't think to look at anything else, least of all my watch."
-
-label press 5
-bg defence
-fg dbench
-char phoenix e=thinking (talk)
-"So the TV was on and running then?"
-
-bg witness
-fg wbench
-char sahwit e=normal (talk)
-"Uh, yes"
-
-label press 6
-bg defence
-fg dbench
 char phoenix e=normal (talk)
-"Isn't a man leaving an apartment a common sight?"
+"Isn't a man leaving an apartment {n}a common sight?"
 bg witness
 fg wbench
 char sahwit e=normal (talk)
@@ -242,7 +165,7 @@ char sahwit e=normal (talk)
 "Yes, of course."
 resume
 
-label press 7
+label press 5
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -261,7 +184,7 @@ char sahwit e=normal (talk)
 "I was just curious, that's all."
 resume
 
-label press 8
+label press 6
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -272,11 +195,11 @@ char sahwit e=normal (talk)
 "No, but there was a lot {n}of blood everywhere."
 resume
 
-label press 9
+label press 7
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You're completely certain the woman {n}you saw was the victim?"
+"You're completely certain {n}the woman you saw {n}was the victim?"
 sfx payne\objection
 fg ObjectionAnim
 bg prosecution
@@ -287,12 +210,15 @@ bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
-label press 10
+label press 8
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -312,7 +238,7 @@ char sahwit e=normal (blink)
 ".{p 5}.{p 5}.{p 5}"
 resume
 
-label press 11
+label press 9
 bg defence
 fg dbench
 char phoenix e=normal (talk)
@@ -332,7 +258,7 @@ char sahwit e=normal (talk)
 "I reached inside and tried calling, {n}but it wasn't working."
 resume
 
-label press 12
+label press 10
 bg defence
 fg dbench
 char phoenix e=confident (talk)
@@ -342,49 +268,72 @@ fg ObjectionAnim
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Your Honor, counsel's question calls for irrelevant testimony."
+"Your Honor, counsel's question {n}calls for irrelevant testimony."
 bg judgestand
 char judge e=normal (talk)
 "Sustained."
 "Mr. Wright, please move on."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
-label blackout 5
+label press 11
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"So you heard the time instead {n}of seeing it?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes, heard."
+"All I saw was the body lying there..."
+"I didn't think to look at anything else, {n}least of all my watch."
+resume
+
+label press 12
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"So the TV was on and running, then?"
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Uh, yes."
+resume
+
+label blackout 12
 mus
 sfx phoenix\holdit
 fg HoldItAnim
-
 bg defence
 fg dbench
+char phoenix e=objecting
+pause 10
 char phoenix e=pointing (blink)
-pause 30 script
+pause 30
+char phoenix e=document (talk)
 set _ev blackout
 sfx sfx-evidenceshoop
 showevr
-char phoenix e=document (talk)
-"Let me direct your attention to the blackout record."
-sfx sfx-evidenceshoop
+"Let me direct your attention to {n}the blackout record."
 hideevr
-"Tell me, what time was the power out?"
+char phoenix e=pointing (talk)
+"Tell me, what time was {n}the power out?"
 
 bg witness
 fg wbench
-char sahwit e=twitching (talk)
+char sahwit e=normal (talk)
 "...12:00 PM to 6:00 PM."
-
+sfx sfx-realization
 char sahwit e=damage
 sfx sfx-stab
-pause 10 script
+pause 10
+char sahwit e=twitching (blink)
 "{s 10}Gah!"
-
-bg prosecution
-fg pbench
-char payne e=damage
-sfx sfx-smack
-pause 25 script
 
 mus objection.ogg
 set _music_loop objection.ogg
@@ -392,29 +341,29 @@ music _fade_in nowait
 
 bg defence
 fg dbench
-char phoenix e=confident (talk)
-"Mr. Sahwit, you are aware witnesses must tell the truth under penalty of perjury, are you not?"
+char phoenix e=pointing (talk)
+"Mr. Sahwit, you are aware witnesses {n}must tell the truth under penalty of {n}perjury, are you not?"
 
 bg witness
 fg wbench
-char sahwit e=glaring (talk)
+char sahwit e=twitching (talk)
 "I... well... {s 5}urk!"
 
 bg judgestand
 char judge e=warning (talk)
 "Mr. Sahwit?"
-"The court would prefer to hear an accurate testimony from the very beginning."
-"These constant corrections are harming your credibility."
+"The court would prefer to hear {n}an accurate testimony from {n}the very beginning."
+"These constant corrections are {n}harming your credibility."
 
 bg witness
 fg wbench
-char sahwit e=glaring (blink)
-sfx sfx-realization
-"...!"
+char sahwit e=damage
+sfx sfx-stab
+pause 10
 char sahwit e=twitching (talk)
 "My apologies, Your Honor!"
 "I seem to have mixed a few details up."
-"It, uh, it must have been the shock of finding the body."
+"It, uh, it must have been the shock {n}from finding the body."
 
 bg defence
 fg dbench
@@ -430,20 +379,20 @@ fg pbench
 char payne e=sweating (talk)
 "...Yes, Your Honor."
 
-music _fade_out nowait
+bg black fade
+music_fade_out
 
-script cross3
+script redirect2
 
 label none
-mus
 sfx phoenix\holdit
 fg HoldItAnim
 bg defence
 fg dbench
 char phoenix e=objecting
-pause 30
+pause 10
 char phoenix e=pointing (talk)
-"Let me direct your attention to this piece of evidence."
+"Let me direct your attention {n}to this piece of evidence."
 
 bg witness
 fg wbench
@@ -452,8 +401,8 @@ char sahwit e=normal (talk)
 
 bg defence
 fg dbench
-char phoenix e=thinking (talk)
-"Doesn't it contradict your testimony?"
+char phoenix e=handsondesk (talk)
+"Doesn't it contradict {n}your testimony?"
 
 bg witness
 fg wbench
@@ -463,29 +412,37 @@ char sahwit e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
-"{c089}(I think I've taken a wrong path...)"
+"{c089}(I can't see where I was {n}going with this...)"
 
 bg judgestand
 char judge e=warning (talk)
-"Mr. Wright, this line of questioning is going nowhere."
+"Mr. Wright, this line of questioning {n}is going nowhere."
 "Please move on."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 is penalty 0 gameover
 resume
 
 label gameover
 mus
+fg ani-judge-gavel
+pause 30
 bg judgestand
 char judge e=warning (talk)
-"That's enough. Mr. Wright, you are hereby removed from the court for legal incompetence."
-"The defendant has the right to request a new attorney and be tried at a later date."
-"The court declares a mistrial and is adjourned."
-
+"That's enough."
+char judge e=normal (talk)
+"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
+"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
+"The court declares a mistrial {n}and is adjourned."
 bg defence
 fg dbench
-cahr phoenix e=emo
-"...Dang."
-"Reset the game!"
-pause 50 script
+char phoenix e=emo
+"Dang. {p 30}Reset the game!"
+pause 60
+bg black
+sfx sfx-guilty
+pause 60
 exit
