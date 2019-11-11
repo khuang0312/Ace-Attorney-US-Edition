@@ -8,6 +8,22 @@
                 {
                     "id": "badge",
                     "page": "evidence"
+                },
+                {
+                    "id": "cindy_autopsy",
+                    "page": "evidence"
+                },
+                {
+                    "id": "thinker",
+                    "page": "evidence"
+                },
+                {
+                    "id": "cindy_passport",
+                    "page": "evidence"
+                },
+                {
+                    "id": "blackout",
+                    "page": "evidence"
                 }
             ],
             "_track": "truth.ogg",
@@ -31,7 +47,7 @@
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "100",
+                "ev_mode_y": "12",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -57,7 +73,7 @@
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "ev_items_y": "63",
+                "_nt_image": "",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -78,9 +94,8 @@
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
-                "_court_fail_label": "none",
+                "_shake_sound": "false",
                 "_font_list": "pwinternational.ttf",
-                "_allow_present_evidence": "false",
                 "ev_zrarrow_x": "240",
                 "ev_zrarrow_y": "90",
                 "_font_block_size": "10",
@@ -89,7 +104,7 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_ev": "cindy_autopsy",
+                "_layering_method": "zorder",
                 "_music_fade_nowait": "",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
@@ -99,10 +114,9 @@
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_nt_text_y": "0",
-                "_nt_image": "",
+                "_timer_value_music_fade_in_add": "-0.08",
+                "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
-                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
@@ -117,7 +131,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_mode_y": "12",
+                "ev_larrow_y": "90",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -125,7 +139,6 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
-                "_selected": "Leading13",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
@@ -145,7 +158,6 @@
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
-                "currentcross": 13,
                 "_textbox_x": "",
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
@@ -170,7 +182,6 @@
                 "_font_tb": "pwinternational.ttf",
                 "ev_rarrow_y": "90",
                 "ev_rarrow_x": "240",
-                "_shake_sound": "false",
                 "_font_list_size": "10",
                 "ev_mode_bg_profiles": "general/evidence",
                 "_nt_y": "",
@@ -182,283 +193,10 @@
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.08",
+                "_nt_text_y": "0",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
-                "_statements": [
-                    {
-                        "test": null,
-                        "index": 17,
-                        "words": "1"
-                    },
-                    {
-                        "test": null,
-                        "index": 22,
-                        "words": "1 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 24,
-                        "words": "2"
-                    },
-                    {
-                        "test": null,
-                        "index": 29,
-                        "words": "2 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 31,
-                        "words": "3"
-                    },
-                    {
-                        "test": null,
-                        "index": 36,
-                        "words": "3 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 38,
-                        "words": "4"
-                    },
-                    {
-                        "test": null,
-                        "index": 43,
-                        "words": "4 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 45,
-                        "words": "5"
-                    },
-                    {
-                        "test": null,
-                        "index": 50,
-                        "words": "5 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 52,
-                        "words": "6"
-                    },
-                    {
-                        "test": null,
-                        "index": 57,
-                        "words": "6 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 59,
-                        "words": "7"
-                    },
-                    {
-                        "test": null,
-                        "index": 64,
-                        "words": "7 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 66,
-                        "words": "8"
-                    },
-                    {
-                        "test": null,
-                        "index": 71,
-                        "words": "8 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 73,
-                        "words": "9"
-                    },
-                    {
-                        "test": null,
-                        "index": 78,
-                        "words": "9 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 80,
-                        "words": "10"
-                    },
-                    {
-                        "test": null,
-                        "index": 85,
-                        "words": "10 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 87,
-                        "words": "11"
-                    },
-                    {
-                        "test": null,
-                        "index": 92,
-                        "words": "11 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 94,
-                        "words": "12"
-                    },
-                    {
-                        "test": null,
-                        "index": 99,
-                        "words": "12 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 101,
-                        "words": "13"
-                    },
-                    {
-                        "test": null,
-                        "index": 106,
-                        "words": "13 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 108,
-                        "words": "14"
-                    },
-                    {
-                        "test": null,
-                        "index": 113,
-                        "words": "14 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 115,
-                        "words": "15"
-                    },
-                    {
-                        "test": null,
-                        "index": 120,
-                        "words": "15 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 122,
-                        "words": "16"
-                    },
-                    {
-                        "test": null,
-                        "index": 127,
-                        "words": "16 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 129,
-                        "words": "17"
-                    },
-                    {
-                        "test": null,
-                        "index": 140,
-                        "words": "17 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 142,
-                        "words": "18"
-                    },
-                    {
-                        "test": null,
-                        "index": 147,
-                        "words": "18 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 149,
-                        "words": "19"
-                    },
-                    {
-                        "test": null,
-                        "index": 154,
-                        "words": "19 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 156,
-                        "words": "20"
-                    },
-                    {
-                        "test": null,
-                        "index": 161,
-                        "words": "20 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 163,
-                        "words": "21"
-                    },
-                    {
-                        "test": null,
-                        "index": 168,
-                        "words": "21 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 170,
-                        "words": "22"
-                    },
-                    {
-                        "test": null,
-                        "index": 176,
-                        "words": "22 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 178,
-                        "words": "23"
-                    },
-                    {
-                        "test": null,
-                        "index": 184,
-                        "words": "23 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 186,
-                        "words": "24"
-                    },
-                    {
-                        "test": null,
-                        "index": 190,
-                        "words": "24 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 192,
-                        "words": "25"
-                    },
-                    {
-                        "test": null,
-                        "index": 199,
-                        "words": "25 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 201,
-                        "words": "26"
-                    },
-                    {
-                        "test": null,
-                        "index": 205,
-                        "words": "26 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 207,
-                        "words": "27"
-                    },
-                    {
-                        "test": null,
-                        "index": 781,
-                        "words": "$$$"
-                    }
-                ],
                 "_allow_click_load": "true",
-                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -474,12 +212,12 @@
         "assets.Script",
         [],
         {
-            "_world_id": 1318462008,
+            "_world_id": 55649184,
             "statement": "",
             "pri": 0,
-            "scene": "cross.script",
+            "scene": "sahwitcross.script",
             "cross": null,
-            "si": 9,
+            "si": 7,
             "lastline": 0,
             "instatement": false,
             "_objects": [
@@ -579,7 +317,6 @@
                         "invert": 0,
                         "loopmode": 0,
                         "start": 0,
-                        "fade": 0,
                         "greyscale": 0,
                         "blinkspeed": [
                             100,
@@ -664,7 +401,7 @@
                 [
                     "textbox",
                     [
-                        "{c 940}{center}{type}{spd 3}-- CROSS EXAMINATION --\nFrank Sahwit\n",
+                        "{c 940}{center}{type}{spd 3}- CROSS EXAMINATION -\nFrank Sahwit\n",
                         [
                             255,
                             255,
@@ -678,7 +415,7 @@
                     ],
                     {
                         "num_lines": 4,
-                        "text": "{c 940}{center}{type}{spd 3}-- CROSS EXAMINATION --\nFrank Sahwit\n",
+                        "text": "{c 940}{center}{type}{spd 3}- CROSS EXAMINATION -\nFrank Sahwit\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "_clicksound": "typewriter.ogg",
@@ -781,61 +518,14 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script63": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script182": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script49": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script183": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script189": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script42": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script21": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script667": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script28": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script631": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script630": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script98": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script84": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script204": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script8": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script167": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script91": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script160": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script105": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script792": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script790": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script126": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script146": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script752": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script77": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script198": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script753": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script56": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script196": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script197": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script35": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script801": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script808": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script809": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitcross.script6": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script802": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script803": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script800": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script610": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script671": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script670": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script804": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script212": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script606": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script153": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script627": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script211": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script749": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script174": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script175": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script609": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script785": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script136": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script138": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script119": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script801": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script804": true
             }
         },
         [
