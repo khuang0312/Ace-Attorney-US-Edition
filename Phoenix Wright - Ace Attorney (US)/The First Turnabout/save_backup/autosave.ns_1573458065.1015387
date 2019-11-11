@@ -10,8 +10,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": null,
-            "character": "phoenix",
+            "_track": "truth.ogg",
+            "character": "mia",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -22,16 +22,16 @@
                 "_testimony_blinker": "false",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "moderato.ogg",
+                "_music_loop": "truth.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "You, the judge...\n",
+                "_last_written_text": "{c 089}(Hoo boy... the pressure's \ngetting to me.)\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "50",
+                "ev_mode_y": "12",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -48,10 +48,11 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "press_21",
+                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
@@ -65,7 +66,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Mia",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -73,7 +74,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "193",
+                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -88,19 +89,19 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_ev": "cindy_passport",
+                "_layering_method": "zorder",
+                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "mia",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "ev_cursor_img": "general/cursor_ev",
+                "_nt_text_y": "0",
                 "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
-                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
@@ -115,7 +116,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_mode_y": "12",
+                "ev_larrow_y": "90",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -128,6 +129,7 @@
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
+                "_timer_value_music_fade_out_add": "-0.08",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -137,16 +139,16 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "1",
+                "_currentline": "2",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
-                "currentcross": 15,
+                "currentcross": 13,
                 "_textbox_x": "",
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "exit",
+                "_lastlabel": "enddd",
                 "_nt_x": "",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
@@ -178,288 +180,282 @@
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_nt_text_y": "0",
+                "_timer_value_music_fade_in_add": "-0.08",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_statements": [
                     {
                         "test": null,
-                        "index": 19,
+                        "index": 17,
                         "words": "1"
                     },
                     {
                         "test": null,
-                        "index": 24,
+                        "index": 22,
                         "words": "1 test"
                     },
                     {
                         "test": null,
-                        "index": 26,
+                        "index": 24,
                         "words": "2"
                     },
                     {
                         "test": null,
-                        "index": 31,
+                        "index": 29,
                         "words": "2 test"
                     },
                     {
                         "test": null,
-                        "index": 33,
+                        "index": 31,
                         "words": "3"
                     },
                     {
                         "test": null,
-                        "index": 38,
+                        "index": 36,
                         "words": "3 test"
                     },
                     {
                         "test": null,
-                        "index": 40,
+                        "index": 38,
                         "words": "4"
                     },
                     {
                         "test": null,
-                        "index": 47,
+                        "index": 43,
                         "words": "4 test"
                     },
                     {
                         "test": null,
-                        "index": 49,
+                        "index": 45,
                         "words": "5"
                     },
                     {
                         "test": null,
-                        "index": 59,
+                        "index": 50,
                         "words": "5 test"
                     },
                     {
                         "test": null,
-                        "index": 61,
+                        "index": 52,
                         "words": "6"
                     },
                     {
                         "test": null,
-                        "index": 67,
+                        "index": 57,
                         "words": "6 test"
                     },
                     {
                         "test": null,
-                        "index": 69,
+                        "index": 59,
                         "words": "7"
                     },
                     {
                         "test": null,
-                        "index": 74,
+                        "index": 64,
                         "words": "7 test"
                     },
                     {
                         "test": null,
-                        "index": 76,
+                        "index": 66,
                         "words": "8"
                     },
                     {
                         "test": null,
-                        "index": 81,
+                        "index": 71,
                         "words": "8 test"
                     },
                     {
                         "test": null,
-                        "index": 83,
+                        "index": 73,
                         "words": "9"
                     },
                     {
                         "test": null,
-                        "index": 88,
+                        "index": 78,
                         "words": "9 test"
                     },
                     {
                         "test": null,
-                        "index": 90,
+                        "index": 80,
                         "words": "10"
                     },
                     {
                         "test": null,
-                        "index": 97,
+                        "index": 85,
                         "words": "10 test"
                     },
                     {
                         "test": null,
-                        "index": 99,
+                        "index": 87,
                         "words": "11"
                     },
                     {
                         "test": null,
-                        "index": 104,
+                        "index": 92,
                         "words": "11 test"
                     },
                     {
                         "test": null,
-                        "index": 106,
+                        "index": 94,
                         "words": "12"
                     },
                     {
                         "test": null,
-                        "index": 111,
+                        "index": 99,
                         "words": "12 test"
                     },
                     {
                         "test": null,
-                        "index": 113,
+                        "index": 101,
                         "words": "13"
                     },
                     {
                         "test": null,
-                        "index": 124,
+                        "index": 106,
                         "words": "13 test"
                     },
                     {
                         "test": null,
-                        "index": 126,
+                        "index": 108,
                         "words": "14"
                     },
                     {
                         "test": null,
-                        "index": 131,
+                        "index": 113,
                         "words": "14 test"
                     },
                     {
                         "test": null,
-                        "index": 133,
+                        "index": 115,
                         "words": "15"
                     },
                     {
                         "test": null,
-                        "index": 142,
+                        "index": 120,
                         "words": "15 test"
                     },
                     {
                         "test": null,
-                        "index": 144,
+                        "index": 122,
                         "words": "16"
                     },
                     {
                         "test": null,
-                        "index": 149,
+                        "index": 127,
                         "words": "16 test"
                     },
                     {
                         "test": null,
-                        "index": 151,
+                        "index": 129,
                         "words": "17"
                     },
                     {
                         "test": null,
-                        "index": 156,
+                        "index": 140,
                         "words": "17 test"
                     },
                     {
                         "test": null,
-                        "index": 158,
+                        "index": 142,
                         "words": "18"
                     },
                     {
                         "test": null,
-                        "index": 169,
+                        "index": 147,
                         "words": "18 test"
                     },
                     {
                         "test": null,
-                        "index": 171,
+                        "index": 149,
                         "words": "19"
                     },
                     {
                         "test": null,
-                        "index": 176,
+                        "index": 154,
                         "words": "19 test"
                     },
                     {
                         "test": null,
-                        "index": 178,
+                        "index": 156,
                         "words": "20"
                     },
                     {
                         "test": null,
-                        "index": 187,
+                        "index": 161,
                         "words": "20 test"
                     },
                     {
                         "test": null,
-                        "index": 189,
+                        "index": 163,
                         "words": "21"
                     },
                     {
                         "test": null,
-                        "index": 193,
+                        "index": 168,
                         "words": "21 test"
                     },
                     {
                         "test": null,
-                        "index": 195,
+                        "index": 170,
                         "words": "22"
                     },
                     {
                         "test": null,
-                        "index": 200,
+                        "index": 176,
                         "words": "22 test"
                     },
                     {
                         "test": null,
-                        "index": 202,
+                        "index": 178,
                         "words": "23"
                     },
                     {
                         "test": null,
-                        "index": 207,
+                        "index": 184,
                         "words": "23 test"
                     },
                     {
                         "test": null,
-                        "index": 209,
+                        "index": 186,
                         "words": "24"
                     },
                     {
                         "test": null,
-                        "index": 214,
+                        "index": 190,
                         "words": "24 test"
                     },
                     {
                         "test": null,
-                        "index": 216,
+                        "index": 192,
                         "words": "25"
                     },
                     {
                         "test": null,
-                        "index": 221,
+                        "index": 199,
                         "words": "25 test"
                     },
                     {
                         "test": null,
-                        "index": 223,
+                        "index": 201,
                         "words": "26"
                     },
                     {
                         "test": null,
-                        "index": 228,
+                        "index": 205,
                         "words": "26 test"
                     },
                     {
                         "test": null,
-                        "index": 230,
+                        "index": 207,
                         "words": "27"
                     },
                     {
                         "test": null,
-                        "index": 235,
-                        "words": "27 test"
-                    },
-                    {
-                        "test": null,
-                        "index": 785,
+                        "index": 721,
                         "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
-                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -475,185 +471,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 796127560,
+            "_world_id": 1195037440,
             "statement": "",
             "pri": 0,
-            "scene": "local://builtin",
+            "scene": "sahwitdirect.script",
             "cross": null,
-            "si": 3,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 0.74600000000000066,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/../general/logosmall",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            -25,
-                            -15
-                        ],
-                        "loopmode": 0,
-                        "id_name": "logo",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": 81,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": "",
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "_world_id": 796308544,
-            "viewed": {},
-            "scene": "",
-            "lastline": ""
-        },
-        [
-            "stack",
-            1
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 796096552,
-            "statement": "",
-            "pri": 0,
-            "scene": "intro",
-            "cross": null,
-            "si": 3,
-            "lastline": 0,
+            "si": 741,
+            "lastline": 214,
             "instatement": false,
             "_objects": [
                 [
@@ -663,7 +487,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/case1-1",
+                        "name": "bg/helper",
                         "blinkspeed": [
                             100,
                             200
@@ -677,7 +501,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "case1-1",
+                        "id_name": "helper",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -689,144 +513,16 @@
                             0,
                             0
                         ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 404289016,
-            "statement": "21",
-            "pri": 0,
-            "scene": "larrydirect.script",
-            "cross": "pressed",
-            "si": 488,
-            "lastline": 193,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/defence",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "defence",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/dbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "dbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/speedline",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "speedline",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": 1,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
                     }
                 ],
                 [
                     "char",
                     [
-                        "phoenix/zoom(blink)",
+                        "mia/bench-stern(blink)",
                         false
                     ],
                     {
-                        "emoname": "zoom",
+                        "emoname": "bench-stern",
                         "pri": 20,
                         "pos": [
                             0,
@@ -849,11 +545,11 @@
                             100,
                             200
                         ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "clicksound": "blipfemale.ogg",
+                        "nametag": "Mia\n",
+                        "id_name": "mia",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "mia",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -867,9 +563,9 @@
                             "x": 0,
                             "spd": 6
                         },
-                        "modename": "talk",
+                        "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/zoom(blink)",
+                        "name": "mia/bench-stern(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -880,10 +576,10 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 12,
                             "spd": 6
                         },
-                        "blinkemo": "zoom",
+                        "blinkemo": "bench-stern",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -892,7 +588,7 @@
                 [
                     "textbox",
                     [
-                        "are wrong!\n",
+                        "Alright, this is it. The real deal!\n",
                         [
                             255,
                             255,
@@ -902,11 +598,11 @@
                         1,
                         true,
                         false,
-                        "Phoenix\n"
+                        "Mia\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "are wrong!\n",
+                        "text": "Alright, this is it. The real deal!\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -1008,50 +704,19 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script155": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script118": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script110": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script484": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script130": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script168": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script57": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script56": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script73": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script23": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script175": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script192": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script87": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script80": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script120": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script123": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script140": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script487": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script103": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script185": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script148": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script46": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script44": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script65": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script66": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script30": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script37": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script182": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script183": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script95": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script94": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script184": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script96": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script165": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script166": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script167": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script162": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutlarrydirect.script163": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script740": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script204": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script212": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script211": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script732": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script730": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script725": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true
             }
         },
         [
             "stack",
-            3
+            0
         ]
     ]
 ]

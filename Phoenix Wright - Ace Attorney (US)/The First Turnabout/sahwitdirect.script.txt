@@ -800,7 +800,7 @@ bg helper
 char mia e=bench-stern (talk)
 "Alright, this is it. The real deal!"
 "Remember: you're allowed to lead the {n}witness during {c940}cross-examination{c999}."
-"{c940}Press{c999} them on any weak statements {n}they made in the direct examination {n}just now."
+"Think over what the witness just {n}testified about, and {c940}press{c999} them on {n}any weak statements they made."
 "If you find a contradiction, {c940}impeach{c999} {n}them by presenting evidence that {n}conflicts with their testimony."
 "This will help weaken the {n}prosecution's case."
 

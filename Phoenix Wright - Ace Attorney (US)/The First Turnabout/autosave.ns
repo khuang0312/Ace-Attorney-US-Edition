@@ -11,7 +11,7 @@
                 }
             ],
             "_track": "truth.ogg",
-            "character": "mia",
+            "character": "sahwit",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -19,19 +19,19 @@
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
                 "thinker_name": "Statue",
-                "_testimony_blinker": "false",
+                "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "truth.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{c 089}(Hoo boy... the pressure's \ngetting to me.)\n",
+                "_last_written_text": "{c 940}{sound}Press {c 940}relevant statements. \n{c 090}Impeach{c 940} by presenting evidence \nfrom the Court Record.\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "ev_mode_y": "12",
+                "penalty": "100",
                 "ev_mode_x": "4",
                 "_penalty_script": "",
                 "_font_itemname_size": "10",
@@ -66,14 +66,14 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Mia",
+                "_speaking_name": "",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
                 "cindy_passport_pic": "en_passport.gif",
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
-                "_music_fade": "100",
+                "_music_fade": "0",
                 "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
@@ -89,19 +89,20 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
-                "_music_fade_nowait": "nowait",
+                "_ev": "cindy_autopsy",
+                "_music_fade_nowait": "",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "mia",
+                "_speaking": "",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
                 "_nt_text_y": "0",
                 "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
+                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
@@ -116,7 +117,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_larrow_y": "90",
+                "ev_mode_y": "12",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -124,12 +125,13 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "Leading13",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
-                "_timer_value_music_fade_out_add": "-0.08",
+                "_timer_value_music_fade_out_add": "-0.14",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -139,7 +141,7 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "2",
+                "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -148,7 +150,7 @@
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "enddd",
+                "_lastlabel": "exit",
                 "_nt_x": "",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
@@ -451,11 +453,12 @@
                     },
                     {
                         "test": null,
-                        "index": 721,
+                        "index": 781,
                         "words": "$$$"
                     }
                 ],
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -471,13 +474,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 1195037440,
+            "_world_id": 1318462008,
             "statement": "",
             "pri": 0,
-            "scene": "sahwitdirect.script",
+            "scene": "cross.script",
             "cross": null,
-            "si": 741,
-            "lastline": 214,
+            "si": 9,
+            "lastline": 0,
             "instatement": false,
             "_objects": [
                 [
@@ -487,7 +490,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/helper",
+                        "name": "bg/witness",
                         "blinkspeed": [
                             100,
                             200
@@ -501,7 +504,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "helper",
+                        "id_name": "witness",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -516,13 +519,49 @@
                     }
                 ],
                 [
+                    "fg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/wbench",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "wbench",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 3,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "wait": 1
+                    }
+                ],
+                [
                     "char",
                     [
-                        "mia/bench-stern(blink)",
+                        "sahwit/normal(blink)",
                         false
                     ],
                     {
-                        "emoname": "bench-stern",
+                        "emoname": "normal",
                         "pri": 20,
                         "pos": [
                             0,
@@ -540,16 +579,17 @@
                         "invert": 0,
                         "loopmode": 0,
                         "start": 0,
+                        "fade": 0,
                         "greyscale": 0,
                         "blinkspeed": [
                             100,
                             200
                         ],
-                        "clicksound": "blipfemale.ogg",
-                        "nametag": "Mia\n",
-                        "id_name": "mia",
+                        "clicksound": "blipmale.ogg",
+                        "nametag": "Sahwit\n",
+                        "id_name": "sahwit",
                         "tint": null,
-                        "charname": "mia",
+                        "charname": "sahwit",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -565,7 +605,7 @@
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "mia/bench-stern(blink)",
+                        "name": "sahwit/normal(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -576,41 +616,78 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 12,
+                            "x": 0,
                             "spd": 6
                         },
-                        "blinkemo": "bench-stern",
+                        "blinkemo": "normal",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
                     }
                 ],
                 [
+                    "fg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "fg/Cross-ExaminationAnim",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "Cross-ExaminationAnim",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": 0,
+                        "x": 20,
+                        "z": 3,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "wait": 1
+                    }
+                ],
+                [
                     "textbox",
                     [
-                        "Alright, this is it. The real deal!\n",
+                        "{c 940}{center}{type}{spd 3}-- CROSS EXAMINATION --\nFrank Sahwit\n",
                         [
                             255,
                             255,
                             255
                         ],
                         2,
-                        1,
+                        3.0,
                         true,
                         false,
-                        "Mia\n"
+                        "\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "Alright, this is it. The real deal!\n",
+                        "text": "{c 940}{center}{type}{spd 3}-- CROSS EXAMINATION --\nFrank Sahwit\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
+                        "_clicksound": "typewriter.ogg",
                         "kill": false,
                         "statement": null,
                         "go": 1,
                         "z": 4,
                         "blocking": true,
-                        "wait": "auto"
+                        "wait": "manual"
                     }
                 ],
                 [
@@ -704,14 +781,61 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script740": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script63": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script182": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script49": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script183": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script189": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script21": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script667": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script28": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script631": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script630": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script98": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script84": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script204": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script8": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script167": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script91": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script160": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script105": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script792": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script790": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script126": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script146": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script752": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script77": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script198": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script753": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script56": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script196": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script197": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script35": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script801": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script808": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script809": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script802": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script803": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script800": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script610": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script671": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script670": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script804": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script212": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script606": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script153": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script627": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script211": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script732": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script730": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script725": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script749": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script174": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script175": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script609": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script785": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script136": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script138": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script119": true
             }
         },
         [
