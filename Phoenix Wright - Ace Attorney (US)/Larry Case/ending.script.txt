@@ -1,0 +1,60 @@
+//
+bg judgestand
+
+char judge e=warning (talk)
+"...Mr. Wright?"
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Yes, Your Honor." 
+
+"The defense is ready to present{n} 
+its closing argument."
+
+bg judgestand
+char judge e=warning (talk)
+"You may proceed."
+
+bg defence
+fg dbench
+
+char phoenix e=confident (talk)
+"May it please the court."
+
+char phoenix e=normal (talk)
+"The prosecution had the burden of {n}conclusively proving that... 
+
+"...the defendant, Larry Butz,{n} committed murder."
+
+"They attempted to do so by{n} presenting a witness, Mr. Sahwit, {n}who allegedly saw..."
+
+"...Mr.Butz fleeing the scene of the crime."
+
+char phoenix e=document (talk)
+"Over the course of this trial, {n}we have discovered that {n}Mr. Sahwit believed...
+
+"...the time was 1:00PM: three hours {n}before the murder."
+
+//do an evidence shoop here...
+char phoenix e=thinking (talk)
+"We have also discovered that {n}the murder weapon, a statue {n}of the Thinker, contains..."
+
+"...a clock that is currently {n}three hours slow."
+
+char phoenix e=normal (talk)
+"The prosecution claims that the clock {n}may not have been three hours slow {n}on the day of the murder and..."
+
+"that there was no reason {n}for it to be slow."
+
+
+char phoenix e=document (talk)
+"However, Ms. Stone had just {n}returned from a trip to Paris {n}the day before she was murdered..."
+
+//do an evidence shoop here...
+"...as shown by her passport."
+
+char phoenix e=normal (talk)
+"As we all know, the difference {n}between here and Paris is {n}nine hours."
+
+"When it's 4:00 PM
