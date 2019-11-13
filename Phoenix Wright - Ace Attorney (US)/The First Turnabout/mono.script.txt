@@ -1,4 +1,4 @@
-bg lobby
+bg black
 
 "{c090}{center}{type}{spd 2}August 3, 9:48 AM {n}Los Angeles Superior Court {n}Defendant Lobby No. 2"
 
@@ -6,26 +6,22 @@ mus lounge.ogg
 set _music_loop lounge.ogg
 music_fade_in nowait
 
-char phoenix hide
+pause 30
+bg lobby fade
+pause 30
 
-addev wright$
-set _ev wright
-sfx sfx-evidenceshoop.ogg
-showevl
+char phoenix hide
 "My name is Phoenix Wright, {n}attorney at law."
-sfx sfx-evidenceshoop.ogg
-hideevl
 
 addev mia$
 set _ev mia
 sfx sfx-evidenceshoop.ogg
 showevl
 "I work at Fey & Co. Law Offices {n}under my boss, Mia Fey."
-sfx sfx-evidenceshoop.ogg
 hideevl
 
 "Here's the story:"
-"My first case is {n}a fairly simple one."
+"My first case is a fairly simple one."
 "A young woman was killed {n}in her apartment."
 "The guy they arrested was {n}the unlucky sap dating her:"
 
@@ -33,9 +29,8 @@ addev larry$
 set _ev larry
 sfx sfx-evidenceshoop.ogg
 showevl
-"Larry Butz... my best {n}friend since grade school."
+"Larry Butz... my best friend {n}since grade school."
 "Our school had a saying: {n}"When something smells, {n}it's usually the Butz.""
-sfx sfx-evidenceshoop.ogg
 hideevl
 
 "In the 23 years I've known {n}him, it's usually been true."
@@ -47,7 +42,5 @@ hideevl
 
 bg black fade
 music_fade_out
-
-pause 60
 
 script court

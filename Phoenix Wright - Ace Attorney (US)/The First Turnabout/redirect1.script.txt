@@ -1,0 +1,243 @@
+bg witness
+fg wbench
+char sahwit e=normal (blink)
+
+fg TestimonyAnim fade name=tanim
+delete name=tanim
+nt
+"{c090}{center}{type}{spd 3}- RE-DIRECT -{n}The Time of Discovery"
+
+mus moderato.ogg
+set _music_loop moderato.ogg
+music_fade_in nowait
+
+cross redirect1
+
+set _testimony_blinker false
+set _allow_present_evidence false
+
+statement 1
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Mr. Sahwit, why did you think {n}the time was 1:00 PM?"
+statement 1 test
+
+statement 2
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"I... heard the time when {n}I found the body."
+statement 2 test
+
+statement 3
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"From where did you hear the time?"
+statement 3 test
+
+statement 4
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"...There was a taped program {n}playing on the TV."
+"A voice mentioned the time as 1:00 PM."
+statement 4 test
+
+statement 5
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"No further questions."
+goto endoftestimony
+
+label press 1
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 1
+
+label press 2
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 2
+
+label press 3
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 3
+
+label press 4
+bg helper
+char mia e=bench-stern (talk)
+"Phoenix, this is opposing counsel's {n}direct examination."
+"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
+"Listen carefully for anything {n}that might damage your case."
+"You can refer to the objection {n}handbook if you need to."
+goto 4
+
+label press 5
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 5
+
+label Leading
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Prejudicial
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Relevance
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label Vague
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+is penalty 0 gameover
+resume
+
+label endoftestimony
+music_fade_out nowait
+endcross
+
+bg judgestand
+char judge e=normal (talk)
+"You may re-cross, Mr. Wright."
+
+bg helper
+char mia e=bench-stern (talk)
+"You know what to do."
+
+bg black
+nt
+"{c940}{sound}Re-direct testimony added to {n}original testimony for cross-exam."
+
+bg black fade
+
+pause 30
+
+script recross1
+
+label gameover
+mus
+fg ani-judge-gavel
+pause 30
+bg judgestand
+char judge e=warning (talk)
+"That's enough."
+char judge e=normal (talk)
+"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
+"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
+"The court declares a mistrial {n}and is adjourned."
+bg defence
+fg dbench
+char phoenix e=emo
+"Dang. {p 30}Reset the game!"
+pause 60
+bg black
+sfx sfx-guilty
+pause 60
+exit

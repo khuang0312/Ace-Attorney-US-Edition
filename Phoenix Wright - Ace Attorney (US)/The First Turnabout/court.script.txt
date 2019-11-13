@@ -1,25 +1,25 @@
-bg black fade
+bg black
 "{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
 
 sfx sfx-gallery
 fg ani-gallery nowait
-
 fg phoenix_mia nowait
 fg judge nowait
 fg payne nowait
 
-pause 160
+pause 120
+
 fg ani-judge-gavel
 fg ani-judge-gavel
+
+pause 30
 
 mus trial.ogg
 set _music_loop trial.ogg
 music_fade_in nowait
 
 bg judgestand
-
 char judge e=normal (talk)
-
 "Good morning, ladies and gentlemen."
 "Court is now in session for the trial {n}of Butz v. the State of California."
 "This is a criminal case brought {n}by the state charging the {n}defendant, Larry Butz,"
@@ -48,7 +48,8 @@ char judge e=surprised (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (talk)
-"Y-Yes, Your Honor. {n}I'm, um, a little nervous."
+"Y-Yes, Your Honor."
+"I'm, um, a little nervous."
 
 bg judgestand
 char judge e=normal (talk)
@@ -59,7 +60,8 @@ char judge e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (talk)
-"Thank... thank you, Your Honor. {n}{c089}(Gulp... Hands shaking... {n}Eyesight... fading...)"
+"Thank... thank you, Your Honor."
+"{c089}(Gulp... Hands shaking... {n}Eyesight... fading...)"
 
 bg judgestand
 char judge e=normal (talk)
@@ -124,7 +126,7 @@ addev cindy_passport
 addev blackout
 
 nt
-"{c090}{spd 50}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
+"{c090}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
 
 bg judgestand
 char judge e=normal (talk)
@@ -140,7 +142,7 @@ char payne e=confident (talk)
 "Yes, Your Honor. {n}May it please the court."
 
 mus logic.ogg
-set_music_loop logic.ogg
+set _music_loop logic.ogg
 music_fade_in nowait
 
 char payne e=normal (talk)
@@ -154,10 +156,11 @@ addev cindy$
 "There was a verbal altercation as reported by the neighbors,"
 "after which he picked up a nearby {n}statue of the Thinker and {n}smashed her in the head."
 "One blow killed her instantly."
+char payne e=confident (talk)
 "You will hear from a witness who saw {n}the defendant flee the scene right {n}after the moment of the crime."
 "That same witness also discovered {n}the body afterwards."
-char payne e=confident (talk)
 "The defendant had a clear motive, {n}and the evidence clearly points {n}to his guilt."
+char payne e=normal (talk)
 "As such, the prosecution asks that {n}you find the defendant, Larry Butz, {n}guilty of murder."
 
 music_fade_out nowait
@@ -176,16 +179,17 @@ char mia e=bench-geez (talk)
 "This one's a bit of a pushover."
 
 char phoenix hide
-"Got it, Chief."
+"Got it, Boss."
 
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "Ahem."
-"The defense will present an opening {n}statement now, Your Honor. {n}May it please the court."
+"The defense will present an opening {n}statement now, Your Honor."
+"May it please the court."
 
 mus logic.ogg
-set_music_loop logic.ogg
+set _music_loop logic.ogg
 music_fade_in nowait
 
 char phoenix e=document (talk)
@@ -217,14 +221,15 @@ char payne e=confident (talk)
 "The prosecution calls the {n}defendant to the stand."
 
 mus suspense.ogg
-set_music_loop suspense.ogg
+set _music_loop suspense.ogg
 music_fade_in nowait
 
 bg defence
 fg dbench
 char phoenix e=sweating (talk)
 sfx sfx-realization
-"Um... what? {n}{c089}(Is he serious?)"
+"Um... what?"
+"{c089}(Is he serious?)"
 
 bg helper
 char mia e=bench-stern (talk)
@@ -242,14 +247,13 @@ char phoenix e=handsondesk (talk)
 
 bg witness
 fg wbench
+char larry e=crying (talk)
+"Remain silent!?"
 char larry e=mad (talk)
-"{s 20}Remain silent!?"
-
-char larry e=mad (talk)
-"{sfx sfx-smack}I ain't gonna remain silent!"
-
+sfx sfx-smack
+"{s 20}I ain't gonna remain silent!"
 "No one can stop me from talking!"
-
+sfx sfx-smack
 char larry e=smirk (talk)
 "{s 20}Bring it on, man!"
 
@@ -265,12 +269,12 @@ char phoenix e=sweating (blink)
 
 bg helper
 char mia e=bench-geez (talk)
-"*sigh* ...You have some strange {n}friends, Wright."
+"*sigh* ...You have some {n}strange friends, Wright."
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"The prosecution will try to devalue {n}the credibility of his testimony {n}through {c940}direct examination{c999}."
-"You should object to any {n}inappropriate queries so {n}he doesn't hurt his case."
-"As for what constitutes an {n}inappropriate query..."
+"The prosecution will try to elicit {n}damaging testimony through {n}questioning our defendant."
+"You should object to any {n}improper questions so he {n}doesn't hurt his case."
+"As for what constitutes an {n}improper question..."
 
 addev handbook
 addev handbook1
@@ -286,20 +290,24 @@ showevl
 "It should be in the {c940}Court Record{c999}."
 "It contains a guide on the types of {n}objections used to protest opposing {n}counsel's questions."
 "Give it a glance now if you need {n}a refresher."
-sfx sfx-evidenceshoop
 hideevl
 
 "If you're able to prevent the {n}prosecution from eliciting {n}damaging testimony,"
 "you'll gain more leeway in {n}pleading your case."
 
+bg black
 nt
-"{c940}{spd 99}{sound}[You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination.]
-"{c940}{spd 99}{sound}[Each successful objection {n}will add an additional point {n}to the penalty bar.]"
-
-bg black fade
+"{c940}{sound}You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination."
+penalty 50
+penalty
+"{c940}{sound}The penalty bar represents {n}Phoenix's standing in the court."
+"{c940}{sound}Each successful objection {n}will raise the bar."
+penalty +10
+penalty
+"{c940}{sound}Improper objections, among other {n}actions, will lower the bar."
+penalty -10
+delete name=penalty
 
 music_fade_out
-
-pause 30
 
 script larrydirect
