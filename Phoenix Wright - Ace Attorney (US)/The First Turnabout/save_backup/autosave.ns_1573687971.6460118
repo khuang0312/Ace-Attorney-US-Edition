@@ -26,8 +26,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "won.ogg",
-            "character": "phoenix",
+            "_track": null,
+            "character": "judge",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -38,9 +38,8 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "won.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "I didn't know it then... but that clock \nwas soon going to be at the center \n of another incident.\n",
+                "_last_written_text": "For the charge of murder, the court \nfinds the defendant, Larry Butz, ...\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -65,16 +64,14 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
-                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "ev_items_y": "63",
+                "_nt_image": "",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -83,7 +80,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Judge",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -91,7 +88,6 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -106,19 +102,18 @@
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
                 "_layering_method": "zorder",
-                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "judge",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.26",
-                "_nt_image": "",
+                "ev_cursor_img": "general/cursor_ev",
+                "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
-                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
+                "handbook1_pic": "handbook.png",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
@@ -195,7 +190,7 @@
                 "_nt_text_x": "0",
                 "_nt_text_y": "0",
                 "ev_present_x": "90",
-                "handbook1_pic": "handbook.png",
+                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "_allow_click_load": "true",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
@@ -212,13 +207,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 283290520,
+            "_world_id": 55219504,
             "statement": "",
             "pri": 0,
             "scene": "ending.script",
             "cross": null,
-            "si": 168,
-            "lastline": 1,
+            "si": 106,
+            "lastline": 0,
             "instatement": false,
             "_objects": [
                 [
@@ -228,7 +223,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/black",
+                        "name": "bg/judgestand",
                         "blinkspeed": [
                             100,
                             200
@@ -242,7 +237,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "black",
+                        "id_name": "judgestand",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -259,11 +254,11 @@
                 [
                     "char",
                     [
-                        "phoenix/normal(blink)",
-                        true
+                        "judge/warning(blink)",
+                        false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "warning",
                         "pri": 20,
                         "pos": [
                             0,
@@ -287,10 +282,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "nametag": "Judge\n",
+                        "id_name": "judge",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "judge",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -298,15 +293,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": 0,
+                            "loopmode": "blinknoset",
                             "start": 0,
-                            "loops": 0,
+                            "loops": 1,
                             "x": 0,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/normal(blink)",
+                        "name": "judge/warning(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -316,81 +311,11 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 0,
-                            "x": 0,
+                            "loops": 1,
+                            "x": 6,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "phoenix/normal(blink)",
-                        true
-                    ],
-                    {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
-                        "tint": null,
-                        "charname": "phoenix",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "phoenix/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
+                        "blinkemo": "warning",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -399,7 +324,7 @@
                 [
                     "textbox",
                     [
-                        "My promise to celebrate our win \nwith Boss and Larry... would turn out \nto be one I wouldn't be able to keep.\n",
+                        "Court is adjourned.\n",
                         [
                             255,
                             255,
@@ -409,11 +334,11 @@
                         1,
                         true,
                         false,
-                        "Phoenix\n"
+                        "Judge\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "My promise to celebrate our win \nwith Boss and Larry... would turn out \nto be one I wouldn't be able to keep.\n",
+                        "text": "Court is adjourned.\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -481,28 +406,72 @@
                         "hold_func": null,
                         "z": 6
                     }
+                ],
+                [
+                    "guiWait",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "_guiWait_",
+                        "start": 0,
+                        "run": null,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script161": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script163": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script165": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script167": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script151": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script155": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script159": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script149": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script111": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script101": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script113": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script143": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script145": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script127": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script139": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script147": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script141": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script109": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script157": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script48": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script65": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script62": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script60": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script44": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script28": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script20": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script27": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script25": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script98": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script14": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script96": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script94": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script10": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script70": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script58": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script56": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script54": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script78": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script51": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script39": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script76": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script31": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script33": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script37": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script83": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script89": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script8": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script105": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script3": true
             }
         },
         [

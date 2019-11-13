@@ -451,7 +451,9 @@ music_fade_in nowait
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"You're also aware that this clock...{p 20}{e confident(talk)} is the {c940}only of its kind{c999}, are you not?"
+"You're also aware that this clock..."
+char phoenix e=confident (talk)
+"{p 20}is the {c940}only of its kind{c999}, are you not?"
 
 bg witness
 fg wbench
@@ -520,7 +522,35 @@ bg judgestand
 char judge e=warning (talk)
 "Order!"
 "Order in the court!"
-"Mr. Wright, please continue."
+"Mr. Wright, is that all?"
+
+bg defence
+fg dbench
+char phoenix e=confident (talk)
+"Yes, Your Honor."
+"Thank you, Mr. Sahwit."
+"No further questions."
+
+bg judgestand
+char judge e=normal (talk)
+"Re-direct, Mr. Payne?"
+
+bg prosecution
+fg pbench
+char payne e=sweating (talk)
+"...No, Your Honor."
+"The witness may be excused."
+"The prosecution rests."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Yes, Your Honor."
+"Thank you, Mr. Sahwit."
+"No further questions."
+
+bg black fade
+pause 30
 
 script pre_closing
 
