@@ -9,6 +9,7 @@ nt
 
 mus moderato.ogg
 set _music_loop moderato.ogg
+music_fade_in nowait
 
 cross sahwitdirect
 

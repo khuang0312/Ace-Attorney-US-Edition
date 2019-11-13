@@ -337,7 +337,7 @@ char sahwit e=twitching (blink)
 
 mus objection.ogg
 set _music_loop objection.ogg
-music _fade_in nowait
+music_fade_in nowait
 
 bg defence
 fg dbench

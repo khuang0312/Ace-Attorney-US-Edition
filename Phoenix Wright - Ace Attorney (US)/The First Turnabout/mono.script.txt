@@ -4,6 +4,7 @@ bg black
 
 mus lounge.ogg
 set _music_loop lounge.ogg
+music_fade_in nowait
 
 pause 30
 bg lobby fade

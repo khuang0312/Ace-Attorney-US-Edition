@@ -16,6 +16,7 @@ pause 30
 
 mus trial.ogg
 set _music_loop trial.ogg
+music_fade_in nowait
 
 bg judgestand
 char judge e=normal (talk)

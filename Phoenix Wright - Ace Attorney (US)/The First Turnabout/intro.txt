@@ -5,10 +5,11 @@ set _allow_present_profiles false
 include evidence
 addev badge
 
-addev cindy_autopsy //uncomment this for DEBUG purposes
-addev thinker //uncomment this for DEBUG purposes
-addev cindy_passport //uncomment this for DEBUG purposes
-addev blackout //uncomment this for DEBUG purposes
+//Uncomment to add evidence for debug
+//addev cindy_autopsy
+//addev thinker
+//addev cindy_passport
+//addev blackout
 
-script recross2
+script mono
 //Just change the script name to whatever you're testing

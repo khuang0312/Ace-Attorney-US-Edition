@@ -8,6 +8,7 @@ nt
 
 mus allegro.ogg
 set _music_loop allegro.ogg
+music_fade_in nowait
 
 cross sahwit1
 
@@ -325,7 +326,7 @@ pause 50
 
 mus objection.ogg
 set _music_loop objection.ogg
-music _fade_in nowait
+music_fade_in nowait
 
 char phoenix e=pointing (talk)
 "You said that you witnessed the {n}defendant fleeing and discovered {n}the body at 1:00 PM, did you not?"
