@@ -6,10 +6,10 @@ include evidence
 addev badge
 
 //Uncomment to add evidence for debug
-//addev cindy_autopsy
-//addev thinker
-//addev cindy_passport
-//addev blackout
+addev cindy_autopsy
+addev thinker
+addev cindy_passport
+addev blackout
 
-script mono
+script ending
 //Just change the script name to whatever you're testing

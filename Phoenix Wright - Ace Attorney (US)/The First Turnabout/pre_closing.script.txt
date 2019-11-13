@@ -5,17 +5,154 @@
 bg defence
 fg dbench
 
-penalty 100
+char phoenix e=withtoupee
+"{c089}(Ugh... I can't believe that just {n}happened.)"
+
+char phoenix e=normal
+"Yes, Your Honor."
+
+char phoenix e=handsondesk (talk)
+"Mr. Sahwit. I'd like you to listen to us {n}sound the clock right now."
+
+bg black
+
+set _ev thinker
+sfx sfx-evidenceshoop
+showevl
+
+//can't figure out how to name it "Alarm Clock"
+char Statue hide
+"{c940}{center}... *beep* ..."
+
+char Statue hide
+"{c090}{center}{delay 2}[I think it's 8:25.]"
+
+hideevl
+
+bg defence
+fg dbench
+
+char phoenix e=normal
+"Mr. Payne... can you tell me {n}what time it is now?"
+
+bg prosecution
+fg pbench
+
+char payne e=sweating
+"It's 11:25..."
+
+char payne e=damage
+"{sfx sfx-stab}Ack!"
+
+bg defence
+fg dbench
+
+char phoenix e=confident
+"Let the record show that this clock, {n}the only one of its kind, is confirmed, {n}to be three hours slow:"
+
+"...precisely the discrepancy between {n}what Mr. Sahwit heard and the actual {n}time of death."
+
+bg courtroom //put jury in the background...
+
+char All hide
+"{c090}{center}..."
+
+bg defence
+fg dbench
+
+char phoenix e=normal
+"Thank you, Mr. Sahwit. No further questions."
+
+bg judgestand
+
+char judge e=warning
+"Re-direct, Mr. Payne?"
+
+bg prosecution
+fg pbench
+
+char payne e=sweating
+"...No, Your Honor. The witness may {n}be excused. The prosecution rests."
+
+bg defence
+fg dbench
+
+char phoenix e=normal
+"The defense also rests, Your Honor."
+
+bg judgestand
+
+char judge e=surprised
+"Well... This case has certainly taken {n}an unexpected turn. Your closing {n}argument, Mr. Payne?"
+
+bg prosecution
+fg pbench
+
+char payne e=confident
+"Yes, Your Honor. May it please the court."
+
+"The evidence and testimony{n} presented in this trial proves the{n} defendant's guilt." 
+
+"He has admitted to being at the {n}apartment during the time of {n}the murder. 
+
+"As we heard from Mr. Sahwit, the {n}defendant fled from the apartment... {n}right after committing the crime."
+
+"The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing:" 
+
+"The clock may be three hours slow {n}now, but it does not mean the clock {n}was three hours slow..."
+
+"...on the day of the murder. It is {n}simply a coincidence that{n} the clock is slow.  
+
+"The blackout that day cannot have {n}affected it since it runs on batteries." 
+
+"As such, Mr. Sahwit's testimony{n} still stands."
+
+"The defendant went to the victim's{n} apartment, got into an argument,{n} and took it too far. {n}"
+
+"He had motive and the opportunity{n} to commit murder." 
+
+"The state asks that the defendant, {n}Larry Butz, be found guilty."
+
+bg judgestand
+
+char judge e=warning
+"Thank you, Mr. Payne." 
+
+"Mr. Wright, your closing argument?"
+
+
+bg helper
+
+char mia e=bench-stern
+
+char phoenix hide
+"Boss, it's over! I can't prove the {n}clock was slow the day of the {n}murder! No one can prove that!"
+
+char mia e=bench-stern
+"Um... well, yes. But that doesn't mean {n}you can't still win! Try thinking out{n} of the box!" 
+
+"If you can present an alternate {n}possibility, we might just have a case."
+
+
+bg defence
+fg dbench
+
+char phoenix e=thinking
+"{c089}(Why the clock was three hours{n}slow... Let's take it from the top.) {n}"
+
+
+
+//do some transition...
+bg black
+fg dbench
+sfx sfx-wipe
 
 mus suspense.ogg
 set _music_loop suspense.ogg
 music_fade_in nowait
 
-//set _textbox_show_button false
 set _list_back_button false 
 set_examine_showbars true
-
-//1st choice
 
 set previous_choice choice1
 label choice1
@@ -78,8 +215,8 @@ showlist
 
 //start ending the game!
 label closingspeech
-char phoenix e=document
-"Sawhit's guilty. Butz didn't do it, bro."
+music_fade_out
+script ending
 
 
 label wronganswer
@@ -101,6 +238,10 @@ fg dbench
 
 char phoenix e=emo
 "{c089}(Dammit Phoenix! Think! {n} Your friend's life is on the line!)"
+
+bg black
+fg dbench
+sfx sfx-wipe
 
 goto $previous_choice
 

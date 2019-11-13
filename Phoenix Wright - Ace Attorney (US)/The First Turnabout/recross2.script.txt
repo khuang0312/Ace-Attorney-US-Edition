@@ -522,9 +522,7 @@ char judge e=warning (talk)
 "Order in the court!"
 "Mr. Wright, please continue."
 
-
-//temp stop here
-exit
+script pre_closing
 
 label none
 mus

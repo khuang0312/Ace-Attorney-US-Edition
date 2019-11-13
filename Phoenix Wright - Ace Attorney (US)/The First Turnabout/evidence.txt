@@ -69,3 +69,5 @@ set frank$_name Frank Sahwit
 set frank$_pic sahwit.png
 set frank$_desc Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.
 
+
+

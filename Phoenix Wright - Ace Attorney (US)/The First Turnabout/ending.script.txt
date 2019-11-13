@@ -9,8 +9,7 @@ fg dbench
 char phoenix e=normal (talk)
 "Yes, Your Honor." 
 
-"The defense is ready to present{n} 
-its closing argument."
+"The defense is ready to present {n} its closing argument."
 
 bg judgestand
 char judge e=warning (talk)

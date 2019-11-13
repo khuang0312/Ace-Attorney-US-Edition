@@ -273,7 +273,7 @@ char mia e=bench-geez (talk)
 char mia e=bench-stern (talk)
 "Listen closely, now."
 "The prosecution will try to elicit {n}damaging testimony through {n}questioning our defendant."
-"You should object to any {n}improper questions so he {n}doesn't hurt his case."
+"You should object to any {n}improper questions so Larry {n}doesn't hurt his case."
 "As for what constitutes an {n}improper question..."
 
 addev handbook
