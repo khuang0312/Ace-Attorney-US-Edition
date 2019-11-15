@@ -8,7 +8,7 @@ fg dbench
 char phoenix e=normal (talk)
 "Yes, Your Honor."
 
-"The defense is ready to present {n} its closing argument."
+"The defense is ready to present {n}its closing argument."
 
 bg judgestand
 char judge e=normal (talk)
@@ -23,10 +23,10 @@ char phoenix e=confident (talk)
 char phoenix e=normal (talk)
 "The prosecution had the burden of {n}conclusively proving that...
 
-"...the defendant, Larry Butz,{n} committed murder."
+"...the defendant, Larry Butz, {n}committed murder."
 
-"They attempted to do so by{n} presenting a witness,{n} Mr. Sahwit..."
-"who allegedly saw Mr.Butz fleeing{n} the scene of the crime."
+"They attempted to do so by{n} presenting a witness, {n}Mr. Sahwit..."
+"who allegedly saw Mr.Butz fleeing {n}the scene of the crime."
 
 char phoenix e=document (talk)
 "Over the course of this trial, {n}we have discovered that {n}Mr. Sahwit believed...
@@ -53,7 +53,7 @@ sfx sfx-evidenceshoop
 set _ev cindy_passport
 showevr
 char phoenix e=document (talk)
-"However, Ms. Stone had just returned{n} from a trip to Paris the day before{n} she was murdered..."
+"However, Ms. Stone had just returned {n}from a trip to Paris the day before {n}she was murdered..."
 
 "...as shown by her passport."
 hideevr
@@ -81,7 +81,7 @@ bg witness
 fg wbench
 
 char sahwit e=bald (talk)
-"I come all the way down here to {n}testify, and look what{n} happens!"
+"I come all the way down here to {n}testify, and look what {n}happens!"
 
 "You treat me like a criminal!{s 5}"
 "A criminal!{s 10}"
@@ -106,7 +106,7 @@ sfx sfx-smack
 bg judgestand
 
 char judge e=warning
-"The court has heard arguments from{n} both sides, deliberated on the {n}testimony and evidence..."
+"The court has heard arguments from {n}both sides, deliberated on the {n}testimony and evidence..."
 
 "...presented thus far, and is prepared {n}to announce a verdict at this time."
 
@@ -138,17 +138,17 @@ music_fade_in nowait
 
 char phoenix hide
 "It turned out that Frank Sahwit was a {n}common burglar!"
-"He posed as a newspaper salesman to{n} check and see when people{n} went out of the house."
+"He posed as a newspaper salesman to {n}check and see when people {n}went out of the house."
 
-"That day...when Larry went to her {n}apartment, the victim wasn't{n} home."
+"That day...when Larry went to her {n}apartment, the victim wasn't {n}home."
 
-"After he left, Mr. Sahwit let himself in{n} to do his dirty work."
+"After he left, Mr. Sahwit let himself in {n}to do his dirty work."
 
-"While he was searching her place,{n} the victim returned!"
+"While he was searching her place, {n}the victim returned!"
 
 "She cried out, which the neighbors {n}heard and assumed was a verbal {n}fight between her and Larry."
 
-"Flustered, Mr. Sahwit grabbed the{n}nearest blunt object he could {n}find..."
+"Flustered, Mr. Sahwit grabbed the {n}nearest blunt object he could {n}find..."
 
 
 char phoenix hide
