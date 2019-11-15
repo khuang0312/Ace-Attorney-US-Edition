@@ -26,25 +26,26 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "won.ogg",
-            "character": "phoenix",
+            "_track": "suspense.ogg",
+            "character": "judge",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
                 "_examine_showbars": "true",
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
+                "text": "{c089}(If Sahwit is telling the truth, then the clock...)",
                 "thinker_name": "Statue",
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "won.ogg",
-                "_list_back_button": "true",
-                "_last_written_text": "I didn't know it then... but that clock \nwas soon going to be at the center \n of another incident.\n",
+                "_music_loop": "suspense.ogg",
+                "_list_back_button": "false",
+                "_last_written_text": "{c 089}(In order for Larry to be innocent,\nSahwit must have...) \n",
                 "ev_check_img": "general/check",
+                "ev_mode_bg_evidence": "general/evidence",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
-                "_x": "95",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
@@ -59,13 +60,14 @@
                 "_textbox_y": "",
                 "handbook3_pic": "handbook.png",
                 "_list_checked_y": "-10",
+                "pass2": "false",
                 "handbook_name": "Objection Handbook",
                 "cindy_autopsy_desc": "Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma",
                 "_font_tb_size": "10",
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "choice2",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -83,7 +85,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Judge",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -91,12 +93,13 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "2",
+                "_lastline": "90",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
-                "_shake_sound": "false",
+                "_court_fail_label": "none",
                 "_font_list": "pwinternational.ttf",
+                "_allow_present_evidence": "true",
                 "ev_zrarrow_x": "240",
                 "ev_zrarrow_y": "90",
                 "_font_block_size": "10",
@@ -105,21 +108,21 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
+                "_ev": "thinker",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "judge",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.26",
+                "_nt_text_y": "0",
                 "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker.\" {n}It's rather heavy.",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
-                "ev_mode_bg_evidence": "general/evidence",
+                "previous_choice": "choice2",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
                 "ev_z_textbox_y": "70",
@@ -140,11 +143,13 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "choice2",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
+                "_timer_value_music_fade_out_add": "-0.98",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -158,6 +163,7 @@
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
+                "currentcross": 13,
                 "_textbox_x": "",
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
@@ -174,14 +180,16 @@
                 "cindy_autopsy_pic": "autopsy_report.png",
                 "_allow_click_save": "true",
                 "_textbox_skipupdate": "off",
-                "_evidence_enable": "true",
                 "mia$_name": "Mia Fey",
+                "_evidence_enable": "true",
+                "_timer_value_choice_timer1": "-0.479999999997",
                 "handbook5_pic": "handbook.png",
                 "mia$_desc": "Age: 27{n}Gender: Female{n}Chief Attorney at Fey & Co.. My boss, and a very good defense attorney.",
                 "_cr_button_loadsave": "on",
                 "_font_tb": "pwinternational.ttf",
                 "ev_rarrow_y": "90",
                 "ev_rarrow_x": "240",
+                "_shake_sound": "false",
                 "_font_list_size": "10",
                 "ev_mode_bg_profiles": "general/evidence",
                 "_nt_y": "",
@@ -192,11 +200,90 @@
                 "frank$_name": "Frank Sahwit",
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
+                "pass1": "1",
                 "_nt_text_x": "0",
-                "_nt_text_y": "0",
+                "_timer_value_music_fade_in_add": "-0.08",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
+                "_statements": [
+                    {
+                        "test": null,
+                        "index": 20,
+                        "words": "1"
+                    },
+                    {
+                        "test": null,
+                        "index": 26,
+                        "words": "2"
+                    },
+                    {
+                        "test": null,
+                        "index": 32,
+                        "words": "3"
+                    },
+                    {
+                        "test": null,
+                        "index": 38,
+                        "words": "4"
+                    },
+                    {
+                        "test": null,
+                        "index": 44,
+                        "words": "5"
+                    },
+                    {
+                        "test": null,
+                        "index": 50,
+                        "words": "6"
+                    },
+                    {
+                        "test": null,
+                        "index": 56,
+                        "words": "7"
+                    },
+                    {
+                        "test": null,
+                        "index": 62,
+                        "words": "8"
+                    },
+                    {
+                        "test": null,
+                        "index": 68,
+                        "words": "9"
+                    },
+                    {
+                        "test": null,
+                        "index": 74,
+                        "words": "10"
+                    },
+                    {
+                        "test": null,
+                        "index": 80,
+                        "words": "11"
+                    },
+                    {
+                        "test": null,
+                        "index": 86,
+                        "words": "12"
+                    },
+                    {
+                        "test": null,
+                        "index": 92,
+                        "words": "13"
+                    },
+                    {
+                        "test": null,
+                        "index": 98,
+                        "words": "14"
+                    },
+                    {
+                        "test": null,
+                        "index": 104,
+                        "words": "$$$"
+                    }
+                ],
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -212,13 +299,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 283290520,
+            "_world_id": 58858592,
             "statement": "",
             "pri": 0,
-            "scene": "ending.script",
+            "scene": "pre_closing.script",
             "cross": null,
-            "si": 168,
-            "lastline": 1,
+            "si": 99,
+            "lastline": 90,
             "instatement": false,
             "_objects": [
                 [
@@ -228,7 +315,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/black",
+                        "name": "bg/judgestand",
                         "blinkspeed": [
                             100,
                             200
@@ -242,7 +329,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "black",
+                        "id_name": "judgestand",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -259,11 +346,11 @@
                 [
                     "char",
                     [
-                        "phoenix/normal(blink)",
-                        true
+                        "judge/warning(blink)",
+                        false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "warning",
                         "pri": 20,
                         "pos": [
                             0,
@@ -287,10 +374,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "nametag": "Judge\n",
+                        "id_name": "judge",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "judge",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -298,15 +385,15 @@
                             ],
                             "end": null,
                             "dim": 1,
-                            "loopmode": 0,
+                            "loopmode": "blinknoset",
                             "start": 0,
-                            "loops": 0,
-                            "x": 0,
+                            "loops": 1,
+                            "x": 11,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/normal(blink)",
+                        "name": "judge/warning(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -316,81 +403,11 @@
                             "dim": 1,
                             "loopmode": 0,
                             "start": 0,
-                            "loops": 0,
+                            "loops": 1,
                             "x": 0,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "phoenix/normal(blink)",
-                        true
-                    ],
-                    {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
-                        "tint": null,
-                        "charname": "phoenix",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "phoenix/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
+                        "blinkemo": "warning",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -399,7 +416,7 @@
                 [
                     "textbox",
                     [
-                        "My promise to celebrate our win \nwith Boss and Larry... would turn out \nto be one I wouldn't be able to keep.\n",
+                        "The court does not appreciate\nstalling, Mr. Wright. \n",
                         [
                             255,
                             255,
@@ -409,11 +426,11 @@
                         1,
                         true,
                         false,
-                        "Phoenix\n"
+                        "Judge\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "My promise to celebrate our win \nwith Boss and Larry... would turn out \nto be one I wouldn't be able to keep.\n",
+                        "text": "The court does not appreciate\nstalling, Mr. Wright. \n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -484,30 +501,367 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script161": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script163": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script165": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script167": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script151": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script155": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script159": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script149": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script111": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script101": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script113": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script143": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script145": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script127": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script139": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script147": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script141": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script109": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script157": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script22": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script98": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script438": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script54": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script29": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script336": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script331": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script43": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script44": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script342": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script341": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script347": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script346": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script17": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script15": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script14": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script530": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script531": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script19": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script535": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script206": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script36": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script81": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script421": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script35": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script36": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script44": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script505": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script504": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script211": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script506": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script215": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script502": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script22": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script370": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script78": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script374": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script379": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script290": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script29": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script295": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script43": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script361": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script51": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script362": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script31": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script491": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script497": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script37": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script6": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script394": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script34": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script410": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script415": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script96": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script363": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script364": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script365": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script22": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script50": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script8": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script351": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script524": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script488": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script489": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script356": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script357": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script484": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script485": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script486": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script487": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script529": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script404": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script405": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script25": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script503": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script403": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script7": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script29": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script471": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script473": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script353": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script478": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script355": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script354": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script48": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script90": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script6": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script306": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script55": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script303": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script52": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script378": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script72": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script373": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script370": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script349": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script36": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script344": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script379": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script523": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script522": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script541": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script540": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script542": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script6": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script547": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script549": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script548": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script66": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script60": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script384": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script389": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script28": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script455": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script453": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script335": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script26": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script145": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script27": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script57": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script211": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script102": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script215": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script30": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script444": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script21": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script329": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script324": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script84": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross1.script321": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script63": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script64": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script7": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script317": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcross.script311": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect1.script207": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script33": true
             }
         },
         [
             "stack",
             0
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_world_id": 58858592,
+            "statement": "",
+            "pri": 0,
+            "scene": "pre_closing.script/choice_timer1",
+            "cross": null,
+            "si": 7,
+            "lastline": 0,
+            "instatement": false,
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/judgestand",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "judgestand",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "char",
+                    [
+                        "judge/warning(blink)",
+                        false
+                    ],
+                    {
+                        "emoname": "warning",
+                        "pri": 20,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loops": 0,
+                        "spd": 6,
+                        "screen_setting": "",
+                        "end": null,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "clicksound": "blipmale.ogg",
+                        "nametag": "Judge\n",
+                        "id_name": "judge",
+                        "tint": null,
+                        "charname": "judge",
+                        "bsprite": {
+                            "blinkspeed": [
+                                100,
+                                200
+                            ],
+                            "end": null,
+                            "dim": 1,
+                            "loopmode": "blinknoset",
+                            "start": 0,
+                            "loops": 1,
+                            "x": 11,
+                            "spd": 6
+                        },
+                        "modename": "blink",
+                        "dim": 1,
+                        "name": "judge/warning(blink)",
+                        "tsprite": {
+                            "blinkspeed": [
+                                100,
+                                200
+                            ],
+                            "end": null,
+                            "dim": 1,
+                            "loopmode": 0,
+                            "start": 0,
+                            "loops": 1,
+                            "x": 0,
+                            "spd": 6
+                        },
+                        "blinkemo": "warning",
+                        "supermode": "lipsync",
+                        "x": 0,
+                        "z": 2
+                    }
+                ],
+                [
+                    "textbox",
+                    [
+                        "The court does not appreciate\nstalling, Mr. Wright. \n",
+                        [
+                            255,
+                            255,
+                            255
+                        ],
+                        2,
+                        1,
+                        true,
+                        false,
+                        "Judge\n"
+                    ],
+                    {
+                        "num_lines": 4,
+                        "text": "The court does not appreciate\nstalling, Mr. Wright. \n",
+                        "can_skip": false,
+                        "id_name": "_textbox_",
+                        "kill": false,
+                        "statement": null,
+                        "go": 1,
+                        "z": 4,
+                        "blocking": true,
+                        "wait": "auto"
+                    }
+                ],
+                [
+                    "uglyarrow",
+                    [],
+                    {
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            192
+                        ],
+                        "height": 192,
+                        "high": false,
+                        "loops": false,
+                        "spd": 6,
+                        "screen_setting": "",
+                        "end": null,
+                        "width": 256,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "fade": 255,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "id_name": "_uglyarrow_",
+                        "tint": null,
+                        "showleft": true,
+                        "_tb": true,
+                        "dim": 1,
+                        "name": "bg/main",
+                        "x": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    "button",
+                    [],
+                    {
+                        "rpos": [
+                            177,
+                            192
+                        ],
+                        "s_graphic": "general/record",
+                        "s_text": "",
+                        "pri": 0,
+                        "id_name": "_crbut_",
+                        "screen_setting": "try_bottom",
+                        "s_macroname": "{_crbut}",
+                        "hold_func": null,
+                        "z": 6
+                    }
+                ]
+            ],
+            "_parent_index": 0,
+            "viewed": {
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script/choice_timer16": true
+            }
+        },
+        [
+            "stack",
+            1
         ]
     ]
 ]

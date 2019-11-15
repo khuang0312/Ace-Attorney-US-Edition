@@ -346,7 +346,7 @@ li Relevance result=objection24
 li Vague result=objection24
 showlist
 delete name=penalty
-goto 22
+goto 25
 
 
 
