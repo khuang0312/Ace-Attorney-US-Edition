@@ -1,4 +1,4 @@
-goto here
+
 //we might need to do playtesting to see if these choices make sense to the player...
 //the text for some of these choices are a bit confusing...
 //specifically choice 3
@@ -57,7 +57,6 @@ char mia e=bench-stern (talk)
 
 "If you can present an alternate {n}possibility, we might just have a case."
 
-label here
 bg defence
 fg dbench
 
