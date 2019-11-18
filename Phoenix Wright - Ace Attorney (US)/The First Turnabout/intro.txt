@@ -11,5 +11,5 @@ addev thinker
 addev cindy_passport
 addev blackout
 
-script cross
+script sahwitdirect
 //Just change the script name to whatever you're testing

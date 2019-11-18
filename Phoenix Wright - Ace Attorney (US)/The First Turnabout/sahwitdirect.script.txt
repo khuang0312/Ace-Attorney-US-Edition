@@ -1,3 +1,5 @@
+goto here
+
 bg witness
 fg wbench
 char sahwit e=normal (blink)
@@ -235,12 +237,12 @@ fg wbench
 char sahwit e=normal (talk)
 "A woman was on the ground.{p 5}.{p 5}.{p 5} {n}She wasn't moving."
 
-
+label here
 label 17
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-set _ev cindy_autopsy
+set _ev cindy
 sfx sfx-evidenceshoop
 showevl
 "Let me direct your attention to {n}the autopsy report."
