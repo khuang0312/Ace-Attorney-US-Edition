@@ -6,10 +6,10 @@ set badge_desc One of my possessions. {n}No one would believe I {n}was a defense
 set cindy_autopsy_name Cindy's Autopsy Report
 set cindy_autopsy_pic autopsy_report.png
 set cindy_autopsy_desc Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma
- 
+
 set thinker_name Statue
 set thinker_pic thinker.png
-set thinker_desc A statue in the shape {n}of "The Thinker." {n}It's rather heavy.
+set thinker_desc A statue in the shape {n}of "The Thinker" made by Larry. {n}It's a one of a kind.
 
 set cindy_passport_name Passport
 set cindy_passport_pic en_passport.gif
@@ -19,7 +19,7 @@ set blackout_name Blackout Record
 set blackout_pic whiteenvelope.png
 set blackout_desc Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.
 
-set handbook_name Objection Handbook 
+set handbook_name Objection Handbook
 set handbook_pic handbook.png
 set handbook_desc A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague
 
@@ -45,7 +45,7 @@ set handbook5_desc Objection: {n}Vague {n}{n}Counsel's question is not {n}clear 
 
 
 //Character Profiles
-set wright$_name Phoenix Wright 
+set wright$_name Phoenix Wright
 set wright$_pic wright.png
 set wright$_desc Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?
 
@@ -64,10 +64,7 @@ set cindy$_desc Age: 22{n}Gender: Female{n}The victim in this case. A model, she
 set winston$_name Winston Payne
 set winston$_pic payne1.png
 set winston$_desc Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.
-   
+
 set frank$_name Frank Sahwit
 set frank$_pic sahwit.png
 set frank$_desc Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.
-
-
-
