@@ -15,6 +15,9 @@ char payne e=confident (talk)
 "Yes, Your Honor."
 "May it please the court."
 
+nt
+"{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Prosecution"
+
 "The evidence and testimony {n}presented in this trial {n}proves the defendant's guilt."
 
 "He has admitted to being at the {n}apartment during the time of {n}the murder.

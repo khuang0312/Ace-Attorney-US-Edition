@@ -1,3 +1,4 @@
+
 bg judgestand fade
 
 char judge e=warning (talk) fade
@@ -19,6 +20,9 @@ fg dbench
 
 char phoenix e=confident (talk)
 "May it please the court."
+
+nt
+"{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Defence"
 
 char phoenix e=normal (talk)
 "The prosecution had the burden of {n}conclusively proving that...
