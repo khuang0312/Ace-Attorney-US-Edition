@@ -242,11 +242,15 @@ label 17
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-set _ev cindy
+set _ev cindy_autopsy
 sfx sfx-evidenceshoop
 showevl
 "Let me direct your attention to {n}the autopsy report."
+hideevl
 char payne e=normal (talk)
+set _ev cindy
+sfx sfx-evidenceshoop
+showevl
 "Do you recognize the woman in {n}the photograph of the body?"
 hideevl
 
