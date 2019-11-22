@@ -403,7 +403,7 @@ pause 30
 goto gameover
 
 
-label Asked and Answered
+label Asked_and_Answered
 sfx phoenix\objection
 fg ObjectionAnim
 bg defence
@@ -421,7 +421,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Leading
@@ -442,7 +441,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Leading7
@@ -501,7 +499,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Relevance
@@ -522,7 +519,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Vague
@@ -543,7 +539,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Vague7
@@ -619,24 +614,3 @@ nt
 music_fade_out
 
 script cross
-
-label gameover
-mus
-fg ani-judge-gavel
-pause 30
-bg judgestand
-char judge e=warning (talk)
-"That's enough."
-char judge e=normal (talk)
-"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
-"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
-"The court declares a mistrial {n}and is adjourned."
-bg defence
-fg dbench
-char phoenix e=emo
-"Dang. {p 30}Reset the game!"
-pause 60
-bg black
-sfx sfx-guilty
-pause 60
-exit

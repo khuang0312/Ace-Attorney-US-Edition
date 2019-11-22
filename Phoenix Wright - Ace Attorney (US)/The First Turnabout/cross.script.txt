@@ -99,7 +99,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label press 2
@@ -122,7 +121,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label press 3
@@ -213,7 +211,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label press 8
@@ -276,7 +273,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label cindy_autopsy 3
@@ -406,26 +402,4 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
-
-label gameover
-mus
-fg ani-judge-gavel
-pause 30
-bg judgestand
-char judge e=warning (talk)
-"That's enough."
-char judge e=normal (talk)
-"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
-"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
-"The court declares a mistrial {n}and is adjourned."
-bg defence
-fg dbench
-char phoenix e=emo
-"Dang. {p 30}Reset the game!"
-pause 60
-bg black
-sfx sfx-guilty
-pause 60
-exit
