@@ -81,7 +81,7 @@ label choice1
 char phoenix e=thinking (blink)
 setvar text {c089}(In order for Larry to be innocent, Sahwit must have...)
 "{c089}(In order for Larry to be innocent, Sahwit must have...)"
-timer 600 choice_timer1
+timer 120 choice_timer1
 setvar pass1 false
 
 list
@@ -98,7 +98,7 @@ set previous_choice choice2
 char phoenix e=thinking (blink)
 setvar text {c089}(If Sahwit is telling the truth, then the clock...)
 "{c089}(If Sahwit is telling the truth, then the clock...)"
-timer 600 choice_timer2
+timer 120 choice_timer2
 
 list
 li Was inaccurate that day. result=wronganswer //changed these two for brevity
@@ -114,7 +114,7 @@ set previous_choice choice3
 char phoenix e=thinking (blink)
 setvar text {c089}(The clock must have had the wrong time, due to...) //Decided to change this for clarity
 "{c089}(The clock must have had the wrong time, due to...)"
-timer 600 choice_timer3
+timer 120 choice_timer3
 
 list
 li The blackout. result=wronganswer
@@ -131,7 +131,7 @@ char phoenix e=sweating (blink)
 "{c089}(But why?)"
 setvar text {c089}(The cause must have been because the clock...)
 "{c089}(The cause must have been because the clock...)"
-timer 600 choice_timer4
+timer 120 choice_timer4
 
 list
 li Was in a different time zone. result=choice5 //changed also
@@ -147,7 +147,7 @@ set previous_choice choice5
 char phoenix e=thinking (blink)
 setvar text {c089}(But what can I use to prove that?)
 "{c089}(But what can I use to prove that?)"
-timer 600 choice_timer5
+timer 120 choice_timer5
 present noback
 
 //Passport choice
@@ -158,7 +158,7 @@ set previous_choice cindy_passport
 char phoenix e=confident (blink)
 setvar text {c089}(That's right! The victim went to Paris, which means...) //Changed this too, since this gives away the answer...
 "{c089}(That's right! The victim went to Paris, which means...)"
-timer 600 choice_timer6
+timer 120 choice_timer6
 
 list
 li The clock is 3 hours slow result=wronganswer

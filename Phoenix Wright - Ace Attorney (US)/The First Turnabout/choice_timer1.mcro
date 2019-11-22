@@ -2,28 +2,9 @@ macro choice_timer1
 
 isnumber pass1 true
 
-bg judgestand
+penalty -2
 
-char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
-
-sfx sfx-damage2
-penalty -25
-
-bg defence
-fg dbench
-
-char phoenix e=emo
-"{c089}(Dammit Phoenix! Think! {n} Your friend's life is on the line!)"
-
-bg black fade
-fg dbench fade
-sfx sfx-wipe
-
-char phoenix e=thinking (blink)
-"{$text}"
-
-timer 600 choice_timer1
+timer 120 choice_timer1
 
 label true
 
