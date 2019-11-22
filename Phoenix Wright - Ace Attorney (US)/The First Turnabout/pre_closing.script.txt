@@ -75,6 +75,7 @@ music_fade_in nowait
 set _list_back_button false
 set_examine_showbars true
 
+//1st choice
 set previous_choice choice1
 label choice1
 char phoenix e=thinking (blink)

@@ -304,7 +304,7 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 3,
+                            "x": 0,
                             "spd": 6
                         },
                         "modename": "blink",

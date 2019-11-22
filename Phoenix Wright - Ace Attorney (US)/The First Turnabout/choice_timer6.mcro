@@ -10,7 +10,6 @@ char judge e=warning (talk)
 sfx sfx-damage2
 penalty -25
 
-is penalty = 0 gameover
 
 bg defence
 fg dbench
@@ -25,7 +24,7 @@ sfx sfx-wipe
 char phoenix e=thinking (blink)
 "{$text}"
 
-timer 600 choice_timer
+timer 600 choice_timer6
 
 label true
 
