@@ -35,9 +35,11 @@ hideevl
 
 "In the 23 years I've known {n}him, it's usually been true."
 "He has a knack for getting {n}himself in trouble."
-"One thing I can say, though: {n}it's usually not his fault. {n}He just has terrible luck."
+"One thing I can say, though: {n}it's usually not his fault."
+"He just has terrible luck."
 "But I know better than anyone {n}that he's a good guy at heart."
-"That and I owe him one. {n}Which is why I took the {n}case... to clear his name."
+"That and I owe him one."
+"Which is why I took the case... {n}to clear his name."
 "And that's just what I'm {n}going to do!"
 
 bg black fade

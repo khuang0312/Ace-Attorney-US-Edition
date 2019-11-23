@@ -42,7 +42,8 @@ char phoenix e=normal (talk)
 
 bg judgestand
 char judge e=surprised (talk)
-"Ahem. Defense?"
+"Ahem."
+"Defense?"
 "This is your first trial, is it not?"
 
 bg defence
@@ -128,6 +129,12 @@ addev blackout
 nt
 "{c090}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
 
+bg helper
+char mia e=bench-stern (talk)
+"Just a reminder, Phoenix:"
+"Keep your copy of the documents {n}in the Court Record organized."
+"It's got all the evidence you need {n}to make your case, after all."
+
 bg judgestand
 char judge e=normal (talk)
 "With that settled..."
@@ -139,13 +146,18 @@ music_fade_out nowait
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Yes, Your Honor. {n}May it please the court."
+"Yes, Your Honor."
+
+char payne e=normal (talk)
+nt
+"{c090}{center}{type}{spd 2}- Opening Statement -{n}Prosecution"
 
 mus logic.ogg
 set _music_loop logic.ogg
 music_fade_in nowait
 
 char payne e=normal (talk)
+"May it please the court."
 "My name is Winston Payne, and I {n}represent the state in this case."
 
 addev cindy$
@@ -186,12 +198,24 @@ fg dbench
 char phoenix e=normal (talk)
 "Ahem."
 "The defense will present an opening {n}statement now, Your Honor."
-"May it please the court."
+
+bg judgestand
+char judge e=normal (talk)
+"Very well."
+"You may proceed."
+
+bg defence
+fg dbench
+char phoenix e=normal (blink)
+nt
+"{c090}{center}{type}{spd 2}- Opening Statement -{n}Defense"
 
 mus logic.ogg
 set _music_loop logic.ogg
 music_fade_in nowait
 
+char phoenix e=normal (talk)
+"May it please the court."
 char phoenix e=document (talk)
 "There is reasonable doubt as to {n}whether or not the defendant,"
 "Larry Butz, committed murder {n}on July 31st."
@@ -251,11 +275,12 @@ char larry e=crying (talk)
 "Remain silent!?"
 char larry e=mad (talk)
 sfx sfx-smack
-"{s 20}I ain't gonna remain silent!"
+"{f}{s 20}I ain't gonna remain silent!"
+char larry e=smirk (talk)
 "No one can stop me from talking!"
 sfx sfx-smack
-char larry e=smirk (talk)
-"{s 20}Bring it on, man!"
+char larry e=mad (talk)
+"{f}{s 20}Bring it on, man!"
 
 bg judgestand
 char judge e=surprised (talk)
@@ -265,15 +290,19 @@ char judge e=surprised (talk)
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c089}(Uh-oh. Larry gets excited easily... {n}This could be bad.)"
+"{c089}(Uh-oh.)"
+"{c089}(Larry gets excited easily... {n}This could be bad.)"
 
 bg helper
 char mia e=bench-geez (talk)
 "*sigh* ...You have some {n}strange friends, Wright."
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"The prosecution will try to elicit {n}damaging testimony through {n}questioning our defendant."
-"You should object to any {n}improper questions so Larry {n}doesn't hurt his case."
+"Direct examination usually involves {n}an attorney questioning their own {n}witness to support their case."
+"For the prosecution to call a {n}defense witness is... unusual, {n}to say the least."
+"Anyway, Mr. Payne is trying to {n}make our defendant slip up {n}during questioning."
+"He's likely going to throw in a few {n}improper questions to trick {n}Larry into hurting his case.
+"As his lawyer, I'm sure you {n}know it's your job to object {n}to these questions."
 "As for what constitutes an {n}improper question..."
 
 addev handbook
@@ -287,7 +316,7 @@ sfx sfx-evidenceshoop
 showevl
 
 "You have the {c940}reference handbook{c999} {n}I gave you, right?"
-"It should be in the {c940}Court Record{c999}."
+"It should be filed in the {c940}Court Record{c999}."
 "It contains a guide on the types of {n}objections used to protest opposing {n}counsel's questions."
 "Give it a glance now if you need {n}a refresher."
 hideevl
@@ -297,17 +326,17 @@ hideevl
 
 bg black
 nt
-"{c940}{sound}You may object to opposing {n}counsel's questions using {c090}Press {c940}{n}during direct examination."
 penalty 50
 penalty
 "{c940}{sound}The penalty bar represents {n}Phoenix's standing in the court."
 "{c940}{sound}Each successful objection {n}will raise the bar."
 penalty +10
 penalty
-"{c940}{sound}Improper objections, among other {n}actions, will lower the bar."
+"{c940}{sound}Improper objections, among other {n}errors, will lower the bar."
 penalty -10
+penalty
+"{c940}{sound}If the prosecution's question is {n}legitimate, press {c999}Back{c940} to move on."
 delete name=penalty
-
 music_fade_out
 
 script larrydirect
