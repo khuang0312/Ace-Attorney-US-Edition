@@ -13,7 +13,6 @@ mus moderato.ogg
 set _music_loop moderato.ogg
 music_fade_in nowait
 
-
 set _testimony_blinker false
 set _allow_present_evidence false
 
@@ -63,7 +62,6 @@ showlist
 delete name=penalty
 goto 4
 
-
 label 4
 bg witness
 fg wbench
@@ -71,7 +69,6 @@ char larry e=hello (talk)
 "I do all kinds of stuff!"
 char larry e=headscratching (talk)
 "I'm making statues at the moment, {n}and each one is unique."
-
 
 label 5
 bg prosecution
@@ -105,20 +102,17 @@ char larry e=hello (talk)
 "Yeah, that's The Thinker!"
 "It's one of my creations."
 
-
 label 7
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Let the record show that the {n}defendant has identified the murder {n}weapon as one of his creations."
 
-
 label 8
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(Not good...)"
-
 
 label 9
 bg prosecution
@@ -140,7 +134,6 @@ showlist
 delete name=penalty
 goto 10
 
-
 label 10
 bg witness
 fg wbench
@@ -149,13 +142,11 @@ char larry e=crying (talk)
 "We were great together!"
 "We were Romeo and Juliet, {p 5}{n}Cleopatra and Mark Anthony!"
 
-
 label 11
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
 "{c089}(Um... didn't they all die?)"
-
 
 label 12
 bg prosecution
@@ -177,7 +168,6 @@ showlist
 delete name=penalty
 goto 13
 
-
 label 13
 bg witness
 fg wbench
@@ -190,13 +180,11 @@ char larry e=mad (talk)
 sfx sfx-smack
 "{s 20}WHAT'S IT TO YOU, ANYWAY!?"
 
-
 label 14
 bg prosecution
 fg pbench
 char payne e=confident (talk)
 "Mr. Butz, what you describe is {n}generally what we mean by {n}"dumped.""
-
 
 label 15
 bg prosecution
@@ -228,7 +216,6 @@ fg wbench
 char larry e=normal (talk)
 "Yeah, that's Cindy's passport."
 
-
 label 17
 bg prosecution
 fg pbench
@@ -249,12 +236,11 @@ showlist
 delete name=penalty
 goto 18
 
-
 label 18
 bg witness
 fg wbench
 char larry e=normal (talk)
-"Looks like she just got back from {n}Paris on {c940}July 30th{c090}..."
+"Looks like she just got back from {n}Paris on {c940}July 30th{c999}..."
 "{sfx sfx-realization}Wait a second."
 char larry e=crying (talk)
 "{s 10}Someone else wrote in here!"
@@ -266,7 +252,7 @@ label 19
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"Mr. Butz, what do you think {n}of her now?"
+"Mr. Butz, what do you {n}think of her now?"
 
 bg defence
 fg dbench
@@ -297,36 +283,13 @@ label 21
 bg judgestand
 char judge e=surprised (talk)
 ".{p 5}.{p 5}.{p 5}Let's continue with the trial, shall we?"
-
-bg defence
-fg dbench
-char phoenix e=sweating (blink)
-"{c089}(I can't possibly object {n}to the judge...)"
-char phoenix e=thinking (blink)
-"{c089}(...Can I?)"
-char phoenix e=normal (blink)
-"{c089}(...)"
-char phoenix e=handsondesk (blink)
-"{c089}(... ... ... ...)"
-
-penalty
-list
-li Asked and Answered result=objection21
-li Leading result=objection21
-li Prejudicial result=objection21
-li Relevance result=objection21
-li Vague result=objection21
-showlist
-delete name=penalty
 goto 22
-
 
 label 22
 bg prosecution
 fg pbench
 char payne e=normal (talk)
 "Of course, Your Honor."
-
 
 label 23
 bg prosecution
@@ -348,13 +311,11 @@ showlist
 delete name=penalty
 goto 24
 
-
 label 24
 bg witness
 fg wbench
 char larry e=crying (talk)
 "I, uh, I was visiting Cindy's {n}apartment."
-
 
 label 25
 bg prosecution
@@ -376,13 +337,11 @@ showlist
 delete name=penalty
 goto 26
 
-
 label 26
 bg witness
 fg wbench
 char larry e=crying (talk)
 "She wasn't home, man... {n}I didn't see her."
-
 
 label 27
 bg prosecution
@@ -390,116 +349,6 @@ fg pbench
 char payne e=confident (talk)
 "Thank you, Mr. Butz."
 
-
-goto endoftestimony
-
-
-
-label objection21
-bg defence
-fg dbench
-
-mus
-sfx phoenix\objection
-fg ObjectionAnim
-bg defence
-fg dbench
-char phoenix e=objecting
-pause 10
-char phoenix e=pointing (blink)
-pause 60
-char phoenix e=sheepish (talk)
-"Sorry, Your Honor."
-"I just couldn't hold it in."
-
-bg judgestand
-char judge e=surprised (blink)
-pause 60
-char judge e=warning (blink)
-pause 30
-penalty threat=100
-pause 30
-sfx sfx-damage2
-penalty -100
-pause 30
-
-label press 22
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
-goto 22
-
-label press 23
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
-goto 23
-
-label press 24
-bg helper
-char mia e=bench-stern (talk)
-"Phoenix, this is opposing counsel's {n}direct examination."
-"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for anything {n}that might damage your case."
-"You can refer to the objection {n}handbook if you need to."
-goto 24
-
-label press 25
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
-goto 25
-
-label press 26
-bg helper
-char mia e=bench-stern (talk)
-"Phoenix, this is opposing counsel's {n}direct examination."
-"You'll want to object to the {n}prosecution's questions rather {n}than the witness' responses."
-"Listen carefully for anything {n}that might damage your case."
-"You can refer to the objection {n}handbook if you need to."
-goto 26
-
-
-label press 27
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
 goto endoftestimony
 
 label Asked_and_Answered
@@ -699,7 +548,6 @@ resume
 
 label endoftestimony
 music_fade_out nowait
-endcross
 
 bg prosecution
 fg pbench
@@ -712,12 +560,12 @@ char judge e=normal (talk)
 
 bg helper
 char mia e=bench-stern (talk)
-
 char phoenix hide
-"What should I do, Mia? {n}This wasn't supposed to happen..."
+"What should I do, Boss?"
+"This wasn't supposed to happen..."
 
 char mia e=bench-stern (talk)
-"Let's move on; the damage {n}has been done."
+"Let's just move on."
 "We can push back from a {n}different angle...{p 10} hopefully."
 
 bg defence
@@ -725,25 +573,36 @@ fg dbench
 char phoenix e=headshake
 pause 60
 char phoenix e=normal (talk)
-"*sigh* ... The defense has no further {n}questions for the defendant, {n}Your Honor."
+"*sigh* ...The defense has no {n}further questions for the {n}defendant, Your Honor."
 
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"The witness may be excused from the stand."
+"The witness may be excused {n}from the stand."
 
 bg witness
 fg wbench
 char larry e=mad (talk)
-"{sfx sfx-smack}Thanks for nothing, Nick!"
+sfx sfx-smack
+"{s 20}Thanks for nothing, Nick!"
 char larry e=crying (talk)
-"Why'd my Cindy go and {n}do that, man? {p 10}{s 10}WHY!?"
+"Why'd my Cindy do that, man?"
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}WHY!?"
 
 bg defence
 fg dbench
 char phoenix e=sweating (blink)
-"{c089}(Larry.{p 10}.{p 10}.{p 10} just get off the stand, please.)"
+"{c089}(Larry...{p 10} just get off the stand, please.)"
 
+sfx sfx-gallery
+fg ani-gallery nowait
+fg phoenix_mia nowait
+fg judge nowait
+fg payne nowait
+fg larry nowait
+pause 120
 fg ani-judge-gavel
 fg ani-judge-gavel
 

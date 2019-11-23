@@ -275,12 +275,12 @@ char larry e=crying (talk)
 "Remain silent!?"
 char larry e=mad (talk)
 sfx sfx-smack
-"{f}{s 20}I ain't gonna remain silent!"
+"{s 20}I ain't gonna remain silent!"
 char larry e=smirk (talk)
 "No one can stop me from talking!"
 sfx sfx-smack
 char larry e=mad (talk)
-"{f}{s 20}Bring it on, man!"
+"{s 20}Bring it on, man!"
 
 bg judgestand
 char judge e=surprised (talk)
