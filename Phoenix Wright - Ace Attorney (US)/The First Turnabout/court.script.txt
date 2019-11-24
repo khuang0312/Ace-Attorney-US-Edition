@@ -298,11 +298,11 @@ char mia e=bench-geez (talk)
 "*sigh* ...You have some {n}strange friends, Wright."
 char mia e=bench-stern (talk)
 "Listen closely, now."
-"Direct examination usually involves {n}an attorney questioning their own {n}witness to support their case."
+"Attorneys generally conduct {c940}{n}direct examination {c999}on their own {n}witness to support their case.
 "For the prosecution to call a {n}defense witness is... unusual, {n}to say the least."
-"Anyway, Mr. Payne is trying to {n}make our defendant slip up {n}during questioning."
+"Anyway, opposing counsel is {n}trying to make our defendant {n}slip up during questioning."
 "He's likely going to throw in a few {n}improper questions to trick {n}Larry into hurting his case.
-"As his lawyer, I'm sure you {n}know it's your job to object {n}to these questions."
+"As his lawyer, I'm sure you {n}know it's your job to {c940}object {n}{c999}to these questions."
 "As for what constitutes an {n}improper question..."
 
 addev handbook

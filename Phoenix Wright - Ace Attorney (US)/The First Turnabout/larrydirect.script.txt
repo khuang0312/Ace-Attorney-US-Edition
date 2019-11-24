@@ -2,14 +2,15 @@ bg witness
 char larry e=hello (blink)
 
 char Bailiff hide
-"Witness. Raise your right hand."
+"Witness."
+"Please raise your right hand."
 "Do you swear to testify to {n}the truth, the whole truth, {n}and nothing but the truth?"
 
 char larry e=hello (talk)
 "I do!"
 
 char Bailiff hide
-"Please step up to the stand."
+"You may step up to the stand."
 
 fg wbench fade
 fg TestimonyAnim fade name=tanim

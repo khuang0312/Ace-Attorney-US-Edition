@@ -11,7 +11,7 @@
                 }
             ],
             "_track": null,
-            "character": "Bailiff",
+            "character": "judge",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -22,15 +22,16 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
+                "_music_loop": "moderato.ogg",
                 "_list_back_button": "true",
-                "ev_z_textbox_x": "100",
+                "_last_written_text": "Answer the question, witness.\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "ev_mode_y": "12",
+                "penalty": "0",
                 "ev_mode_x": "4",
                 "_penalty_script": "penalty",
                 "_font_itemname_size": "10",
@@ -47,14 +48,16 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
+                "_currentlabel": "Leading",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "_nt_image": "",
+                "ev_items_y": "63",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -63,8 +66,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_last_written_text": "Please step up to the stand.\n",
-                "_speaking_name": "",
+                "_speaking_name": "Judge",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -72,6 +74,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
+                "_lastline": "44",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -86,18 +89,20 @@
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
                 "_layering_method": "zorder",
+                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "",
+                "_speaking": "judge",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "ev_cursor_img": "general/cursor_ev",
-                "ev_items_y": "63",
+                "_timer_value_music_fade_in_add": "-0.08",
+                "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
-                "handbook1_pic": "handbook.png",
+                "ev_larrow_y": "90",
+                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
@@ -111,7 +116,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_larrow_y": "90",
+                "ev_mode_y": "12",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -126,6 +131,7 @@
                 "_font_block": "arial.ttf",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
+                "ev_z_textbox_x": "100",
                 "_flash_sound": "false",
                 "handbook5_name": "Objection Handbook Ch. 5",
                 "_font_gametitle_size": "16",
@@ -173,8 +179,9 @@
                 "_nt_text_x": "0",
                 "_nt_text_y": "0",
                 "ev_present_x": "90",
-                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
+                "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
+                "_selected": "Leading",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -190,12 +197,12 @@
         "assets.Script",
         [],
         {
-            "_world_id": 102773464,
+            "_world_id": 454200936,
             "statement": "",
             "pri": 0,
-            "scene": "sahwitdirect.script",
+            "scene": "penalty",
             "cross": null,
-            "si": 18,
+            "si": 6,
             "lastline": 0,
             "instatement": false,
             "_objects": [
@@ -206,7 +213,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/witness",
+                        "name": "bg/judgestand",
                         "blinkspeed": [
                             100,
                             200
@@ -220,7 +227,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "witness",
+                        "id_name": "judgestand",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -237,11 +244,11 @@
                 [
                     "char",
                     [
-                        "sahwit/normal(blink)",
+                        "judge/warning(blink)",
                         false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "warning",
                         "pri": 20,
                         "pos": [
                             0,
@@ -265,10 +272,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Sahwit\n",
-                        "id_name": "sahwit",
+                        "nametag": "Judge\n",
+                        "id_name": "judge",
                         "tint": null,
-                        "charname": "sahwit",
+                        "charname": "judge",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -284,7 +291,7 @@
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "sahwit/normal(blink)",
+                        "name": "judge/warning(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -295,148 +302,41 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 1,
+                            "x": 4,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
+                        "blinkemo": "warning",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "Bailiff/normal(blink)",
-                        true
-                    ],
-                    {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Bailiff\n",
-                        "id_name": "Bailiff",
-                        "tint": null,
-                        "charname": "Bailiff",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "Bailiff/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/wbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "wbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
                     }
                 ],
                 [
                     "textbox",
                     [
-                        "{c 090}{center}{type}{spd 3}- DIRECT EXAMINATION -\nFrank Sahwit\n",
+                        "That's enough.\n",
                         [
                             255,
                             255,
                             255
                         ],
                         2,
-                        3.0,
+                        1,
                         true,
                         false,
-                        "\n"
+                        "Judge\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "{c 090}{center}{type}{spd 3}- DIRECT EXAMINATION -\nFrank Sahwit\n",
+                        "text": "That's enough.\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
-                        "_clicksound": "typewriter.ogg",
                         "kill": false,
                         "statement": null,
                         "go": 1,
                         "z": 4,
                         "blocking": true,
-                        "wait": "manual"
+                        "wait": "auto"
                     }
                 ],
                 [
@@ -530,11 +430,17 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script8": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script11": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script4": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script441": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpenalty5": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script437": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script31": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script13": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script10": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script5": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script17": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script6": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script440": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script19": true
             }
         },
         [
