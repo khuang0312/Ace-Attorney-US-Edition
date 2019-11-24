@@ -12,5 +12,5 @@ addev badge
 //addev cindy_passport
 //addev blackout
 
-script larrydirect
+script sahwitdirect
 //Just change the script name to whatever you're testing

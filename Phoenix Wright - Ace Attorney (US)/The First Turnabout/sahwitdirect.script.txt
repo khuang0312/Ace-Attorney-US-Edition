@@ -1,9 +1,17 @@
-goto here
-
 bg witness
-fg wbench
 char sahwit e=normal (blink)
 
+char Bailiff hide
+"Witness. Raise your right hand."
+"Do you swear to testify to {n}the truth, the whole truth, {n}and nothing but the truth?"
+
+char sahwit e=normal (talk)
+"I do."
+
+char Bailiff hide
+"Please step up to the stand."
+
+fg wbench fade
 fg labelimonyAnim fade name=tanim
 delete name=tanim
 nt
