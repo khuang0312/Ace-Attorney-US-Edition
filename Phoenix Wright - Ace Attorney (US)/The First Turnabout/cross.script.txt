@@ -127,7 +127,7 @@ label press 3
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
-"You're certain the time was 1:00 PM?"
+"You're certain the time was 1:00?"
 bg witness
 fg wbench
 char sahwit e=normal (talk)

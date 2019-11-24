@@ -34,7 +34,7 @@ statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 PM on July 31st.""
+""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 on July 31st.""
 
 statement 4
 bg witness
@@ -88,7 +88,7 @@ statement 12
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00 PM.""
+""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00.""
 
 endcross
 goto start
@@ -338,7 +338,7 @@ music_fade_in nowait
 bg defence
 fg dbench
 char phoenix e=pointing (talk)
-"Mr. Sahwit, you are aware witnesses {n}must tell the truth under penalty of {n}perjury, are you not?"
+"Mr. Sahwit, you swore under oath {n}to tell the truth under penalty of {n}perjury, did you not?"
 
 bg witness
 fg wbench
