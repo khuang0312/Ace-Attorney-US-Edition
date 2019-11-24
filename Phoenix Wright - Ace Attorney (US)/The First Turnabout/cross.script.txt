@@ -32,7 +32,7 @@ statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 PM on July 31st.""
+""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 on July 31st.""
 
 statement 4
 bg witness
@@ -284,7 +284,18 @@ fg dbench
 char phoenix e=objecting
 pause 10
 char phoenix e=pointing (talk)
-"Mr. Sahwit.{p 10} You have been telling {n}the truth as a witness in a court {n}of law,{p 5} have you not?"
+"Mr. Sahwit."
+"You swore under oath to tell {n}the truth, did you not?"
+
+bg witness
+fg wbench
+char sahwit e=normal (talk)
+"Yes."
+
+bg defence
+fg dbench
+char phoenix e=pointing (talk)
+"And you told the truth?"
 
 bg witness
 fg wbench
@@ -325,7 +336,7 @@ set _music_loop objection.ogg
 music_fade_in nowait
 
 char phoenix e=pointing (talk)
-"You said that you witnessed the {n}defendant fleeing and discovered {n}the body at 1:00 PM, did you not?"
+"You said that you witnessed the {n}defendant fleeing and discovered {n}the body at 1:00, did you not?"
 
 bg witness
 fg wbench

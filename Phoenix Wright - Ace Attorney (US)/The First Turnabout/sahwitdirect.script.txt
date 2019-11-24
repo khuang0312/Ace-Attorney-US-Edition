@@ -99,7 +99,8 @@ label 6
 bg witness
 fg wbench
 char sahwit e=normal (talk)
-"Yes. I saw him fleeing an apartment {n}while I was working at 1:00 PM {n}on July 31st."
+"Yes."
+"I saw him fleeing an apartment {n}while I was working at 1:00 {n}on July 31st."
 
 label 7
 bg prosecution

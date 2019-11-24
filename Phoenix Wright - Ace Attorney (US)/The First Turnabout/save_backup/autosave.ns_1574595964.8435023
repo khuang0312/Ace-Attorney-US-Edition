@@ -10,8 +10,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "moderato.ogg",
-            "character": "phoenix",
+            "_track": null,
+            "character": "judge",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -24,14 +24,14 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "moderato.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "Aren't phones supposed to work \nduring a blackout?\n",
+                "_last_written_text": "Answer the question, witness.\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "100",
+                "penalty": "0",
                 "ev_mode_x": "4",
                 "_penalty_script": "penalty",
                 "_font_itemname_size": "10",
@@ -48,7 +48,7 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "22",
+                "_currentlabel": "Leading",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -66,7 +66,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Judge",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -74,7 +74,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "322",
+                "_lastline": "44",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -88,13 +88,13 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_ev": "cindy",
+                "_layering_method": "zorder",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "judge",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
@@ -124,7 +124,6 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
-                "_selected": "Back",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
@@ -182,7 +181,7 @@
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
-                "_layering_method": "zorder",
+                "_selected": "Leading",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -198,13 +197,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 107569024,
+            "_world_id": 454200936,
             "statement": "",
             "pri": 0,
-            "scene": "sahwitdirect.script",
+            "scene": "penalty",
             "cross": null,
-            "si": 349,
-            "lastline": 322,
+            "si": 6,
+            "lastline": 0,
             "instatement": false,
             "_objects": [
                 [
@@ -214,7 +213,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/defence",
+                        "name": "bg/judgestand",
                         "blinkspeed": [
                             100,
                             200
@@ -228,7 +227,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "defence",
+                        "id_name": "judgestand",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -243,49 +242,13 @@
                     }
                 ],
                 [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/dbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "dbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
                     "char",
                     [
-                        "phoenix/sweating(blink)",
+                        "judge/warning(blink)",
                         false
                     ],
                     {
-                        "emoname": "sweating",
+                        "emoname": "warning",
                         "pri": 20,
                         "pos": [
                             0,
@@ -309,10 +272,10 @@
                             200
                         ],
                         "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "nametag": "Judge\n",
+                        "id_name": "judge",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "judge",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -323,12 +286,12 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 1,
+                            "x": 0,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/sweating(blink)",
+                        "name": "judge/warning(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -339,10 +302,10 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 4,
                             "spd": 6
                         },
-                        "blinkemo": "sweating",
+                        "blinkemo": "warning",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
@@ -351,7 +314,7 @@
                 [
                     "textbox",
                     [
-                        "{c 089}(I can't possibly object \nto the judge...)\n",
+                        "That's enough.\n",
                         [
                             255,
                             255,
@@ -361,11 +324,11 @@
                         1,
                         true,
                         false,
-                        "Phoenix\n"
+                        "Judge\n"
                     ],
                     {
                         "num_lines": 4,
-                        "text": "{c 089}(I can't possibly object \nto the judge...)\n",
+                        "text": "That's enough.\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
                         "kill": false,
@@ -433,43 +396,51 @@
                         "hold_func": null,
                         "z": 6
                     }
+                ],
+                [
+                    "guiWait",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "_guiWait_",
+                        "start": 0,
+                        "run": null,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script164": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script20": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script108": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script143": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script227": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script220": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script264": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script336": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script337": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script248": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script199": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script59": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script441": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpenalty5": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script437": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script31": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script52": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script343": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script192": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script13": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script10": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script258": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script80": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script87": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script171": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script115": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script272": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script136": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script5": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script6": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script279": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script300": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script329": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script328": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script348": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script307": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script440": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script19": true
             }
         },
         [
