@@ -1,68 +1,59 @@
-
-//we might need to do playtesting to see if these choices make sense to the player...
-//the text for some of these choices are a bit confusing...
-//specifically choice 3
-
-bg judgestand fade
-
-char judge e=surprised (talk) fade
-"Well... This case has certainly taken {n}an unexpected turn. Your closing {n}argument, Mr. Payne?"
+bg judgestand
+char judge e=surprised (talk)
+"Well... This case has certainly taken {n}an unexpected turn."
+"Your closing argument, {n}Mr. Payne?"
 
 bg prosecution
 fg pbench
-
 char payne e=confident (talk)
 "Yes, Your Honor."
-"May it please the court."
 
 nt
 "{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Prosecution"
 
+mus cornered1.ogg
+set _music_loop cornered1.ogg
+music_fade_in nowait
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"May it please the court."
 "The evidence and testimony {n}presented in this trial {n}proves the defendant's guilt."
-
 "He has admitted to being at the {n}apartment during the time of {n}the murder.
-
 "As we heard from Mr. Sahwit, the {n}defendant fled from the apartment {n}right after committing the crime."
-
 "The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing:"
-
-"The clock may be three hours slow {n}now..."
+"The clock may be three hours slow now,"
 "but it does not mean the clock {n}was three hours slow on {n}the day of the murder."
 "It is simply a coincidence that the clock is slow.
-
 "The blackout that day cannot have {n}affected it since it runs on {n}batteries."
-
 "As such, Mr. Sahwit's testimony {n}still stands."
-
-"The defendant went to the victim's {n}apartment, got into an argument, {n}and took it too far.{n}"
-
+"The defendant went to the victim's {n}apartment, got into an argument, {n}and took it too far."
 "He had motive and the opportunity {n}to commit murder."
-
 "The state asks that the defendant, {n}Larry Butz, be found guilty."
 
-bg judgestand
+music_fade_out nowait
 
+bg judgestand
 char judge e=warning (talk)
 "Thank you, Mr. Payne."
-
 "Mr. Wright, your closing argument?"
 
-
 bg helper
-
 char mia e=bench-stern (blink)
-
 char phoenix hide
-"Boss, it's over! I can't prove the {n}clock was slow the day of the {n}murder! No one can prove that!"
+"Boss, it's over!"
+"I can't prove the clock was {n}slow the day of the murder!"
+"No one can prove that!"
 
 char mia e=bench-stern (talk)
-"Um... well, yes. But that doesn't mean {n}you can't still win! Try thinking out {n}of the box!"
-
+"Um... well, yes."
+"But that doesn't mean {n}you can't still win!"
+"Try thinking out of the box!"
 "If you can present an alternate {n}possibility, we might just have a case."
 
 bg defence
 fg dbench
-
 char phoenix e=thinking (talk)
 "{c089}(Why was the clock three hours{n}slow...?)"
 "{c089}(Let's take it from the top.)"
@@ -71,8 +62,8 @@ bg black fade
 fg dbench fade
 sfx sfx-wipe
 
-mus suspense.ogg
-set _music_loop suspense.ogg
+mus truth.ogg
+set _music_loop truth.ogg
 music_fade_in nowait
 
 set _list_back_button false
@@ -213,13 +204,10 @@ char judge e=warning (talk)
 "The court does not appreciate stalling, Mr. Wright."
 
 sfx sfx-damage2
-penalty -25
-
-is penalty = 0 gameover
+penalty -10
 
 bg defence
 fg dbench
-
 char phoenix e=emo
 "{c089}(Dammit Phoenix! Think! {n}Your friend's life is on the line!)"
 
@@ -228,21 +216,3 @@ fg dbench fade
 sfx sfx-wipe
 
 goto $previous_choice
-
-label gameover
-mus
-fg ani-judge-gavel
-pause 50 script
-bg judgestand
-char judge e=warning (talk)
-"That's enough."
-char judge e=normal (talk)
-"Mr. Wright, you are hereby {n}removed from the court {n}for legal incompetence."
-"The defendant has the right to {n}request a new attorney and be {n}tried at a later date."
-"The court declares a mistrial {n}and is adjourned."
-bg defence
-fg dbench
-char phoenix e=emo
-"Dang. Reset the game!"
-pause 50 script
-exit

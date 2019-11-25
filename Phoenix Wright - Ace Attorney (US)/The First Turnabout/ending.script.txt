@@ -1,7 +1,5 @@
-
-bg judgestand fade
-
-char judge e=warning (talk) fade
+bg judgestand
+char judge e=warning (talk)
 "...Mr. Wright?"
 
 bg defence
