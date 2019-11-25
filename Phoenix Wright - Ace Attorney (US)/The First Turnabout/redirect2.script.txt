@@ -89,7 +89,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Prejudicial
@@ -110,7 +109,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Relevance
@@ -131,7 +129,6 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
 resume
 
 label Vague
@@ -152,7 +149,7 @@ pause 30
 sfx sfx-damage2
 penalty -10
 pause 30
-is penalty 0 gameover
+
 resume
 
 label endoftestimony

@@ -34,7 +34,7 @@ statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 PM on July 31st.""
+""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 on July 31st.""
 
 statement 4
 bg witness
@@ -88,7 +88,7 @@ statement 12
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00 PM.""
+""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00.""
 
 statement 13
 bg witness
@@ -423,16 +423,14 @@ label thinker
 mus
 sfx phoenix\takethat
 fg TakeThatAnim
-
 pause 5 script
-
 bg defence
 fg dbench
 char phoenix e=confident (talk)
 set _ev thinker
 sfx sfx-evidenceshoop
 showevr
-"Mr. Sahwit, you are aware that this clock was made by the defendant, don't you?"
+"Mr. Sahwit, you are aware that this clock was made by the defendant, are you not?"
 hideevr
 
 bg witness
@@ -455,15 +453,6 @@ bg witness
 fg wbench
 char sahwit e=glaring (blink)
 sfx sfx-stab
-
-bg prosecution
-fg pbench
-char payne e=damage
-sfx sfx-smack
-pause 25 script
-
-bg witness
-fg wbench
 char sahwit e=glaring (blink)
 "{s 15}...!"
 char sahwit e=glaring (talk)
@@ -471,7 +460,7 @@ char sahwit e=glaring (talk)
 
 bg defence
 fg dbench
-char phoenix e=confident (talk)
+char phoenix e=pointing (talk)
 "Mr. Sahwit, {p 10} you held the statue of The Thinker in your hand that day, didn't you?"
 
 bg witness
@@ -479,11 +468,11 @@ fg wbench
 char sahwit e=glaring (talk)
 sfx sfx-smack
 "{s 15}I..."
-"I...!"
-"That...that day..."
-"I...I never!"
-"Look... I...the clock...I heard, no!"
-"I mean, I saw...saw..."
+"I...!{next}"
+"That...that day...{next}"
+"I...I never!{next}"
+"Look... I...the clock...I heard, no!{next}"
+"I mean, I saw...saw...{next}"
 char sahwit e=damage
 "Gaaah!{s 15}{sfx sfx-stab}{p 20}{s 20}{sfx sfx-stab}{p 20}{s 30}{sfx sfx-stab}{f}{next}"
 pause 30 script
@@ -500,7 +489,7 @@ char sahwit e=bald (talk)
 "I saw him!"
 "H-he killed her and he should burn!"
 "Burn!"
-"Give him {c940}death{c999}!"
+"Give him death!"
 
 bg courtroom
 fg ani-gallery nowait
@@ -509,7 +498,7 @@ fg phoenix_mia nowait
 fg payne nowait
 fg sahwit nowait
 sfx sfx-gallery
-pause 160 script
+pause 120 script
 
 fg ani-judge-gavel
 fg ani-judge-gavel
@@ -579,12 +568,15 @@ char sahwit e=normal (talk)
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
-"{c089}(I think I've taken a wrong path...)"
+"{c089}(I can't see where I was going with this...)"
 
 bg judgestand
 char judge e=warning (talk)
 "Mr. Wright, this line of questioning is going nowhere."
 "Please move on."
-sfx sfx-damage2.ogg
+penalty threat=10
+pause 30
+sfx sfx-damage2
 penalty -10
+pause 30
 resume
