@@ -4,9 +4,8 @@ char judge e=warning (talk)
 
 bg defence
 fg dbench
-char phoenix e=normal (talk)
+char phoenix e=handsondesk (talk)
 "Yes, Your Honor."
-
 "The defense is ready to present {n}its closing argument."
 
 bg judgestand
@@ -16,72 +15,56 @@ char judge e=normal (talk)
 bg defence
 fg dbench
 
-char phoenix e=confident (talk)
-"May it please the court."
-
 nt
 "{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Defence"
 
+mus cornered2.ogg
+set _music_loop cornered2.ogg
+music_fade_in nowait
+
+char phoenix e=confident (talk)
+"May it please the court."
 char phoenix e=normal (talk)
-"The prosecution had the burden of {n}conclusively proving that...
-
-"...the defendant, Larry Butz, {n}committed murder."
-
-"They attempted to do so by{n} presenting a witness, {n}Mr. Sahwit..."
-"who allegedly saw Mr.Butz fleeing {n}the scene of the crime."
-
+"The prosecution had the burden of {n}conclusively proving that Larry Butz committed murder."
+"They attempted to do so by {n}presenting a witness, Mr. Sahwit,"
+"who allegedly saw Mr. Butz fleeing {n}the scene of the crime."
 char phoenix e=document (talk)
-"Over the course of this trial, {n}we have discovered that {n}Mr. Sahwit believed...
-
-"...the time was 1:00PM: three hours {n}before the murder."
-
-//do an evidence shoop here...
+"Over the course of this trial, {n}we have discovered that {n}Mr. Sahwit believed the time was 1:00:"
+"Three hours before the murder."
 sfx sfx-evidenceshoop
-set _ev Thinker
+set _ev thinker
 showevr
 char phoenix e=thinking (talk)
-"We have also discovered that {n}the murder weapon, a statue {n}of the Thinker, contains..."
-
-"...a clock that is currently {n}three hours slow."
+"We have also discovered that {n}the murder weapon, a statue {n}of the Thinker,"
+"contains a clock that is currently {n}three hours slow."
 hideevr
-
 char phoenix e=normal (talk)
-"The prosecution claims that the clock {n}may not have been three hours slow {n}on the day of the murder..."
-
+"The prosecution claims that the clock {n}may not have been three hours slow {n}on the day of the murder,"
 "and that there was no reason {n}for it to be slow."
-
-
+char phoenix e=document (talk)
+"However, Ms. Stone had just returned {n}from a trip to Paris the day before {n}she was murdered..."
 sfx sfx-evidenceshoop
 set _ev cindy_passport
 showevr
-char phoenix e=document (talk)
-"However, Ms. Stone had just returned {n}from a trip to Paris the day before {n}she was murdered..."
-
 "...as shown by her passport."
 hideevr
-
 char phoenix e=normal (talk)
 "As we all know, the difference {n}between here and Paris is {n}nine hours."
-
-"When it's 4:00 PM here, it's 1:00AM {n}the next day there."
-
+"When it's 4:00 PM here, it's 1:00 AM {n}the next day there."
 "The clock wasn't three hours slow: {n}{sfx sfx-lightbulb}it was nine hours fast!"
-
 "Once again, we remind the court that {n}Mr. Sahwit was certain the time was {n}1:00PM when it was actually 4:00PM,"
-
-"...that the only way to hear the time {n}is to hold the statue, and that said {n}statue is the only one of its kind.{n}"
-
-char phoenix e=confident (talk)
+"that the only way to hear the time {n}is to hold the statue, and that said {n}statue is the only one of its kind.{n}"
+char phoenix e=normal (talk)
 "With that, we ask that the defendant, {n}Larry Butz, be found not guilty."
 
-bg judgestand
+music_fade_out
 
+bg judgestand
 char judge e=normal (talk)
 "Thank you, Mr. Wright."
 
 bg witness
 fg wbench
-
 char sahwit e=bald (talk)
 "I come all the way down here to {n}testify, and look what {n}happens!"
 
@@ -90,14 +73,13 @@ char sahwit e=bald (talk)
 "You lawyers are all slime!"
 
 bg judgestand
-
 char judge e=warning (talk)
-"Bailiff! Restrain the witness."
+"Bailiff!"
+"Restrain the witness."
 "Take him down to the detention center."
 
 bg witness
 fg wbench
-
 char sahwit e=bald (talk)
 "Ngh! {f}{s 5}{sfx sfx-stab}{e damage}Urgh! {f}{s 10}{sfx sfx-stab}{e bald}Hnugh! {f}{s 15}{sfx sfx-stab}{e damage}{next}"
 char sahwit e=break //This animation is just wrong...on so many levels
@@ -106,12 +88,9 @@ pause 260 script
 sfx sfx-smack
 
 bg judgestand
-
 char judge e=warning
 "The court has heard arguments from {n}both sides, deliberated on the {n}testimony and evidence..."
-
 "...presented thus far, and is prepared {n}to announce a verdict at this time."
-
 "For the charge of murder, the court {n}finds the defendant, Larry Butz..."
 
 notguilty
@@ -134,38 +113,26 @@ pause 5 script
 bg black fade
 pause 5 script
 
+char phoenix hide
+"It turned out that Frank Sahwit was a {n}common burglar!"
+"He posed as a newspaper salesman to {n}check and see when people {n}went out of the house."
+"That day...when Larry went to her {n}apartment, the victim wasn't {n}home."
+"After he left, Mr. Sahwit let himself in {n}to do his dirty work."
+"While he was searching her place, {n}the victim returned!"
+"She cried out, which the neighbors {n}heard and assumed was a verbal {n}fight between her and Larry."
+"Flustered, Mr. Sahwit grabbed the {n}nearest blunt object he could {n}find..."
+
 mus won.ogg
 set _music_loop won.ogg
 music_fade_in nowait
 
 char phoenix hide
-"It turned out that Frank Sahwit was a {n}common burglar!"
-"He posed as a newspaper salesman to {n}check and see when people {n}went out of the house."
-
-"That day...when Larry went to her {n}apartment, the victim wasn't {n}home."
-
-"After he left, Mr. Sahwit let himself in {n}to do his dirty work."
-
-"While he was searching her place, {n}the victim returned!"
-
-"She cried out, which the neighbors {n}heard and assumed was a verbal {n}fight between her and Larry."
-
-"Flustered, Mr. Sahwit grabbed the {n}nearest blunt object he could {n}find..."
-
-
-char phoenix hide
 "And so my first trial came to a close."
-
 "Larry slapped me on the back and {n}said, "Gee, Nick it's good to have {n}friends!""
-
 "But I'm pretty sure he's not going{n} to pay us."
-
 "Unless you count the clock, which he {n}ended up giving to Boss."
-
 "God only knows how he managed {n}to snag it back from police{n} custody."
-
 "I didn't know it then... but that clock {n}was soon going to be at the center {n} of another incident."
-
 "My promise to celebrate our win with{n} Boss and Larry would turn out to{n} be one I wouldn't be able to keep."
 
 music_fade_out nowait
@@ -179,21 +146,13 @@ music_fade_in nowait
 
 char nt
 "Thank you for playing this re-creation of the First Turnabout."
-
 "This project was designed as an {n}educational experience by toning {n}down the whacky nature of the..."
-
 "...original case while adding elements {n}from real life court cases."
-
 "Of course, some liberties were taken {n}so that the overall structure and {n}twists of the case could remain..."
-
 "...intact. (such as excluding testimony about the murder weapon)."
-
 "Real life legal procedures were also {n}introduced in a simplified manner, {n}such as the revised...
-
 "...objection system and the usage of evidence."
-
 "We used California mock trial{n}procedures to create the legal {n}aspects in this project."
-
 "We apologize for any inaccuracies, {n}and welcome all kinds of feedback."
 
 char nt
@@ -208,3 +167,5 @@ char nt
 "{center}Grace Hong{n}Producer"
 
 music_fade_out nowait
+
+exit
