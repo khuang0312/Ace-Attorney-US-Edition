@@ -1,7 +1,8 @@
 bg judgestand
 char judge e=surprised (talk)
-"Well... This case has certainly taken {n}an unexpected turn."
-"Your closing argument, {n}Mr. Payne?"
+"Well... This trial has certainly taken {n}an unexpected turn."
+"The court has heard cases from both sides and will now move to closing arguments."
+"If you would, Mr. Payne?"
 
 bg prosecution
 fg pbench

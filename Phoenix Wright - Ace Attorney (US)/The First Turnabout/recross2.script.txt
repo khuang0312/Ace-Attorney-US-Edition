@@ -507,13 +507,57 @@ bg judgestand
 char judge e=warning (talk)
 "Order!"
 "Order in the court!"
-"Mr. Wright, is that all?"
+"Mr. Wright, please continue."
 
 bg defence
 fg dbench
-char phoenix e=confident (talk)
+char phoenix e=normal (talk)
 "Yes, Your Honor."
-"Thank you, Mr. Sahwit."
+"Mr. Sahwit."
+"I'd like you to listen to us sound the clock right now, in this court."
+
+bg courtroom
+nt
+"...*beep*..."
+"[I think it's 8:25.]"
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Mr. Payne... can you tell me what time it is now?"
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"It's 11:25..."
+char payne e=sweating (talk)
+"Ack!"
+
+bg defence
+fg dbench
+char phoenix e=pointing (talk)
+"Let the record show that this clock, the only one of its kind,"
+"is confirmed to be three hours slow:"
+"Precisely the discrepancy between what Mr. Sahwit heard and the actual time of death."
+
+bg judgestand
+char judge e=surprised (blink)
+"..."
+
+bg prosecution
+fg pbench
+char payne e=sweating (blink)
+"..."
+
+bg witness
+fg wbench
+char sahwit e=bald (blink)
+"..."
+
+bg defence
+fg dbench
+char phoenix e=handsondesk (talk)
+"That will be all, Mr. Sahwit."
 "No further questions."
 
 bg judgestand
@@ -530,9 +574,7 @@ char payne e=sweating (talk)
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"Yes, Your Honor."
-"Thank you, Mr. Sahwit."
-"No further questions."
+"The defense also rests, Your Honor."
 
 bg black fade
 pause 30
