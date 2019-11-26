@@ -12,5 +12,5 @@ addev thinker
 addev cindy_passport
 addev blackout
 
-script recross2
+script pre_closing
 //Just change the script name to whatever you're testing

@@ -578,9 +578,6 @@ fg dbench
 char phoenix e=normal (talk)
 "The defense also rests, Your Honor."
 
-bg black fade
-pause 30
-
 script pre_closing
 
 label none

@@ -1,7 +1,9 @@
+goto here
 bg judgestand
 char judge e=surprised (talk)
-"Well... This trial has certainly taken {n}an unexpected turn."
-"The court has heard cases from both sides and will now move to closing arguments."
+"Well... This trial has certainly {n}taken an unexpected turn."
+char judge e=normal (talk)
+"If both the defense and prosecution {n}rest their case, the court will now {n}move to {c940}closing arguments{c999}."
 "If you would, Mr. Payne?"
 
 bg prosecution
@@ -9,6 +11,7 @@ fg pbench
 char payne e=confident (talk)
 "Yes, Your Honor."
 
+char payne e=normal (blink)
 nt
 "{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Prosecution"
 
@@ -20,13 +23,14 @@ bg prosecution
 fg pbench
 char payne e=normal (talk)
 "May it please the court."
-"The evidence and testimony {n}presented in this trial {n}proves the defendant's guilt."
-"He has admitted to being at the {n}apartment during the time of {n}the murder.
+"The evidence and testimony {n}presented in this trial proves {n}the defendant's guilt."
+"He has admitted to being at the {n}apartment during the time {n}of the murder.
 "As we heard from Mr. Sahwit, the {n}defendant fled from the apartment {n}right after committing the crime."
-"The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing:"
-"The clock may be three hours slow now,"
-"but it does not mean the clock {n}was three hours slow on {n}the day of the murder."
-"It is simply a coincidence that the clock is slow.
+"The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing."
+label here
+"Yes, the clock may be three hours {n}slow right now.
+"But this does not necessarily mean {n}the clock was three hours slow on {n}the day of the murder."
+"It is simply a coincidence that {n}the clock is currently slow.
 "The blackout that day cannot have {n}affected it since it runs on {n}batteries."
 "As such, Mr. Sahwit's testimony {n}still stands."
 "The defendant went to the victim's {n}apartment, got into an argument, {n}and took it too far."
