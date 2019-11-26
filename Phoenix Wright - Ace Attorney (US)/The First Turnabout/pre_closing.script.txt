@@ -1,4 +1,4 @@
-goto here
+//goto here
 bg judgestand
 char judge e=surprised (talk)
 "Well... This trial has certainly {n}taken an unexpected turn."
