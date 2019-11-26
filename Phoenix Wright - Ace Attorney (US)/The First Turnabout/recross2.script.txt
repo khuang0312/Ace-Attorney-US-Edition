@@ -579,8 +579,9 @@ char phoenix e=normal (talk)
 "The defense also rests, Your Honor."
 
 pause 10
+bg black
+pause60
 script closing1
-pause 60
 
 label none
 mus

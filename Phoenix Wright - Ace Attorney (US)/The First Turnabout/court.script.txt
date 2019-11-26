@@ -271,7 +271,7 @@ char phoenix e=handsondesk (talk)
 
 bg witness
 fg wbench
-char larry e=crying (talk)
+char larry e=crying (talk) fade
 "Remain silent!?"
 char larry e=mad (talk)
 sfx sfx-smack
