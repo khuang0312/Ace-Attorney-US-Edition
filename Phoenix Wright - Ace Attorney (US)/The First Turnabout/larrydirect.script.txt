@@ -279,7 +279,6 @@ showlist
 delete name=penalty
 goto 20
 
-
 label 20
 bg witness
 fg wbench
@@ -288,7 +287,6 @@ char larry e=crying (talk)
 "I'm gonna die."
 "I'm just gonna drop dead."
 "Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
-
 
 label 21
 bg judgestand

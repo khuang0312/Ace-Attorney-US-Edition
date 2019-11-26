@@ -13,7 +13,7 @@ char payne e=confident (talk)
 
 char payne e=normal (blink)
 nt
-"{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Prosecution"
+"{c940}{center}{type}{spd 3}- CLOSING ARGUMENT -{n}Prosecution"
 
 mus cornered1.ogg
 set _music_loop cornered1.ogg
