@@ -8,10 +8,26 @@
                 {
                     "id": "badge",
                     "page": "evidence"
+                },
+                {
+                    "id": "cindy_autopsy",
+                    "page": "evidence"
+                },
+                {
+                    "id": "thinker",
+                    "page": "evidence"
+                },
+                {
+                    "id": "cindy_passport",
+                    "page": "evidence"
+                },
+                {
+                    "id": "blackout",
+                    "page": "evidence"
                 }
             ],
-            "_track": null,
-            "character": "Bailiff",
+            "_track": "truth.ogg",
+            "character": "sahwit",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
@@ -22,8 +38,9 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
+                "_music_loop": "truth.ogg",
                 "_list_back_button": "true",
-                "ev_z_textbox_x": "100",
+                "_last_written_text": "{s 15}",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -47,9 +64,11 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
+                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
@@ -63,8 +82,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_last_written_text": "You may step up to the stand.\n",
-                "_speaking_name": "Bailiff",
+                "_speaking_name": "Sahwit",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -72,6 +90,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
+                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -85,19 +104,20 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
+                "_ev": "thinker",
+                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "Bailiff",
+                "_speaking": "sahwit",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "ev_cursor_img": "general/cursor_ev",
+                "_timer_value_music_fade_in_add": "-0.14",
                 "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
-                "handbook1_pic": "handbook.png",
+                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
@@ -119,6 +139,7 @@
                 "ev_larrow_x": "2",
                 "blackout_desc": "Electricity to Ms. Stone's {n}building was out from {n}noon to 6 PM on the {n}day of the crime.",
                 "badge_pic": "lawyer_badge.png",
+                "_selected": "thinker",
                 "cindy$_desc": "Age: 22{n}Gender: Female{n}The victim in this case. A model, she lived in an apartment by herself.",
                 "thinker_pic": "thinker.png",
                 "_punctuation": ".\u3002?!,;\u3001",
@@ -126,13 +147,14 @@
                 "_font_block": "arial.ttf",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
+                "ev_z_textbox_x": "100",
                 "_flash_sound": "false",
                 "handbook5_name": "Objection Handbook Ch. 5",
                 "_font_gametitle_size": "16",
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "17",
+                "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -173,8 +195,9 @@
                 "_nt_text_x": "0",
                 "_nt_text_y": "0",
                 "ev_present_x": "90",
-                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
+                "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -190,13 +213,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 458821840,
+            "_world_id": 58142472,
             "statement": "",
             "pri": 0,
-            "scene": "sahwitdirect.script",
-            "cross": null,
-            "si": 17,
-            "lastline": 0,
+            "scene": "recross2.script",
+            "cross": "presenting",
+            "si": 488,
+            "lastline": 419,
             "instatement": false,
             "_objects": [
                 [
@@ -273,11 +296,11 @@
                 [
                     "char",
                     [
-                        "sahwit/normal(blink)",
+                        "sahwit/bald(blink)",
                         false
                     ],
                     {
-                        "emoname": "normal",
+                        "emoname": "bald",
                         "pri": 20,
                         "pos": [
                             0,
@@ -320,7 +343,7 @@
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "sahwit/normal(blink)",
+                        "name": "sahwit/bald(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -331,83 +354,41 @@
                             "loopmode": 0,
                             "start": 0,
                             "loops": 1,
-                            "x": 1,
+                            "x": 10,
                             "spd": 6
                         },
-                        "blinkemo": "normal",
+                        "blinkemo": "bald",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
                     }
                 ],
                 [
-                    "char",
+                    "textbox",
                     [
-                        "Bailiff/normal(blink)",
-                        true
+                        "{s 15}I-it was him, I tell you!\n",
+                        [
+                            255,
+                            255,
+                            255
+                        ],
+                        2,
+                        1,
+                        true,
+                        false,
+                        "Sahwit\n"
                     ],
                     {
-                        "emoname": "normal",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Bailiff\n",
-                        "id_name": "Bailiff",
-                        "tint": null,
-                        "charname": "Bailiff",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "Bailiff/normal(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 0,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "normal",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
+                        "num_lines": 4,
+                        "text": "{s 15}I-it was him, I tell you!\n",
+                        "can_skip": false,
+                        "id_name": "_textbox_",
+                        "kill": false,
+                        "statement": null,
+                        "go": 1,
+                        "z": 4,
+                        "blocking": true,
+                        "wait": "auto"
                     }
                 ],
                 [
@@ -451,115 +432,43 @@
                     }
                 ],
                 [
-                    "fg",
+                    "button",
                     [],
                     {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/wbench",
-                        "blinkspeed": [
-                            100,
-                            200
+                        "rpos": [
+                            177,
+                            192
                         ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
+                        "s_graphic": "general/record",
+                        "s_text": "",
                         "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "wbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/TestimonyAnim",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "tanim",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": 0,
-                        "x": 13,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
+                        "id_name": "_crbut_",
+                        "screen_setting": "try_bottom",
+                        "s_macroname": "{_crbut}",
+                        "hold_func": null,
+                        "z": 6
                     }
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script13": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script10": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script5": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script6": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutsahwitdirect.script7": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script438": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script443": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script471": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script445": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script473": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script458": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script456": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script432": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script482": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script469": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script472": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script411": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script476": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script417": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script487": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script470": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script474": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutrecross2.script463": true
             }
         },
         [
