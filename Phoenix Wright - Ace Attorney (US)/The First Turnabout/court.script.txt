@@ -166,7 +166,7 @@ addev cindy$
 "...but had broken up a few {n}weeks prior to July 31st."
 "On that day, the defendant {n}entered the victim's apartment."
 "There was a verbal altercation as reported by the neighbors,"
-"after which he picked up a nearby {n}statue of the Thinker and {n}smashed her in the head."
+"after which he picked up a nearby {n}statue of The Thinker and {n}smashed her in the head."
 "One blow killed her instantly."
 char payne e=confident (talk)
 "You will hear from a witness who saw {n}the defendant flee the scene right {n}after the moment of the crime."
@@ -317,7 +317,7 @@ showevl
 
 "You have the {c940}reference handbook{c999} {n}I gave you, right?"
 "It should be filed in the {c940}Court Record{c999}."
-"It contains a guide on the types of {n}objections used to protest opposing {n}counsel's questions."
+"It contains a guide on the types of {n}objections used to protest {n}opposing counsel's questions."
 "Give it a glance now if you need {n}a refresher."
 hideevl
 

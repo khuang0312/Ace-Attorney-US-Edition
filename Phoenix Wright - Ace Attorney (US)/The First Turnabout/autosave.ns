@@ -24,32 +24,46 @@
                 {
                     "id": "blackout",
                     "page": "evidence"
+                },
+                {
+                    "id": "mia$",
+                    "page": "profiles"
+                },
+                {
+                    "id": "larry$",
+                    "page": "profiles"
+                },
+                {
+                    "id": "winston$",
+                    "page": "profiles"
+                },
+                {
+                    "id": "cindy$",
+                    "page": "profiles"
                 }
             ],
-            "_track": null,
-            "character": "phoenix",
+            "_track": "suspense.ogg",
+            "character": "mia",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
                 "_examine_showbars": "true",
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
-                "text": "{c089}(If Sahwit is telling the truth, then the clock...)",
                 "thinker_name": "Statue",
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "truth.ogg",
-                "_list_back_button": "false",
-                "_last_written_text": "{c 089}(If Sahwit is telling the truth, then the\nclock...) \n",
+                "_music_loop": "suspense.ogg",
+                "_list_back_button": "true",
+                "_last_written_text": "He's likely going to throw in a few \nimproper questions to trick \nLarry into hurting his case.\n",
                 "ev_check_img": "general/check",
-                "ev_mode_bg_evidence": "general/evidence",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "88",
+                "ev_mode_y": "12",
                 "ev_mode_x": "4",
                 "_penalty_script": "penalty",
                 "_font_itemname_size": "10",
@@ -60,14 +74,13 @@
                 "_textbox_y": "",
                 "handbook3_pic": "handbook.png",
                 "_list_checked_y": "-10",
-                "pass2": "false",
                 "handbook_name": "Objection Handbook",
                 "cindy_autopsy_desc": "Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma",
                 "_font_tb_size": "10",
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "choice2",
+                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -76,8 +89,7 @@
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "_timer_value_choice_timer2": "43.62",
-                "ev_items_y": "63",
+                "_nt_image": "",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -86,7 +98,7 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
+                "_speaking_name": "Mia",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -94,7 +106,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "4",
+                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -108,22 +120,21 @@
                 "larry$_pic": "larry.png",
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
-                "_layering_method": "zorder",
+                "_ev": "blackout",
                 "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": "mia",
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_nt_text_y": "0",
-                "_nt_image": "",
+                "_timer_value_music_fade_in_add": "-0.08",
+                "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
-                "ev_larrow_y": "90",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
-                "previous_choice": "choice2",
+                "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
                 "ev_z_textbox_y": "70",
@@ -136,7 +147,7 @@
                 "_evidence_present": "true",
                 "_textbox_lines": "3",
                 "cindy_passport_desc": "The victim apparently {n}arrived home from Paris {n}on 7/30, the day before {n}the murder.",
-                "ev_mode_y": "12",
+                "ev_larrow_y": "90",
                 "handbook2_name": "Objection Handbook Ch. 2",
                 "cindy_autopsy_name": "Cindy's Autopsy Report",
                 "_default_frame_delay": "6",
@@ -149,7 +160,7 @@
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
-                "_timer_value_music_fade_out_add": "-0.14",
+                "_timer_value_music_fade_out_add": "-0.08",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -179,9 +190,8 @@
                 "cindy_autopsy_pic": "autopsy_report.png",
                 "_allow_click_save": "true",
                 "_textbox_skipupdate": "off",
-                "mia$_name": "Mia Fey",
                 "_evidence_enable": "true",
-                "_timer_value_choice_timer1": "-0.66",
+                "mia$_name": "Mia Fey",
                 "handbook5_pic": "handbook.png",
                 "mia$_desc": "Age: 27{n}Gender: Female{n}Chief Attorney at Fey & Co.. My boss, and a very good defense attorney.",
                 "_cr_button_loadsave": "on",
@@ -198,13 +208,12 @@
                 "frank$_name": "Frank Sahwit",
                 "ev_zarrow_img": "general/arrow_right",
                 "_examine_cursor_img": "",
-                "pass1": "1",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.02",
+                "_nt_text_y": "0",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
-                "_selected": "choice3",
+                "_layering_method": "zorder",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -220,215 +229,12 @@
         "assets.Script",
         [],
         {
-            "_world_id": 52700704,
+            "_world_id": 101700072,
             "statement": "",
             "pri": 0,
-            "scene": "local://builtin",
+            "scene": "court.script",
             "cross": null,
-            "si": 3,
-            "lastline": 0,
-            "instatement": false,
-            "_objects": [
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 0.7420000000000011,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/../general/logosmall",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            -25,
-                            -15
-                        ],
-                        "loopmode": 0,
-                        "id_name": "logo",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": 81,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": "",
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            0
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/main",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "_world_id": 52745720,
-            "viewed": {},
-            "scene": "",
-            "lastline": ""
-        },
-        [
-            "stack",
-            1
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 52744800,
-            "statement": "",
-            "pri": 0,
-            "scene": "intro",
-            "cross": null,
-            "si": 3,
+            "si": 305,
             "lastline": 0,
             "instatement": false,
             "_objects": [
@@ -439,7 +245,7 @@
                         "dim": 1,
                         "screen_setting": "",
                         "end": null,
-                        "name": "bg/case1-1",
+                        "name": "bg/helper",
                         "blinkspeed": [
                             100,
                             200
@@ -453,7 +259,7 @@
                             0
                         ],
                         "loopmode": 0,
-                        "id_name": "case1-1",
+                        "id_name": "helper",
                         "start": 0,
                         "tint": null,
                         "fade": 255,
@@ -465,108 +271,16 @@
                             0,
                             0
                         ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            2
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 52746360,
-            "statement": "",
-            "pri": 0,
-            "scene": "pre_closing.script",
-            "cross": null,
-            "si": 106,
-            "lastline": 90,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/black",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "black",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/dbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "dbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
                     }
                 ],
                 [
                     "char",
                     [
-                        "phoenix/thinking(blink)",
+                        "mia/bench-stern(blink)",
                         false
                     ],
                     {
-                        "emoname": "thinking",
+                        "emoname": "bench-stern",
                         "pri": 20,
                         "pos": [
                             0,
@@ -589,11 +303,11 @@
                             100,
                             200
                         ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
+                        "clicksound": "blipfemale.ogg",
+                        "nametag": "Mia\n",
+                        "id_name": "mia",
                         "tint": null,
-                        "charname": "phoenix",
+                        "charname": "mia",
                         "bsprite": {
                             "blinkspeed": [
                                 100,
@@ -604,12 +318,12 @@
                             "loopmode": "blinknoset",
                             "start": 0,
                             "loops": 1,
-                            "x": 0,
+                            "x": 1,
                             "spd": 6
                         },
                         "modename": "blink",
                         "dim": 1,
-                        "name": "phoenix/thinking(blink)",
+                        "name": "mia/bench-stern(blink)",
                         "tsprite": {
                             "blinkspeed": [
                                 100,
@@ -623,10 +337,38 @@
                             "x": 0,
                             "spd": 6
                         },
-                        "blinkemo": "thinking",
+                        "blinkemo": "bench-stern",
                         "supermode": "lipsync",
                         "x": 0,
                         "z": 2
+                    }
+                ],
+                [
+                    "textbox",
+                    [
+                        "As his lawyer, I'm sure you \nknow it's your job to {c 940}object \n{c 999}to these questions.\n",
+                        [
+                            255,
+                            255,
+                            255
+                        ],
+                        2,
+                        1,
+                        true,
+                        false,
+                        "Mia\n"
+                    ],
+                    {
+                        "num_lines": 4,
+                        "text": "As his lawyer, I'm sure you \nknow it's your job to {c 940}object \n{c 999}to these questions.\n",
+                        "can_skip": false,
+                        "id_name": "_textbox_",
+                        "kill": false,
+                        "statement": null,
+                        "go": 1,
+                        "z": 4,
+                        "blocking": true,
+                        "wait": "auto"
                     }
                 ],
                 [
@@ -670,91 +412,6 @@
                     }
                 ],
                 [
-                    "timer",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "ticks": 43.620000000000161,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "run": "choice_timer2",
-                        "loops": 0,
-                        "x": 0,
-                        "z": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "listmenu",
-                    [],
-                    {
-                        "pri": 50,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "fail": "none",
-                        "tag": null,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "try_bottom",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "selected": [
-                            "Was accurate that day.",
-                            "choice3"
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "hidden": false,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "max_fade": 50,
-                        "id_name": "list_menu_id",
-                        "tint": null,
-                        "dim": 1,
-                        "name": "general/black",
-                        "si": 1,
-                        "x": 0,
-                        "z": 5,
-                        "options": [
-                            [
-                                "Was inaccurate that day.",
-                                "wronganswer"
-                            ],
-                            [
-                                "Was accurate that day.",
-                                "choice3"
-                            ]
-                        ]
-                    }
-                ],
-                [
                     "button",
                     [],
                     {
@@ -770,503 +427,135 @@
                         "s_macroname": "{_crbut}",
                         "hold_func": null,
                         "z": 6
-                    }
-                ],
-                [
-                    "penalty",
-                    [
-                        88,
-                        "penalty"
-                    ],
-                    {
-                        "dim": 1,
-                        "flash_color": [
-                            255,
-                            242,
-                            129,
-                            150
-                        ],
-                        "screen_setting": "",
-                        "end": 88,
-                        "delay": 23,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "penalty",
-                        "start": 0,
-                        "tint": null,
-                        "flash_amount": 0,
-                        "loops": 0,
-                        "x": 0,
-                        "flash_dir": 1,
-                        "z": 4,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
                     }
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script54": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script98": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script51": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script50": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script31": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script30": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script33": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script32": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script35": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script34": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script37": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script36": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script11": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script15": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script81": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script6": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script5": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script3": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script62": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script63": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script49": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script44": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script43": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script26": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script27": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script24": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script25": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script56": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script55": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script28": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script57": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script264": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script267": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script266": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script269": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script92": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script98": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script148": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script304": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script302": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script303": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script300": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script301": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script143": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script254": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script255": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script259": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script35": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script37": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script35": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script32": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script31": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script38": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script39": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script80": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script86": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script293": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script159": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script152": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script204": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script2": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script1": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script299": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script287": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script286": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script160": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script166": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script167": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script164": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script165": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script168": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script169": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script75": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script74": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script279": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script277": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script274": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script19": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script13": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script68": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script69": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script63": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script64": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script175": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script171": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script173": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script172": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script188": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script186": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script187": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script181": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script182": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script107": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script103": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script108": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script109": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script221": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script220": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script222": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script225": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script224": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script227": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script228": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script219": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script199": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script198": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script203": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script217": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script193": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script190": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script117": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script26": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script297": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script112": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script292": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script27": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script44": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script45": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script46": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script40": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script42": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script41": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script40": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script244": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script25": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script24": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script24": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script25": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script22": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script23": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script22": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script28": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script129": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script121": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script210": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script52": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script51": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script57": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script56": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script58": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script282": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script139": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutmono.script36": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script133": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script135": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script134": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script236": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script230": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script238": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutcourt.script239": true
             }
         },
         [
             "stack",
-            3
-        ]
-    ],
-    [
-        "assets.Script",
-        [],
-        {
-            "_world_id": 52746360,
-            "statement": "",
-            "pri": 0,
-            "scene": "pre_closing.script/choice_timer1/choice_timer1/choice_timer1/choice_timer1/choice_timer1/choice_timer1",
-            "cross": null,
-            "si": 4,
-            "lastline": 4,
-            "instatement": false,
-            "_objects": [
-                [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/black",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "black",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/dbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "dbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "char",
-                    [
-                        "phoenix/thinking(blink)",
-                        false
-                    ],
-                    {
-                        "emoname": "thinking",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
-                        "tint": null,
-                        "charname": "phoenix",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": "blinknoset",
-                            "start": 0,
-                            "loops": 1,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "phoenix/thinking(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 1,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "thinking",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
-                    }
-                ],
-                [
-                    "uglyarrow",
-                    [],
-                    {
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "height": 192,
-                        "high": false,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "width": 256,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "id_name": "_uglyarrow_",
-                        "tint": null,
-                        "showleft": true,
-                        "_tb": true,
-                        "dim": 1,
-                        "name": "bg/main",
-                        "x": 0,
-                        "z": 0
-                    }
-                ],
-                [
-                    "timer",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "ticks": 43.620000000000161,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "run": "choice_timer2",
-                        "loops": 0,
-                        "x": 0,
-                        "z": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "listmenu",
-                    [],
-                    {
-                        "pri": 50,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "fail": "none",
-                        "tag": null,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "try_bottom",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "selected": [
-                            "Was accurate that day.",
-                            "choice3"
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "hidden": false,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "max_fade": 50,
-                        "id_name": "list_menu_id",
-                        "tint": null,
-                        "dim": 1,
-                        "name": "general/black",
-                        "si": 1,
-                        "x": 0,
-                        "z": 5,
-                        "options": [
-                            [
-                                "Was inaccurate that day.",
-                                "wronganswer"
-                            ],
-                            [
-                                "Was accurate that day.",
-                                "choice3"
-                            ]
-                        ]
-                    }
-                ],
-                [
-                    "button",
-                    [],
-                    {
-                        "rpos": [
-                            177,
-                            192
-                        ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
-                    }
-                ],
-                [
-                    "penalty",
-                    [
-                        88,
-                        "penalty"
-                    ],
-                    {
-                        "dim": 1,
-                        "flash_color": [
-                            255,
-                            242,
-                            129,
-                            150
-                        ],
-                        "screen_setting": "",
-                        "end": 88,
-                        "delay": 23,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "penalty",
-                        "start": 0,
-                        "tint": null,
-                        "flash_amount": 0,
-                        "loops": 0,
-                        "x": 0,
-                        "flash_dir": 1,
-                        "z": 4,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "guiWait",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "_guiWait_",
-                        "start": 0,
-                        "run": null,
-                        "loops": 0,
-                        "x": 0,
-                        "z": 0,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            ],
-            "viewed": {}
-        },
-        [
-            "stack",
-            4
+            0
         ]
     ]
 ]

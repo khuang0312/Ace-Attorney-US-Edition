@@ -1,5 +1,4 @@
 bg witness
-fg wbench
 char sahwit e=normal (blink)
 
 char Bailiff hide
