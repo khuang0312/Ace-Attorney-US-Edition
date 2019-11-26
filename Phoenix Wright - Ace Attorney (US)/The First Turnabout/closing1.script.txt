@@ -1,4 +1,3 @@
-goto here
 bg judgestand
 char judge e=surprised (talk)
 "Well... This trial has certainly {n}taken an unexpected turn."
@@ -40,7 +39,7 @@ char payne e=normal (talk)
 "He had both motive and opportunity {n}to commit murder."
 "The state asks that the defendant, {n}Larry Butz, be found guilty."
 
-music_fade_out nowait
+music_fade_out
 
 bg judgestand
 char judge e=warning (talk)
@@ -60,7 +59,7 @@ char mia e=bench-stern (talk)
 "Try thinking out of the box!"
 "If you can present an alternate {n}possibility for why the clock {n}was three hours slow..."
 "...we might just have a case."
-label here
+
 bg defence
 fg dbench
 char phoenix e=thinking (talk)
@@ -80,7 +79,7 @@ set _list_back_button false
 
 label choice1
 char phoenix e=thinking (blink)
-"{c089}(In order for Larry to be innocent, Sahwit must be...)"
+"{c089}(In order for Larry to be innocent, {n}Sahwit must be...)"
 list
 li Lying about the time. result=wronganswer1
 li Telling the truth about the time. result=choice2
@@ -89,24 +88,24 @@ showlist
 label choice2
 char phoenix e=thinking (blink)
 "{c089}(Sahwit is telling the truth.)
-"{c089}(If so, then on the day of the murder the clock must have...)
+"{c089}(If so, then on the day of the murder {n}the clock must have...)
 list
-li Spoken the right time. result=choice3
-li Spoken the wrong time. result=wronganswer2
+li Spoken the wrong time. result=choice3
+li Spoken the right time. result=wronganswer2
 showlist
 
 label choice3
 char phoenix e=thinking (blink)
 "{c089}(The clock had the wrong time.)"
-"{c089}[This must have been caused by...)"
+"{c089}(This must have been caused by...)"
 list
 li The blackout. result=wronganswer3
-li A time difference. result=presentfinal
+li A time difference. result=choice4
 showlist
 
 label choice4
 char phoenix e=thinking (blink)
-"{c089}(The clock could have been brought to a different time zone!)"
+"{c089}(The clock could have been brought {n}to a different time zone!)"
 "{c089}(But what can I use to prove that?)"
 present noback
 
@@ -116,15 +115,18 @@ char phoenix e=handsondesk (blink)
 
 label choice5
 char phoenix e=handsondesk (blink)
-"{c089}(The victim went to Paris, which means...)"
+"{c089}(The victim went to Paris, {n}which means...)"
 list
 li The clock is 3 hours slow. result=wronganswer5
 li The clock is 9 hours fast. result=closingspeech
 showlist
 
 label closingspeech
-music_fade_out nowait
 bg black fade
+sfx sfx-wipe
+nt
+"{c940}{sound}{center}{spd 3}THE CLOCK IS 9 HOURS FAST"
+music_fade_out
 script ending
 
 label wronganswer1

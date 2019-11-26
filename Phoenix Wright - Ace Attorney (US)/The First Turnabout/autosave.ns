@@ -26,22 +26,21 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "truth.ogg",
-            "character": "phoenix",
+            "_track": "end.ogg",
+            "character": "nt",
             "lists": {},
             "variables": {
                 "_font_loading_size": "16",
                 "_examine_showbars": "true",
                 "_font_nt_size": "10",
                 "_profiles_present": "true",
-                "text": "{c089}(The clock must have had the wrong time, due to...)",
                 "thinker_name": "Statue",
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
-                "_timer_value_choice_timer3": "22.38",
-                "_music_loop": "truth.ogg",
-                "_list_back_button": "false",
-                "_last_written_text": "{c 089}(The clock must have had the wrong\ntime, due to...) \n",
+                "ev_z_text_col": "FFFFFF",
+                "_music_loop": "end.ogg",
+                "_list_back_button": "true",
+                "_last_written_text": "{center}{sound}Kevin Huang\nProgrammer / Outreach\nAudio / Art\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -59,16 +58,13 @@
                 "_textbox_y": "",
                 "handbook3_pic": "handbook.png",
                 "_list_checked_y": "-10",
-                "pass2": "1",
-                "pass3": "false",
                 "handbook_name": "Objection Handbook",
                 "cindy_autopsy_desc": "Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma",
                 "_font_tb_size": "10",
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "ev_z_text_col": "FFFFFF",
-                "_currentlabel": "choice3",
+                "_currentlabel": "enddd",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -77,7 +73,7 @@
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
                 "_list_checked_img": "general/checkmark",
-                "ev_items_y": "63",
+                "_nt_image": "",
                 "ev_items_x": "38",
                 "_font_loading": "arial.ttf",
                 "handbook1_desc": "Objection: {n}Asked and Answered {n}{n}Counsel is asking a {n}question that has already{n}been answered.",
@@ -86,7 +82,6 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "Phoenix",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -94,7 +89,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "96",
+                "_lastline": "2",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -114,12 +109,12 @@
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": "phoenix",
+                "_speaking": null,
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_nt_text_y": "0",
-                "_nt_image": "",
+                "_timer_value_music_fade_in_add": "-0.26",
+                "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "ev_mode_bg_evidence": "general/evidence",
@@ -157,7 +152,7 @@
                 "handbook3_name": "Objection Handbook Ch. 3",
                 "_textbox_wrap_avoid_controlled": "true",
                 "handbook4_name": "Objection Handbook Ch. 4",
-                "_currentline": "112",
+                "_currentline": "4",
                 "_examine_showcursor": "true",
                 "_preload": "off",
                 "_list_checked_x": "-10",
@@ -194,14 +189,12 @@
                 "_font_itemname": "pwinternational.ttf",
                 "frank$_name": "Frank Sahwit",
                 "ev_zarrow_img": "general/arrow_right",
-                "previous_choice": "choice3",
                 "_examine_cursor_img": "",
                 "_nt_text_x": "0",
-                "_timer_value_music_fade_in_add": "-0.2",
+                "_nt_text_y": "0",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
-                "_selected": "choice3",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -217,154 +210,42 @@
         "assets.Script",
         [],
         {
-            "_world_id": 154805392,
+            "_world_id": 226037072,
             "statement": "",
             "pri": 0,
-            "scene": "closing1.script",
+            "scene": "ending.script",
             "cross": null,
-            "si": 112,
-            "lastline": 96,
+            "si": 209,
+            "lastline": 1,
             "instatement": false,
             "_objects": [
                 [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/black",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "black",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "fg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "fg/dbench",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "dbench",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 3,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "wait": 1
-                    }
-                ],
-                [
-                    "char",
+                    "textbox",
                     [
-                        "phoenix/thinking(blink)",
-                        false
+                        "{center}{sound}Grace Hong\nProducer\n",
+                        [
+                            255,
+                            255,
+                            255
+                        ],
+                        2,
+                        1,
+                        true,
+                        false,
+                        "\n"
                     ],
                     {
-                        "emoname": "thinking",
-                        "pri": 20,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loops": 0,
-                        "spd": 6,
-                        "screen_setting": "",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "loopmode": 0,
-                        "start": 0,
-                        "greyscale": 0,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "clicksound": "blipmale.ogg",
-                        "nametag": "Phoenix\n",
-                        "id_name": "phoenix",
-                        "tint": null,
-                        "charname": "phoenix",
-                        "bsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": "blinknoset",
-                            "start": 0,
-                            "loops": 1,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "modename": "blink",
-                        "dim": 1,
-                        "name": "phoenix/thinking(blink)",
-                        "tsprite": {
-                            "blinkspeed": [
-                                100,
-                                200
-                            ],
-                            "end": null,
-                            "dim": 1,
-                            "loopmode": 0,
-                            "start": 0,
-                            "loops": 1,
-                            "x": 0,
-                            "spd": 6
-                        },
-                        "blinkemo": "thinking",
-                        "supermode": "lipsync",
-                        "x": 0,
-                        "z": 2
+                        "num_lines": 4,
+                        "text": "{center}{sound}Grace Hong\nProducer\n",
+                        "can_skip": false,
+                        "id_name": "_textbox_",
+                        "_clicksound": "",
+                        "kill": false,
+                        "statement": null,
+                        "go": 1,
+                        "z": 4,
+                        "blocking": true,
+                        "wait": "auto"
                     }
                 ],
                 [
@@ -405,91 +286,6 @@
                         "name": "bg/main",
                         "x": 0,
                         "z": 0
-                    }
-                ],
-                [
-                    "timer",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "ticks": 22.380000000000155,
-                        "pri": -1000,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "run": "choice_timer3",
-                        "loops": 0,
-                        "x": 0,
-                        "z": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
-                    "listmenu",
-                    [],
-                    {
-                        "pri": 50,
-                        "pos": [
-                            0,
-                            192
-                        ],
-                        "fail": "none",
-                        "tag": null,
-                        "loops": false,
-                        "spd": 6,
-                        "screen_setting": "try_bottom",
-                        "end": null,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "invert": 0,
-                        "selected": [
-                            "The blackout.",
-                            "wronganswer"
-                        ],
-                        "loopmode": 0,
-                        "start": 0,
-                        "fade": 255,
-                        "greyscale": 0,
-                        "hidden": false,
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "max_fade": 50,
-                        "id_name": "list_menu_id",
-                        "tint": null,
-                        "dim": 1,
-                        "name": "general/black",
-                        "si": 0,
-                        "x": 0,
-                        "z": 5,
-                        "options": [
-                            [
-                                "The blackout.",
-                                "wronganswer"
-                            ],
-                            [
-                                "Something else.",
-                                "choice4"
-                            ]
-                        ]
                     }
                 ],
                 [
@@ -543,12 +339,11 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script68": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script91": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script90": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script66": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script82": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script104": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script204": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script208": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script206": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script200": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script202": true
             }
         },
         [
