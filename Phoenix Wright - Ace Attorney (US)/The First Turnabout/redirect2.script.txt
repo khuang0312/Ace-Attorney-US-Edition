@@ -55,7 +55,7 @@ li Relevance
 li Vague
 showlist
 delete name=penalty
-goto 2
+goto 4
 
 label 4
 bg witness
@@ -70,6 +70,26 @@ char payne e=normal (talk)
 "No further questions."
 
 goto endoftestimony
+
+label Asked_and_Answered
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10 script
+char phoenix e=pointing (talk)
+"Your Honor, this question has {n}been asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
 
 label Leading
 sfx phoenix\objection

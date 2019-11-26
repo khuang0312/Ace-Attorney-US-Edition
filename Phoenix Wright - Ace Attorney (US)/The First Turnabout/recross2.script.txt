@@ -415,7 +415,7 @@ label present1
 bg defence
 fg dbench
 char phoenix e=document (talk)
-"Mr. Sahwit, I have evidence that points to the contrary..."
+"Mr. Sahwit, I have evidence that {n}points to the contrary..."
 present noback
 goto present1
 
@@ -423,24 +423,20 @@ label thinker
 mus
 sfx phoenix\takethat
 fg TakeThatAnim
-pause 5 script
+pause 10
 bg defence
 fg dbench
 char phoenix e=confident (talk)
 set _ev thinker
 sfx sfx-evidenceshoop
 showevr
-"Mr. Sahwit, you are aware that this clock was made by the defendant, are you not?"
+"Mr. Sahwit, you are aware that this {n}clock was made by the defendant, {n}are you not?"
 hideevr
 
 bg witness
 fg wbench
 char sahwit e=twitching (talk)
 "...Yes."
-
-mus truth.ogg
-set _music_loop truth.ogg
-music_fade_in nowait
 
 bg defence
 fg dbench
@@ -449,11 +445,14 @@ char phoenix e=normal (talk)
 char phoenix e=confident (talk)
 "{p 20}is the {c940}only of its kind{c999}, are you not?"
 
+mus truth.ogg
+set _music_loop truth.ogg
+music_fade_in nowait
+
 bg witness
 fg wbench
 char sahwit e=glaring (blink)
 sfx sfx-stab
-char sahwit e=glaring (blink)
 "{s 15}...!"
 char sahwit e=glaring (talk)
 "I..."
@@ -461,29 +460,25 @@ char sahwit e=glaring (talk)
 bg defence
 fg dbench
 char phoenix e=pointing (talk)
-"Mr. Sahwit, {p 10} you held the statue of The Thinker in your hand that day, didn't you?"
+"Mr. Sahwit, {p 10}you held the statue of {n}The Thinker in your hand that day, {n}didn't you?"
 
 bg witness
 fg wbench
 char sahwit e=glaring (talk)
 sfx sfx-smack
 "{s 15}I..."
-"I...!{next}"
-"That...that day...{next}"
-"I...I never!{next}"
-"Look... I...the clock...I heard, no!{next}"
-"I mean, I saw...saw...{next}"
+"I...!"
+"That...that day..."
+"I...I never!"
+"Look... I...the clock...I heard, no!"
+"I mean, I saw...saw..."
 char sahwit e=damage
 "Gaaah!{s 15}{sfx sfx-stab}{p 20}{s 20}{sfx sfx-stab}{p 20}{s 30}{sfx sfx-stab}{f}{next}"
-pause 30 script
-
 char sahwit e=toss
-pause 70 script
+pause 80
 sfx sfx-smack
 "{s 15}{next}"
-pause 10 script
-
-
+pause 10
 char sahwit e=bald (talk)
 "{s 15}I-it was him, I tell you!"
 "I saw him!"
@@ -502,43 +497,49 @@ pause 120 script
 
 fg ani-judge-gavel
 fg ani-judge-gavel
-pause 5 script
+pause 10
 bg judgestand
 char judge e=warning (talk)
-"Order!"
-"Order in the court!"
+"Order! Order in the court!"
 "Mr. Wright, please continue."
 
 bg defence
 fg dbench
 char phoenix e=normal (talk)
 "Yes, Your Honor."
+char phoenix e=handsondesk (talk)
 "Mr. Sahwit."
-"I'd like you to listen to us sound the clock right now, in this court."
+"I'd like you to listen to us sound {n}the clock right now, in this court."
 
-bg courtroom
-nt
-"...*beep*..."
-"[I think it's 8:25.]"
+bg witness
+fg wbench
+char sahwit e=glaring (blink)
+char Thinker hide
+"{c090}...*beep*..."
+"{c090}[I think it's 8:25.]"
 
 bg defence
 fg dbench
 char phoenix e=normal (talk)
-"Mr. Payne... can you tell me what time it is now?"
+"Mr. Payne..."
+char phoenix e=pointing (talk)
+"Can you tell me what the time is now?"
 
 bg prosecution
 fg pbench
 char payne e=normal (talk)
 "It's 11:25..."
 char payne e=sweating (talk)
-"Ack!"
+sfx sfx-lightbulb
+"{s 10}Ack!"
 
 bg defence
 fg dbench
 char phoenix e=pointing (talk)
-"Let the record show that this clock, the only one of its kind,"
-"is confirmed to be three hours slow:"
-"Precisely the discrepancy between what Mr. Sahwit heard and the actual time of death."
+"Let the record show that this clock, {n}the only one of its kind, is confirmed {n}to be three hours slow:"
+"Precisely the discrepancy between {n}what Mr. Sahwit heard and the {n}actual time of death."
+
+music_fade_out nowait
 
 bg judgestand
 char judge e=surprised (blink)
@@ -561,14 +562,15 @@ char phoenix e=handsondesk (talk)
 "No further questions."
 
 bg judgestand
-char judge e=normal (talk)
-"Re-direct, Mr. Payne?"
+char judge e=surprised (talk)
+"I... I see."
+"...Re-direct, Mr. Payne?"
 
 bg prosecution
 fg pbench
 char payne e=sweating (talk)
 "...No, Your Honor."
-"The witness may be excused."
+"The witness may be excused {n}from the stand."
 "The prosecution rests."
 
 bg defence
