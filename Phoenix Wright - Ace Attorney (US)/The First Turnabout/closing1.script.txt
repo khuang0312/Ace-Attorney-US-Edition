@@ -131,10 +131,12 @@ script ending
 
 label wronganswer1
 char phoenix e=handsondesk (blink)
-"{c089}(No, that can't be right... {n}I need to refocus.)"
+"{c089}(No, that can't be right.)"
+"{c089}(Sahwit had no reason to lie {n}on this point.)"
+"{c089}(Despite changing his explanation {n}constantly for how he knew the time, {n}he never changed the time itself.)"
 bg judgestand
 char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
+"The court does not appreciate {n}stalling, Mr. Wright."
 penalty threat=10
 pause 30
 sfx sfx-damage2
@@ -148,10 +150,12 @@ goto choice1
 
 label wronganswer2
 char phoenix e=handsondesk (blink)
-"{c089}(No, that can't be right... {n}I need to refocus.)"
+"{c089}(The clock had the right time.)"
+"{c089}(...But that would contradict the time {n}of death in the autopsy report!)"
+"{c089}(There were no inconclusive or {n}inconsistent findings in the {n}medical examination.)"
 bg judgestand
 char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
+"The court does not appreciate {n}stalling, Mr. Wright."
 penalty threat=10
 pause 30
 sfx sfx-damage2
@@ -165,10 +169,12 @@ goto choice2
 
 label wronganswer3
 char phoenix e=handsondesk (blink)
-"{c089}(No, that can't be right... {n}I need to refocus.)"
+"{c089}(The clock was slow due {n}to the blackout...?)"
+"{c089}(No, Mr. Payne pointed out in {n}his closing argument that the {n}clock runs on batteries.)"
+"{c089}(It's impossible that the blackout {n}could have affected the clock.)"
 bg judgestand
 char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
+"The court does not appreciate {n}stalling, Mr. Wright."
 penalty threat=10
 pause 30
 sfx sfx-damage2
@@ -182,10 +188,12 @@ goto choice3
 
 label wronganswer5
 char phoenix e=handsondesk (blink)
-"{c089}(No, that can't be right... {n}I need to refocus.)"
+"{c089}(...)"
+"{c089}(I thought I had it.)"
+"{c089}(...Must've lost track of my {n}thoughts somehow.)"
 bg judgestand
 char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
+"The court does not appreciate {n}stalling, Mr. Wright."
 penalty threat=10
 pause 30
 sfx sfx-damage2
@@ -199,10 +207,10 @@ goto choice5
 
 label none
 char phoenix e=handsondesk (blink)
-"{c089}(No, that can't be right... {n}I need to refocus.)"
+"{c089}(No, this doesn't prove anything... {n}I need to refocus.)"
 bg judgestand
 char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
+"The court does not appreciate {n}stalling, Mr. Wright."
 penalty threat=10
 pause 30
 sfx sfx-damage2
