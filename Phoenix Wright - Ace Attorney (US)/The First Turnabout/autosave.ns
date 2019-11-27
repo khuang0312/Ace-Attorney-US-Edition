@@ -3,7 +3,6 @@
         "Assets",
         [],
         {
-            "_loop": 0,
             "items": [
                 {
                     "id": "badge",
@@ -26,9 +25,8 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "end.ogg",
-            "character": "nt",
-            "lists": {},
+            "_track": null,
+            "_loop": 0,
             "variables": {
                 "_font_loading_size": "16",
                 "_examine_showbars": "true",
@@ -38,9 +36,8 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "end.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "{center}{sound}Kevin Huang\nProgrammer / Outreach\nAudio / Art\n",
+                "_last_written_text": "{c 089}(Sahwit had no reason to lie \non this point.)\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -64,11 +61,10 @@
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "here",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
-                "ev_cursor_img": "general/cursor_ev",
                 "ev_z_bg": "general/evidence_zoom",
                 "mia$_pic": "mia.png",
                 "badge_name": "Attorney's Badge",
@@ -89,7 +85,7 @@
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
                 "_music_fade": "100",
-                "_lastline": "2",
+                "_lastline": "1",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -104,19 +100,17 @@
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
                 "_layering_method": "zorder",
-                "_music_fade_nowait": "nowait",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
                 "handbook_desc": "A gift from Boss. {n}{n}Ch. 1: Asked & Answered{n}Ch. 2: Leading {n}Ch. 3: Prejudicial {n}Ch. 4: Relevance {n}Ch. 5: Vague",
-                "_speaking": null,
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.26",
+                "ev_cursor_img": "general/cursor_ev",
                 "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
-                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
+                "handbook1_pic": "handbook.png",
                 "ev_mode_bg_evidence": "general/evidence",
                 "_cr_back_button": "true",
                 "_textbox_allow_skip": "false",
@@ -193,7 +187,7 @@
                 "_nt_text_x": "0",
                 "_nt_text_y": "0",
                 "ev_present_x": "90",
-                "handbook1_pic": "handbook.png",
+                "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
                 "_allow_click_load": "true",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
@@ -202,7 +196,8 @@
                 "ev_currentname_x": "30",
                 "frank$_pic": "sahwit.png",
                 "cindy$_pic": "cindy.png"
-            }
+            },
+            "lists": {}
         },
         null
     ],
@@ -210,19 +205,19 @@
         "assets.Script",
         [],
         {
-            "_world_id": 226037072,
+            "_world_id": 59519984,
             "statement": "",
             "pri": 0,
-            "scene": "ending.script",
+            "scene": "closing1.script",
             "cross": null,
-            "si": 209,
+            "si": 138,
             "lastline": 1,
             "instatement": false,
             "_objects": [
                 [
                     "textbox",
                     [
-                        "{center}{sound}Grace Hong\nProducer\n",
+                        "{c 089}(Despite changing his explanation\nconstantly for how he knew the time,\nhe never changed the time itself.)  \n",
                         [
                             255,
                             255,
@@ -236,10 +231,9 @@
                     ],
                     {
                         "num_lines": 4,
-                        "text": "{center}{sound}Grace Hong\nProducer\n",
+                        "text": "{c 089}(Despite changing his explanation\nconstantly for how he knew the time,\nhe never changed the time itself.)  \n",
                         "can_skip": false,
                         "id_name": "_textbox_",
-                        "_clicksound": "",
                         "kill": false,
                         "statement": null,
                         "go": 1,
@@ -339,11 +333,9 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script204": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script208": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script206": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script200": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script202": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script137": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script136": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutclosing1.script135": true
             }
         },
         [

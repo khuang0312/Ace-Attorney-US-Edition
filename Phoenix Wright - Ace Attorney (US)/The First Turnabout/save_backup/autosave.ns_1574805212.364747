@@ -40,7 +40,7 @@
                 "ev_z_text_col": "FFFFFF",
                 "_music_loop": "end.ogg",
                 "_list_back_button": "true",
-                "_last_written_text": "Lack of testimony about the murder\nweapon, no closing argument\nrebuttals, and so on.  \n",
+                "_last_written_text": "{center}{sound}Kevin Huang\nProgrammer / Outreach\nAudio / Art\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
@@ -82,7 +82,6 @@
                 "_default_fg_frame_delay": "6",
                 "_blinkspeed_global": "default",
                 "_profiles_enable": "true",
-                "_speaking_name": "",
                 "_default_port_frame_delay": "6",
                 "_examine_cursor_col": "FFFFFF",
                 "_textbox_show_button": "true",
@@ -114,7 +113,7 @@
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.08",
+                "_timer_value_music_fade_in_add": "-0.26",
                 "ev_items_y": "63",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. {n}It's a one of a kind.",
                 "badge_desc": "One of my possessions. {n}No one would believe I {n}was a defense attorney {n}if I didn't carry this.",
@@ -211,54 +210,19 @@
         "assets.Script",
         [],
         {
-            "_world_id": 227357840,
+            "_world_id": 226037072,
             "statement": "",
             "pri": 0,
             "scene": "ending.script",
             "cross": null,
-            "si": 202,
+            "si": 209,
             "lastline": 1,
             "instatement": false,
             "_objects": [
                 [
-                    "bg",
-                    [],
-                    {
-                        "dim": 1,
-                        "screen_setting": "",
-                        "end": null,
-                        "name": "bg/black",
-                        "blinkspeed": [
-                            100,
-                            200
-                        ],
-                        "spd": 6,
-                        "invert": 0,
-                        "greyscale": 0,
-                        "pri": 0,
-                        "pos": [
-                            0,
-                            0
-                        ],
-                        "loopmode": 0,
-                        "id_name": "black",
-                        "start": 0,
-                        "tint": null,
-                        "fade": 255,
-                        "loops": false,
-                        "x": 0,
-                        "z": 1,
-                        "rot": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ],
-                [
                     "textbox",
                     [
-                        "Real life legal procedures were also \nintroduced in a simplified manner, \nsuch as the revised...\n",
+                        "{center}{sound}Grace Hong\nProducer\n",
                         [
                             255,
                             255,
@@ -272,9 +236,10 @@
                     ],
                     {
                         "num_lines": 4,
-                        "text": "Real life legal procedures were also \nintroduced in a simplified manner, \nsuch as the revised...\n",
+                        "text": "{center}{sound}Grace Hong\nProducer\n",
                         "can_skip": false,
                         "id_name": "_textbox_",
+                        "_clicksound": "",
                         "kill": false,
                         "statement": null,
                         "go": 1,
@@ -374,13 +339,11 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script198": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script199": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script186": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script196": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script197": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script204": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script208": true,
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script206": true,
                 "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script200": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script201": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutending.script202": true
             }
         },
         [
