@@ -580,7 +580,7 @@ char phoenix e=normal (talk)
 
 pause 10
 bg black
-pause60
+pause 60
 script closing1
 
 label none
