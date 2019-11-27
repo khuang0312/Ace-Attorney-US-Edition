@@ -15,8 +15,8 @@ char payne e=normal (blink)
 nt
 "{c940}{center}{type}{spd 3}- CLOSING ARGUMENT -{n}Prosecution"
 
-mus cornered1.ogg
-set _music_loop cornered1.ogg
+mus suspense.ogg
+set _music_loop suspense.ogg
 music_fade_in nowait
 
 bg prosecution
