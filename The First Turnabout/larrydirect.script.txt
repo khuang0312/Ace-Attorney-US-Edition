@@ -573,7 +573,7 @@ char phoenix e=normal (talk)
 bg prosecution
 fg pbench
 char payne e=confident (talk)
-"The witness may be excused {n}from the stand."
+"The defendant may be excused {n}from the stand."
 
 bg witness
 fg wbench

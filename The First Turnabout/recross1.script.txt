@@ -90,13 +90,14 @@ fg wbench
 char sahwit e=normal (blink)
 "{type}{spd 100}(12/12) "There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00.""
 
+endcross
+
 bg defence
 fg dbench
 char phoenix e=thinking (blink)
 "{c089}(There's a contradiction in his {n}testimony... I know it.)"
 "{c089}(I need to {c940}impeach {c089}him by presenting {n}evidence from the Court Record {n}that contradicts a statement.)"
 
-endcross
 goto start
 
 label press 1
