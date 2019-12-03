@@ -587,7 +587,7 @@ char phoenix e=normal (talk)
 pause 10
 bg black
 pause 60
-script closing1
+script pre_closing
 
 label none
 mus
