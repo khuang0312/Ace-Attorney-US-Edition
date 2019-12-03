@@ -33,20 +33,6 @@ fg pbench
 char payne e=normal (talk)
 "Please state your first and last {n}name for the record."
 
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
-goto 2
-
 label 2
 bg witness
 fg wbench
@@ -565,7 +551,7 @@ char payne e=confident (talk)
 
 bg judgestand
 char judge e=normal (talk)
-"Mr. Wright, do you wish to {n}{c940}cross-examine{c999} the defendant?"
+"Mr. Wright, do you wish to {n}cross-examine the defendant?"
 
 bg helper
 char mia e=bench-stern (talk)

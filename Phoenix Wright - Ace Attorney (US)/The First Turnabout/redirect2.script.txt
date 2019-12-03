@@ -186,7 +186,7 @@ char phoenix e=handsondesk (talk)
 
 bg black
 nt
-"{c940}{sound}Re-direct testimony added to {n}original testimony for cross-exam."
+"{c940}{sound}Re-direct testimony added {n}to previous testimony for {n}cross-examination."
 
 bg black fade
 

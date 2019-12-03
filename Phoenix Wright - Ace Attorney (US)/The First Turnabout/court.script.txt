@@ -128,12 +128,7 @@ addev blackout
 
 nt
 "{c090}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
-
-bg helper
-char mia e=bench-stern (talk)
-"Just a reminder, Phoenix:"
-"Keep your copy of the documents {n}in the Court Record organized."
-"It's got all the evidence you need {n}to make your case, after all."
+"{c940}{sound}Tap the {c090}Court Record {c940}button to view."
 
 bg judgestand
 char judge e=normal (talk)
@@ -175,7 +170,7 @@ char payne e=confident (talk)
 char payne e=normal (talk)
 "As such, the prosecution asks that {n}you find the defendant, Larry Butz, {n}guilty of murder."
 
-music_fade_out nowait
+music_fade_out
 
 bg judgestand
 char judge e=normal (talk)
@@ -230,7 +225,7 @@ char phoenix e=confident (talk)
 char phoenix e=normal (talk)
 "Because of that, we ask that you {n}find the defendant, Larry Butz, {n}not guilty."
 
-music_fade_out nowait
+music_fade_out
 
 bg judgestand
 char judge e=normal (talk)
@@ -265,7 +260,7 @@ char phoenix e=thinking (talk)
 "R-right!"
 char phoenix e=normal (talk)
 "O-Objection, Your Honor!"
-"The defense is under no obligation {n}to testify as opposing counsel {n}has requested."
+"The defendant is under no obligation {n}to testify as opposing counsel {n}has requested."
 char phoenix e=handsondesk (talk)
 "The defense asserts the defendant's {n}right to remain silent."
 
