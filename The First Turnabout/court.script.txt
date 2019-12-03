@@ -1,0 +1,336 @@
+bg black
+"{c090}{center}{type}{spd 2}August 3, 10:00 AM {n}Los Angeles Superior Court {n}Courtroom No. 2"
+
+sfx sfx-gallery
+fg ani-gallery nowait
+fg phoenix_mia nowait
+fg judge nowait
+fg payne nowait
+
+pause 120
+
+fg ani-judge-gavel
+fg ani-judge-gavel
+
+pause 30
+
+mus trial.ogg
+set _music_loop trial.ogg
+music_fade_in nowait
+
+bg judgestand
+char judge e=normal (talk)
+"Good morning, ladies and gentlemen."
+"Court is now in session for the trial {n}of Butz v. the State of California."
+"This is a criminal case brought {n}by the state charging the {n}defendant, Larry Butz,"
+"with one count of murder: {n}the unlawful killing of {n}another human being."
+"This trial will determine whether {n}the defendant is guilty..."
+"...or not guilty, based on the {n}testimony and evidence {n}provided in this case."
+"Are the prosecution and {n}defense ready?"
+
+addev winston$
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"The prosecution is ready, {n}Your Honor."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"The, um, defense is ready, {n}Your Honor."
+
+bg judgestand
+char judge e=surprised (talk)
+"Ahem."
+"Defense?"
+"This is your first trial, is it not?"
+
+bg defence
+fg dbench
+char phoenix e=sweating (talk)
+"Y-Yes, Your Honor."
+"I'm, um, a little nervous."
+
+bg judgestand
+char judge e=normal (talk)
+"Your conduct during this trial will {n}decide the fate of your client."
+"Murder is a serious charge."
+"For your client's sake, I hope you {n}can control your nerves."
+
+bg defence
+fg dbench
+char phoenix e=sweating (talk)
+"Thank... thank you, Your Honor."
+"{c089}(Gulp... Hands shaking... {n}Eyesight... fading...)"
+
+bg judgestand
+char judge e=normal (talk)
+"Well, then..."
+"Does the prosecution have any {n}evidence to submit for inspection?"
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Yes, Your Honor."
+"We submit the following {n}pieces of evidence:"
+
+set _ev cindy_autopsy
+sfx sfx-evidenceshoop
+showevl
+"The victim's autopsy report... "
+hideevl
+
+set _ev thinker
+sfx sfx-evidenceshoop
+showevl
+"A statue of The Thinker: {n}the murder weapon... "
+hideevl
+
+set _ev cindy_passport
+sfx sfx-evidenceshoop
+showevl
+"The victim's passport... "
+hideevl
+
+set _ev blackout
+sfx sfx-evidenceshoop
+showevl
+"...and a blackout record from {n}the day of the murder."
+hideevl
+
+bg judgestand
+char judge e=normal (talk)
+"Does the defense object to the {n}inclusion of any of the evidence {n}presented by the prosecution?"
+
+bg helper
+char mia e=bench-stern (talk)
+"Nothing seems out of {n}order here, Wright."
+"If you find that any evidence is {n}suspicious or irrelevant in future {n}trials during inspection..."
+"...you'll want to call the {n}prosecution out on it."
+
+char phoenix hide
+"Got it, Boss."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Uh... No objections, Your Honor."
+
+bg judgestand
+char judge e=normal (talk)
+"The court then accepts the evidence into the {c940}Court Record{c999}."
+
+addev cindy_autopsy
+addev thinker
+addev cindy_passport
+addev blackout
+
+nt
+"{c090}{sound}{sfx sfx-selectjingle}Evidence has been added {n}to the Court Record."
+"{c940}{sound}Tap the {c090}Court Record {c940}button to view."
+
+bg judgestand
+char judge e=normal (talk)
+"With that settled..."
+
+music_fade_out nowait
+
+"Is the prosecution ready to {n}give an opening statement?"
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Yes, Your Honor."
+
+char payne e=normal (talk)
+nt
+"{c090}{center}{type}{spd 2}- OPENING STATEMENT -{n}Prosecution"
+
+mus logic.ogg
+set _music_loop logic.ogg
+music_fade_in nowait
+
+char payne e=normal (talk)
+"May it please the court."
+"My name is Winston Payne, and I {n}represent the state in this case."
+
+addev cindy$
+
+"The defendant, Larry Butz, and the {n}victim, Cindy Stone, were dating..."
+"...but had broken up a few {n}weeks prior to July 31st."
+"On that day, the defendant {n}entered the victim's apartment."
+"There was a verbal altercation as reported by the neighbors,"
+"after which he picked up a nearby {n}statue of The Thinker and {n}smashed her in the head."
+"One blow killed her instantly."
+char payne e=confident (talk)
+"You will hear from a witness who saw {n}the defendant flee the scene right {n}after the moment of the crime."
+"That same witness also discovered {n}the body afterwards."
+"The defendant had a clear motive, {n}and the evidence clearly points {n}to his guilt."
+char payne e=normal (talk)
+"As such, the prosecution asks that {n}you find the defendant, Larry Butz, {n}guilty of murder."
+
+music_fade_out
+
+bg judgestand
+char judge e=normal (talk)
+"Thank you, Mr. Payne."
+"Does the defense wish to give their {n}opening statement at this time?"
+
+bg helper
+char mia e=bench-stern (talk)
+"You can choose to give an {n}opening statement now,"
+"or after the prosecution {n}completes its case in chief."
+"I'd recommend giving it now, before {n}the judge becomes ingrained in the {n}prosecution's point of view..."
+char mia e=bench-geez (talk)
+"This one's a bit of a pushover."
+
+char phoenix hide
+"Got it, Boss."
+
+bg defence
+fg dbench
+char phoenix e=normal (talk)
+"Ahem."
+"The defense will present an opening {n}statement now, Your Honor."
+
+bg judgestand
+char judge e=normal (talk)
+"Very well."
+"You may proceed."
+
+bg defence
+fg dbench
+char phoenix e=normal (blink)
+nt
+"{c090}{center}{type}{spd 2}- OPENING STATEMENT -{n}Defense"
+
+mus logic.ogg
+set _music_loop logic.ogg
+music_fade_in nowait
+
+char phoenix e=normal (talk)
+"May it please the court."
+char phoenix e=document (talk)
+"There is reasonable doubt as to {n}whether or not the defendant,"
+"Larry Butz, committed murder {n}on July 31st."
+"While Mr. Butz had indeed broken {n}up with Ms. Stone a few weeks {n}prior to her murder,"
+"he harbored no ill feelings {n}toward Ms. Stone."
+char phoenix e=normal (talk)
+"In fact, he had gone to her apartment {n}that day simply to see how she {n}was doing."
+"After realizing that she was out, he {n}left the apartment without incident."
+char phoenix e=confident (talk)
+"The prosecution lacks definitive {n}evidence proving that Mr. Butz {n}murdered Ms. Stone that day."
+"Mr. Butz was simply caught up in a {n}series of events; he is no murderer."
+char phoenix e=normal (talk)
+"Because of that, we ask that you {n}find the defendant, Larry Butz, {n}not guilty."
+
+music_fade_out
+
+bg judgestand
+char judge e=normal (talk)
+"Very good, Mr. Wright."
+
+"Moving on..."
+"The prosecution may call its {n}first witness."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"The prosecution calls the {n}defendant to the stand."
+
+mus suspense.ogg
+set _music_loop suspense.ogg
+music_fade_in nowait
+
+bg defence
+fg dbench
+char phoenix e=sweating (talk)
+sfx sfx-realization
+"Um... what?"
+"{c089}(Is he serious?)"
+
+bg helper
+char mia e=bench-stern (talk)
+"{s 10}Object, Wright!"
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"R-right!"
+char phoenix e=normal (talk)
+"O-Objection, Your Honor!"
+"The defendant is under no obligation {n}to testify as opposing counsel {n}has requested."
+char phoenix e=handsondesk (talk)
+"The defense asserts the defendant's {n}right to remain silent."
+
+bg witness
+fg wbench
+char larry e=crying (talk) fade
+"Remain silent!?"
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}I ain't gonna remain silent!"
+char larry e=smirk (talk)
+"No one can stop me from talking!"
+sfx sfx-smack
+char larry e=mad (talk)
+"{s 20}Bring it on, man!"
+
+bg judgestand
+char judge e=surprised (talk)
+"Well, if the witness himself wants {n}to testify, the court sees no {n}reason to stop him."
+"Objection overruled."
+
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(Uh-oh.)"
+"{c089}(Larry gets excited easily... {n}This could be bad.)"
+
+bg helper
+char mia e=bench-geez (talk)
+"*sigh* ...You have some {n}strange friends, Wright."
+char mia e=bench-stern (talk)
+"Listen closely, now."
+"Attorneys generally conduct {c940}{n}direct examination {c999}on their own {n}witness to support their case.
+"For the prosecution to call a {n}defense witness is... unusual, {n}to say the least."
+"Anyway, opposing counsel is {n}trying to make our defendant {n}slip up during questioning."
+"He's likely going to throw in a few {n}improper questions to trick {n}Larry into hurting his case.
+"As his lawyer, I'm sure you {n}know it's your job to {c940}object {n}{c999}to these questions."
+
+addev handbook
+addev handbook1
+addev handbook2
+addev handbook3
+addev handbook4
+addev handbook5
+set _ev handbook
+sfx sfx-evidenceshoop
+showevl
+
+"You have the {c940}reference handbook{c999} {n}I gave you, right?"
+"It should be filed in the {c940}Court Record{c999}."
+"It contains a guide on the types of {n}objections used to protest {n}opposing counsel's questions."
+"Give it a glance now if you need {n}a refresher."
+hideevl
+
+"If you're able to prevent the {n}prosecution from eliciting {n}damaging testimony,"
+"you'll gain more leeway in {n}pleading your case."
+
+bg black
+nt
+penalty 50
+penalty
+"{c940}{sound}The penalty bar represents {n}Phoenix's standing in the court."
+"{c940}{sound}Each successful objection {n}will raise the bar."
+penalty +10
+penalty
+"{c940}{sound}Improper objections, among other {n}errors, will lower the bar."
+penalty -10
+penalty
+"{c940}{sound}If the prosecution's question is {n}legitimate, press {c999}Back{c940} to move on."
+delete name=penalty
+music_fade_out
+
+script larrydirect

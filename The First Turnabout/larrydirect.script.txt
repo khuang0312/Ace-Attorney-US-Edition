@@ -1,0 +1,621 @@
+bg witness
+char larry e=hello (blink)
+
+char Bailiff hide
+"Witness."
+"Please raise your right hand."
+"Do you swear to testify to {n}the truth, the whole truth, {n}and nothing but the truth?"
+
+char larry e=hello (talk)
+"I do!"
+
+char Bailiff hide
+"You may step up to the stand."
+
+fg wbench fade
+fg TestimonyAnim fade name=tanim
+delete name=tanim
+nt
+"{c090}{center}{type}{spd 3}- DIRECT EXAMINATION -{n}Larry Butz"
+
+penalty 50
+
+mus moderato.ogg
+set _music_loop moderato.ogg
+music_fade_in nowait
+
+set _testimony_blinker false
+set _allow_present_evidence false
+
+label 1
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Please state your first and last {n}name for the record."
+
+label 2
+bg witness
+fg wbench
+char larry e=hello (talk)
+"Yo. I'm Larry Butz."
+
+label 3
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"What do you do for a living?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 4
+
+label 4
+bg witness
+fg wbench
+char larry e=hello (talk)
+"I do all kinds of stuff!"
+char larry e=headscratching (talk)
+"I'm making statues at the moment, {n}and each one is unique."
+
+label 5
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+set _ev thinker
+sfx sfx-evidenceshoop
+showevl
+"Mr. Butz, let me direct your attention {n}to this piece of evidence."
+"Do you recognize it?"
+hideev1
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 6
+
+label 6
+bg witness
+fg wbench
+char larry e=hello (talk)
+"Yeah, that's The Thinker!"
+"It's one of my creations."
+
+label 7
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Let the record show that the {n}defendant has identified the murder {n}weapon as one of his creations."
+
+label 8
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(Not good...)"
+
+label 9
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Mr. Butz, were you related {n}to the victim?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 10
+
+label 10
+bg witness
+fg wbench
+char larry e=crying (talk)
+"She was my girl, man!"
+"We were great together!"
+"We were Romeo and Juliet, {p 5}{n}Cleopatra and Mark Anthony!"
+
+label 11
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(Um... didn't they all die?)"
+
+label 12
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"But isn't it true that the victim had {n}recently dumped you?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading result=Leading12
+li Prejudicial result=Prejudicial12
+li Relevance result=Relevance12
+li Vague
+showlist
+delete name=penalty
+goto 13
+
+label 13
+bg witness
+fg wbench
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}I wasn't dumped!"
+char larry e=crying (talk)
+"She just wasn't taking my phone {n}calls...{p 30} or seeing me. {p 30}Ever."
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}WHAT'S IT TO YOU, ANYWAY!?"
+
+label 14
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, what you describe is {n}generally what we mean by {n}"dumped.""
+
+label 15
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+set _ev cindy_passport
+sfx sfx-evidenceshoop
+showevl
+"Let me direct your attention {n}to this piece of evidence. {n}Do you recognize it?"
+hideevl
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 16
+
+label 16
+bg witness
+fg wbench
+char larry e=normal (talk)
+"Yeah, that's Cindy's passport."
+
+label 17
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Can you describe to me what's {n}on the most recent page?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 18
+
+label 18
+bg witness
+fg wbench
+char larry e=normal (talk)
+"Looks like she just got back from {n}Paris on July 30th..."
+"{sfx sfx-realization}Wait a second."
+char larry e=crying (talk)
+"{s 10}Someone else wrote in here!"
+""To the love of my life, Cindy. {n}Thanks for visiting me! {n}XOXO""
+"{s 20}WHAT!?"
+"Dude...{p 10} no way..."
+
+label 19
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, what do you {n}think of her now?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial result=Prejudicial19
+li Relevance result=Relevance19
+li Vague
+showlist
+delete name=penalty
+goto 20
+
+label 20
+bg witness
+fg wbench
+char larry e=crying (talk)
+"That...{p 5} that cheatin' she-dog!"
+"I'm gonna die."
+"I'm just gonna drop dead."
+"Yeah, and when I meet her in the {n}afterlife, I'm going to get to {n}the bottom of this!"
+
+label 21
+bg judgestand
+char judge e=surprised (talk)
+".{p 5}.{p 5}.{p 5}Let's continue with the trial, {n}shall we?"
+goto 22
+
+label 22
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"Of course, Your Honor."
+
+label 23
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Mr. Butz, where were you {n}on the 31st of July?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 24
+
+label 24
+bg witness
+fg wbench
+char larry e=crying (talk)
+"I, uh, I was visiting Cindy's {n}apartment."
+
+label 25
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Did you meet with the victim?"
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+penalty
+list
+li Asked and Answered
+li Leading
+li Prejudicial
+li Relevance
+li Vague
+showlist
+delete name=penalty
+goto 26
+
+label 26
+bg witness
+fg wbench
+char larry e=crying (talk)
+"She wasn't home, man... {n}I didn't see her."
+
+label 27
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"Thank you, Mr. Butz."
+
+goto endoftestimony
+
+label Asked_and_Answered
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10 script
+char phoenix e=pointing (talk)
+"Your Honor, this question has {n}been asked and answered."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
+
+label Leading
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
+
+label Leading12
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel is {n}leading the witness."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 15
+
+label Prejudicial
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
+
+label Prejudicial12
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 15
+
+label Prejudicial19
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for prejudicial testimony."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 23
+
+label Relevance
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
+
+label Relevance12
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 15
+
+label Relevance19
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question calls {n}for testimony irrelevant to this case."
+bg judgestand
+char judge e=normal (talk)
+"Sustained."
+"Please move on, Mr. Payne."
+pause 30
+sfx sfx-bling2
+penalty +10
+pause 30
+goto 23
+
+label Vague
+sfx phoenix\objection
+fg ObjectionAnim
+bg defence
+fg dbench
+char phoenix e=objecting
+pause 10
+char phoenix e=pointing (talk)
+"Your Honor, counsel's question is {n}vague and ambiguous."
+bg judgestand
+char judge e=normal (talk)
+"Overruled."
+"Answer the question, witness."
+penalty threat=10
+pause 30
+sfx sfx-damage2
+penalty -10
+pause 30
+resume
+
+label endoftestimony
+music_fade_out nowait
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"No further questions, Your Honor."
+
+bg judgestand
+char judge e=normal (talk)
+"Mr. Wright, do you wish to {n}cross-examine the defendant?"
+
+bg helper
+char mia e=bench-stern (talk)
+char phoenix hide
+"What should I do, Boss?"
+"This wasn't supposed to happen..."
+
+char mia e=bench-stern (talk)
+"Let's just move on."
+"We can push back from a {n}different angle...{p 10} hopefully."
+
+bg defence
+fg dbench
+char phoenix e=headshake
+pause 60
+char phoenix e=normal (talk)
+"*sigh* ...The defense has no {n}further questions for the {n}defendant, Your Honor."
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"The witness may be excused {n}from the stand."
+
+bg witness
+fg wbench
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}Thanks for nothing, Nick!"
+char larry e=crying (talk)
+"Why'd my Cindy do that, man?"
+char larry e=mad (talk)
+sfx sfx-smack
+"{s 20}WHY!?"
+
+bg defence
+fg dbench
+char phoenix e=sweating (blink)
+"{c089}(Larry...{p 10} just get off the stand, please.)"
+
+sfx sfx-gallery
+fg ani-gallery nowait
+fg phoenix_mia nowait
+fg judge nowait
+fg payne nowait
+fg larry nowait
+pause 120
+fg ani-judge-gavel
+fg ani-judge-gavel
+
+bg judgestand
+char judge e=warning (talk)
+"Order! Order in the court!"
+char judge e=normal (talk)
+"Please call your next witness, {n}Mr. Payne."
+
+addev frank$
+
+bg prosecution
+fg pbench
+char payne e=confident (talk)
+"The prosecution calls Frank Sahwit {n}to the stand."
+
+bg black fade
+
+pause 30
+
+script sahwitdirect

@@ -1,9 +1,0 @@
--Add save game so player doesn't start from beginning when gameover
-
--Timer and penalty for closing statement
-
-Text Colors
-{c940} = orange
-{c089} = blue
-{c090} = green
-{c999} = white

@@ -1,0 +1,6 @@
+bg witness
+char sahwit e=normala (blink)
+"(This is a test blinking linkgin oin goisne oi enqo in qio n)"
+
+char sahwit e=normala (talk)
+"This is a test talking. Alot alot alotalot alotaltoa"

@@ -1,3 +1,0 @@
-set _order_cases variable
-set _case_1 The First Turnabout
-casemenu

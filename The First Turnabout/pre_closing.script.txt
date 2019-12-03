@@ -1,0 +1,107 @@
+bg judgestand
+char judge e=surprised (talk)
+"Well... This trial has certainly {n}taken an unexpected turn."
+char judge e=normal (talk)
+"If both the defense and prosecution {n}rest their case, the court will now {n}move to {c940}closing arguments{c999}."
+"If you would, Mr. Payne?"
+
+bg prosecution
+fg pbench
+char payne e=sweating (blink)
+".{p 10}.{p 10}.{p 10}"
+char payne e=confident (talk)
+"Yes, Your Honor."
+
+char payne e=normal (blink)
+nt
+"{c940}{center}{type}{spd 3}- CLOSING ARGUMENT -{n}Prosecution"
+
+mus cornered1.ogg
+set _music_loop cornered1.ogg
+music_fade_in nowait
+
+bg prosecution
+fg pbench
+char payne e=normal (talk)
+"May it please the court."
+"The evidence and testimony {n}presented in this trial proves {n}the defendant's guilt."
+"He has admitted to being at the {n}apartment during the time {n}of the murder.
+"As we heard from Mr. Sahwit, the {n}defendant fled from the apartment {n}right after committing the crime."
+"The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing."
+char payne e=confident (talk)
+"Yes, the clock may be three hours {n}slow right now.
+"But this does not necessarily mean {n}the clock was three hours slow on {n}the day of the murder."
+"It is simply a coincidence that {n}the clock is currently slow.
+"The blackout on the day of the {n}murder cannot have affected it {n}since it runs on batteries."
+"As such, Mr. Sahwit's testimony {n}still stands."
+char payne e=normal (talk)
+"The defendant went to the victim's {n}apartment, got into an argument, {n}and took it too far."
+"He had both motive and opportunity {n}to commit murder."
+"The state asks that the defendant, {n}Larry Butz, be found guilty."
+
+music_fade_out
+
+bg judgestand
+char judge e=warning (talk)
+"Thank you, Mr. Payne."
+"Mr. Wright, your closing argument?"
+
+bg helper
+char mia e=bench-stern (blink)
+char phoenix hide
+"Boss, it's over!"
+"I can't prove the clock was {n}slow the day of the murder!"
+"No one can prove that!"
+
+char mia e=bench-stern (talk)
+"Um... well, yes."
+"But that doesn't mean {n}you can't still win!"
+"Try thinking out of the box!"
+"If you can present an alternate {n}possibility for why the clock {n}was three hours slow..."
+"...we might just have a case."
+
+bg defence
+fg dbench
+char phoenix e=thinking (talk)
+"{c089}(Why was the clock three hours{n}slow...?)"
+char phoenix e=handsondesk (blink)
+"{c089}(Let's take it from the top.)"
+
+bg black fade
+fg dbench fade
+sfx sfx-wipe
+
+mus truth.ogg
+set _music_loop truth.ogg
+music_fade_in nowait
+
+set _list_back_button false
+set_examine_showbars true
+
+//Begin timer flags
+setflag pass1
+setflag pass2
+setflag pass3
+setflag pass4
+setflag pass5
+setflag pass6
+
+set previous_choice choice1
+timer_sequence
+
+//Make sure all timer flags are done with
+setflag pass1
+setflag pass2
+setflag pass3
+setflag pass4
+setflag pass5
+setflag pass6
+
+//start ending the game!
+
+bg black fade
+sfx sfx-wipe
+nt
+"{c940}{sound}{center}{spd 3}THE CLOCK IS 9 HOURS FAST"
+music_fade_out
+script ending
