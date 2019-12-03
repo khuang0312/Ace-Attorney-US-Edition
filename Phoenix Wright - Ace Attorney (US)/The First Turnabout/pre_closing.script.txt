@@ -1,4 +1,3 @@
-//goto here
 bg judgestand
 char judge e=surprised (talk)
 "Well... This trial has certainly {n}taken an unexpected turn."
@@ -13,10 +12,10 @@ char payne e=confident (talk)
 
 char payne e=normal (blink)
 nt
-"{c940}{center}{type}{spd 3}- CLOSING ARGUMENT -{n}Prosecution"
+"{c940}{center}{type}{spd 3}- CLOSING STATEMENT -{n}Prosecution"
 
-mus suspense.ogg
-set _music_loop suspense.ogg
+mus cornered1.ogg
+set _music_loop cornered1.ogg
 music_fade_in nowait
 
 bg prosecution
@@ -27,7 +26,6 @@ char payne e=normal (talk)
 "He has admitted to being at the {n}apartment during the time {n}of the murder.
 "As we heard from Mr. Sahwit, the {n}defendant fled from the apartment {n}right after committing the crime."
 "The defense has questioned the {n}reliability of Mr. Sahwit's testimony, {n}but cannot prove one crucial thing."
-label here
 "Yes, the clock may be three hours {n}slow right now.
 "But this does not necessarily mean {n}the clock was three hours slow on {n}the day of the murder."
 "It is simply a coincidence that {n}the clock is currently slow.
@@ -74,150 +72,30 @@ music_fade_in nowait
 set _list_back_button false
 set_examine_showbars true
 
-//1st choice
+//Begin timer flags
+setflag pass1
+setflag pass2
+setflag pass3
+setflag pass4
+setflag pass5
+setflag pass6
+
 set previous_choice choice1
-label choice1
-char phoenix e=thinking (blink)
-setvar text {c089}(In order for Larry to be innocent, Sahwit must have...)
-"{c089}(In order for Larry to be innocent, Sahwit must have...)"
-timer 120 choice_timer1
-setvar pass1 false
+timer_sequence
 
-list
-li Not actually heard the time. result=wronganswer //rewrote this for brevity
-li Heard the time. result=choice2
-
-showlist
-
-//2nd choice
-label choice2
-setvar pass1 1
-setvar pass2 false
-set previous_choice choice2
-char phoenix e=thinking (blink)
-setvar text {c089}(If Sahwit is telling the truth, then the clock...)
-"{c089}(If Sahwit is telling the truth, then the clock...)"
-timer 120 choice_timer2
-
-list
-li Was inaccurate that day. result=wronganswer //changed these two for brevity
-li Was accurate that day. result=choice3
-
-showlist
-
-//3rd choice
-label choice3
-setvar pass2 1
-setvar pass3 false
-set previous_choice choice3
-char phoenix e=thinking (blink)
-setvar text {c089}(The clock must have had the wrong time, due to...) //Decided to change this for clarity
-"{c089}(The clock must have had the wrong time, due to...)"
-timer 120 choice_timer3
-
-list
-li The blackout. result=wronganswer
-li Something else. result=choice4 //Decided to change this choice's text
-
-showlist
-
-//4th choice
-label choice4
-setvar pass3 1
-setvar pass4 false
-set previous_choice choice4
-char phoenix e=sweating (blink)
-"{c089}(But why?)"
-setvar text {c089}(The cause must have been because the clock...)
-"{c089}(The cause must have been because the clock...)"
-timer 120 choice_timer4
-
-list
-li Was in a different time zone. result=choice5 //changed also
-li Was not designed to tell the time. result=wronganswer
-
-showlist
-
-//5th choice
-label choice5
-setvar pass4 1
-setvar pass5 false
-set previous_choice choice5
-char phoenix e=thinking (blink)
-setvar text {c089}(But what can I use to prove that?)
-"{c089}(But what can I use to prove that?)"
-timer 120 choice_timer5
-present noback
-
-//Passport choice
-label cindy_passport
-setvar pass5 1
-setvar pass6 false
-set previous_choice cindy_passport
-char phoenix e=confident (blink)
-setvar text {c089}(That's right! The victim went to Paris, which means...) //Changed this too, since this gives away the answer...
-"{c089}(That's right! The victim went to Paris, which means...)"
-timer 120 choice_timer6
-
-list
-li The clock is 3 hours slow result=wronganswer
-li The clock is 9 hours fast result=closingspeech
-
-showlist
+//Make sure all timer flags are done with
+setflag pass1
+setflag pass2
+setflag pass3
+setflag pass4
+setflag pass5
+setflag pass6
 
 //start ending the game!
-label closingspeech
-setvar pass6 1
-music_fade_out nowait
+
 bg black fade
+sfx sfx-wipe
+nt
+"{c940}{sound}{center}{spd 3}THE CLOCK IS 9 HOURS FAST"
+music_fade_out
 script ending
-
-
-label wronganswer
-char phoenix e=sweating (talk)
-"{c089}(No, that can't be right... {n}I need to refocus!)"
-
-bg judgestand
-
-char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
-
-sfx sfx-damage2
-penalty -25
-
-is penalty = 0 gameover
-
-bg defence
-fg dbench
-
-char phoenix e=emo
-"{c089}(Dammit Phoenix! Think! {n}Your friend's life is on the line!)"
-
-bg black fade
-fg dbench fade
-sfx sfx-wipe
-
-goto $previous_choice
-
-label none
-char phoenix e=sweating (talk)
-"{c089}(No, that can't be right... {n}I need to refocus!)"
-
-bg judgestand
-
-char judge e=warning (talk)
-"The court does not appreciate stalling, Mr. Wright."
-
-sfx sfx-damage2
-penalty -10
-
-bg defence
-fg dbench
-char phoenix e=emo
-"{c089}(Dammit Phoenix! Think! {n}Your friend's life is on the line!)"
-
-bg black fade
-fg dbench fade
-sfx sfx-wipe
-
-goto $previous_choice

@@ -26,7 +26,7 @@
                     "page": "evidence"
                 }
             ],
-            "_track": "moderato.ogg",
+            "_track": "truth.ogg",
             "character": "phoenix",
             "lists": {},
             "variables": {
@@ -38,16 +38,16 @@
                 "_testimony_blinker": "true",
                 "_font_itemset_size": "10",
                 "ev_z_text_col": "FFFFFF",
-                "_music_loop": "moderato.ogg",
-                "_list_back_button": "true",
-                "_last_written_text": "Gladly, Your Honor.\n",
+                "_music_loop": "truth.ogg",
+                "_list_back_button": "false",
+                "_last_written_text": "{c 940}{sound}{center}{spd 3}THE CLOCK IS 9 HOURS FAST\n",
                 "ev_check_img": "general/check",
                 "cindy$_name": "Cindy Stone",
                 "winston$_desc": "Age: 52{n}Gender: Male{n}The prosecutor for this case. Lacks presence. Generally bad at getting his points across.",
                 "ev_z_icon_x": "25",
                 "ev_z_icon_y": "60",
                 "_font_new_resume": "arial.ttf",
-                "penalty": "90",
+                "penalty": "60",
                 "ev_mode_x": "4",
                 "_penalty_script": "penalty",
                 "_font_itemname_size": "10",
@@ -57,14 +57,19 @@
                 "blackout_name": "Blackout Record",
                 "_textbox_y": "",
                 "handbook3_pic": "handbook.png",
+                "pass4": "true",
+                "pass5": "true",
+                "pass6": "true",
                 "_list_checked_y": "-10",
+                "pass2": "true",
+                "pass3": "true",
                 "handbook_name": "Objection Handbook",
                 "cindy_autopsy_desc": "Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of death: {n}Loss of blood due to {n}blunt trauma",
                 "_font_tb_size": "10",
                 "handbook3_desc": "Objection: {n}Prejudicial {n}{n}Counsel is asking a {n}question to elicit an {n}emotional response.",
                 "ev_zlarrow_x": "2",
                 "ev_zlarrow_y": "90",
-                "_currentlabel": "enddd",
+                "_currentlabel": "true5",
                 "handbook2_pic": "handbook.png",
                 "wright$_desc": "Age: 24{n}Gender: Male{n}Just a greenhorn defense attorney about to defend his childhood friend for murder. What can go wrong?",
                 "larry$_desc": "Age: 23{n}Gender: Male{n}The defendant in this case. A likeable guy who was my friend in grade school.",
@@ -89,8 +94,8 @@
                 "cindy_passport_pic": "en_passport.gif",
                 "handbook5_desc": "Objection: {n}Vague {n}{n}Counsel's question is not {n}clear enough to elicit a {n}concise answer.",
                 "_textbox_wrap": "true",
-                "_music_fade": "0",
-                "_lastline": "2",
+                "_music_fade": "48",
+                "_lastline": "41",
                 "_font_itemset": "pwinternational.ttf",
                 "ev_spacing_x": "48",
                 "ev_spacing_y": "46",
@@ -105,7 +110,7 @@
                 "_font_new_resume_size": "14",
                 "_examine_skipupdate": "off",
                 "_layering_method": "zorder",
-                "_music_fade_nowait": "nowait",
+                "_music_fade_nowait": "",
                 "_nt_text_color": "",
                 "winston$_pic": "payne1.png",
                 "winston$_name": "Winston Payne",
@@ -114,7 +119,7 @@
                 "_font_nt": "arial.ttf",
                 "_list_bg_image": "general/black",
                 "_cr_button": "true",
-                "_timer_value_music_fade_in_add": "-0.08",
+                "_nt_text_y": "0",
                 "_nt_image": "",
                 "thinker_desc": "A statue in the shape {n}of \"The Thinker\" made by Larry. It's a one of a kind.",
                 "ev_larrow_y": "90",
@@ -126,6 +131,7 @@
                 "larry$_name": "Larry Butz",
                 "_examine_mousedown": "false",
                 "ev_z_textbox_w": "130",
+                "_timer_value_choice_timer": "-0.18",
                 "ev_present_y": "0",
                 "ev_z_textbox_h": "100",
                 "_font_itemset_big": "arial.ttf",
@@ -145,7 +151,7 @@
                 "_punctuation": ".\u3002?!,;\u3001",
                 "_allow_saveload": "true",
                 "_font_block": "arial.ttf",
-                "_timer_value_music_fade_out_add": "-0.14",
+                "_timer_value_music_fade_out_add": "-0.02",
                 "_menu_fade_level": "50",
                 "blackout_pic": "whiteenvelope.png",
                 "ev_z_textbox_x": "100",
@@ -163,7 +169,7 @@
                 "wright$_pic": "wright.png",
                 "wright$_name": "Phoenix Wright",
                 "_return": "",
-                "_lastlabel": "exit",
+                "_lastlabel": "enddd",
                 "_nt_x": "",
                 "_font_gametitle": "arial.ttf",
                 "_bigbutton_bg": "bg/main",
@@ -192,13 +198,15 @@
                 "_font_itemname": "pwinternational.ttf",
                 "frank$_name": "Frank Sahwit",
                 "ev_zarrow_img": "general/arrow_right",
+                "previous_choice": "choice55",
                 "_examine_cursor_img": "",
+                "pass1": "true",
                 "_nt_text_x": "0",
-                "_nt_text_y": "0",
+                "_timer_value_music_fade_in_add": "-0.08",
                 "ev_present_x": "90",
                 "handbook1_pic": "handbook.png",
                 "_allow_click_load": "true",
-                "_selected": "Asked and Answered",
+                "_selected": "closingspeech",
                 "ev_show_mode_text": "true",
                 "frank$_desc": "Age: 36{n}Gender: Male{n}Discovered Ms. Stone's body. Newspaper salesman who saw Larry flee the scene.",
                 "handbook4_pic": "handbook.png",
@@ -214,13 +222,13 @@
         "assets.Script",
         [],
         {
-            "_world_id": 197474504,
+            "_world_id": 402008544,
             "statement": "",
             "pri": 0,
-            "scene": "redirect2.script",
+            "scene": "pre_closing.script",
             "cross": null,
-            "si": 189,
-            "lastline": 72,
+            "si": 102,
+            "lastline": 1,
             "instatement": false,
             "_objects": [
                 [
@@ -256,35 +264,6 @@
                             0,
                             0
                         ]
-                    }
-                ],
-                [
-                    "textbox",
-                    [
-                        "{c 940}{sound}Re-direct testimony added \nto previous testimony for \ncross-examination.\n",
-                        [
-                            255,
-                            255,
-                            255
-                        ],
-                        2,
-                        1,
-                        true,
-                        false,
-                        "\n"
-                    ],
-                    {
-                        "num_lines": 4,
-                        "text": "{c 940}{sound}Re-direct testimony added \nto previous testimony for \ncross-examination.\n",
-                        "can_skip": false,
-                        "id_name": "_textbox_",
-                        "_clicksound": "",
-                        "kill": false,
-                        "statement": null,
-                        "go": 1,
-                        "z": 4,
-                        "blocking": true,
-                        "wait": "auto"
                     }
                 ],
                 [
@@ -328,21 +307,33 @@
                     }
                 ],
                 [
-                    "button",
+                    "delay",
                     [],
                     {
-                        "rpos": [
-                            177,
-                            192
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
                         ],
-                        "s_graphic": "general/record",
-                        "s_text": "",
-                        "pri": 0,
-                        "id_name": "_crbut_",
-                        "screen_setting": "try_bottom",
-                        "s_macroname": "{_crbut}",
-                        "hold_func": null,
-                        "z": 6
+                        "spd": 6,
+                        "ticks": 79.679999999999978,
+                        "pri": 10000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "start": 0,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
                     }
                 ],
                 [
@@ -378,23 +369,327 @@
                 ]
             ],
             "viewed": {
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script37": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script69": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script7": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script179": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script81": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script188": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script85": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script84": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script43": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script184": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script63": true,
-                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutredirect2.script17": true
+                "games/Ace-Attorney-US-Edition/Phoenix Wright - Ace Attorney (US)/The First Turnaboutpre_closing.script100": true
             }
         },
         [
             "stack",
             0
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_world_id": 402008544,
+            "statement": "",
+            "pri": 0,
+            "scene": "pre_closing.script/music_fade_out",
+            "cross": null,
+            "si": 5,
+            "lastline": 0,
+            "instatement": false,
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/black",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "black",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "uglyarrow",
+                    [],
+                    {
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            192
+                        ],
+                        "height": 192,
+                        "high": false,
+                        "loops": false,
+                        "spd": 6,
+                        "screen_setting": "",
+                        "end": null,
+                        "width": 256,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "fade": 255,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "id_name": "_uglyarrow_",
+                        "tint": null,
+                        "showleft": true,
+                        "_tb": true,
+                        "dim": 1,
+                        "name": "bg/main",
+                        "x": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    "delay",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "ticks": 79.679999999999978,
+                        "pri": 10000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "start": 0,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "guiWait",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "_guiWait_",
+                        "start": 0,
+                        "run": null,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            ],
+            "_parent_index": 0,
+            "viewed": {}
+        },
+        [
+            "stack",
+            1
+        ]
+    ],
+    [
+        "assets.Script",
+        [],
+        {
+            "_world_id": 402008544,
+            "statement": "",
+            "pri": 0,
+            "scene": "pre_closing.script/music_fade_out/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add/music_fade_out_add",
+            "cross": null,
+            "si": 0,
+            "lastline": 0,
+            "instatement": false,
+            "_objects": [
+                [
+                    "bg",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "name": "bg/black",
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "invert": 0,
+                        "greyscale": 0,
+                        "pri": 0,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "black",
+                        "start": 0,
+                        "tint": null,
+                        "fade": 255,
+                        "loops": false,
+                        "x": 0,
+                        "z": 1,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "uglyarrow",
+                    [],
+                    {
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            192
+                        ],
+                        "height": 192,
+                        "high": false,
+                        "loops": false,
+                        "spd": 6,
+                        "screen_setting": "",
+                        "end": null,
+                        "width": 256,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "invert": 0,
+                        "loopmode": 0,
+                        "start": 0,
+                        "fade": 255,
+                        "greyscale": 0,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "id_name": "_uglyarrow_",
+                        "tint": null,
+                        "showleft": true,
+                        "_tb": true,
+                        "dim": 1,
+                        "name": "bg/main",
+                        "x": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    "delay",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "ticks": 79.679999999999978,
+                        "pri": 10000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "start": 0,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                [
+                    "guiWait",
+                    [],
+                    {
+                        "dim": 1,
+                        "screen_setting": "",
+                        "end": null,
+                        "blinkspeed": [
+                            100,
+                            200
+                        ],
+                        "spd": 6,
+                        "pri": -1000,
+                        "pos": [
+                            0,
+                            0
+                        ],
+                        "loopmode": 0,
+                        "id_name": "_guiWait_",
+                        "start": 0,
+                        "run": null,
+                        "loops": 0,
+                        "x": 0,
+                        "z": 0,
+                        "rot": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            ],
+            "viewed": {}
+        },
+        [
+            "stack",
+            2
         ]
     ]
 ]
