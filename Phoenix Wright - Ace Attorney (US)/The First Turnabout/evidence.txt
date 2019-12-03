@@ -9,7 +9,7 @@ set cindy_autopsy_desc Time of death: {n}7/31 4:00 PM - 5:00 PM {n}Cause of deat
 
 set thinker_name Statue
 set thinker_pic thinker.png
-set thinker_desc A statue in the shape {n}of "The Thinker" made by Larry. {n}It's a one of a kind.
+set thinker_desc A statue in the shape {n}of "The Thinker" made by Larry. It's a one of a kind.
 
 set cindy_passport_name Passport
 set cindy_passport_pic en_passport.gif

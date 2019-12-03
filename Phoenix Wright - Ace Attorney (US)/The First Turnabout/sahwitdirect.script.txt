@@ -28,20 +28,6 @@ fg pbench
 char payne e=normal (talk)
 "Please state your first and last {n}name for the record."
 
-bg defence
-fg dbench
-char phoenix e=thinking (blink)
-penalty
-list
-li Asked and Answered
-li Leading
-li Prejudicial
-li Relevance
-li Vague
-showlist
-delete name=penalty
-goto 2
-
 label 2
 bg witness
 fg wbench
@@ -597,7 +583,7 @@ music_fade_out nowait
 
 bg judgestand
 char judge e=normal (talk)
-"Your {c940}cross-examination{c999}, {n}Mr. Wright?"
+"Your cross-examination, {n}Mr. Wright?"
 
 bg defence
 fg dbench

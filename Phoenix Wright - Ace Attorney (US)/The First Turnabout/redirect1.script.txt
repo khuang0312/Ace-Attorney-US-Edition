@@ -161,7 +161,7 @@ music_fade_out nowait
 
 bg judgestand
 char judge e=normal (talk)
-"You may {c940}re-cross{c999}, Mr. Wright."
+"You may re-cross, Mr. Wright."
 
 bg helper
 char mia e=bench-stern (talk)
@@ -169,7 +169,7 @@ char mia e=bench-stern (talk)
 
 bg black
 nt
-"{c940}{sound}Re-direct testimony added to {n}original testimony for cross-exam."
+"{c940}{sound}Re-direct testimony added {n}to previous testimony for {n}cross-examination."
 
 bg black fade
 

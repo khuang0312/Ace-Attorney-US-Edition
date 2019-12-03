@@ -22,85 +22,91 @@ statement 1
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}My name is Frank Sahwit.""
+"{type}{spd 100}(1/14) "My name is Frank Sahwit.""
 
 statement 2
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I go door-to-door selling {n}newspaper subscriptions.""
+"{type}{spd 100}(2/14) "I go door-to-door selling {n}newspaper subscriptions.""
 
 statement 3
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I saw the defendant fleeing an {n}apartment while I was working {n}at 1:00 on July 31st.""
+"{type}{spd 100}(3/14) "I saw the defendant fleeing {n}an apartment while I was working {n}at 1:00 on July 31st.""
 
 statement 4
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}He ran out leaving the door {n}half-open behind him, so he {n}must have been in a hurry.""
+"{type}{spd 100}(4/14) "He ran out leaving the door {n}half-open behind him, so he must {n}have been in a hurry.""
 
 statement 5
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}After seeing the defendant {n}run away, I looked inside {n}the apartment.""
+"{type}{spd 100}(5/14) "After seeing the defendant {n}run away, I looked inside {n}the apartment.""
 
 statement 6
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}A woman was on the ground. {n}She wasn't moving.""
+"{type}{spd 100}(6/14) "A woman was on the ground. {n}She wasn't moving.""
 
 statement 7
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}The victim is, without a doubt, {n}the woman I saw.""
+"{type}{spd 100}(7/14) "The victim is, without {n}a doubt, the woman I saw.""
 
 statement 8
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I went to a nearby park and {n}called the police immediately {n}from a public phone.""
+"{type}{spd 100}(8/14) "I went to a nearby park and {n}called the police immediately from {n}a public phone.""
 
 statement 9
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}There was a phone in the victim's {n}apartment, but it wasn't working.""
+"{type}{spd 100}(9/14) "There was a phone in {n}the victim's apartment, but {n}it wasn't working.""
 
 statement 10
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I don't have a cell phone, {n}unfortunately.""
+"{type}{spd 100}(10/14) "I don't have a cell phone, {n}unfortunately.""
 
 statement 11
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}I heard the time when I {n}found the body.""
+"{type}{spd 100}(11/14) "I heard the time {n}when I found the body.""
 
 statement 12
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-""{type}{spd 100}There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00.""
+"{type}{spd 100}(12/14) "There was a taped program {n}playing on the TV, and a voice {n}mentioned the time as 1:00.""
 
 statement 13
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I didn't hear the time; I saw it."
+"{type}{spd 100} (13/14) "I didn't hear the time; I saw it.""
 
 statement 14
 bg witness
 fg wbench
 char sahwit e=normal (blink)
-"{type}{spd 100}I saw the time on the clock the defendant used to hit the victim."
+"{type}{spd 100} (14/14) "I saw the time on the clock the defendant used to hit the victim.""
+
+bg defence
+fg dbench
+char phoenix e=thinking (blink)
+"{c089}(There's a contradiction in his {n}testimony... I know it.)"
+"{c089}(I need to {c940}impeach {c089}him by presenting {n}evidence from the Court Record {n}that contradicts a statement.)"
 
 endcross
 goto start
